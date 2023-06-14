@@ -74,8 +74,9 @@ public class PlayerController : MonoBehaviour
             // 次の目標地点を選択します
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
                 GotoNextPoint();
+        }
     }
-
+    
     void OnDrawGizmosSelected()
     {
         //trackingRangeの範囲を赤いワイヤーフレームで示す
@@ -86,5 +87,5 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, quitRange);
     }
-    }
+    
 }
