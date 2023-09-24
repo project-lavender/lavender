@@ -535,11 +535,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -450435477336378351, guid: 147237b62224d16469ff679b01697815,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c770ab2eefa3d742be12f748c9dd927, type: 2}
     - target: {fileID: 919132149155446097, guid: 147237b62224d16469ff679b01697815,
         type: 3}
       propertyPath: m_Name
-      value: jikkendai Variant
+      value: jikkendai
       objectReference: {fileID: 0}
+    - target: {fileID: 2831065782900121813, guid: 147237b62224d16469ff679b01697815,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66dd86d549eb9eb4081f4b7c6d56be0f, type: 2}
+    - target: {fileID: 2831065782900121813, guid: 147237b62224d16469ff679b01697815,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c770ab2eefa3d742be12f748c9dd927, type: 2}
+    - target: {fileID: 3313408250060592266, guid: 147237b62224d16469ff679b01697815,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c770ab2eefa3d742be12f748c9dd927, type: 2}
     - target: {fileID: 3313408250060592266, guid: 147237b62224d16469ff679b01697815,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
