@@ -5,31 +5,40 @@ using UnityEngine;
 public class RierMover : MonoBehaviour
 {
     private CharacterController ctr;
-
     [SerializeField]
-    private float walkspeed = 3.0f;
+    private float PL_cam_height = 2.2f;
     [SerializeField]
-    private float runspeed = 6.0f;
+    private float PL_light_intencity = 10f;
+    [SerializeField]
+    private float PL_walk = 3.0f;
+    [SerializeField]
+    private float PL_run = 6.0f;
+    
     private float g = 9.8f;
 
     private float h, v, c;
 
+
+    Light l;
     // Start is called before the first frame update
     void Start()
     {
         ctr = GetComponent<CharacterController>();
+        l = GetComponentInChildren<Light>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ctr.height = PL_cam_height;
+        l.intensity = PL_light_intencity;
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            c = runspeed;
+            c = PL_run;
         }
         else
         {
-            c = walkspeed;
+            c = PL_walk;
         }
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
