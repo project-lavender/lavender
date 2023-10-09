@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
+using System.Linq;
 public class RierMover : MonoBehaviour
 {
+    [SerializeField]
+    private TextAsset param;
     private CharacterController ctr;
     [SerializeField]
     private float PL_cam_height = 2.2f;
@@ -18,13 +21,27 @@ public class RierMover : MonoBehaviour
 
     private float h, v, c;
 
-
+    [SerializeField]
+    private List<string[]> p = new();
     Light l;
     // Start is called before the first frame update
     void Start()
     {
         ctr = GetComponent<CharacterController>();
         l = GetComponentInChildren<Light>();
+        Debug.Log(param.text);
+        string ptext = param.text;
+        string[] enterspl = ptext.Split("\n", System.StringSplitOptions.None);
+        foreach (string s in enterspl){
+            p.Add(s.Split(",", System.StringSplitOptions.None));
+        }
+
+        Debug.Log(p[1][1]);
+        Debug.Log(p[2][1]);
+        Debug.Log(p[3][1]);
+        Debug.Log(p[4][1]);
+        //PL_cam_height = float.Parse( p[1][1]);
+        //PL_light_intencity = float.Parse( p[2][1]);
     }
 
     // Update is called once per frame
