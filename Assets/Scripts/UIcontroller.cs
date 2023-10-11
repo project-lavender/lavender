@@ -8,6 +8,9 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] RectTransform[] UIs;
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
 
+    Cinemachine.CinemachinePOV pov;
+    Vector2 sence;
+
     public void ActiveUI(int i)
     {
         int j = 0;
@@ -16,6 +19,7 @@ public class UIcontroller : MonoBehaviour
             r.gameObject.SetActive(false);
             if (i == j)
             {
+                
                 r.gameObject.SetActive(true);
             }
             j += 1;
@@ -23,12 +27,21 @@ public class UIcontroller : MonoBehaviour
     }
     public void SetVirtualCamera(bool b)
     {
-        vc.gameObject.SetActive(b);
+        if (b) {
+            pov.m_HorizontalAxis.m_MaxSpeed = sence.x;
+            pov.m_VerticalAxis.m_MaxSpeed = sence.y;
+        }
+        else
+        {
+            pov.m_HorizontalAxis.m_MaxSpeed = 0f;
+            pov.m_VerticalAxis.m_MaxSpeed = 0f;
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        pov = vc.GetCinemachineComponent<Cinemachine.CinemachinePOV>();
+        sence = Vector2.right * pov.m_HorizontalAxis.m_MaxSpeed + Vector2.up * pov.m_VerticalAxis.m_MaxSpeed;
     }
 
     // Update is called once per frame
