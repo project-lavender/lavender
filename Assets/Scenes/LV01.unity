@@ -10037,7 +10037,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 424837382816074474, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.09000003
       objectReference: {fileID: 0}
     - target: {fileID: 424837382816074474, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10107,9 +10107,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353035646805916632, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: leapTime
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: crouchCamHeight
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: noiseSettings.Array.data[1].x

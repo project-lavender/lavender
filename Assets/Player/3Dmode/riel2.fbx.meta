@@ -24,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: hair
     second: {fileID: 2100000, guid: b6a7cf117b1a4d349a5ecf91e75543e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skart
+    second: {fileID: 2100000, guid: 7ae04e546d2425f4dbd56a0b88df12ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

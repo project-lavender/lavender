@@ -17,8 +17,16 @@ public class RierMover : MonoBehaviour
     [SerializeField]
     private float PL_run = 6.0f;
 
+
+    //しゃがみ
+    [SerializeField]
+    private float crouchCamHeight = -0.7f;
     [SerializeField]
     private float leapTime = 0.4f;
+
+    //しゃがみと起ち状態の高さの影響度0~1
+    public float highorCrouch = 1.0f;
+
     //歩行とダッシュのカメラ揺れ
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
     [SerializeField] Vector2[] noiseSettings;
@@ -86,6 +94,8 @@ public class RierMover : MonoBehaviour
     void Update()
     {
         ctr.height = PL_cam_height;
+        Vector3 camh = Vector3.up * Mathf.Lerp(0f, crouchCamHeight, highorCrouch);
+        vc.transform.localPosition = camh;
         l.intensity = PL_light_intencity;
 
         
@@ -126,8 +136,23 @@ public class RierMover : MonoBehaviour
                 
             }
         }
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            anm.SetBool("run", false);
+            anmmesh.SetBool("run", false);
+            anm.SetBool("walk", false);
+            anmmesh.SetBool("walk", false);
+            anm.SetBool("crouch", true);
+            anmmesh.SetBool("crouch", true);
+        }
+        else
+        {
+            anm.SetBool("crouch", false);
+            anmmesh.SetBool("crouch", false);
+            ctr.Move((Camera.main.transform.forward * v + Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
+        }
         
-        ctr.Move((Camera.main.transform.forward * v +Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
         Vector3 lookVec = Camera.main.transform.rotation.eulerAngles;
         lookVec = new Vector3(0f, lookVec.y, 0f);
         anmmesh.transform.rotation = Quaternion.Euler(lookVec);
