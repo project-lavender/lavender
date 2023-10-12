@@ -10107,6 +10107,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: leapTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: noiseSettings.Array.data[1].x
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761597855725295765, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: noiseSettings.Array.data[2].x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8007964221798074061, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: m_Name
       value: Player

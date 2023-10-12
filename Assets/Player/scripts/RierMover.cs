@@ -16,6 +16,9 @@ public class RierMover : MonoBehaviour
     private float PL_walk = 3.0f;
     [SerializeField]
     private float PL_run = 6.0f;
+
+    [SerializeField]
+    private float leapTime = 0.4f;
     //歩行とダッシュのカメラ揺れ
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
     [SerializeField] Vector2[] noiseSettings;
@@ -23,22 +26,33 @@ public class RierMover : MonoBehaviour
     
     private float g = 9.8f;
     private float h, v, c;
-    
+    float lt = 0f;
+    Cinemachine.CinemachineBasicMultiChannelPerlin nz;
 
     [SerializeField]
     private List<string[]> p = new();
     Light l;
     [SerializeField] Animator anm,anmmesh;
 
-    void CamNoise(int i)
+    void NoiseSet(int i)
     {
 
-        if (nownoise != i)
+        float ampNow = noiseSettings[nownoise].x;
+        float freqNow = noiseSettings[nownoise].y;
+        float ampNext = noiseSettings[i].x;
+        float freqNext = noiseSettings[i].y;
+        float amp, freq;
+        
+        lt += Time.deltaTime;
+        amp = Mathf.Lerp(ampNow, ampNext, lt / leapTime);
+        freq = Mathf.Lerp(freqNow, freqNext, lt / leapTime);
+        nz.m_AmplitudeGain = amp;
+        nz.m_FrequencyGain = freq;
+        if (lt / leapTime > 1f)
         {
-            vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = noiseSettings[i].x;
-            vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = noiseSettings[i].y;
+            nownoise = i;
+            lt = 0f;
         }
-        nownoise = i;
 
     }
 
@@ -47,6 +61,7 @@ public class RierMover : MonoBehaviour
     {
         ctr = GetComponent<CharacterController>();
         anm = GetComponent<Animator>();
+        nz = vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>();
         //anmmesh = GetComponentInChildren<Animator>();
         l = GetComponentInChildren<Light>();
         Debug.Log(param.text);
@@ -76,9 +91,11 @@ public class RierMover : MonoBehaviour
         
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
-        Debug.Log((h * h + v * v));
-        
-       if((h * h + v * v) <  0.1f)
+        if (nownoise != noisemode && lt<leapTime)
+        {
+            NoiseSet(noisemode);
+        }
+        if ((h * h + v * v) <  0.1f)
         {
             noisemode = 0;
             
@@ -109,7 +126,7 @@ public class RierMover : MonoBehaviour
                 
             }
         }
-        CamNoise(noisemode);
+        
         ctr.Move((Camera.main.transform.forward * v +Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
         Vector3 lookVec = Camera.main.transform.rotation.eulerAngles;
         lookVec = new Vector3(0f, lookVec.y, 0f);
