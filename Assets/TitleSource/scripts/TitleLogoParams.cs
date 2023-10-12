@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TitleLogoParams : MonoBehaviour
 {
     public float Grad = 15f;
-    [SerializeField] Sprite[] Logos;
-    [SerializeField] float waitTime = 1f;
-    [SerializeField] float randomTime = 3f;
-    [SerializeField] Image bc;
+    [SerializeField] Image bc = null;
 
     Material bcMat;
 
-    int maxlength = 0;
-    float t = 0f;
+
+    public void MoveScene(int i)
+    {
+        SceneManager.LoadScene(i);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

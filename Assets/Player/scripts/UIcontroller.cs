@@ -7,8 +7,8 @@ public class UIcontroller : MonoBehaviour
 {
     [SerializeField] RectTransform[] UIs;
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
-
     Cinemachine.CinemachinePOV pov;
+    
     Vector2 sence;
 
     public void ActiveUI(int i)
