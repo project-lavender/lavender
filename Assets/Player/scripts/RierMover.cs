@@ -7,7 +7,8 @@ public class RierMover : MonoBehaviour
 {
     [SerializeField]
     private TextAsset param;
-    private CharacterController ctr;
+    //private CharacterController ctr;
+    private Rigidbody rb;
     [SerializeField]
     private float PL_cam_height = 2.2f;
     [SerializeField]
@@ -36,6 +37,7 @@ public class RierMover : MonoBehaviour
     private float h, v, c;
     float lt = 0f;
     Cinemachine.CinemachineBasicMultiChannelPerlin nz;
+    Transform mcam;
 
     [SerializeField]
     private List<string[]> p = new();
@@ -67,22 +69,19 @@ public class RierMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ctr = GetComponent<CharacterController>();
+        //ctr = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+        mcam = Camera.main.transform;
         anm = GetComponent<Animator>();
         nz = vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>();
         //anmmesh = GetComponentInChildren<Animator>();
         l = GetComponentInChildren<Light>();
-        Debug.Log(param.text);
         string ptext = param.text;
         string[] enterspl = ptext.Split("\n", System.StringSplitOptions.None);
         foreach (string s in enterspl){
             p.Add(s.Split(",", System.StringSplitOptions.None));
         }
-
-        Debug.Log(p[1][1]);
-        Debug.Log(p[2][1]);
-        Debug.Log(p[3][1]);
-        Debug.Log(p[4][1]);
+        c = PL_walk;
         //PL_cam_height = float.Parse( p[1][1]);
         //PL_light_intencity = float.Parse( p[2][1]);
         h = 0f;
@@ -93,7 +92,7 @@ public class RierMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ctr.height = PL_cam_height;
+        //ctr.height = PL_cam_height;
         Vector3 camh = Vector3.up * Mathf.Lerp(0f, crouchCamHeight, highorCrouch);
         vc.transform.localPosition = camh;
         l.intensity = PL_light_intencity;
@@ -105,17 +104,35 @@ public class RierMover : MonoBehaviour
         {
             NoiseSet(noisemode);
         }
-        if ((h * h + v * v) <  0.1f)
+        //ˆÚ“®“ü—Í‚ª‚È‚¢
+        if ((h * h + v * v) <  0.01f)
         {
             noisemode = 0;
-            
+            c = 0f;
             anm.SetBool("walk", false);
             anm.SetBool("run", false);
             anmmesh.SetBool("walk", false);
             anmmesh.SetBool("run", false);
+            //‚µ‚á‚ª‚Ýó‘Ô‚È‚ç
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                noisemode = 0;
+                anm.SetBool("run", false);
+                anmmesh.SetBool("run", false);
+                anm.SetBool("walk", false);
+                anmmesh.SetBool("walk", false);
+                anm.SetBool("crouch", true);
+                anmmesh.SetBool("crouch", true);
+            }
+            else
+            {
+                anm.SetBool("crouch", false);
+                anmmesh.SetBool("crouch", false);
+            }
         }
         else
         {
+            c = PL_walk;
             noisemode = 1;
             anm.SetBool("walk", true);
             anmmesh.SetBool("walk", true);
@@ -132,31 +149,25 @@ public class RierMover : MonoBehaviour
             {
                 anm.SetBool("run", false);
                 anmmesh.SetBool("run", false);
-                c = PL_walk;
                 
+                //rb.velocity = Vector3.Scale(Vector3.up, rb.velocity);
             }
-        }
-
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            noisemode = 0;
-            anm.SetBool("run", false);
-            anmmesh.SetBool("run", false);
-            anm.SetBool("walk", false);
-            anmmesh.SetBool("walk", false);
-            anm.SetBool("crouch", true);
-            anmmesh.SetBool("crouch", true);
-        }
-        else
-        {
             anm.SetBool("crouch", false);
             anmmesh.SetBool("crouch", false);
-            ctr.Move((Camera.main.transform.forward * v + Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
+            //ctr.Move((Camera.main.transform.forward * v + Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
+            
+            
         }
         
         Vector3 lookVec = Camera.main.transform.rotation.eulerAngles;
         lookVec = new Vector3(0f, lookVec.y, 0f);
         anmmesh.transform.rotation = Quaternion.Euler(lookVec);
+    }
+    private void FixedUpdate()
+    {
+        Vector3 vvec = Vector3.Scale(mcam.forward, Vector3.one - Vector3.up);
+        Vector3 hvec = Vector3.Scale(mcam.right, Vector3.one - Vector3.up);
+        rb.AddForce((vvec * v + hvec * h).normalized * c, ForceMode.Force);
     }
 
 }
