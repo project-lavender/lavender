@@ -139,6 +139,7 @@ public class RierMover : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
+            noisemode = 0;
             anm.SetBool("run", false);
             anmmesh.SetBool("run", false);
             anm.SetBool("walk", false);
