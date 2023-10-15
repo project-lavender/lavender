@@ -11,9 +11,9 @@ public class Gimicks : MonoBehaviour
         prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
         prog.progress = p;
     }
-    public virtual void ConectGimick()
+    public virtual void InteractGimick()
     {
-
+        Debug.Log("Base Interact");
     }
     // Start is called before the first frame update
     void Start()

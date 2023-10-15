@@ -20,6 +20,11 @@ public class StretcherCtr : Gimicks
             se.LoopFinish();
         }
     }
+    public override void InteractGimick()
+    {
+        //base.InteractGimick();
+        Debug.Log("Interacted");
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Wall")
@@ -30,7 +35,7 @@ public class StretcherCtr : Gimicks
     }
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log(rb.velocity.magnitude);
+        //Debug.Log(rb.velocity.magnitude);
         if (collision.gameObject.tag == "Player" && rb.velocity.magnitude > soundvelociy)
         {
             se.SELoop(0);
