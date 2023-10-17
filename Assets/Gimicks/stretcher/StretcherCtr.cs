@@ -25,12 +25,23 @@ public class StretcherCtr : Gimicks
         //base.InteractGimick();
         Debug.Log("Interacted");
     }
+    public override void EnableGimick()
+    {
+        base.EnableGimick();
+        rb.isKinematic = false;
+    }
+    public override void DisableGimick()
+    {
+        base.DisableGimick();
+        se = GetComponent<SEController>();
+        rb = GetComponent<Rigidbody>();
+        rb.isKinematic = true;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Wall")
         {
             SetProgress();
-            rb.isKinematic = true;
         }
     }
     private void OnCollisionStay(Collision collision)

@@ -68,8 +68,8 @@ MonoBehaviour:
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
-    m_MinValue: -70
-    m_MaxValue: 40
+    m_MinValue: -80
+    m_MaxValue: 70
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0
@@ -784,6 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iTime: 0.2
+  gimicks: {fileID: 0}
 --- !u!1001 &3565668104991191244
 PrefabInstance:
   m_ObjectHideFlags: 0
