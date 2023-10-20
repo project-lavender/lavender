@@ -32,11 +32,18 @@ public class Interacter : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Gimick")
+        
+        if (other.tag == "Gimick")
         {
-            gimicks = other.GetComponent<Gimicks>();
-            if (gimicks != null)
+            Gimicks tmpgm = other.GetComponent<Gimicks>();
+            if (gimicks == null)
             {
+                gimicks = tmpgm;
+                gimicks.EmitColor();
+            }else if(gimicks != null)
+            {
+                gimicks.TurnOffColor();
+                gimicks = tmpgm;
                 gimicks.EmitColor();
             }
         }
@@ -56,7 +63,7 @@ public class Interacter : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (gimicks != null)
+        if (gimicks != null && other.gameObject == gimicks.gameObject)
         {
             gimicks.TurnOffColor();
             gimicks = null;

@@ -1,0 +1,117 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ItemStack : MonoBehaviour
+{
+    [SerializeField] float itemRingLength = 5f;
+    [SerializeField] Transform itemIconAnker;
+    [SerializeField] GameObject itemIconPrefab;
+    [SerializeField] List<Items> items;
+    [SerializeField] List<Image> itemIcons;
+    [SerializeField] Color selectColor, Offcolor;
+    
+    [SerializeField] int rotI = 0,nowitem = 0;
+
+    int itemN = 0;
+    void LineupItems()
+    {
+        float angle;
+        if (itemN != 0)
+        {
+            angle = 360f / itemN;
+        }
+        else
+        {
+            angle = 360f;
+        }
+        for (int i = 0; i < itemN; i++)
+        {
+            float rad = Mathf.Deg2Rad * angle * i;
+            itemIcons[i].transform.localPosition = new Vector3(itemRingLength * Mathf.Sin(rad), itemRingLength * Mathf.Cos(rad), 0f);
+            itemIcons[i].color = Offcolor;
+        }
+        itemIcons[nowitem].color = selectColor;
+    }
+
+    public void AddItem(Items item)
+    {
+        items.Add(item);
+        GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker); 
+        //iconobj.transform.SetParent(itemIconAnker);
+        Image iconImg = iconobj.GetComponent<Image>();
+        itemIcons.Add(iconImg);
+        iconImg.sprite = item.itemIcon;
+        itemN += 1;
+        nowitem = 0;
+        LineupItems();
+    }
+
+    void RotateItem(int r)
+    {
+        float angle = 0f;
+        if (itemN != 0)
+        {
+            angle = 360f / itemN;
+        }
+        else
+        {
+            r = 0;
+        }
+        rotI += r;
+        nowitem = Mathf.Abs(rotI) % itemN;
+
+        if (itemN < 2)
+        {
+            nowitem = 0;
+        }
+        else if (rotI > 0)
+        {
+            nowitem = itemN - nowitem;
+            if (nowitem == itemN)
+            {
+                nowitem = 0;
+            }
+        }
+        for (int i = 0; i < itemN; i++)
+        {
+            float rad = Mathf.Deg2Rad * angle * (i + rotI);
+            Vector2 Tfunc = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+            itemIcons[i].transform.localPosition = new Vector3(itemRingLength * Tfunc.y, itemRingLength * Tfunc.x, 0f);
+            itemIcons[i].color = Offcolor;
+            //itemIcons[i].transform.localRotation = Quaternion.Euler(Vector3.zero);
+            //itemIconAnker.rotation = Quaternion.Euler(angle * Vector3.forward);
+        }
+        itemIcons[nowitem].color = selectColor;
+        //Debug.Log(items[nowitem].name);
+
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        //iconN = itemIcons.Count;
+        //itemN = items.Count;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (items.Count > 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                RotateItem(-1);
+
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                RotateItem(+1);
+            }
+            else if (Input.GetKeyDown(KeyCode.F))
+            {
+                items[nowitem].UseItem();
+            }
+        }
+    }
+}

@@ -33,7 +33,6 @@ public class RierMover : MonoBehaviour
     [SerializeField] Vector2[] noiseSettings;
     [SerializeField] int noisemode,nownoise;
     
-    private float g = 9.8f;
     private float h, v, c;
     float lt = 0f;
     Cinemachine.CinemachineBasicMultiChannelPerlin nz;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using TMPro;
 
 
 public class UIcontroller : MonoBehaviour
@@ -15,6 +16,8 @@ public class UIcontroller : MonoBehaviour
     Cinemachine.CinemachinePOV pov;
     [SerializeField] Slider xslider, yslder;
 
+    [SerializeField] float voiceSpeed = 0.2f;
+
     [SerializeField]
     private class Sence
     {
@@ -24,9 +27,11 @@ public class UIcontroller : MonoBehaviour
 
     Sence sence;
     Vector2 nowvec;
+    TMP_Text voiceText;
 
     public void ActiveUI(int i)
     {
+        
         int j = 0;
         foreach(RectTransform r in UIs)
         {
@@ -42,7 +47,7 @@ public class UIcontroller : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
-        else
+        else if (i != 2)
         {
             Cursor.lockState = CursorLockMode.None;
         }
@@ -79,13 +84,29 @@ public class UIcontroller : MonoBehaviour
             pov.m_VerticalAxis.m_MaxSpeed = 0f;
         }
     }
+
+
+    IEnumerator VoiceText()
+    {
+
+        int textLength = voiceText.text.Length;
+        WaitForSeconds delay = new WaitForSeconds(voiceSpeed);
+        Debug.Log(textLength);
+        for(int i = 0; i <= textLength; i++)
+        {
+            voiceText.maxVisibleCharacters = i;
+            yield return delay;
+        }
+        delay = null;
+    }
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         pov = vc.GetCinemachineComponent<Cinemachine.CinemachinePOV>();
         sence = JsonUtility.FromJson<Sence>(playesence.text);
-        Debug.Log(sence.Xsence);
+        //Debug.Log(sence.Xsence);
+        voiceText = UIs[2].GetComponentInChildren<TMP_Text>();
         //maxSence = Vector2.right * pov.m_HorizontalAxis.m_MaxSpeed + Vector2.up * pov.m_VerticalAxis.m_MaxSpeed;
     }
     // Update is called once per frame
@@ -107,7 +128,8 @@ public class UIcontroller : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ActiveUI(2);
-            
+            StopAllCoroutines();
+            StartCoroutine(VoiceText());
         }
         //Esc
         if (Input.GetKeyDown(KeyCode.Escape)){

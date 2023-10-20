@@ -7,7 +7,7 @@ public class ProgressController : MonoBehaviour
 
     //progressによってアクティブなギミックを設定
     [SerializeField]private int progress = 0;
-    [SerializeField]
+    [SerializeField] bool debugMode;
     Gimicks dynamo, stretcher;
 
     [SerializeField] Gimicks[] allgimicks;
@@ -41,12 +41,15 @@ public class ProgressController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        allgimicks = FindObjectsOfType<Gimicks>();
-        foreach(Gimicks g in allgimicks)
+        if (!debugMode)
         {
-            if (g != dynamo)
+            allgimicks = FindObjectsOfType<Gimicks>();
+            foreach (Gimicks g in allgimicks)
             {
-                g.DisableGimick();
+                if (g != dynamo)
+                {
+                    g.DisableGimick();
+                }
             }
         }
 
