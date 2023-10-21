@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class ItemStack : MonoBehaviour
 {
     [SerializeField] float itemRingLength = 5f;
@@ -10,6 +10,7 @@ public class ItemStack : MonoBehaviour
     [SerializeField] GameObject itemIconPrefab;
     [SerializeField] List<Items> items;
     [SerializeField] List<Image> itemIcons;
+    [SerializeField] TMP_Text itemname;
     [SerializeField] Color selectColor, Offcolor;
     
     [SerializeField] int rotI = 0,nowitem = 0;
@@ -33,6 +34,7 @@ public class ItemStack : MonoBehaviour
             itemIcons[i].color = Offcolor;
         }
         itemIcons[nowitem].color = selectColor;
+        itemname.text = items[nowitem].itemname;
     }
 
     public void AddItem(Items item)
@@ -84,6 +86,7 @@ public class ItemStack : MonoBehaviour
             //itemIconAnker.rotation = Quaternion.Euler(angle * Vector3.forward);
         }
         itemIcons[nowitem].color = selectColor;
+        itemname.text = items[nowitem].itemname;
         //Debug.Log(items[nowitem].name);
 
     }

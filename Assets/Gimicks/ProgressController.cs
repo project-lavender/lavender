@@ -8,7 +8,7 @@ public class ProgressController : MonoBehaviour
     //progressによってアクティブなギミックを設定
     [SerializeField]private int progress = 0;
     [SerializeField] bool debugMode;
-    Gimicks dynamo, stretcher;
+    [SerializeField] Gimicks dynamo, stretcher;
 
     [SerializeField] Gimicks[] allgimicks;
 
@@ -19,8 +19,8 @@ public class ProgressController : MonoBehaviour
         {
             case 100:
                 //active stretcher
-                dynamo.DisableGimick();
-                stretcher.EnableGimick();
+                //dynamo.DisableGimick();
+                //stretcher.EnableGimick();
                 break;
 
             case 110:
@@ -46,9 +46,11 @@ public class ProgressController : MonoBehaviour
             allgimicks = FindObjectsOfType<Gimicks>();
             foreach (Gimicks g in allgimicks)
             {
-                if (g != dynamo)
+                g.DisableGimick();
+                if (g == dynamo || g == stretcher)
                 {
-                    g.DisableGimick();
+                    Debug.Log("aaaa");
+                    g.EnableGimick();
                 }
             }
         }
