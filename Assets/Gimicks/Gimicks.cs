@@ -39,6 +39,7 @@ public class Gimicks : MonoBehaviour
         Debug.Log("Base Interact" + gameObject.name);
     }
 
+
     public virtual void DisableGimick()
     {
         Debug.Log("Base DisableGimick "+gameObject.name);

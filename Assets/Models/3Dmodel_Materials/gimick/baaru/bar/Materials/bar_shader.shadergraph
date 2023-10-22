@@ -691,10 +691,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -498.9999694824219,
-            "y": 578.0000610351563,
-            "width": 208.00003051757813,
-            "height": 326.0
+            "x": -525.0,
+            "y": 550.0000610351563,
+            "width": 208.0,
+            "height": 326.00006103515627
         }
     },
     "m_Slots": [
@@ -1224,7 +1224,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Power",
     "m_StageCapability": 3,
-    "m_Value": 1.0,
+    "m_Value": 1.840000033378601,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
