@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class StretcherCtr : Gimicks
 {
     SEController se;
     Rigidbody rb;
+    PlayableDirector director;
     [SerializeField] float soundvelociy = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
         se = GetComponent<SEController>();
         rb = GetComponent<Rigidbody>();
+        director = GetComponent<PlayableDirector>();
     }
     private void FixedUpdate()
     {
@@ -24,6 +27,7 @@ public class StretcherCtr : Gimicks
     {
         //base.InteractGimick();
         Debug.Log("Interacted");
+        director.Play();
     }
     public override void EnableGimick()
     {
