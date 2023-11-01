@@ -12,6 +12,11 @@ public class ProgressController : MonoBehaviour
 
     [SerializeField] Gimicks[] allgimicks;
 
+    public int ReadProgress()
+    {
+        return progress;
+    }
+
     public void AttachProgress(int p)
     {
         progress = p;
@@ -55,11 +60,5 @@ public class ProgressController : MonoBehaviour
             }
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

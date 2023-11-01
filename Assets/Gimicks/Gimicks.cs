@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class Gimicks : MonoBehaviour
     [SerializeField]
     private List<Material> myMats;
 
+    [SerializeField] private string gimicksName;
+    [SerializeField] private DT_Gimicks gimicks;
+    [SerializeField] private DT_Frag frags;
+    [SerializeField] private List<DTGimick> gimickDatalist;
     [SerializeField]
     private Color emittionColor,darkColor;
 
@@ -34,10 +39,25 @@ public class Gimicks : MonoBehaviour
         prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
         prog.AttachProgress(p);
     }
-    public virtual void InteractGimick()
+    public virtual string InteractGimick()
     {
         Debug.Log("Base Interact" + gameObject.name);
-
+        string textid = "";
+        
+        foreach (DTGimick g in gimickDatalist)
+        {
+            //進行度とフラグが立っているなら実行
+            Debug.Log(frags.ReadVal(g.frag));
+            if (g.progress == prog.ReadProgress() && frags.ReadVal(g.frag))
+            {
+                Debug.Log("Do Event " + gameObject.name);
+                textid = g.textID;
+                frags.SetVal(g.upFrag, true);
+                frags.SetVal(g.downFrag, false);
+                break;
+            }
+        }
+        return textid;
     }
 
 
@@ -54,6 +74,10 @@ public class Gimicks : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        if (gimicks != null)
+        {
+            gimickDatalist = gimicks.FindTable(gimicksName);
+        }
         prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
         renderers = GetComponentsInChildren<Renderer>();
         foreach(Renderer r in renderers)

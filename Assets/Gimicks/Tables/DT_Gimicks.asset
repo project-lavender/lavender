@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101f5db5e0104604dacac94233c0c96a, type: 3}
+  m_Name: DT_Gimicks
+  m_EditorClassIdentifier: 
+  Stretcher:
+  - progress: 100
+    frag: 
+    textID: 
+    demoID: 
+    itemID: 
+    upFrag: Flag_Stretcher_Collided
+    downFrag: 
+  - progress: 110
+    frag: Flag_Stretcher_Collided
+    textID: TXT_Stretcher_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+  TestGimick:
+  - progress: -1
+    frag: Flag_TestGimick_CanTouch
+    textID: TXT_TestDialog_001
+    demoID: 
+    itemID: 
+    upFrag: Flag_TestGimick_UpFrag
+    downFrag: Flag_TestGimick_DownFrag

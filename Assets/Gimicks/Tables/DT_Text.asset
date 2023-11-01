@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56193740a527cd9469a4b058da01bb23, type: 3}
+  m_Name: DT_Text
+  m_EditorClassIdentifier: 
+  Sheet1:
+  - id: TXT_Stretcher_001
+    text: If I climb up to the top,I can touch that.
+    ui: 2
+    nextText: TXT_Stretcher_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Stretcher_002
+    text: Climb?
+    ui: 0
+    nextText: 
+    choise0: TXT_System_001
+    choise1: TXT_System_002
+    choise2: 
+    choise3: 
+  - id: TXT_Stretcher_003
+    text: It is a stretcher.
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_System_001
+    text: Yes
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_System_002
+    text: No
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestDialog_001
+    text: aaaaaaTESTTESTETETTETT
+    ui: 1
+    nextText: TXT_TestDialog_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestDialog_002
+    text: koreha Dialog no Test you Desu
+    ui: 1
+    nextText: TXT_TestDialog_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestDialog_003
+    text: wwwwwwwww
+    ui: 1
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

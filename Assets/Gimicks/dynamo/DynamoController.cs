@@ -41,6 +41,7 @@ public class DynamoController : Gimicks
 
     }
 
+    /*
     //ƒ_ƒCƒiƒ‚on
     public override void InteractGimick()
     {
@@ -53,6 +54,6 @@ public class DynamoController : Gimicks
         }
 
         se.SE(0);
-
     }
+    */
 }

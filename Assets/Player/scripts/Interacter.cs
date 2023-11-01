@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,9 @@ public class Interacter : MonoBehaviour
 {
     //左クリックからインタラクトできる時間
     [SerializeField] float iTime = 0.2f;
-    private bool interactTrigger = false;
+    [SerializeField] UIcontroller uictr;
+    public bool interactTrigger = false;
+    
 
     // Start is called before the first frame update
     [SerializeField]
@@ -19,7 +22,7 @@ public class Interacter : MonoBehaviour
     }
     void Start()
     {
-        
+        //uictr = GetComponent<UIcontroller>();
     }
 
     // Update is called once per frame
@@ -54,10 +57,15 @@ public class Interacter : MonoBehaviour
         if (other.tag == "Gimick" && interactTrigger)
         {
             interactTrigger = false;
-            
+            string textid;
+            //ui 起動
             if (gimicks != null)
             {
-                gimicks.InteractGimick();
+                textid = gimicks.InteractGimick();
+                Debug.Log(textid);
+                uictr.ActiveUI(textid);
+                gimicks.TurnOffColor();
+                gimicks = null;
             }
         }
     }

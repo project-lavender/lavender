@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc953083b37a0a43bb87b9ee66d41d6, type: 3}
+  m_Name: DT_Frag
+  m_EditorClassIdentifier: 
+  Sheet1:
+  - id: Flag_Memo_01_read
+    value: 0
+  - id: Flag_Memo_02_read
+    value: 0
+  - id: Flag_Memo_03_read
+    value: 0
+  - id: Flag_Memo_04_read
+    value: 0
+  - id: Flag_Memo_05_read
+    value: 0
+  - id: Flag_Stretcher_Collided
+    value: 0
+  - id: Flag_TestTube_Obtained
+    value: 0
+  - id: Flag_Rotor_4h_Obtained
+    value: 0
+  - id: Flag_Rotor_6h_Obtained
+    value: 0
+  - id: Flag_Rotor_8h_Obtained
+    value: 0
+  - id: Flag_SeparatedTestTube_Obtained
+    value: 0
+  - id: Flag_TipSet_Obtained
+    value: 0
+  - id: Flag_TestGimick_UpFrag
+    value: 1
+  - id: Flag_TestGimick_DownFrag
+    value: 0
+  - id: Flag_TestGimick_CanTouch
+    value: 1

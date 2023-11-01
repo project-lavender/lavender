@@ -9,6 +9,8 @@ public class StretcherCtr : Gimicks
     Rigidbody rb;
     PlayableDirector director;
     [SerializeField] float soundvelociy = 0.1f;
+
+    //[SerializeField] private DT_Stretcher stretcher = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,16 +25,17 @@ public class StretcherCtr : Gimicks
             se.LoopFinish();
         }
     }
+    /*
     public override void InteractGimick()
     {
         //base.InteractGimick();
         Debug.Log("Interacted");
         director.Play();
     }
+    */
     public override void EnableGimick()
     {
         base.EnableGimick();
-        rb.isKinematic = false;
     }
     public override void DisableGimick()
     {
@@ -46,6 +49,8 @@ public class StretcherCtr : Gimicks
         if(collision.gameObject.tag == "Wall")
         {
             SetProgress();
+
+            rb.isKinematic = false;
         }
     }
     private void OnCollisionStay(Collision collision)

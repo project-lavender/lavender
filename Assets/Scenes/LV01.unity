@@ -2385,6 +2385,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: 0
   myMats: []
+  gimicksName: 
+  gimicks: {fileID: 0}
+  frags: {fileID: 0}
+  gimickDatalist: []
   emittionColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 0}
   darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &406109681
@@ -8584,6 +8588,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: 0
   myMats: []
+  gimicksName: 
+  gimicks: {fileID: 0}
+  frags: {fileID: 0}
+  gimickDatalist: []
   emittionColor: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0}
   darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &1648638146
@@ -10575,6 +10583,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2095900640900647336, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: dttext
+      value: 
+      objectReference: {fileID: 11400000, guid: f035f7e16093f734e928236bbfe9f274, type: 2}
     - target: {fileID: 3670251032377634802, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10649,6 +10661,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353035646805916632, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6006046094494769010, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6797114802532433693, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}

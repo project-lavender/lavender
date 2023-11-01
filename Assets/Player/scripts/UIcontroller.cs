@@ -4,36 +4,96 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using TMPro;
-
+using UnityEngine.Playables;
 
 public class UIcontroller : MonoBehaviour
 {
+    [SerializeField] DT_Text dttext;
     [SerializeField] TextAsset playesence;
     [SerializeField] string pathsence = "Assets/Player/scripts/DataTable/PlayerSence.json";
     [SerializeField] Vector2 maxSence;
     [SerializeField] RectTransform[] UIs;
+    [SerializeField] RectTransform[] choices;
+    [SerializeField] TMP_Text[] uitexts;
+    [SerializeField] TMP_Text dialogPageView;
+    //テキストダイアログのページ
+    [SerializeField] int pageNum = 0;
+    [SerializeField] List<string> dialog;
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
     Cinemachine.CinemachinePOV pov;
     [SerializeField] Slider xslider, yslder;
 
-    [SerializeField] float voiceSpeed = 0.2f;
-
-    [SerializeField]
+    [SerializeField] float voiceSpeed = 0.2f,finishWait = 2.5f;
+    [System.Serializable]
     private class Sence
     {
         public float Xsence;
         public float Ysence;
     }
 
-    Sence sence;
+    [SerializeField] Sence sence;
     Vector2 nowvec;
-    TMP_Text voiceText;
 
-    public void ActiveUI(int i)
+
+    //ギミックのイベント呼び出し
+    //汎用のやつで使う
+    public void GimickEvent(string textid) 
     {
+        DTText dT = dttext.Find(textid);
+        if (dT == null)
+        {
+            return;
+        }
         
+    }
+
+    //テキストダイアログのページ送り
+    public void PageSend(int p)
+    {
+        Debug.Log("next page->"+(pageNum + p).ToString());
+        if(pageNum+p<0 || pageNum + p >= dialog.Count)
+        {
+            return;
+        }
+        pageNum += p;
+        uitexts[1].text = dialog[pageNum];
+        dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
+    }
+
+    public void CloseUIs()
+    {
+        Debug.Log("close ui");
+
+        //interactColider.enabled = true;
+        SetVirtualCamera(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        foreach (RectTransform r in UIs)
+        {
+            r.gameObject.SetActive(false);
+        }
+    }
+    public void ActiveUI(string textid)
+    {
+        //インタラクトコライダーを無効か
+        //interactColider.enabled = false;
+        int i = -1;
+        DTText dT = dttext.Find(textid);
+        //カーソルロックを外す
+        Cursor.lockState = CursorLockMode.None;
+        //カメラ固定
+        SetVirtualCamera(false);
+        if (textid == "esc")
+        {
+            i = 3;
+        }
+        else if (dT != null)
+        {
+            i = dT.ui;
+        }
+
+        Debug.Log(i);
         int j = 0;
-        foreach(RectTransform r in UIs)
+        foreach (RectTransform r in UIs)
         {
             r.gameObject.SetActive(false);
             if (i == j)
@@ -43,13 +103,60 @@ public class UIcontroller : MonoBehaviour
             }
             j += 1;
         }
-        if (i < 0)
+        
+        if(i == 0)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else if (i != 2)
-        {
+            //汎用
+            uitexts[i].text = dT.text;
             Cursor.lockState = CursorLockMode.None;
+            List<string> choiseID = new List<string>
+            {
+                dT.choise0,
+                dT.choise1,
+                dT.choise2,
+                dT.choise3
+            };
+
+            for (int c=0; c < choiseID.Count; c++)
+            {
+                if (choiseID[c] == "")
+                {
+                    choices[c].gameObject.SetActive(false);
+                }
+                else
+                {
+                    choices[c].gameObject.SetActive(true);
+                    choices[c].GetComponentInChildren<TMP_Text>().text = dttext.Find(choiseID[c]).text;
+                }
+            }
+        }
+        else if (i == 1)
+        {
+            //テキストダイアログ
+            //本文に代入
+            int pagenum;
+            dialog = new List<string>();
+            (pagenum, dialog) = dttext.Pages(textid);
+            uitexts[i].text = dialog[0];
+            dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
+            
+        }
+        else if (i == 2)
+        {
+            //voice
+
+            int pagenum;
+            dialog = new List<string>();
+            (pagenum, dialog) = dttext.Pages(textid);
+            Cursor.lockState = CursorLockMode.Locked;
+            SetVirtualCamera(true);
+            StartCoroutine(VoiceText());
+        }
+        else
+        {
+            //esc
+            xslider.value = sence.Xsence;
+            yslder.value = sence.Ysence;
         }
     }
     public void XSence()
@@ -72,7 +179,7 @@ public class UIcontroller : MonoBehaviour
         wr.Close();
     }
 
-    public void SetVirtualCamera(bool b)
+    void SetVirtualCamera(bool b)
     {
         if (b) {
             pov.m_HorizontalAxis.m_MaxSpeed = nowvec.x;
@@ -88,13 +195,19 @@ public class UIcontroller : MonoBehaviour
 
     IEnumerator VoiceText()
     {
-
-        int textLength = voiceText.text.Length;
-        WaitForSeconds delay = new WaitForSeconds(voiceSpeed);
-        Debug.Log(textLength);
-        for(int i = 0; i <= textLength; i++)
+        WaitForSeconds delay;
+        foreach (string d in dialog)
         {
-            voiceText.maxVisibleCharacters = i;
+            uitexts[2].text = d;
+            int textLength = uitexts[2].text.Length;
+            delay = new WaitForSeconds(voiceSpeed);
+            Debug.Log(textLength);
+            for (int i = 0; i <= textLength; i++)
+            {
+                uitexts[2].maxVisibleCharacters = i;
+                yield return delay;
+            }
+            delay = new WaitForSeconds(finishWait);
             yield return delay;
         }
         delay = null;
@@ -105,39 +218,18 @@ public class UIcontroller : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pov = vc.GetCinemachineComponent<Cinemachine.CinemachinePOV>();
         sence = JsonUtility.FromJson<Sence>(playesence.text);
-        //Debug.Log(sence.Xsence);
-        voiceText = UIs[2].GetComponentInChildren<TMP_Text>();
-        //maxSence = Vector2.right * pov.m_HorizontalAxis.m_MaxSpeed + Vector2.up * pov.m_VerticalAxis.m_MaxSpeed;
+        nowvec.x = sence.Xsence * maxSence.x;
+        nowvec.y = sence.Ysence * maxSence.y;
+
     }
     // Update is called once per frame
     void Update()
     {
-        //Hanyo
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ActiveUI(0);
-            SetVirtualCamera(false);
-        }
-        //Text
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ActiveUI(1);
-            SetVirtualCamera(false);
-        }
-        //Voice
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ActiveUI(2);
-            StopAllCoroutines();
-            StartCoroutine(VoiceText());
-        }
         //Esc
         if (Input.GetKeyDown(KeyCode.Escape)){
-            ActiveUI(3);
-            SetVirtualCamera(false);
-            //sence = JsonUtility.FromJson<Sence>(playesence.text);
-            xslider.value = sence.Xsence;
-            yslder.value = sence.Ysence;
+            ActiveUI("esc");
+            sence = JsonUtility.FromJson<Sence>(playesence.text);
+
         }
     }
 }

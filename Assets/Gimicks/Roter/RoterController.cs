@@ -7,7 +7,8 @@ public class RoterController : Gimicks
     [SerializeField] int holesize = 4;
     [SerializeField] GameObject myItem = null;
 
-    public override void InteractGimick()
+    /*
+    public override DTText InteractGimick()
     {
         base.InteractGimick();
         ItemStack itemStack = GameObject.FindObjectOfType<ItemStack>();
@@ -16,5 +17,7 @@ public class RoterController : Gimicks
         Debug.Log(i);
         itemStack.AddItem(i);
         base.DisableGimick();
+        return null;
     }
+    */
 }
