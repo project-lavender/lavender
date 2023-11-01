@@ -14,6 +14,8 @@ public class Interacter : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     Gimicks gimicks = null;
+
+
     IEnumerator InteractTrigger()
     {
         interactTrigger = true;

@@ -34,6 +34,7 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] Sence sence;
     Vector2 nowvec;
 
+    Coroutine E;
 
     //ギミックのイベント呼び出し
     //汎用のやつで使う
@@ -145,13 +146,17 @@ public class UIcontroller : MonoBehaviour
         else if (i == 2)
         {
             //voice
-
+            if (E != null)
+            {
+                StopCoroutine(E);
+                E = null;
+            }
             int pagenum;
             dialog = new List<string>();
             (pagenum, dialog) = dttext.Pages(textid);
             Cursor.lockState = CursorLockMode.Locked;
             SetVirtualCamera(true);
-            StartCoroutine(VoiceText());
+            E = StartCoroutine(VoiceText());
         }
         else
         {
@@ -192,7 +197,6 @@ public class UIcontroller : MonoBehaviour
             pov.m_VerticalAxis.m_MaxSpeed = 0f;
         }
     }
-
 
     IEnumerator VoiceText()
     {

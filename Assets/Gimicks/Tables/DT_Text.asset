@@ -101,3 +101,35 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_TestVoice_001
+    text: I couldn't look back
+    ui: 2
+    nextText: TXT_TestVoice_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestVoice_002
+    text: You'd gone away from me
+    ui: 2
+    nextText: TXT_TestVoice_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestVoice_003
+    text: I felt my heart aches
+    ui: 2
+    nextText: TXT_TestVoice_004
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestVoice_004
+    text: I was afraid of following you
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

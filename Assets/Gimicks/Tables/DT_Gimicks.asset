@@ -43,3 +43,11 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+  TestGimick_voice:
+  - progress: -1
+    frag: Flag_TestGimick_CanTouch
+    textID: TXT_TestVoice_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
