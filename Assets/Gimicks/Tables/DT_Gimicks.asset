@@ -35,3 +35,11 @@ MonoBehaviour:
     itemID: 
     upFrag: Flag_TestGimick_UpFrag
     downFrag: Flag_TestGimick_DownFrag
+  TestGimick_choise:
+  - progress: -1
+    frag: Flag_TestGimick_CanTouch
+    textID: TXT_TestChoise_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 

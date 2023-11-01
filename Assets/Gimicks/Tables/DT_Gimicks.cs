@@ -8,16 +8,20 @@ public class DT_Gimicks : ScriptableObject
 {
 	public List<DTGimick> Stretcher; // Replace 'EntityType' to an actual type that is serializable.
     public List<DTGimick> TestGimick;
-
+    public List<DTGimick> TestGimick_choise;
 	public List<DTGimick> FindTable(string listname)
     {
         if (listname == nameof(Stretcher))
         {
             return Stretcher;
         }
-        else if(listname == nameof(TestGimick) || listname == "")
+        else if(listname == nameof(TestGimick))
         {
             return TestGimick;
+        }
+        else if(listname == nameof(TestGimick_choise))
+        {
+            return TestGimick_choise;
         }
         else
         {

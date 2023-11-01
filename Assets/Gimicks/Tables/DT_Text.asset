@@ -77,3 +77,27 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_TestChoise_001
+    text: Choose from 4choices
+    ui: 0
+    nextText: 
+    choise0: TXT_System_001
+    choise1: TXT_System_002
+    choise2: TXT_TestChoise_002
+    choise3: TXT_TestChoise_003
+  - id: TXT_TestChoise_002
+    text: kill
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestChoise_003
+    text: death
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

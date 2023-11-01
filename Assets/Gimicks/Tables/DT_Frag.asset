@@ -38,8 +38,8 @@ MonoBehaviour:
   - id: Flag_TipSet_Obtained
     value: 0
   - id: Flag_TestGimick_UpFrag
-    value: 1
-  - id: Flag_TestGimick_DownFrag
     value: 0
+  - id: Flag_TestGimick_DownFrag
+    value: 1
   - id: Flag_TestGimick_CanTouch
     value: 1

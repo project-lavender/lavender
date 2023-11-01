@@ -65,6 +65,7 @@ public class UIcontroller : MonoBehaviour
         Debug.Log("close ui");
 
         //interactColider.enabled = true;
+        pageNum = 0;
         SetVirtualCamera(true);
         Cursor.lockState = CursorLockMode.Locked;
         foreach (RectTransform r in UIs)
