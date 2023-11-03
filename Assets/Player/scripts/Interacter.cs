@@ -8,7 +8,10 @@ public class Interacter : MonoBehaviour
     //左クリックからインタラクトできる時間
     [SerializeField] float iTime = 0.2f;
     [SerializeField] UIcontroller uictr;
+    [SerializeField] ItemStack itemStack;
+    [SerializeField] DT_Item itemslist;
     public bool interactTrigger = false;
+
     
 
     // Start is called before the first frame update
@@ -25,6 +28,7 @@ public class Interacter : MonoBehaviour
     void Start()
     {
         //uictr = GetComponent<UIcontroller>();
+        //itemStack = GetComponent<ItemStack>();
     }
 
     // Update is called once per frame
@@ -60,12 +64,18 @@ public class Interacter : MonoBehaviour
         {
             interactTrigger = false;
             string textid;
+            DTGimick dT;
             //ui 起動
             if (gimicks != null)
             {
-                textid = gimicks.InteractGimick();
+                dT = gimicks.InteractGimick();
+                textid = dT.textID;
                 Debug.Log(textid);
                 uictr.ActiveUI(textid);
+
+                //アイテム追加
+                Items i = itemslist.FindItem(dT.itemID);
+                itemStack.AddItem(i);
                 gimicks.TurnOffColor();
                 gimicks = null;
             }

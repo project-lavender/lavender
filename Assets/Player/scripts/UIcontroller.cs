@@ -216,6 +216,7 @@ public class UIcontroller : MonoBehaviour
             yield return delay;
         }
         delay = null;
+        uitexts[2].text = "";
     }
     // Start is called before the first frame update
     void Start()

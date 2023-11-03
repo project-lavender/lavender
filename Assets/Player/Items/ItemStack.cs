@@ -39,6 +39,10 @@ public class ItemStack : MonoBehaviour
 
     public void AddItem(Items item)
     {
+        if (item == null)
+        {
+            return;
+        }
         items.Add(item);
         GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker); 
         //iconobj.transform.SetParent(itemIconAnker);

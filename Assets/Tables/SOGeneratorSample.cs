@@ -9,10 +9,10 @@ public class SOGeneratorSample
     [MenuItem("MyGenerator/CreateScriptableObject")]
     private static void CreateScriptableObject()
     {
-        var obj = ScriptableObject.CreateInstance<DT_Demo>();
+        var obj = ScriptableObject.CreateInstance<DT_Item>();
         //obj.hogeValue = "hogehoge";
         var fileName = $"{TypeNameToString(obj.GetType().ToString())}.asset";
-        var path = "Assets/Gimicks";
+        var path = "Assets/Tables";
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);
         AssetDatabase.CreateAsset(obj, Path.Combine(path, fileName));

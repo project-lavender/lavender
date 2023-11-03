@@ -39,11 +39,11 @@ public class Gimicks : MonoBehaviour
         prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
         prog.AttachProgress(p);
     }
-    public virtual string InteractGimick()
+    public virtual DTGimick InteractGimick()
     {
         Debug.Log("Base Interact" + gameObject.name);
-        string textid = "";
-        
+        //string textid = "";
+        DTGimick ret = null;
         foreach (DTGimick g in gimickDatalist)
         {
             //進行度とフラグが立っているなら実行
@@ -51,13 +51,14 @@ public class Gimicks : MonoBehaviour
             if (g.progress == prog.ReadProgress() && frags.ReadVal(g.frag))
             {
                 Debug.Log("Do Event " + gameObject.name);
-                textid = g.textID;
+                //textid = g.textID;
                 frags.SetVal(g.upFrag, true);
                 frags.SetVal(g.downFrag, false);
+                ret = g;
                 break;
             }
         }
-        return textid;
+        return ret;
     }
 
 

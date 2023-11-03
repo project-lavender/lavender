@@ -32,7 +32,7 @@ MonoBehaviour:
     frag: Flag_TestGimick_CanTouch
     textID: TXT_TestDialog_001
     demoID: 
-    itemID: 
+    itemID: r4
     upFrag: Flag_TestGimick_UpFrag
     downFrag: Flag_TestGimick_DownFrag
   TestGimick_choise:
@@ -40,7 +40,7 @@ MonoBehaviour:
     frag: Flag_TestGimick_CanTouch
     textID: TXT_TestChoise_001
     demoID: 
-    itemID: 
+    itemID: r6
     upFrag: 
     downFrag: 
   TestGimick_voice:
@@ -48,6 +48,6 @@ MonoBehaviour:
     frag: Flag_TestGimick_CanTouch
     textID: TXT_TestVoice_001
     demoID: 
-    itemID: 
+    itemID: r8
     upFrag: 
     downFrag: 
