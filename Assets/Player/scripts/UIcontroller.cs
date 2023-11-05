@@ -37,15 +37,16 @@ public class UIcontroller : MonoBehaviour
     Coroutine E;
 
     //ギミックのイベント呼び出し
-    //汎用のやつで使う
-    public void GimickEvent(string textid) 
+    //汎用の選択肢で使う
+    void ChosesAction(DTText dT)
     {
-        DTText dT = dttext.Find(textid);
-        if (dT == null)
-        {
-            return;
-        }
+        //chose の nextTextがある->テキスト表示イベント
         
+        if (dT.nextText != "")
+        {
+            ActiveUI(dT.nextText);
+        }
+        //アイテム入手イベントはここから
     }
 
     //テキストダイアログのページ送り
@@ -61,6 +62,7 @@ public class UIcontroller : MonoBehaviour
         dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
     }
 
+    
     public void CloseUIs()
     {
         Debug.Log("close ui");
@@ -128,7 +130,10 @@ public class UIcontroller : MonoBehaviour
                 else
                 {
                     choices[c].gameObject.SetActive(true);
-                    choices[c].GetComponentInChildren<TMP_Text>().text = dttext.Find(choiseID[c]).text;
+                    DTText choiseText = dttext.Find(choiseID[c]);
+                    choices[c].GetComponentInChildren<TMP_Text>().text = choiseText.text;
+                    //イベントを登録
+                    choices[c].GetComponent<Button>().onClick.AddListener(() => ChosesAction(choiseText));
                 }
             }
         }

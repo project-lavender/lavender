@@ -88,7 +88,7 @@ MonoBehaviour:
   - id: TXT_TestChoise_002
     text: kill
     ui: 0
-    nextText: 
+    nextText: TXT_TestChoise_004
     choise0: 
     choise1: 
     choise2: 
@@ -96,7 +96,7 @@ MonoBehaviour:
   - id: TXT_TestChoise_003
     text: death
     ui: 0
-    nextText: 
+    nextText: TXT_TestChose_005
     choise0: 
     choise1: 
     choise2: 
@@ -127,6 +127,22 @@ MonoBehaviour:
     choise3: 
   - id: TXT_TestVoice_004
     text: I was afraid of following you
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestChoise_004
+    text: You chose "kill"
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestChose_005
+    text: You chose "death"
     ui: 2
     nextText: 
     choise0: 
