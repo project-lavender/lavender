@@ -9,7 +9,7 @@ public class Interacter : MonoBehaviour
     [SerializeField] float iTime = 0.2f;
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
-    [SerializeField] DT_Item itemslist;
+    [SerializeField] DT_Item dtitem;
     public bool interactTrigger = false;
 
     
@@ -74,7 +74,9 @@ public class Interacter : MonoBehaviour
                 uictr.ActiveUI(textid);
 
                 //ƒAƒCƒeƒ€’Ç‰Á
-                Items i = itemslist.FindItem(dT.itemID);
+                Debug.Log(dT.itemID);
+                GameObject i = dtitem.FindItem(dT.itemID);
+                
                 itemStack.AddItem(i);
                 gimicks.TurnOffColor();
                 gimicks = null;

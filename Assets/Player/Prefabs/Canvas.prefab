@@ -769,6 +769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dttext: {fileID: 11400000, guid: f035f7e16093f734e928236bbfe9f274, type: 2}
+  dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
+  itemStack: {fileID: 0}
   playesence: {fileID: 4900000, guid: 9e7f2c150c44a434b8e066c898e5d89d, type: 3}
   pathsence: Assets/Player/scripts/DataTables/PlayerSence.json
   maxSence: {x: 500, y: 500}
@@ -1095,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1271923858541022720
 RectTransform:
   m_ObjectHideFlags: 0

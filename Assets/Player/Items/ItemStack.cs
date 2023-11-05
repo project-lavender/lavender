@@ -37,18 +37,19 @@ public class ItemStack : MonoBehaviour
         itemname.text = items[nowitem].itemname;
     }
 
-    public void AddItem(Items item)
+    public void AddItem(GameObject item)
     {
         if (item == null)
         {
             return;
         }
-        items.Add(item);
+        Items I = item.GetComponent<Items>();
+        items.Add(I);
         GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker); 
         //iconobj.transform.SetParent(itemIconAnker);
         Image iconImg = iconobj.GetComponent<Image>();
         itemIcons.Add(iconImg);
-        iconImg.sprite = item.itemIcon;
+        iconImg.sprite = I.itemIcon;
         itemN += 1;
         nowitem = 0;
         LineupItems();

@@ -626,7 +626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8946203826881873724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0, z: 0}
+  m_LocalPosition: {x: -1.937, y: 0.8299999, z: -0.979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -807,7 +807,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iTime: 0.2
-  uictr: {fileID: 0}
+  uictr: {fileID: 2095900640900647336}
+  itemStack: {fileID: 4767323125235869803}
+  dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
   interactTrigger: 0
   gimicks: {fileID: 0}
 --- !u!1001 &3565668104991191244
@@ -826,6 +828,10 @@ PrefabInstance:
       propertyPath: vc
       value: 
       objectReference: {fileID: 2694801402056874853}
+    - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
+      propertyPath: itemStack
+      value: 
+      objectReference: {fileID: 4767323125235869803}
     - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: pathSence
       value: DataTables\PlayerSence.json
@@ -938,6 +944,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
+--- !u!114 &2095900640900647336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
+  m_PrefabInstance: {fileID: 3565668104991191244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7d3d03079694c4686ca7c1cd5c5ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3081449431064498447 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1997431997384712643, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}

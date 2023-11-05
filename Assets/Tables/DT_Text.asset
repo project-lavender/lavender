@@ -86,19 +86,19 @@ MonoBehaviour:
     choise2: TXT_TestChoise_002
     choise3: TXT_TestChoise_003
   - id: TXT_TestChoise_002
-    text: kill
+    text: get r6
     ui: 0
     nextText: TXT_TestChoise_004
-    choise0: 
+    choise0: r6
     choise1: 
     choise2: 
     choise3: 
   - id: TXT_TestChoise_003
-    text: death
+    text: get r4 and r8
     ui: 0
     nextText: TXT_TestChose_005
-    choise0: 
-    choise1: 
+    choise0: r4
+    choise1: r8
     choise2: 
     choise3: 
   - id: TXT_TestVoice_001
@@ -134,7 +134,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_TestChoise_004
-    text: You chose "kill"
+    text: You got r6
     ui: 0
     nextText: 
     choise0: 
@@ -142,7 +142,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_TestChose_005
-    text: You chose "death"
+    text: You got r4 and r8
     ui: 2
     nextText: 
     choise0: 

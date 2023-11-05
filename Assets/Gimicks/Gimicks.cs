@@ -44,6 +44,10 @@ public class Gimicks : MonoBehaviour
         Debug.Log("Base Interact" + gameObject.name);
         //string textid = "";
         DTGimick ret = null;
+        if (gimickDatalist == null)
+        {
+            return null;
+        }
         foreach (DTGimick g in gimickDatalist)
         {
             //進行度とフラグが立っているなら実行

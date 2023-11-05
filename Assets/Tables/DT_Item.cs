@@ -7,17 +7,17 @@ public class DT_Item : ScriptableObject
     public List<DTItem> ItemsList = new List<DTItem>();
 
     //itemのコンポーネントを返す
-    public Items FindItem(string id)
+    public GameObject FindItem(string id)
     {
-        Items items = null;
+        GameObject item = null;
         foreach(DTItem i in ItemsList)
         {
             if (id == i.id)
             {
-                items = i.item.GetComponent<Items>();
+                item = Instantiate(i.item);
             }
         }
 
-        return items;
+        return item;
     }
 }

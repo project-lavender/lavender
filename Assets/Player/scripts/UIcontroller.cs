@@ -9,6 +9,8 @@ using UnityEngine.Playables;
 public class UIcontroller : MonoBehaviour
 {
     [SerializeField] DT_Text dttext;
+    [SerializeField] DT_Item dtitem;
+    [SerializeField] ItemStack itemStack;
     [SerializeField] TextAsset playesence;
     [SerializeField] string pathsence = "Assets/Player/scripts/DataTable/PlayerSence.json";
     [SerializeField] Vector2 maxSence;
@@ -41,12 +43,39 @@ public class UIcontroller : MonoBehaviour
     void ChosesAction(DTText dT)
     {
         //chose の nextTextがある->テキスト表示イベント
-        
+        Debug.Log("Choise Act ->" + dT.id);
         if (dT.nextText != "")
         {
+            //テキスト
             ActiveUI(dT.nextText);
         }
         //アイテム入手イベントはここから
+        GameObject[] itemchosen = new GameObject[4];
+        DTDemo d = null;
+        if (dT.choise0 != "")
+        {
+            itemchosen[0] = dtitem.FindItem(dT.choise0);
+        }
+        if(dT.choise1 != "")
+        {
+            itemchosen[1] = dtitem.FindItem(dT.choise1);
+        }
+        if (dT.choise2 != "")
+        {
+            itemchosen[2] = dtitem.FindItem(dT.choise2);
+        }
+        if (dT.choise3 != "")
+        {
+            itemchosen[3] = dtitem.FindItem(dT.choise3);
+        }
+        foreach(GameObject i in itemchosen)
+        {
+            if (i != null)
+            {
+                itemStack.AddItem(i);
+            }
+        }
+        
     }
 
     //テキストダイアログのページ送り
@@ -107,8 +136,8 @@ public class UIcontroller : MonoBehaviour
             }
             j += 1;
         }
-        
-        if(i == 0)
+
+        if (i == 0)
         {
             //汎用
             uitexts[i].text = dT.text;
@@ -121,7 +150,7 @@ public class UIcontroller : MonoBehaviour
                 dT.choise3
             };
 
-            for (int c=0; c < choiseID.Count; c++)
+            for (int c = 0; c < choiseID.Count; c++)
             {
                 if (choiseID[c] == "")
                 {
@@ -129,11 +158,18 @@ public class UIcontroller : MonoBehaviour
                 }
                 else
                 {
-                    choices[c].gameObject.SetActive(true);
+                    
                     DTText choiseText = dttext.Find(choiseID[c]);
-                    choices[c].GetComponentInChildren<TMP_Text>().text = choiseText.text;
-                    //イベントを登録
-                    choices[c].GetComponent<Button>().onClick.AddListener(() => ChosesAction(choiseText));
+                    Debug.Log(choiseID[c]);
+                    if (choiseText != null)
+                    {
+                        choices[c].gameObject.SetActive(true);
+                        choices[c].GetComponentInChildren<TMP_Text>().text = choiseText.text;
+                        //イベントを登録
+                        Button button = choices[c].GetComponent<Button>();
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() => ChosesAction(choiseText));
+                    }
                 }
             }
         }
@@ -146,7 +182,7 @@ public class UIcontroller : MonoBehaviour
             (pagenum, dialog) = dttext.Pages(textid);
             uitexts[i].text = dialog[0];
             dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
-            
+
         }
         else if (i == 2)
         {
@@ -163,11 +199,15 @@ public class UIcontroller : MonoBehaviour
             SetVirtualCamera(true);
             E = StartCoroutine(VoiceText());
         }
-        else
+        else if (i == -1)
         {
             //esc
             xslider.value = sence.Xsence;
             yslder.value = sence.Ysence;
+        }
+        else
+        {
+            return;
         }
     }
     public void XSence()
