@@ -90,16 +90,16 @@ MonoBehaviour:
     ui: 0
     nextText: TXT_TestChoise_004
     choise0: r6
-    choise1: 
+    choise1: testdemo1
     choise2: 
-    choise3: 
+    choise3: testdemo2
   - id: TXT_TestChoise_003
     text: get r4 and r8
     ui: 0
     nextText: TXT_TestChose_005
     choise0: r4
     choise1: r8
-    choise2: 
+    choise2: testdemo2
     choise3: 
   - id: TXT_TestVoice_001
     text: I couldn't look back

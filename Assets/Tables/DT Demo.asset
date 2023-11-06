@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DT Demo
   m_EditorClassIdentifier: 
   demos:
-  - id: 
+  - id: testdemo1
     asset: {fileID: 11400000, guid: 9f851b80ea1a03745b5f173fd12b376c, type: 2}

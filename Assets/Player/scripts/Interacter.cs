@@ -10,6 +10,7 @@ public class Interacter : MonoBehaviour
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
     [SerializeField] DT_Item dtitem;
+    [SerializeField] DemoPlayer demoPlayer;
     public bool interactTrigger = false;
 
     
@@ -29,6 +30,7 @@ public class Interacter : MonoBehaviour
     {
         //uictr = GetComponent<UIcontroller>();
         //itemStack = GetComponent<ItemStack>();
+        demoPlayer = FindAnyObjectByType<DemoPlayer>();
     }
 
     // Update is called once per frame
@@ -80,6 +82,10 @@ public class Interacter : MonoBehaviour
                 itemStack.AddItem(i);
                 gimicks.TurnOffColor();
                 gimicks = null;
+
+                //ƒCƒxƒ“ƒg”­“®
+                Debug.Log(dT.demoID);
+                demoPlayer.DemoPlay(dT.demoID);
             }
         }
     }

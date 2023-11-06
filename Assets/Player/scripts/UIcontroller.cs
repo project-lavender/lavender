@@ -25,6 +25,8 @@ public class UIcontroller : MonoBehaviour
     Cinemachine.CinemachinePOV pov;
     [SerializeField] Slider xslider, yslder;
 
+    [SerializeField] DemoPlayer demoPlayer;
+
     [SerializeField] float voiceSpeed = 0.2f,finishWait = 2.5f;
     [System.Serializable]
     private class Sence
@@ -55,18 +57,22 @@ public class UIcontroller : MonoBehaviour
         if (dT.choise0 != "")
         {
             itemchosen[0] = dtitem.FindItem(dT.choise0);
+            demoPlayer.DemoPlay(dT.choise0);
         }
         if(dT.choise1 != "")
         {
             itemchosen[1] = dtitem.FindItem(dT.choise1);
+            demoPlayer.DemoPlay(dT.choise1);
         }
         if (dT.choise2 != "")
         {
             itemchosen[2] = dtitem.FindItem(dT.choise2);
+            demoPlayer.DemoPlay(dT.choise2);
         }
         if (dT.choise3 != "")
         {
             itemchosen[3] = dtitem.FindItem(dT.choise3);
+            demoPlayer.DemoPlay(dT.choise3);
         }
         foreach(GameObject i in itemchosen)
         {
@@ -91,7 +97,7 @@ public class UIcontroller : MonoBehaviour
         dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
     }
 
-    
+    //Uiを閉じる
     public void CloseUIs()
     {
         Debug.Log("close ui");
@@ -199,9 +205,15 @@ public class UIcontroller : MonoBehaviour
             SetVirtualCamera(true);
             E = StartCoroutine(VoiceText());
         }
-        else if (i == -1)
+        else if (i == 3)
         {
             //esc
+            //読み込み
+            StreamReader rd = new StreamReader(pathsence);
+            string json = rd.ReadToEnd();
+            rd.Close();
+            sence = JsonUtility.FromJson<Sence>(json);
+            //スライダーに反映
             xslider.value = sence.Xsence;
             yslder.value = sence.Ysence;
         }
@@ -226,6 +238,7 @@ public class UIcontroller : MonoBehaviour
         sence.Ysence = yslder.value;
         string json = JsonUtility.ToJson(sence);
         StreamWriter wr = new StreamWriter(pathsence);
+        Debug.Log(json);
         wr.WriteLine(json);
         wr.Close();
     }
@@ -271,6 +284,7 @@ public class UIcontroller : MonoBehaviour
         sence = JsonUtility.FromJson<Sence>(playesence.text);
         nowvec.x = sence.Xsence * maxSence.x;
         nowvec.y = sence.Ysence * maxSence.y;
+        demoPlayer = FindAnyObjectByType<DemoPlayer>();
 
     }
     // Update is called once per frame
@@ -279,7 +293,7 @@ public class UIcontroller : MonoBehaviour
         //Esc
         if (Input.GetKeyDown(KeyCode.Escape)){
             ActiveUI("esc");
-            sence = JsonUtility.FromJson<Sence>(playesence.text);
+            //
 
         }
     }
