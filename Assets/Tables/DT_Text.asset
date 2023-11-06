@@ -149,3 +149,27 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_TestItem_001
+    text: This is test item01
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestItem_002
+    text: This is test item02
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestItem_003
+    text: This is test item03
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

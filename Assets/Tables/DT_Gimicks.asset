@@ -31,7 +31,7 @@ MonoBehaviour:
   - progress: -1
     frag: Flag_TestGimick_CanTouch
     textID: TXT_TestDialog_001
-    demoID: testdemo1
+    demoID: 
     itemID: r4
     upFrag: Flag_TestGimick_UpFrag
     downFrag: Flag_TestGimick_DownFrag

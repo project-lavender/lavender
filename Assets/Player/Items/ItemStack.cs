@@ -8,6 +8,7 @@ public class ItemStack : MonoBehaviour
     [SerializeField] float itemRingLength = 5f;
     [SerializeField] Transform itemIconAnker;
     [SerializeField] GameObject itemIconPrefab;
+    [SerializeField] UIcontroller uic;
     [SerializeField] List<Items> items;
     [SerializeField] List<Image> itemIcons;
     [SerializeField] TMP_Text itemname;
@@ -118,7 +119,10 @@ public class ItemStack : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.F))
             {
-                items[nowitem].UseItem();
+                string id = items[nowitem].UseItem();
+                Debug.Log("Use item " + id);
+                //アイテムテキスト表示
+                uic.ActiveUI(id);
             }
         }
     }

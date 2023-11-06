@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
+    //UIに表示するアイテム名
     public string itemname = "";
+    public string useTextID = "";
     public Sprite itemIcon;
-    public virtual void UseItem()
+    public virtual string UseItem()
     {
         Debug.Log("Default Item Use " + gameObject.name);
+        return useTextID;
     }
 }

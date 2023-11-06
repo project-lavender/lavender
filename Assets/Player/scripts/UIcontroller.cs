@@ -115,6 +115,7 @@ public class UIcontroller : MonoBehaviour
     {
         //インタラクトコライダーを無効か
         //interactColider.enabled = false;
+        Debug.Log(textid);
         int i = -1;
         DTText dT = dttext.Find(textid);
         //カーソルロックを外す
@@ -130,7 +131,7 @@ public class UIcontroller : MonoBehaviour
             i = dT.ui;
         }
 
-        Debug.Log(i);
+        Debug.Log(dT);
         int j = 0;
         foreach (RectTransform r in UIs)
         {
@@ -219,7 +220,9 @@ public class UIcontroller : MonoBehaviour
         }
         else
         {
+            CloseUIs();
             return;
+            
         }
     }
     public void XSence()

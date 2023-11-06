@@ -45,4 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemname: Roter4
+  useTextID: TXT_TestItem_001
   itemIcon: {fileID: 21300000, guid: 7cd615f7c3637074c9c9872bc7a4b57a, type: 3}

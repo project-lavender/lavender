@@ -589,6 +589,7 @@ MonoBehaviour:
   itemRingLength: 20
   itemIconAnker: {fileID: 8226625314226794485}
   itemIconPrefab: {fileID: 8120506545867084935, guid: 5e949a05fce8df240b9881ac802ee3f5, type: 3}
+  uic: {fileID: 2095900640900647336}
   items: []
   itemIcons: []
   itemname: {fileID: 3081449431064498447}
@@ -626,7 +627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8946203826881873724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.937, y: 0.8299999, z: -0.979}
+  m_LocalPosition: {x: -0.09, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -810,6 +811,7 @@ MonoBehaviour:
   uictr: {fileID: 2095900640900647336}
   itemStack: {fileID: 4767323125235869803}
   dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
+  demoPlayer: {fileID: 0}
   interactTrigger: 0
   gimicks: {fileID: 0}
 --- !u!1001 &3565668104991191244
