@@ -151,7 +151,7 @@ MonoBehaviour:
     choise3: 
   - id: TXT_TestItem_001
     text: This is test item01
-    ui: 0
+    ui: 2
     nextText: 
     choise0: 
     choise1: 
@@ -159,7 +159,7 @@ MonoBehaviour:
     choise3: 
   - id: TXT_TestItem_002
     text: This is test item02
-    ui: 0
+    ui: 1
     nextText: 
     choise0: 
     choise1: 
