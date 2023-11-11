@@ -176,6 +176,11 @@ public class UIcontroller : MonoBehaviour
                         Button button = choices[c].GetComponent<Button>();
                         button.onClick.RemoveAllListeners();
                         button.onClick.AddListener(() => ChosesAction(choiseText));
+                        //ui‚ª-1‚È‚çui‚ð‘I‘ð‚µ‚½‚ç•Â‚¶‚é
+                        if (choiseText.ui == -1)
+                        {
+                            button.onClick.AddListener(() => CloseUIs());
+                        }
                     }
                 }
             }

@@ -24,7 +24,7 @@ MonoBehaviour:
   - id: Flag_Memo_05_read
     value: 0
   - id: Flag_Stretcher_Collided
-    value: 0
+    value: 1
   - id: Flag_TestTube_Obtained
     value: 0
   - id: Flag_Rotor_4h_Obtained

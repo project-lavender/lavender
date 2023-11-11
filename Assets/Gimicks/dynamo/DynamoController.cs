@@ -8,7 +8,13 @@ public class DynamoController : Gimicks
     private Color OffColor, OnColor;
     [SerializeField]
     private Light[] lights;
+    [SerializeField]
+    private Light[] execptionLights;
     private float[] intencities;
+    [SerializeField]
+    Material emmision;
+    [SerializeField]
+    Color offcolor, oncollor;
     [SerializeField]
     private float maxOnTime = 0.5f;
     Material myMat;
@@ -27,6 +33,13 @@ public class DynamoController : Gimicks
             Light l = lights[i];
             intencities[i] = l.intensity;
             l.intensity = 0f;
+            emmision.SetColor("_EmissionColor", offcolor);
+        }
+        for (int i = 0; i < execptionLights.Length; i++)
+        {
+            Light l = execptionLights[i];
+            //intencities[i] = l.intensity;
+            l.intensity = 0.5f;
         }
 
         se = GetComponent<SEController>();
@@ -41,9 +54,9 @@ public class DynamoController : Gimicks
 
     }
 
-    /*
+    
     //ƒ_ƒCƒiƒ‚on
-    public override void InteractGimick()
+    public override DTGimick InteractGimick()
     {
 
         myMat.SetColor("_RampColor", OnColor);
@@ -52,8 +65,9 @@ public class DynamoController : Gimicks
         {
             StartCoroutine(LightTime(i));
         }
-
+        emmision.SetColor("_EmissionColor", oncollor);
         se.SE(0);
+        return null;
     }
-    */
+    
 }

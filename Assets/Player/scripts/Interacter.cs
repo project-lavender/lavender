@@ -71,6 +71,10 @@ public class Interacter : MonoBehaviour
             if (gimicks != null)
             {
                 dT = gimicks.InteractGimick();
+                if (dT == null)
+                {
+                    return;
+                }
                 textid = dT.textID;
                 Debug.Log(textid);
                 uictr.ActiveUI(textid);
@@ -78,10 +82,10 @@ public class Interacter : MonoBehaviour
                 //アイテム追加
                 Debug.Log(dT.itemID);
                 GameObject i = dtitem.FindItem(dT.itemID);
-                
                 itemStack.AddItem(i);
-                gimicks.TurnOffColor();
-                gimicks = null;
+
+                //gimicks.TurnOffColor();
+                //gimicks = null;
 
                 //イベント発動
                 Debug.Log(dT.demoID);

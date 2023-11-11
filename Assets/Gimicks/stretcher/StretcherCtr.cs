@@ -17,6 +17,7 @@ public class StretcherCtr : Gimicks
         se = GetComponent<SEController>();
         rb = GetComponent<Rigidbody>();
         director = GetComponent<PlayableDirector>();
+        base.DisableGimick();
     }
     private void FixedUpdate()
     {
@@ -33,29 +34,24 @@ public class StretcherCtr : Gimicks
         director.Play();
     }
     */
-    public override void EnableGimick()
-    {
-        base.EnableGimick();
-    }
     public override void DisableGimick()
     {
         base.DisableGimick();
-        se = GetComponent<SEController>();
-        rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Wall")
         {
+            base.InteractGimick();
+            base.EnableGimick();
             SetProgress();
-
-            rb.isKinematic = false;
+            rb.isKinematic = true;
         }
     }
     private void OnCollisionStay(Collision collision)
     {
-        //Debug.Log(rb.velocity.magnitude);
+        //動かしている間　ストレッチャーから音が鳴る
         if (collision.gameObject.tag == "Player" && rb.velocity.magnitude > soundvelociy)
         {
             se.SELoop(0);

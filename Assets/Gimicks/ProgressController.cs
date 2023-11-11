@@ -30,10 +30,16 @@ public class ProgressController : MonoBehaviour
 
             case 110:
                 //active all gimicks
-                foreach(Gimicks g in allgimicks)
+                
+                //dynamo.DisableGimick();
+                //stretcher.DisableGimick();
+                break;
+            case 120:
+                foreach (Gimicks g in allgimicks)
                 {
                     g.EnableGimick();
                 }
+
                 dynamo.DisableGimick();
                 stretcher.DisableGimick();
                 break;

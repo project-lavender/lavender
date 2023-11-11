@@ -209,7 +209,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -281,6 +281,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: 110
   myMats: []
+  gimicksName: Stretcher
+  gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
+  frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
+  gimickDatalist: []
   emittionColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
   darkColor: {r: 0, g: 0, b: 0, a: 0}
   soundvelociy: 0.4

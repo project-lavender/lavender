@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sheet1:
   - id: TXT_Stretcher_001
-    text: If I climb up to the top,I can touch that.
-    ui: 2
+    text: 'If I climb up to the top,I can touch that.
+
+      Climb?'
+    ui: 0
     nextText: TXT_Stretcher_002
-    choise0: 
-    choise1: 
+    choise0: TXT_System_001
+    choise1: TXT_System_002
     choise2: 
     choise3: 
   - id: TXT_Stretcher_002
     text: Climb?
     ui: 0
     nextText: 
-    choise0: TXT_System_001
-    choise1: TXT_System_002
+    choise0: 
+    choise1: 
     choise2: 
     choise3: 
   - id: TXT_Stretcher_003
@@ -39,15 +41,15 @@ MonoBehaviour:
     choise3: 
   - id: TXT_System_001
     text: Yes
-    ui: 0
+    ui: -1
     nextText: 
-    choise0: 
+    choise0: stretcherUp
     choise1: 
     choise2: 
     choise3: 
   - id: TXT_System_002
     text: No
-    ui: 0
+    ui: -1
     nextText: 
     choise0: 
     choise1: 

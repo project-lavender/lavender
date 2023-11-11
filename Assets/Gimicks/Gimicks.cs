@@ -52,7 +52,16 @@ public class Gimicks : MonoBehaviour
         {
             //進行度とフラグが立っているなら実行
             Debug.Log(frags.ReadVal(g.frag));
-            if (g.progress == prog.ReadProgress() && frags.ReadVal(g.frag))
+            bool frag;
+            if (g.frag == "")
+            {
+                frag = true;
+            }
+            else
+            {
+                frag = frags.ReadVal(g.frag);
+            }
+            if (g.progress == prog.ReadProgress() && frag)
             {
                 Debug.Log("Do Event " + gameObject.name);
                 //textid = g.textID;
@@ -92,5 +101,7 @@ public class Gimicks : MonoBehaviour
                 myMats.Add(m);
             }
         }
+
+        TurnOffColor();
     }
 }

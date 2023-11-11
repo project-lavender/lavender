@@ -9,16 +9,16 @@ public class RierMover : MonoBehaviour
     private TextAsset param;
     //private CharacterController ctr;
     private Rigidbody rb;
+    /*
     [SerializeField]
     private float PL_cam_height = 2.2f;
     [SerializeField]
     private float PL_light_intencity = 10f;
+    */
     [SerializeField]
     private float PL_walk = 3.0f;
     [SerializeField]
     private float PL_run = 6.0f;
-
-
     //‚µ‚á‚ª‚Ý
     [SerializeField]
     private float crouchCamHeight = -0.7f;
@@ -95,7 +95,7 @@ public class RierMover : MonoBehaviour
         //ctr.height = PL_cam_height;
         Vector3 camh = Vector3.up * Mathf.Lerp(0f, crouchCamHeight, highorCrouch);
         vc.transform.localPosition = camh;
-        l.intensity = PL_light_intencity;
+        //l.intensity = PL_light_intencity;
 
         
         h = Input.GetAxis("Horizontal");
