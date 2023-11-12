@@ -53,7 +53,6 @@ public class UIcontroller : MonoBehaviour
         }
         //アイテム入手イベントはここから
         GameObject[] itemchosen = new GameObject[4];
-        DTDemo d = null;
         if (dT.choise0 != "")
         {
             itemchosen[0] = dtitem.FindItem(dT.choise0);

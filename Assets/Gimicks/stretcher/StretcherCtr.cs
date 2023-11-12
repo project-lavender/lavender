@@ -37,6 +37,8 @@ public class StretcherCtr : Gimicks
     public override void DisableGimick()
     {
         base.DisableGimick();
+        darkColor = Color.black;
+        TurnOffColor();
         rb.isKinematic = true;
     }
     private void OnCollisionEnter(Collision collision)

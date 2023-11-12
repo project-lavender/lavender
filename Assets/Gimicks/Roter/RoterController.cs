@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RoterController : Gimicks
 {
-    [SerializeField] int holesize = 4;
-    [SerializeField] GameObject myItem = null;
+    //[SerializeField] int holesize = 4;
+    //[SerializeField] GameObject myItem = null;
 
     /*
     public override DTText InteractGimick()

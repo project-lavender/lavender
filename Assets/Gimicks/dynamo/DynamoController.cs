@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DynamoController : Gimicks
 {
+    //配電盤の店頭ランプ
     [SerializeField]
     private Color OffColor, OnColor;
     [SerializeField]
@@ -13,8 +14,6 @@ public class DynamoController : Gimicks
     private float[] intencities;
     [SerializeField]
     Material emmision;
-    [SerializeField]
-    Color offcolor, oncollor;
     [SerializeField]
     private float maxOnTime = 0.5f;
     Material myMat;
@@ -33,7 +32,6 @@ public class DynamoController : Gimicks
             Light l = lights[i];
             intencities[i] = l.intensity;
             l.intensity = 0f;
-            emmision.SetColor("_EmissionColor", offcolor);
         }
         for (int i = 0; i < execptionLights.Length; i++)
         {
@@ -42,6 +40,8 @@ public class DynamoController : Gimicks
             l.intensity = 0.5f;
         }
 
+        //ライトのmaterial collor
+        emmision.SetColor("_EmissionColor", Color.black);
         se = GetComponent<SEController>();
     }
 
@@ -54,19 +54,23 @@ public class DynamoController : Gimicks
 
     }
 
-    
+    public override void DisableGimick()
+    {
+        base.DisableGimick();
+    }
     //ダイナモon
     public override DTGimick InteractGimick()
     {
-
-        myMat.SetColor("_RampColor", OnColor);
+        darkColor = Color.black;
+        TurnOffColor();
         SetProgress();
         for (int i = 0; i < lights.Length; i++)
         {
             StartCoroutine(LightTime(i));
         }
-        emmision.SetColor("_EmissionColor", oncollor);
         se.SE(0);
+        myMat.SetColor("_RampColor", OnColor);
+        emmision.SetColor("_EmissionColor", Color.white);
         return null;
     }
     

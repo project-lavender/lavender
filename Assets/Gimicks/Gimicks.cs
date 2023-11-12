@@ -17,7 +17,7 @@ public class Gimicks : MonoBehaviour
     [SerializeField] private DT_Frag frags;
     [SerializeField] private List<DTGimick> gimickDatalist;
     [SerializeField]
-    private Color emittionColor,darkColor;
+    public Color emittionColor,darkColor;
 
     private Renderer[] renderers;
     public void EmitColor()
