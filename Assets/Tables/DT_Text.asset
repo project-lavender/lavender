@@ -175,3 +175,219 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CassetteTape_2_001
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: TXT_CassetteTape_2_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_2_002
+    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
+    ui: 2
+    nextText: TXT_CassetteTape_2_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_2_003
+    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_2_004
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_3_001
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: TXT_CassetteTape_3_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_3_002
+    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
+    ui: 2
+    nextText: TXT_CassetteTape_3_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_3_003
+    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_3_004
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_001
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: TXT_CassetteTape_4_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_002
+    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF1F"
+    ui: 2
+    nextText: TXT_CassetteTape_4_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_003
+    text: "\u6EB6\u6DB2C\u3067\u3044\u3044\u306E\u304B\u306A\uFF1F"
+    ui: 2
+    nextText: TXT_CassetteTape_4_004
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_004
+    text: "\u5C11\u3057\u30BF\u30A4\u30C8\u30EB\u304C\u5909\u306A\u6C17\u304C\u3059\u308B\u3051\u3069\u3001\u4E00\u5FDC\u8CB0\u3063\u3066\u304A\u3053\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_005
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_001
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: TXT_CassetteTape_5_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_002
+    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2C\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
+    ui: 2
+    nextText: TXT_CassetteTape_5_003
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_003
+    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_004
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2C\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_2
+    text: "\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_3
+    text: "\u6EB6\u6DB2\uFF22\u306E\u4F5C\u6210\u65B9\u6CD5"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_4
+    text: "\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_5
+    text: "\u6EB6\u6DB2\uFF23\u306E\u4F5C\u6210\u65B9\u6CD5"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_001
+    text: "\u30AB\u30BB\u30C3\u30C8\u30D7\u30EC\u30FC\u30E4\u30FC\u3060"
+    ui: 2
+    nextText: TXT_CassettePlayer_002
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_002
+    text: "\u30C6\u30FC\u30D7\u304C\u3042\u308C\u3070\u518D\u751F\u3067\u304D\u305D\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_T2
+    text: "\u30C6\u30FC\u30D702\u306E\u30D2\u30F3\u30C8"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_T3
+    text: "\u30C6\u30FC\u30D703\u306E\u30D2\u30F3\u30C8"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_T4
+    text: "\u30C6\u30FC\u30D704\u306E\u30D2\u30F3\u30C8"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassettePlayer_T5
+    text: "\u30C6\u30FC\u30D705\u306E\u30D2\u30F3\u30C8"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

@@ -52,13 +52,20 @@ public class ItemStack : MonoBehaviour
         itemIcons.Add(iconImg);
         iconImg.sprite = I.itemIcon;
         itemN += 1;
-        nowitem = 0;
+        nowitem = itemN - 1;
+        //前のアイテムのフラグを折る
+        if (itemN > 1)
+        {
+            items[nowitem - 1].SetFrag(false);
+        }
+        I.SetFrag(true);
         LineupItems();
     }
 
     void RotateItem(int r)
     {
         float angle = 0f;
+        items[nowitem].SetFrag(false);
         if (itemN != 0)
         {
             angle = 360f / itemN;
@@ -85,7 +92,7 @@ public class ItemStack : MonoBehaviour
         for (int i = 0; i < itemN; i++)
         {
             float rad = Mathf.Deg2Rad * angle * (i + rotI);
-            Vector2 Tfunc = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+            Vector2 Tfunc = new(Mathf.Cos(rad), Mathf.Sin(rad));
             itemIcons[i].transform.localPosition = new Vector3(itemRingLength * Tfunc.y, itemRingLength * Tfunc.x, 0f);
             itemIcons[i].color = Offcolor;
             //itemIcons[i].transform.localRotation = Quaternion.Euler(Vector3.zero);
@@ -93,16 +100,18 @@ public class ItemStack : MonoBehaviour
         }
         itemIcons[nowitem].color = selectColor;
         itemname.text = items[nowitem].itemname;
+        items[nowitem].SetFrag(true);
         //Debug.Log(items[nowitem].name);
 
     }
     // Start is called before the first frame update
+    /*
     void Start()
     {
         //iconN = itemIcons.Count;
         //itemN = items.Count;
     }
-
+    */
     // Update is called once per frame
     void Update()
     {

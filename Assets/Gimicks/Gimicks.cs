@@ -6,20 +6,20 @@ using UnityEngine;
 public class Gimicks : MonoBehaviour
 {
 
-    [SerializeField] int p;
+    [SerializeField] int p = 0;
     ProgressController prog;
 
     [SerializeField]
-    private List<Material> myMats;
+    private List<Material> myMats = null;
 
-    [SerializeField] private string gimicksName;
-    [SerializeField] private DT_Gimicks gimicks;
-    [SerializeField] private DT_Frag frags;
+    [SerializeField] private string gimicksName = "";
+    [SerializeField] private DT_Gimicks gimicks = null;
+    [SerializeField] private DT_Frag frags = null;
     [SerializeField] private List<DTGimick> gimickDatalist;
-    [SerializeField]
-    public Color emittionColor,darkColor;
+    public Color emittionColor = Color.white, darkColor = Color.black;
 
     private Renderer[] renderers;
+    //private ItemStack itemStack;
     public void EmitColor()
     {
         foreach(Material mat in myMats)
@@ -61,7 +61,9 @@ public class Gimicks : MonoBehaviour
             {
                 frag = frags.ReadVal(g.frag);
             }
-            if (g.progress == prog.ReadProgress() && frag)
+
+            //progress = -1 ‚È‚ç‚¢‚Â‚Å‚àOK
+            if ((g.progress == -1 || g.progress == prog.ReadProgress()) && frag)
             {
                 Debug.Log("Do Event " + gameObject.name);
                 //textid = g.textID;
@@ -101,7 +103,6 @@ public class Gimicks : MonoBehaviour
                 myMats.Add(m);
             }
         }
-
         TurnOffColor();
     }
 }

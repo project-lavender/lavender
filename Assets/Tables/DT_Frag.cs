@@ -19,8 +19,8 @@ public class DT_Frag : ScriptableObject
                 f.value = val;
             }
         }
-        EditorUtility.SetDirty(this);
-        AssetDatabase.SaveAssets();
+        //EditorUtility.SetDirty(this);
+        //AssetDatabase.SaveAssets();
     }
     public bool ReadVal(string fragname)
     {
@@ -33,5 +33,14 @@ public class DT_Frag : ScriptableObject
             }
         }
         return val;
+    }
+    public void ResetValue()
+    {
+        foreach(DTFrag f in Sheet1)
+        {
+            f.value = false;
+        }
+        EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssets();
     }
 }

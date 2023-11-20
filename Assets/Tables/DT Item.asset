@@ -19,3 +19,11 @@ MonoBehaviour:
     item: {fileID: 1038337578043533058, guid: 3531c42fb9f90304f9ed239d0a513e12, type: 3}
   - id: r8
     item: {fileID: 1038337578043533058, guid: 459991d2d23ee1844b66c923d4eb7532, type: 3}
+  - id: IT_CassetteTape2
+    item: {fileID: 4496552130631344947, guid: eacf83bdac62c46438417647873c9f98, type: 3}
+  - id: IT_CassetteTape3
+    item: {fileID: 4496552130631344947, guid: 06b969b85cdcff8439eee76a6dfaeb38, type: 3}
+  - id: IT_CassetteTape4
+    item: {fileID: 4496552130631344947, guid: ee63ee1e777484842a597736f9a2ea1b, type: 3}
+  - id: IT_CassetteTape5
+    item: {fileID: 4496552130631344947, guid: ea1068beccbe2e84ebc09f954df64a89, type: 3}

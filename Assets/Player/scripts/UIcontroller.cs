@@ -28,6 +28,9 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] DemoPlayer demoPlayer;
 
     [SerializeField] float voiceSpeed = 0.2f,finishWait = 2.5f;
+
+    //
+    int beforeOpenedID = -1;
     [System.Serializable]
     private class Sence
     {
@@ -121,15 +124,28 @@ public class UIcontroller : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         //ÉJÉÅÉâå≈íË
         SetVirtualCamera(false);
+        
+        
         if (textid == "esc")
         {
             i = 3;
         }
         else if (dT != null)
         {
+            
             i = dT.ui;
+            //ëOÇÃuiÇ∆ì«Ç›çûÇÒÇæuiÇÃidÇ™à·Ç§èÍçáÇ¢Ç¡ÇΩÇÒè¡Ç∑
+            if (beforeOpenedID != i)
+            {
+                CloseUIs();
+                beforeOpenedID = i;
+            }
         }
-
+        else
+        {
+            return;
+        }
+        
         Debug.Log(dT);
         int j = 0;
         foreach (RectTransform r in UIs)
@@ -148,7 +164,7 @@ public class UIcontroller : MonoBehaviour
             //îƒóp
             uitexts[i].text = dT.text;
             Cursor.lockState = CursorLockMode.None;
-            List<string> choiseID = new List<string>
+            List<string> choiseID = new()
             {
                 dT.choise0,
                 dT.choise1,
@@ -214,7 +230,7 @@ public class UIcontroller : MonoBehaviour
         {
             //esc
             //ì«Ç›çûÇ›
-            StreamReader rd = new StreamReader(pathsence);
+            StreamReader rd = new(pathsence);
             string json = rd.ReadToEnd();
             rd.Close();
             sence = JsonUtility.FromJson<Sence>(json);
@@ -244,7 +260,7 @@ public class UIcontroller : MonoBehaviour
         sence.Xsence = xslider.value;
         sence.Ysence = yslder.value;
         string json = JsonUtility.ToJson(sence);
-        StreamWriter wr = new StreamWriter(pathsence);
+        StreamWriter wr = new(pathsence);
         Debug.Log(json);
         wr.WriteLine(json);
         wr.Close();
@@ -280,7 +296,7 @@ public class UIcontroller : MonoBehaviour
             delay = new WaitForSeconds(finishWait);
             yield return delay;
         }
-        delay = null;
+
         uitexts[2].text = "";
     }
     // Start is called before the first frame update

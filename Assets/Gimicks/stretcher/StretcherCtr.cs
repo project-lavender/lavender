@@ -5,18 +5,18 @@ using UnityEngine.Playables;
 
 public class StretcherCtr : Gimicks
 {
-    SEController se;
-    Rigidbody rb;
-    PlayableDirector director;
+    [SerializeField]SEController se;
+    [SerializeField] Rigidbody rb;
+    //PlayableDirector director;
     [SerializeField] float soundvelociy = 0.1f;
 
     //[SerializeField] private DT_Stretcher stretcher = null;
     // Start is called before the first frame update
     void Start()
     {
-        se = GetComponent<SEController>();
-        rb = GetComponent<Rigidbody>();
-        director = GetComponent<PlayableDirector>();
+        //se = GetComponent<SEController>();
+        //rb = GetComponent<Rigidbody>();
+        // = GetComponent<PlayableDirector>();
         base.DisableGimick();
     }
     private void FixedUpdate()
@@ -37,10 +37,16 @@ public class StretcherCtr : Gimicks
     public override void DisableGimick()
     {
         base.DisableGimick();
-        darkColor = Color.black;
+        //darkColor = Color.black;
         TurnOffColor();
         rb.isKinematic = true;
     }
+    public override void EnableGimick()
+    {
+        base.EnableGimick();
+        rb.isKinematic = false;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Wall")

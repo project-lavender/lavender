@@ -44,7 +44,7 @@ public class Interacter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.tag == "Gimick")
+        if (other.CompareTag("Gimick"))
         {
             Gimicks tmpgm = other.GetComponent<Gimicks>();
             if (gimicks == null)
@@ -62,7 +62,7 @@ public class Interacter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Gimick" && interactTrigger)
+        if (other.CompareTag("Gimick") && interactTrigger)
         {
             interactTrigger = false;
             string textid;
@@ -80,7 +80,7 @@ public class Interacter : MonoBehaviour
                 uictr.ActiveUI(textid);
 
                 //ƒAƒCƒeƒ€’Ç‰Á
-                Debug.Log(dT.itemID);
+                Debug.Log("itemID->" + dT.itemID);
                 GameObject i = dtitem.FindItem(dT.itemID);
                 itemStack.AddItem(i);
 

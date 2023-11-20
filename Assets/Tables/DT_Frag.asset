@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - id: Flag_Memo_05_read
     value: 0
   - id: Flag_Stretcher_Collided
-    value: 1
+    value: 0
   - id: Flag_TestTube_Obtained
     value: 0
   - id: Flag_Rotor_4h_Obtained
@@ -38,8 +38,18 @@ MonoBehaviour:
   - id: Flag_TipSet_Obtained
     value: 0
   - id: Flag_TestGimick_UpFrag
-    value: 1
+    value: 0
   - id: Flag_TestGimick_DownFrag
     value: 0
   - id: Flag_TestGimick_CanTouch
-    value: 1
+    value: 0
+  - id: KL_CassetteTape_get
+    value: 0
+  - id: KL_CassetteTape_002
+    value: 0
+  - id: KL_CassetteTape_003
+    value: 0
+  - id: KL_CassetteTape_004
+    value: 0
+  - id: KL_CassetteTape_005
+    value: 0

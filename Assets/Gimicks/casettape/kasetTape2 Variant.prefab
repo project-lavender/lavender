@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4881670428756059374
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1346871760021997807, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_Name
+      value: kasetTape2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51632667
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7070887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.8385153
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872050583593914965, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1346871760021997807, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1187373791703239214}
+  m_SourcePrefab: {fileID: 100100000, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+--- !u!1 &5840643007444249601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1346871760021997807, guid: 208def9fdc7a2724385eb49dfe7f5b3e, type: 3}
+  m_PrefabInstance: {fileID: 4881670428756059374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1187373791703239214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5840643007444249601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc706c54bddb9e4faf47b02e19041a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: 0
+  myMats: []
+  gimicksName: CassetteTapeA
+  gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
+  frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
+  gimickDatalist: []
+  emittionColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 0}
+  darkColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}

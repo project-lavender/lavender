@@ -51,3 +51,71 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+  CassetteTapeA:
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_2_001
+    demoID: 
+    itemID: IT_CassetteTape2
+    upFrag: KL_CassetteTape_get
+    downFrag: 
+  CassetteTapeB:
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_3_001
+    demoID: 
+    itemID: IT_CassetteTape3
+    upFrag: KL_CassetteTape_get
+    downFrag: 
+  CassetteTapeC:
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_4_001
+    demoID: 
+    itemID: IT_CassetteTape4
+    upFrag: KL_CassetteTape_get
+    downFrag: 
+  CassetteTapeD:
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_5_001
+    demoID: 
+    itemID: IT_CassetteTape5
+    upFrag: KL_CassetteTape_get
+    downFrag: 
+  KasetPlayer:
+  - progress: -1
+    frag: KL_CassetteTape_002
+    textID: TXT_CassettePlayer_T2
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+  - progress: -1
+    frag: KL_CassetteTape_003
+    textID: TXT_CassettePlayer_T3
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+  - progress: -1
+    frag: KL_CassetteTape_004
+    textID: TXT_CassettePlayer_T4
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+  - progress: -1
+    frag: KL_CassetteTape_005
+    textID: TXT_CassettePlayer_T5
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+  - progress: -1
+    frag: 
+    textID: TXT_CassettePlayer_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
