@@ -59,6 +59,7 @@ public class ItemStack : MonoBehaviour
             items[nowitem - 1].SetFrag(false);
         }
         I.SetFrag(true);
+        RotateItem(-1);
         LineupItems();
     }
 

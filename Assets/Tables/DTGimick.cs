@@ -13,4 +13,5 @@ public class DTGimick
     public string itemID = "";
     public string upFrag = "";
     public string downFrag = "";
+    public bool death = false;
 }

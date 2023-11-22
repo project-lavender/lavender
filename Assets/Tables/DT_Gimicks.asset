@@ -20,6 +20,7 @@ MonoBehaviour:
     itemID: 
     upFrag: Flag_Stretcher_Collided
     downFrag: 
+    death: 0
   - progress: 110
     frag: Flag_Stretcher_Collided
     textID: TXT_Stretcher_001
@@ -27,6 +28,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   TestGimick:
   - progress: -1
     frag: Flag_TestGimick_CanTouch
@@ -35,6 +37,7 @@ MonoBehaviour:
     itemID: r4
     upFrag: Flag_TestGimick_UpFrag
     downFrag: Flag_TestGimick_DownFrag
+    death: 0
   TestGimick_choise:
   - progress: -1
     frag: Flag_TestGimick_CanTouch
@@ -43,6 +46,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   TestGimick_voice:
   - progress: -1
     frag: Flag_TestGimick_CanTouch
@@ -51,6 +55,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   CassetteTapeA:
   - progress: -1
     frag: 
@@ -59,6 +64,7 @@ MonoBehaviour:
     itemID: IT_CassetteTape2
     upFrag: KL_CassetteTape_get
     downFrag: 
+    death: 1
   CassetteTapeB:
   - progress: -1
     frag: 
@@ -67,6 +73,7 @@ MonoBehaviour:
     itemID: IT_CassetteTape3
     upFrag: KL_CassetteTape_get
     downFrag: 
+    death: 1
   CassetteTapeC:
   - progress: -1
     frag: 
@@ -75,6 +82,7 @@ MonoBehaviour:
     itemID: IT_CassetteTape4
     upFrag: KL_CassetteTape_get
     downFrag: 
+    death: 1
   CassetteTapeD:
   - progress: -1
     frag: 
@@ -83,6 +91,7 @@ MonoBehaviour:
     itemID: IT_CassetteTape5
     upFrag: KL_CassetteTape_get
     downFrag: 
+    death: 1
   KasetPlayer:
   - progress: -1
     frag: KL_CassetteTape_002
@@ -91,6 +100,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   - progress: -1
     frag: KL_CassetteTape_003
     textID: TXT_CassettePlayer_T3
@@ -98,6 +108,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   - progress: -1
     frag: KL_CassetteTape_004
     textID: TXT_CassettePlayer_T4
@@ -105,6 +116,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   - progress: -1
     frag: KL_CassetteTape_005
     textID: TXT_CassettePlayer_T5
@@ -112,6 +124,7 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
   - progress: -1
     frag: 
     textID: TXT_CassettePlayer_001
@@ -119,3 +132,64 @@ MonoBehaviour:
     itemID: 
     upFrag: 
     downFrag: 
+    death: 0
+  MemoA:
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_1_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_02_read
+    downFrag: 
+    death: 0
+  RoterRed:
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_Roter4_get
+    demoID: 
+    itemID: r4
+    upFrag: 
+    downFrag: 
+    death: 1
+  - progress: -1
+    frag: 
+    textID: TXT_Roter_no_Memo
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+  RoterBlack:
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_Roter6_get
+    demoID: 
+    itemID: r6
+    upFrag: 
+    downFrag: 
+    death: 1
+  - progress: -1
+    frag: 
+    textID: TXT_Roter_no_Memo
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+  RoterBlue:
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_Roter8_get
+    demoID: 
+    itemID: r8
+    upFrag: 
+    downFrag: 
+    death: 1
+  - progress: -1
+    frag: 
+    textID: TXT_Roter_no_Memo
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0

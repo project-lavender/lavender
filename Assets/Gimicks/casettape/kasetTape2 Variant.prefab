@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc706c54bddb9e4faf47b02e19041a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDeath_if_Use: 1
   p: 0
   myMats: []
   gimicksName: CassetteTapeA

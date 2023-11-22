@@ -15,7 +15,10 @@ public class Items : MonoBehaviour
 
     public void SetFrag(bool f)
     {
-        frags.SetVal(myfrag, f);
+        if (myfrag != "")
+        {
+            frags.SetVal(myfrag, f);
+        }
     }
     public virtual string UseItem()
     {

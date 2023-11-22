@@ -107,6 +107,7 @@ public class UIcontroller : MonoBehaviour
         //interactColider.enabled = true;
         pageNum = 0;
         SetVirtualCamera(true);
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         foreach (RectTransform r in UIs)
         {
@@ -117,14 +118,14 @@ public class UIcontroller : MonoBehaviour
     {
         //インタラクトコライダーを無効か
         //interactColider.enabled = false;
-        Debug.Log(textid);
+        
         int i = -1;
         DTText dT = dttext.Find(textid);
         //カーソルロックを外す
         Cursor.lockState = CursorLockMode.None;
         //カメラ固定
         SetVirtualCamera(false);
-        
+
         
         if (textid == "esc")
         {
@@ -145,8 +146,7 @@ public class UIcontroller : MonoBehaviour
         {
             return;
         }
-        
-        Debug.Log(dT);
+        Debug.Log(textid + " ui" + i.ToString());
         int j = 0;
         foreach (RectTransform r in UIs)
         {
@@ -161,9 +161,14 @@ public class UIcontroller : MonoBehaviour
 
         if (i == 0)
         {
+            //カーソルロックを外す
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            //カメラ固定
+            SetVirtualCamera(false);
             //汎用
             uitexts[i].text = dT.text;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
             List<string> choiseID = new()
             {
                 dT.choise0,
@@ -203,6 +208,13 @@ public class UIcontroller : MonoBehaviour
         else if (i == 1)
         {
             //テキストダイアログ
+
+            //カーソルロックを外す
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            //カメラ固定
+            SetVirtualCamera(false);
+
             //本文に代入
             int pagenum;
             dialog = new List<string>();
@@ -222,6 +234,8 @@ public class UIcontroller : MonoBehaviour
             int pagenum;
             dialog = new List<string>();
             (pagenum, dialog) = dttext.Pages(textid);
+            //カメラ設定
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             SetVirtualCamera(true);
             E = StartCoroutine(VoiceText());
@@ -230,6 +244,9 @@ public class UIcontroller : MonoBehaviour
         {
             //esc
             //読み込み
+            //カーソルロックを外す
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             StreamReader rd = new(pathsence);
             string json = rd.ReadToEnd();
             rd.Close();
@@ -265,7 +282,6 @@ public class UIcontroller : MonoBehaviour
         wr.WriteLine(json);
         wr.Close();
     }
-
     void SetVirtualCamera(bool b)
     {
         if (b) {
@@ -315,9 +331,21 @@ public class UIcontroller : MonoBehaviour
     {
         //Esc
         if (Input.GetKeyDown(KeyCode.Escape)){
-            ActiveUI("esc");
-            //
 
+            bool allNonActive = true;
+            foreach(RectTransform rect in UIs)
+            {
+                Debug.Log(rect.name+rect.gameObject.activeSelf);
+                allNonActive = allNonActive && !rect.gameObject.activeSelf;
+            }
+            if (allNonActive)
+            {
+                ActiveUI("esc");
+            }
+            else
+            {
+               CloseUIs();
+            }
         }
     }
 }

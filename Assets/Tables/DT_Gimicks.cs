@@ -15,6 +15,10 @@ public class DT_Gimicks : ScriptableObject
     public List<DTGimick> CassetteTapeC;
     public List<DTGimick> CassetteTapeD;
     public List<DTGimick> KasetPlayer;
+    public List<DTGimick> MemoA;
+    public List<DTGimick> RoterRed;
+    public List<DTGimick> RoterBlack;
+    public List<DTGimick> RoterBlue;
 
     public List<DTGimick> FindTable(string listname)
     {
@@ -50,9 +54,25 @@ public class DT_Gimicks : ScriptableObject
         {
             return CassetteTapeD;
         }
-        else if(listname == nameof(KasetPlayer))
+        else if (listname == nameof(KasetPlayer))
         {
             return KasetPlayer;
+        }
+        else if (listname == nameof(MemoA))
+        {
+            return MemoA;
+        }
+        else if (listname == nameof(RoterRed))
+        {
+            return RoterRed;
+        }
+        else if (listname == nameof(RoterBlack))
+        {
+            return RoterBlack;
+        }
+        else if (listname == nameof(RoterBlue))
+        {
+            return RoterBlue;
         }
         else
         {

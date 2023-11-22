@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Gimicks : MonoBehaviour
 {
-
+    //[SerializeField] bool isDeath_if_Use = false;
     [SerializeField] int p = 0;
     ProgressController prog;
 
@@ -70,13 +70,18 @@ public class Gimicks : MonoBehaviour
                 frags.SetVal(g.upFrag, true);
                 frags.SetVal(g.downFrag, false);
                 ret = g;
+                if (g.death)
+                {
+                    Destroy(gameObject);
+                    return ret;
+                }
                 break;
             }
+            
         }
+        
         return ret;
     }
-
-
     public virtual void DisableGimick()
     {
         Debug.Log("Base DisableGimick "+gameObject.name);
