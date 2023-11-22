@@ -40,7 +40,7 @@ public class DT_Frag : ScriptableObject
         {
             f.value = false;
         }
-        EditorUtility.SetDirty(this);
-        AssetDatabase.SaveAssets();
+        //EditorUtility.SetDirty(this);
+        //AssetDatabase.SaveAssets();
     }
 }

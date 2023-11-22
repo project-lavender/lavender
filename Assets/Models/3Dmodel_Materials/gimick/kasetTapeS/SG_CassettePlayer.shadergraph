@@ -239,7 +239,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Power",
     "m_StageCapability": 3,
-    "m_Value": 1.7899999618530274,
+    "m_Value": 2.319999933242798,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
@@ -319,7 +319,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Opacity",
     "m_StageCapability": 3,
-    "m_Value": 1.100000023841858,
+    "m_Value": 0.8199999928474426,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
@@ -711,7 +711,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_BlendMode": 15
+    "m_BlendMode": 13
 }
 
 {

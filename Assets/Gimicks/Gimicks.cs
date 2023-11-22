@@ -70,16 +70,14 @@ public class Gimicks : MonoBehaviour
                 frags.SetVal(g.upFrag, true);
                 frags.SetVal(g.downFrag, false);
                 ret = g;
-                if (g.death)
-                {
-                    Destroy(gameObject);
-                    return ret;
-                }
                 break;
             }
             
         }
-        
+        if (ret.death)
+        {
+            Destroy(gameObject);
+        }
         return ret;
     }
     public virtual void DisableGimick()
