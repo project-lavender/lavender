@@ -323,7 +323,10 @@ public class UIcontroller : MonoBehaviour
         sence = JsonUtility.FromJson<Sence>(playesence.text);
         nowvec.x = sence.Xsence * maxSence.x;
         nowvec.y = sence.Ysence * maxSence.y;
+        pov.m_HorizontalAxis.m_MaxSpeed = nowvec.x;
+        pov.m_VerticalAxis.m_MaxSpeed = nowvec.y;
         demoPlayer = FindAnyObjectByType<DemoPlayer>();
+       // WriteSence();
 
     }
     // Update is called once per frame

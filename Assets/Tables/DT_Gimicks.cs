@@ -15,6 +15,7 @@ public class DT_Gimicks : ScriptableObject
     public List<DTGimick> CassetteTapeC;
     public List<DTGimick> CassetteTapeD;
     public List<DTGimick> KasetPlayer;
+    public List<DTGimick> MemoO;
     public List<DTGimick> MemoA;
     public List<DTGimick> RoterRed;
     public List<DTGimick> RoterBlack;
@@ -57,6 +58,10 @@ public class DT_Gimicks : ScriptableObject
         else if (listname == nameof(KasetPlayer))
         {
             return KasetPlayer;
+        }
+        else if(listname == nameof(MemoO))
+        {
+            return MemoO;
         }
         else if (listname == nameof(MemoA))
         {

@@ -133,10 +133,19 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-  MemoA:
+  MemoO:
   - progress: -1
     frag: 
     textID: TXT_Memo_1_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_01_read
+    downFrag: 
+    death: 0
+  MemoA:
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_2_01
     demoID: 
     itemID: 
     upFrag: Flag_Memo_02_read

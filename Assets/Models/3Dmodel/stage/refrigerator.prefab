@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,6 +60,34 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7072302
+      objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7069834
+      objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -6974809413966224254, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324559275908171818, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4819223349682164798, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -68,6 +96,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8364ebe94185d9d4bab7b0a27482a8ce, type: 2}
+    - target: {fileID: -200907381262875561, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
       propertyPath: m_Name
       value: refrigerator
@@ -84,6 +116,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8364ebe94185d9d4bab7b0a27482a8ce, type: 2}
+    - target: {fileID: 4145595502613709030, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238316754552903935, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7385773107824023246, guid: 44a26e0c2c4d9bc4583f936059dd0b4a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

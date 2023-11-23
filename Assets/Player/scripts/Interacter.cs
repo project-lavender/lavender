@@ -51,12 +51,15 @@ public class Interacter : MonoBehaviour
             {
                 gimicks = tmpgm;
                 gimicks.EmitColor();
-            }else if(gimicks != null)
+            }
+            /*
+            else if(gimicks != null)
             {
                 gimicks.TurnOffColor();
                 gimicks = tmpgm;
                 gimicks.EmitColor();
             }
+            */
         }
     }
 

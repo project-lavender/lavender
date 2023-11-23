@@ -392,7 +392,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Memo_1_01
-    text: "\u30E1\u30E2\u306E\u30D2\u30F3\u30C81_1"
+    text: "\u8D77\u304D\u3066\u3044\u308B\u3053\u3068\n\"\u7814\u7A76\u6240\u5185\u306E\u72B6\u6CC1\u3092\u4F1D\u3048\u3066\u304F\u308C\u308B\u3002\n\u307E\u305F\u90E8\u5C4B\u306E\u8272\u3005\u306A\u6240\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3068\u30E1\u30E2\u3092\u96A0\u3057\u305F\u3053\u3068\u304C\u4F1D\u3048\u3089\u308C\u308B\u3002\""
     ui: 1
     nextText: TXT_Memo_1_02
     choise0: 
@@ -400,7 +400,23 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Memo_1_02
-    text: "\u30E1\u30E2\u306E\u30D2\u30F3\u30C81_2"
+    text: Good Luck!
+    ui: 1
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_2_01
+    text: "\u30E1\u30E2\u306E\u30D2\u30F3\u30C82_1"
+    ui: 1
+    nextText: TXT_Memo_2_02
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_2_02
+    text: "\u30E1\u30E2\u306E\u30D2\u30F3\u30C82_2"
     ui: 1
     nextText: 
     choise0: 
