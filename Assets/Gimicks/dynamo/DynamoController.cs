@@ -61,6 +61,7 @@ public class DynamoController : Gimicks
     //ƒ_ƒCƒiƒ‚on
     public override DTGimick InteractGimick()
     {
+        base.InteractGimick();
         darkColor = Color.black;
         TurnOffColor();
         SetProgress();

@@ -14,4 +14,5 @@ public class DTGimick
     public string upFrag = "";
     public string downFrag = "";
     public bool death = false;
+    public int overWriteProgress = -1;
 }

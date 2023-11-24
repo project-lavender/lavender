@@ -3864,7 +3864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc706c54bddb9e4faf47b02e19041a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
   myMats: []
   gimicksName: 
   gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
@@ -4017,7 +4016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3145121227574598352, guid: cc100e9c64a48064eb320199f91ee0cd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3686167114751552053, guid: cc100e9c64a48064eb320199f91ee0cd, type: 3}
       propertyPath: p
@@ -4078,6 +4077,10 @@ PrefabInstance:
     - target: {fileID: 3686167114751552053, guid: cc100e9c64a48064eb320199f91ee0cd, type: 3}
       propertyPath: darkColor.r
       value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686167114751552053, guid: cc100e9c64a48064eb320199f91ee0cd, type: 3}
+      propertyPath: gimicksName
+      value: Dynamo
       objectReference: {fileID: 0}
     - target: {fileID: 3686167114751552053, guid: cc100e9c64a48064eb320199f91ee0cd, type: 3}
       propertyPath: emittionColor.b
@@ -10273,7 +10276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 100
-  debugMode: 1
+  debugMode: 0
   dynamo: {fileID: 415119255}
   stretcher: {fileID: 1496337694}
   frag: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
@@ -13834,7 +13837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347894335665208205, guid: 73821871382bd924da6f46d7090fd74f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1873354978146754871, guid: 73821871382bd924da6f46d7090fd74f, type: 3}
       propertyPath: m_RootOrder
@@ -21976,6 +21979,26 @@ PrefabInstance:
     - target: {fileID: 3454806231544373507, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
       propertyPath: m_Name
       value: refrigerator
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324856341629843664, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7072302
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324856341629843664, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7069834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324856341629843664, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324856341629843664, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324856341629843664, guid: ae4e9d43e587d384f8ee8fd5de9247d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

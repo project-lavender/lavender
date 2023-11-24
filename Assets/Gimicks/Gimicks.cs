@@ -6,7 +6,7 @@ using UnityEngine;
 public class Gimicks : MonoBehaviour
 {
     //[SerializeField] bool isDeath_if_Use = false;
-    [SerializeField] int p = 0;
+    //[SerializeField] int p = 0;
     ProgressController prog;
 
     [SerializeField]
@@ -36,8 +36,8 @@ public class Gimicks : MonoBehaviour
     }
     public void SetProgress()
     {
-        prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
-        prog.AttachProgress(p);
+        //prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();
+        //prog.AttachProgress(p);
     }
     public virtual DTGimick InteractGimick()
     {
@@ -69,6 +69,11 @@ public class Gimicks : MonoBehaviour
                 //textid = g.textID;
                 frags.SetVal(g.upFrag, true);
                 frags.SetVal(g.downFrag, false);
+                int p = g.overWriteProgress;
+                if (p != -1)
+                {
+                    prog.AttachProgress(p);
+                }
                 ret = g;
                 break;
             }
