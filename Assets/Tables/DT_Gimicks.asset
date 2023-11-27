@@ -177,6 +177,36 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
+  MemoB:
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_3_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_03_read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  MemoC:
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_4_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_04_read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  MemoD:
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_5_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_05_read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   RoterRed:
   - progress: -1
     frag: Flag_Memo_02_read
@@ -228,6 +258,53 @@ MonoBehaviour:
   - progress: -1
     frag: 
     textID: TXT_Roter_no_Memo
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  Freezer:
+  - progress: -1
+    frag: Flag_DimpleKey_Selected
+    textID: TXT_Freezer_03
+    demoID: freezerOpen
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_Freezer_02
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_Freezer_01
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  DimpleKey:
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_DimpleKey_02
+    demoID: 
+    itemID: IT_DimpleKey
+    upFrag: Flag_DimpleKey_Obtained
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_DimpleKey_01
     demoID: 
     itemID: 
     upFrag: 

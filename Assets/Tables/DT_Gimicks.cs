@@ -18,9 +18,14 @@ public class DT_Gimicks : ScriptableObject
     public List<DTGimick> KasetPlayer;
     public List<DTGimick> MemoO;
     public List<DTGimick> MemoA;
+    public List<DTGimick> MemoB;
+    public List<DTGimick> MemoC;
+    public List<DTGimick> MemoD;
     public List<DTGimick> RoterRed;
     public List<DTGimick> RoterBlack;
     public List<DTGimick> RoterBlue;
+    public List<DTGimick> Freezer;
+    public List<DTGimick> DimpleKey;
 
     public List<DTGimick> FindTable(string listname)
     {
@@ -28,7 +33,7 @@ public class DT_Gimicks : ScriptableObject
         {
             return Stretcher;
         }
-        else if(listname == nameof(Dynamo))
+        else if (listname == nameof(Dynamo))
         {
             return Dynamo;
         }
@@ -64,13 +69,24 @@ public class DT_Gimicks : ScriptableObject
         {
             return KasetPlayer;
         }
-        else if(listname == nameof(MemoO))
+        else if (listname == nameof(MemoO))
         {
             return MemoO;
         }
         else if (listname == nameof(MemoA))
         {
             return MemoA;
+        }
+        else if (listname == nameof(MemoB))
+        {
+            return MemoB;
+        }
+        else if (listname == nameof(MemoC)) {
+            return MemoC;
+        }
+        else if(listname == nameof(MemoD))
+        {
+            return MemoD;
         }
         else if (listname == nameof(RoterRed))
         {
@@ -83,6 +99,14 @@ public class DT_Gimicks : ScriptableObject
         else if (listname == nameof(RoterBlue))
         {
             return RoterBlue;
+        }
+        else if (listname == nameof(Freezer))
+        {
+            return Freezer;
+        }
+        else if(listname == nameof(DimpleKey))
+        {
+            return DimpleKey;
         }
         else
         {

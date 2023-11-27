@@ -27,3 +27,5 @@ MonoBehaviour:
     item: {fileID: 4496552130631344947, guid: ee63ee1e777484842a597736f9a2ea1b, type: 3}
   - id: IT_CassetteTape5
     item: {fileID: 4496552130631344947, guid: ea1068beccbe2e84ebc09f954df64a89, type: 3}
+  - id: IT_DimpleKey
+    item: {fileID: 920562781242114877, guid: b0e1f1f809651724a837c03bac2a6323, type: 3}

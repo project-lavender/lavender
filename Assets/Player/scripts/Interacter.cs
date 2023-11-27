@@ -11,21 +11,13 @@ public class Interacter : MonoBehaviour
     [SerializeField] ItemStack itemStack;
     [SerializeField] DT_Item dtitem;
     [SerializeField] DemoPlayer demoPlayer;
-    public bool interactTrigger = false;
-
+    [SerializeField] bool touchingOnother = false;
     
 
     // Start is called before the first frame update
     [SerializeField]
     Gimicks gimicks = null;
-
-
-    IEnumerator InteractTrigger()
-    {
-        interactTrigger = true;
-        yield return new WaitForSeconds(iTime);
-        interactTrigger = false;
-    }
+    RaycastHit hit;
     void Start()
     {
         //uictr = GetComponent<UIcontroller>();
@@ -36,38 +28,30 @@ public class Interacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        Debug.DrawRay(transform.position, transform.forward * 0.8f);
+        if (Physics.Raycast(transform.position, transform.forward * 0.8f, out hit))
         {
-            StartCoroutine(InteractTrigger());
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.CompareTag("Gimick"))
-        {
-            Gimicks tmpgm = other.GetComponent<Gimicks>();
-            if (gimicks == null)
+            //とりあえず触れている
+            if (hit.collider.CompareTag("Gimick"))
             {
-                gimicks = tmpgm;
-                gimicks.EmitColor();
+                if (gimicks == null)
+                {
+                    Gimicks tmpgm = hit.collider.GetComponent<Gimicks>();
+                    gimicks = tmpgm;
+                    gimicks.EmitColor();
+                }
             }
-            /*
-            else if(gimicks != null)
-            {
-                gimicks.TurnOffColor();
-                gimicks = tmpgm;
-                gimicks.EmitColor();
-            }
-            */
         }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Gimick") && interactTrigger)
+        //ギミックから離れたらオフ
+        if (gimicks != null && hit.collider.gameObject != gimicks.gameObject)
         {
-            interactTrigger = false;
+            gimicks.TurnOffColor();
+            gimicks = null;
+        }
+        //インタラクトボタンオン
+        if (gimicks!=null && Input.GetMouseButtonDown(0))
+        {
+            //StartCoroutine(InteractTrigger());
             string textid;
             DTGimick dT;
             //ui 起動
@@ -94,14 +78,6 @@ public class Interacter : MonoBehaviour
                 Debug.Log(dT.demoID);
                 demoPlayer.DemoPlay(dT.demoID);
             }
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (gimicks != null && other.gameObject == gimicks.gameObject)
-        {
-            gimicks.TurnOffColor();
-            gimicks = null;
         }
     }
 }

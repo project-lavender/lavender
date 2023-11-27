@@ -34,6 +34,14 @@ public class Gimicks : MonoBehaviour
             mat.SetColor("_EmissionColor", darkColor);
         }
     }
+
+    public void BlackColor()
+    {
+        foreach (Material mat in myMats)
+        {
+            mat.SetColor("_EmissionColor", Color.black);
+        }
+    }
     public void SetProgress()
     {
         //prog = GameObject.FindGameObjectWithTag("GameController").GetComponent<ProgressController>();

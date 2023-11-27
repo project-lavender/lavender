@@ -41,6 +41,7 @@ public class ProgressController : MonoBehaviour
                 foreach (Gimicks g in allgimicks)
                 {
                     g.EnableGimick();
+                    g.TurnOffColor();
                 }
 
                 dynamo.darkColor = Color.black;
@@ -64,11 +65,13 @@ public class ProgressController : MonoBehaviour
             foreach (Gimicks g in allgimicks)
             {
                 g.DisableGimick();
+                g.BlackColor();
                 if (g == dynamo || g == stretcher)
                 {
                     Debug.Log("aaaa");
                     g.EnableGimick();
                     g.TurnOffColor();
+                    
                 }
             }
         }

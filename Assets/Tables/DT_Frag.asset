@@ -40,9 +40,9 @@ MonoBehaviour:
   - id: Flag_TestGimick_UpFrag
     value: 0
   - id: Flag_TestGimick_DownFrag
-    value: 0
+    value: 1
   - id: Flag_TestGimick_CanTouch
-    value: 0
+    value: 1
   - id: KL_CassetteTape_get
     value: 0
   - id: KL_CassetteTape_002
@@ -52,4 +52,8 @@ MonoBehaviour:
   - id: KL_CassetteTape_004
     value: 0
   - id: KL_CassetteTape_005
+    value: 0
+  - id: Flag_DimpleKey_Obtained
+    value: 0
+  - id: Flag_DimpleKey_Selected
     value: 0
