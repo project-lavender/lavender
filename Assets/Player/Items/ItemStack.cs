@@ -5,21 +5,42 @@ using UnityEngine.UI;
 using TMPro;
 public class ItemStack : MonoBehaviour
 {
+    [System.Serializable]
+    struct ItemSet
+    {
+        public bool enable;
+        public DTItem item;
+        public Items itemComponent;
+        public Image img;
+    }
     [SerializeField] float itemRingLength = 5f;
     [SerializeField] Transform itemIconAnker;
     [SerializeField] GameObject itemIconPrefab;
     [SerializeField] UIcontroller uic;
-    [SerializeField] List<Items> items;
-    [SerializeField] List<Image> itemIcons;
+    [SerializeField] DT_Frag DTfrag;
+    [SerializeField] DT_Item DTitem;
+    [SerializeField] List<ItemSet> itemList = new();
+    [SerializeField] Sprite dummy;
     [SerializeField] TMP_Text itemname;
     [SerializeField] Color selectColor, Offcolor;
     
-    [SerializeField] int rotI = 0,nowitem = 0;
-
-    int itemN = 0;
+    [SerializeField] int nowitem = 0;
+    int EnableNum()
+    {
+        int i = 0;
+        foreach(ItemSet set in itemList)
+        {
+            if(set.enable == true)
+            {
+                i++;
+            }
+        }
+        return i;
+    }
     void LineupItems()
     {
         float angle;
+        int itemN = itemList.Count;
         if (itemN != 0)
         {
             angle = 360f / itemN;
@@ -28,110 +49,154 @@ public class ItemStack : MonoBehaviour
         {
             angle = 360f;
         }
-        for (int i = 0; i < itemN; i++)
+        int i = 0;
+        foreach(ItemSet set in itemList)
         {
-            float rad = Mathf.Deg2Rad * angle * i;
-            itemIcons[i].transform.localPosition = new Vector3(itemRingLength * Mathf.Sin(rad), itemRingLength * Mathf.Cos(rad), 0f);
-            itemIcons[i].color = Offcolor;
+            float rad = Mathf.Deg2Rad * angle * (i - nowitem);
+            set.img.transform.localPosition = new Vector3(itemRingLength * Mathf.Sin(rad), itemRingLength * Mathf.Cos(rad), 0f);
+            set.img.color = Offcolor;
+            if (set.enable)
+            {
+                set.img.sprite = set.itemComponent.itemIcon;
+            }
+            else
+            {
+                set.img.sprite = dummy;
+            }
+            i++;
         }
-        itemIcons[nowitem].color = selectColor;
-        itemname.text = items[nowitem].itemname;
-    }
+        itemList[nowitem].img.color = selectColor;
+        if (itemList[nowitem].enable)
+        {
+            itemname.text = itemList[nowitem].itemComponent.itemname;
+        }
+        else
+        {
+            itemname.text = "???";
+        }
 
-    public void AddItem(GameObject item)
+    }
+    public void DisableItem(string id)
     {
-        if (item == null)
+        //第一段階 idがItemList idに合致するか？ したらリストのフラグを折る
+        
+        for(int i = 0; i < itemList.Count; i++)
         {
-            return;
+            ItemSet set = itemList[i];
+            if (set.item.id == id)
+            {
+                set.enable = false;
+                itemList[i] = set;
+                break;
+            }
         }
-        Items I = item.GetComponent<Items>();
-        items.Add(I);
-        GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker); 
-        //iconobj.transform.SetParent(itemIconAnker);
-        Image iconImg = iconobj.GetComponent<Image>();
-        itemIcons.Add(iconImg);
-        iconImg.sprite = I.itemIcon;
-        itemN += 1;
-        nowitem = itemN - 1;
-        //前のアイテムのフラグを折る
-        if (itemN > 1)
+        RotateItem(1);
+        LineupItems();
+    }
+    public void EnableItem(string id)
+    {
+        for (int i = 0; i < itemList.Count; i++)
         {
-            items[nowitem - 1].SetFrag(false);
+            ItemSet set = itemList[i];
+            if (set.item.id == id)
+            {
+                set.enable = true;
+                itemList[i] = set;
+                //Debug.Log(i);
+                nowitem = i;
+                break;
+            }
         }
-        I.SetFrag(true);
-        RotateItem(-1);
+        RotateItem(0);
         LineupItems();
     }
 
     void RotateItem(int r)
     {
-        float angle = 0f;
-        items[nowitem].SetFrag(false);
-        if (itemN != 0)
+        //r...進める数
+        int itemN = itemList.Count;
+        
+        if (nowitem == 0 && r < 0)
         {
-            angle = 360f / itemN;
+            //nowitem 最前列 で後ろに行きたいときはリストの最後尾にジャンプ
+            nowitem = itemN - 1;
+        }
+        else if (nowitem == itemN - 1 && r > 0)
+        {
+            //nowitem 最後尾 で前に行きたいときは初めにジャンプ
+            nowitem = 0;
         }
         else
         {
-            r = 0;
+            nowitem += r;
         }
-        rotI += r;
-        nowitem = Mathf.Abs(rotI) % itemN;
-
-        if (itemN < 2)
-        {
-            nowitem = 0;
-        }
-        else if (rotI > 0)
-        {
-            nowitem = itemN - nowitem;
-            if (nowitem == itemN)
-            {
-                nowitem = 0;
-            }
-        }
-        for (int i = 0; i < itemN; i++)
-        {
-            float rad = Mathf.Deg2Rad * angle * (i + rotI);
-            Vector2 Tfunc = new(Mathf.Cos(rad), Mathf.Sin(rad));
-            itemIcons[i].transform.localPosition = new Vector3(itemRingLength * Tfunc.y, itemRingLength * Tfunc.x, 0f);
-            itemIcons[i].color = Offcolor;
-            //itemIcons[i].transform.localRotation = Quaternion.Euler(Vector3.zero);
-            //itemIconAnker.rotation = Quaternion.Euler(angle * Vector3.forward);
-        }
-        itemIcons[nowitem].color = selectColor;
-        itemname.text = items[nowitem].itemname;
-        items[nowitem].SetFrag(true);
-        //Debug.Log(items[nowitem].name);
-
     }
     // Start is called before the first frame update
-    /*
+    
     void Start()
     {
-        //iconN = itemIcons.Count;
-        //itemN = items.Count;
+        int x = 0;
+        foreach(DTItem dti in DTitem.ItemsList)
+        {
+            //オブジェを追加
+            GameObject i = Instantiate(dti.item);
+            DTItem tItem = new();
+            tItem.id = dti.id;
+            tItem.item = i;
+            //items.Add(tItem);
+            //アイコンを追加
+            Items itemComp = i.GetComponent<Items>();
+            GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker);
+            Image iconImg = iconobj.GetComponent<Image>();
+            Sprite sprite = itemComp.itemIcon;
+            iconImg.sprite = sprite;
+            //itemIcons.Add(iconImg);
+
+            ItemSet set = new();
+            set.enable = false;
+            set.item = tItem;
+            set.img = iconImg;
+            set.itemComponent = itemComp;
+            itemList.Add(set);
+            x++;
+        }
+        Debug.Log(EnableNum());
+        LineupItems();
     }
-    */
+    
     // Update is called once per frame
     void Update()
     {
-        if (items.Count > 0)
+        /*
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            DisableItem(itemList[nowitem].item.id);
+            //LineupItems();
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            EnableItem("KL_CassetteTape_003_Obtained");
+        }*/
+        if (EnableNum() > 0)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                RotateItem(-1);
+                RotateItem(1);
+                LineupItems();
 
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
-                RotateItem(+1);
+                RotateItem(-1);
+                LineupItems();
             }
-            else if (Input.GetKeyDown(KeyCode.F))
+            else if (itemList[nowitem].enable && Input.GetKeyDown(KeyCode.F))
             {
-                string id = items[nowitem].UseItem();
+                Items itemComponent = itemList[nowitem].itemComponent;//items[nowitem].item.GetComponent<Items>();
+                string id = itemComponent.UseItem();
                 Debug.Log("Use item " + id);
                 //アイテムテキスト表示
+
                 uic.ActiveUI(id);
             }
         }

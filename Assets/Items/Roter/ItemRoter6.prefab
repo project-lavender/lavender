@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemname: Roter6
   useTextID: TXT_TestItem_002
-  myfrag: Flag_Rotor_6h_Obtained
+  myfrag: Flag_Rotor_6h_Selected
   itemIcon: {fileID: 21300000, guid: 77dc35148d7879241ad25ee5142e5cf2, type: 3}
   frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}

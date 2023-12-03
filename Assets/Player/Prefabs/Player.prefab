@@ -620,6 +620,14 @@ MonoBehaviour:
   itemIconAnker: {fileID: 0}
   itemIconPrefab: {fileID: 8120506545867084935, guid: 5e949a05fce8df240b9881ac802ee3f5, type: 3}
   uic: {fileID: 2095900640900647336}
+  ItemFrag:
+  - Flag_Rotor_4h_Obtained
+  - Flag_Rotor_6h_Obtained
+  - Flag_Rotor_8h_Obtained
+  - Flag_DimpleKey_Obtained
+  - Flag_TestTube_Obtained
+  DTfrag: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
+  DTimtem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
   items: []
   itemIcons: []
   itemname: {fileID: 0}
@@ -696,7 +704,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.07
+  near clip plane: 0.01
   far clip plane: 100
   field of view: 60.000004
   orthographic: 0
@@ -842,7 +850,7 @@ MonoBehaviour:
   itemStack: {fileID: 4767323125235869803}
   dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
   demoPlayer: {fileID: 0}
-  interactTrigger: 0
+  touchingOnother: 0
   gimicks: {fileID: 0}
 --- !u!1001 &3565668104991191244
 PrefabInstance:

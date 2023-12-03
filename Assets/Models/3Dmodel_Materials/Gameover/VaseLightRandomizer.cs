@@ -7,8 +7,8 @@ using static Unity.Mathematics.math;
 public class VaseLightRandomizer : MonoBehaviour
 {
     [SerializeField] float amp = 0.5f, freq = 1f, c = 0.01f;
-    float t = 0f;
-    Light light;
+    private float t = 0f;
+    private Light light;
     // Start is called before the first frame update
     void Start()
     {

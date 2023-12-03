@@ -76,7 +76,7 @@ MonoBehaviour:
     frag: 
     textID: TXT_CassetteTape_2_001
     demoID: 
-    itemID: IT_CassetteTape2
+    itemID: KL_CassetteTape_002_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
     death: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
     frag: 
     textID: TXT_CassetteTape_3_001
     demoID: 
-    itemID: IT_CassetteTape3
+    itemID: KL_CassetteTape_003_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
     death: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
     frag: 
     textID: TXT_CassetteTape_4_001
     demoID: 
-    itemID: IT_CassetteTape4
+    itemID: KL_CassetteTape_004_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
     death: 1
@@ -106,7 +106,7 @@ MonoBehaviour:
     frag: 
     textID: TXT_CassetteTape_5_001
     demoID: 
-    itemID: IT_CassetteTape5
+    itemID: KL_CassetteTape_005_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
     death: 1
@@ -212,8 +212,8 @@ MonoBehaviour:
     frag: Flag_Memo_02_read
     textID: TXT_Roter4_get
     demoID: 
-    itemID: r4
-    upFrag: 
+    itemID: Flag_Rotor_4h_Obtained
+    upFrag: Flag_Rotor_4h_Obtained
     downFrag: 
     death: 1
     overWriteProgress: -1
@@ -231,8 +231,8 @@ MonoBehaviour:
     frag: Flag_Memo_02_read
     textID: TXT_Roter6_get
     demoID: 
-    itemID: r6
-    upFrag: 
+    itemID: Flag_Rotor_6h_Obtained
+    upFrag: Flag_Rotor_6h_Obtained
     downFrag: 
     death: 1
     overWriteProgress: -1
@@ -250,8 +250,8 @@ MonoBehaviour:
     frag: Flag_Memo_02_read
     textID: TXT_Roter8_get
     demoID: 
-    itemID: r8
-    upFrag: 
+    itemID: Flag_Rotor_8h_Obtained
+    upFrag: Flag_Rotor_8h_Obtained
     downFrag: 
     death: 1
     overWriteProgress: -1
@@ -294,10 +294,19 @@ MonoBehaviour:
     overWriteProgress: -1
   DimpleKey:
   - progress: -1
+    frag: Flag_DimpleKey_Obtained
+    textID: TXT_DimpleKey_03
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_Memo_02_read
     textID: TXT_DimpleKey_02
     demoID: 
-    itemID: IT_DimpleKey
+    itemID: Flag_DimpleKey_Obtained
     upFrag: Flag_DimpleKey_Obtained
     downFrag: 
     death: 0
@@ -305,6 +314,88 @@ MonoBehaviour:
   - progress: -1
     frag: 
     textID: TXT_DimpleKey_01
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  Centrifuge:
+  - progress: -1
+    frag: Flag_CloudySolution_Obtained
+    textID: TXT_Centrifuge_08
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_BlueSolution_Obtained
+    textID: TXT_Centrifuge_08
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_TestTube_Obtained
+    textID: TXT_Centrifuge_07
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_RotorSet
+    textID: TXT_Centrifuge_06
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_4h_Selected
+    textID: TXT_Centrifuge_03
+    demoID: SetRoter4
+    itemID: 
+    upFrag: Flag_RotorSet
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_6h_Selected
+    textID: TXT_Centrifuge_04
+    demoID: SetRoter6
+    itemID: 
+    upFrag: Flag_RotorSet
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_8h_Selected
+    textID: TXT_Centrifuge_05
+    demoID: SetRoter8
+    itemID: 
+    upFrag: Flag_RotorSet
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_02_read
+    textID: TXT_Centrifuge_02
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_Centrifuge_01
     demoID: 
     itemID: 
     upFrag: 

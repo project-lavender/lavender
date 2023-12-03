@@ -58,32 +58,24 @@ public class UIcontroller : MonoBehaviour
         GameObject[] itemchosen = new GameObject[4];
         if (dT.choise0 != "")
         {
-            itemchosen[0] = dtitem.FindItem(dT.choise0);
+            itemStack.EnableItem(dT.choise0);
             demoPlayer.DemoPlay(dT.choise0);
         }
         if(dT.choise1 != "")
         {
-            itemchosen[1] = dtitem.FindItem(dT.choise1);
+            itemStack.EnableItem(dT.choise1);
             demoPlayer.DemoPlay(dT.choise1);
         }
         if (dT.choise2 != "")
         {
-            itemchosen[2] = dtitem.FindItem(dT.choise2);
+            itemStack.EnableItem(dT.choise2);
             demoPlayer.DemoPlay(dT.choise2);
         }
         if (dT.choise3 != "")
         {
-            itemchosen[3] = dtitem.FindItem(dT.choise3);
+            itemStack.EnableItem(dT.choise3);
             demoPlayer.DemoPlay(dT.choise3);
         }
-        foreach(GameObject i in itemchosen)
-        {
-            if (i != null)
-            {
-                itemStack.AddItem(i);
-            }
-        }
-        
     }
 
     //テキストダイアログのページ送り
