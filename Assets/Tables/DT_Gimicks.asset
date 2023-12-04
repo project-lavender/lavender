@@ -113,7 +113,7 @@ MonoBehaviour:
     overWriteProgress: -1
   KasetPlayer:
   - progress: -1
-    frag: KL_CassetteTape_002
+    frag: KL_CassetteTape_002_Selected
     textID: TXT_CassettePlayer_T2
     demoID: 
     itemID: 
@@ -122,7 +122,7 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: KL_CassetteTape_003
+    frag: KL_CassetteTape_003_Selected
     textID: TXT_CassettePlayer_T3
     demoID: 
     itemID: 
@@ -131,7 +131,7 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: KL_CassetteTape_004
+    frag: KL_CassetteTape_004_Selected
     textID: TXT_CassettePlayer_T4
     demoID: 
     itemID: 
@@ -140,7 +140,7 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: KL_CassetteTape_005
+    frag: KL_CassetteTape_005_Selected
     textID: TXT_CassettePlayer_T5
     demoID: 
     itemID: 
@@ -269,8 +269,8 @@ MonoBehaviour:
     frag: Flag_DimpleKey_Selected
     textID: TXT_Freezer_03
     demoID: freezerOpen
-    itemID: 
-    upFrag: 
+    itemID: Flag_TestTube_Obtained
+    upFrag: Flag_TestTube_Obtained
     downFrag: 
     death: 0
     overWriteProgress: -1
@@ -340,15 +340,6 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: Flag_TestTube_Obtained
-    textID: TXT_Centrifuge_07
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: Flag_TestTube_Obtained
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
     frag: Flag_RotorSet
     textID: TXT_Centrifuge_06
     demoID: 
@@ -358,12 +349,30 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
+    frag: Flag_Rotor_4h_Set
+    textID: TXT_Roter4_get
+    demoID: GetRoter4
+    itemID: Flag_Rotor_4h_Obtained
+    upFrag: 
+    downFrag: Flag_Rotor_4h_Set
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_Rotor_4h_Selected
     textID: TXT_Centrifuge_03
     demoID: SetRoter4
     itemID: 
-    upFrag: Flag_RotorSet
-    downFrag: 
+    upFrag: Flag_Rotor_4h_Set
+    downFrag: Flag_Rotor_4h_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_6h_Set
+    textID: TXT_Roter6_get
+    demoID: GetRoter6
+    itemID: Flag_Rotor_6h_Obtained
+    upFrag: 
+    downFrag: Flag_Rotor_6h_Set
     death: 0
     overWriteProgress: -1
   - progress: -1
@@ -371,8 +380,17 @@ MonoBehaviour:
     textID: TXT_Centrifuge_04
     demoID: SetRoter6
     itemID: 
-    upFrag: Flag_RotorSet
-    downFrag: 
+    upFrag: Flag_Rotor_6h_Set
+    downFrag: Flag_Rotor_6h_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_8h_Set
+    textID: TXT_Roter8_get
+    demoID: GetRoter8
+    itemID: Flag_Rotor_8h_Obtained
+    upFrag: 
+    downFrag: Flag_Rotor_8h_Set
     death: 0
     overWriteProgress: -1
   - progress: -1
@@ -380,8 +398,17 @@ MonoBehaviour:
     textID: TXT_Centrifuge_05
     demoID: SetRoter8
     itemID: 
-    upFrag: Flag_RotorSet
-    downFrag: 
+    upFrag: Flag_Rotor_8h_Set
+    downFrag: Flag_Rotor_8h_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_TestTube_Obtained
+    textID: TXT_Centrifuge_07
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Obtained
     death: 0
     overWriteProgress: -1
   - progress: -1

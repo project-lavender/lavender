@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemname: Yoeki_W
   useTextID: TXT_ItemName_CassetteTape_4
-  myfrag: KL_CassetteTape_004
+  myfrag: KL_CassetteTape_004_Selected
   itemIcon: {fileID: 21300000, guid: 4e20a12ff7f203f4290e957181c94998, type: 3}
   frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}

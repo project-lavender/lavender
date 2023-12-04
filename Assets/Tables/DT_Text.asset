@@ -591,3 +591,11 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_TestTube_ItemUse
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3060\u3000\u9060\u5FC3\u5206\u96E2\u6A5F\u306B\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 

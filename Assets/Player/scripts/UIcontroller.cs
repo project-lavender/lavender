@@ -55,7 +55,8 @@ public class UIcontroller : MonoBehaviour
             ActiveUI(dT.nextText);
         }
         //アイテム入手イベントはここから
-        GameObject[] itemchosen = new GameObject[4];
+        //
+        //GameObject[] itemchosen = new GameObject[4];
         if (dT.choise0 != "")
         {
             itemStack.EnableItem(dT.choise0);

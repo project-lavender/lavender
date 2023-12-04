@@ -67,11 +67,12 @@ public class Interacter : MonoBehaviour
                 uictr.ActiveUI(textid);
 
                 //ƒAƒCƒeƒ€’Ç‰Á
-                Debug.Log("itemID->" + dT.itemID);
+                //Debug.Log("itemID->" + dT.itemID);
                 //GameObject i = dtitem.FindItem(dT.itemID);
                 //itemStack.AddItem(i);
                 itemStack.EnableItem(dT.itemID);
                 itemStack.DisableItem(dT.downFrag);
+
                 //gimicks.TurnOffColor();
                 //gimicks = null;
 

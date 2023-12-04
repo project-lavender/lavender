@@ -13,7 +13,7 @@ public class ItemStack : MonoBehaviour
         public Items itemComponent;
         public Image img;
     }
-    [SerializeField] float itemRingLength = 5f;
+    [SerializeField] float itemUIdistance = 5f;
     [SerializeField] Transform itemIconAnker;
     [SerializeField] GameObject itemIconPrefab;
     [SerializeField] UIcontroller uic;
@@ -39,53 +39,49 @@ public class ItemStack : MonoBehaviour
     }
     void LineupItems()
     {
-        float angle;
-        int itemN = itemList.Count;
-        if (itemN != 0)
-        {
-            angle = 360f / itemN;
-        }
-        else
-        {
-            angle = 360f;
-        }
         int i = 0;
         foreach(ItemSet set in itemList)
         {
-            float rad = Mathf.Deg2Rad * angle * (i - nowitem);
-            set.img.transform.localPosition = new Vector3(itemRingLength * Mathf.Sin(rad), itemRingLength * Mathf.Cos(rad), 0f);
+            //set　を配置
+            set.img.transform.localPosition = new Vector3(itemUIdistance * i, 0f, 0f);
             set.img.color = Offcolor;
+            //アイテムを入手した
             if (set.enable)
             {
                 set.img.sprite = set.itemComponent.itemIcon;
+                DTfrag.SetVal(set.itemComponent.myfrag, false);
             }
             else
             {
+                //していないならダミー画像
                 set.img.sprite = dummy;
+                itemname.text = "???";
             }
             i++;
         }
+        //選択中アイテム
         itemList[nowitem].img.color = selectColor;
         if (itemList[nowitem].enable)
         {
             itemname.text = itemList[nowitem].itemComponent.itemname;
-        }
-        else
-        {
-            itemname.text = "???";
-        }
+            DTfrag.SetVal(itemList[nowitem].itemComponent.myfrag, true);
 
+        }
     }
     public void DisableItem(string id)
     {
         //第一段階 idがItemList idに合致するか？ したらリストのフラグを折る
-        
+        if (id == "")
+        {
+            return;
+        }
         for(int i = 0; i < itemList.Count; i++)
         {
             ItemSet set = itemList[i];
             if (set.item.id == id)
             {
                 set.enable = false;
+                DTfrag.SetVal(set.itemComponent.myfrag, false);
                 itemList[i] = set;
                 break;
             }
@@ -95,6 +91,10 @@ public class ItemStack : MonoBehaviour
     }
     public void EnableItem(string id)
     {
+        if (id == "")
+        {
+            return;
+        }
         for (int i = 0; i < itemList.Count; i++)
         {
             ItemSet set = itemList[i];
@@ -102,12 +102,11 @@ public class ItemStack : MonoBehaviour
             {
                 set.enable = true;
                 itemList[i] = set;
-                //Debug.Log(i);
-                nowitem = i;
-                break;
+                Debug.Log(i);
+
+                RotateItem(i - nowitem);
             }
         }
-        RotateItem(0);
         LineupItems();
     }
 
@@ -176,18 +175,19 @@ public class ItemStack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             EnableItem("KL_CassetteTape_003_Obtained");
-        }*/
+        }
+        */
         if (EnableNum() > 0)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                RotateItem(1);
+                RotateItem(-1);
                 LineupItems();
 
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
-                RotateItem(-1);
+                RotateItem(1);
                 LineupItems();
             }
             else if (itemList[nowitem].enable && Input.GetKeyDown(KeyCode.F))

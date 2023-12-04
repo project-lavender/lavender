@@ -75,7 +75,13 @@ MonoBehaviour:
     value: 0
   - id: Flag_BlueSolution_Obtained
     value: 0
-  - id: Flag_RotorSet
+  - id: Flag_Rotor_4h_Set
+    value: 0
+  - id: Flag_Rotor_6h_Set
+    value: 0
+  - id: Flag_Rotor_8h_Set
     value: 0
   - id: Flag_TestTube_Obtained
+    value: 0
+  - id: Flag_TestTube_Selected
     value: 0

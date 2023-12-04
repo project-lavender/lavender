@@ -75,6 +75,7 @@ public class Gimicks : MonoBehaviour
             {
                 Debug.Log("Do Event " + gameObject.name);
                 //textid = g.textID;
+                frags.SetVal(g.itemID, true);
                 frags.SetVal(g.upFrag, true);
                 frags.SetVal(g.downFrag, false);
                 int p = g.overWriteProgress;

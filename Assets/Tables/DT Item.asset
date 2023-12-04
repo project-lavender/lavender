@@ -29,3 +29,5 @@ MonoBehaviour:
     item: {fileID: 1038337578043533058, guid: 459991d2d23ee1844b66c923d4eb7532, type: 3}
   - id: Flag_DimpleKey_Obtained
     item: {fileID: 920562781242114877, guid: b0e1f1f809651724a837c03bac2a6323, type: 3}
+  - id: Flag_TestTube_Obtained
+    item: {fileID: 4152621255302381244, guid: bb41a37eb7cea9548847a4121f477f2e, type: 3}
