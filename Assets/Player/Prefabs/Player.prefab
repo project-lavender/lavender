@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9029233252532112218}
   - component: {fileID: 2694801402056874853}
+  - component: {fileID: 6920445933940234105}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -347,6 +348,22 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1180605790216543207}
+--- !u!114 &6920445933940234105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7881103191903185500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  AutoEnableInputs: 1
+  XYAxis: {fileID: 6177824982289524234, guid: 799fecd50ffa655429bc32bd124dd6f6, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!1 &8007964221798074061
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,13 +373,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4020231014645416042}
+  - component: {fileID: 32616767431670812}
+  - component: {fileID: 2190357012579119297}
   - component: {fileID: -5955244893337248977}
   - component: {fileID: 8511257537012125438}
   - component: {fileID: 7761597855725295765}
   - component: {fileID: 6724844463670009853}
-  - component: {fileID: 32616767431670812}
-  - component: {fileID: 2190357012579119297}
   - component: {fileID: 4767323125235869803}
+  - component: {fileID: 1901522790197371626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -389,6 +407,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &32616767431670812
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007964221798074061}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0.15
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!136 &2190357012579119297
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007964221798074061}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.11
+  m_Height: 1.4
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.61, z: 0}
 --- !u!95 &-5955244893337248977
 Animator:
   serializedVersion: 5
@@ -554,56 +622,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e570d3e431c7874b878412e4e99f79d, type: 3}
   loopse:
   - {fileID: 8300000, guid: 680ae349091602549a3b9cc82851a624, type: 3}
---- !u!54 &32616767431670812
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8007964221798074061}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0.15
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!136 &2190357012579119297
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8007964221798074061}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.11
-  m_Height: 1.4
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.61, z: 0}
 --- !u!114 &4767323125235869803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,25 +634,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc584dcd0ebff5940bf20a20e3a6f8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemRingLength: 20
+  itemUIdistance: 5
   itemIconAnker: {fileID: 0}
   itemIconPrefab: {fileID: 8120506545867084935, guid: 5e949a05fce8df240b9881ac802ee3f5, type: 3}
   uic: {fileID: 2095900640900647336}
-  ItemFrag:
-  - Flag_Rotor_4h_Obtained
-  - Flag_Rotor_6h_Obtained
-  - Flag_Rotor_8h_Obtained
-  - Flag_DimpleKey_Obtained
-  - Flag_TestTube_Obtained
   DTfrag: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
-  DTimtem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
-  items: []
-  itemIcons: []
+  DTitem: {fileID: 0}
+  itemList: []
+  dummy: {fileID: 0}
   itemname: {fileID: 0}
   selectColor: {r: 0, g: 0, b: 0, a: 0}
   Offcolor: {r: 0, g: 0, b: 0, a: 0}
-  rotI: 0
   nowitem: 0
+--- !u!114 &1901522790197371626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007964221798074061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 96b493f4c28c49d4d90b56efa07b5b23, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8946203826881873724
 GameObject:
   m_ObjectHideFlags: 0

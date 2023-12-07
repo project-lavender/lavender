@@ -1,0 +1,45 @@
+{
+    "name": "CameraXY",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "1e02d6d9-1ded-4717-a6f9-a1221abbd47d",
+            "actions": [
+                {
+                    "name": "CamXY",
+                    "type": "Value",
+                    "id": "46b10c6c-e25b-46ee-91f5-20172445a23c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "617d8d03-f84b-4f96-bd91-5657d9e320ed",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CamXY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad9981a7-ce6c-4a87-96a2-b38c6a5d7362",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=13,y=13)",
+                    "groups": "",
+                    "action": "CamXY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

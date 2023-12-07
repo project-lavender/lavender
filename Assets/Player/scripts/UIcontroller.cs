@@ -28,7 +28,7 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] DemoPlayer demoPlayer;
 
     [SerializeField] float voiceSpeed = 0.2f,finishWait = 2.5f;
-
+    private Lavender action;
     //
     int beforeOpenedID = -1;
     [System.Serializable]
@@ -319,14 +319,15 @@ public class UIcontroller : MonoBehaviour
         pov.m_HorizontalAxis.m_MaxSpeed = nowvec.x;
         pov.m_VerticalAxis.m_MaxSpeed = nowvec.y;
         demoPlayer = FindAnyObjectByType<DemoPlayer>();
-       // WriteSence();
-
+        // WriteSence();
+        action = new Lavender();
+        action.Enable();
     }
     // Update is called once per frame
     void Update()
     {
         //Esc
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (action.UI.finishUI.triggered){
 
             bool allNonActive = true;
             foreach(RectTransform rect in UIs)
@@ -342,6 +343,10 @@ public class UIcontroller : MonoBehaviour
             {
                CloseUIs();
             }
+        }
+        if (action.UI.CloseUI.triggered)
+        {
+            CloseUIs();
         }
     }
 }

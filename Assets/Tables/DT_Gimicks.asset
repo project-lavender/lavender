@@ -73,7 +73,7 @@ MonoBehaviour:
     overWriteProgress: -1
   CassetteTapeA:
   - progress: -1
-    frag: 
+    frag: Flag_Memo_02_read
     textID: TXT_CassetteTape_2_001
     demoID: 
     itemID: KL_CassetteTape_002_Obtained
@@ -81,35 +81,98 @@ MonoBehaviour:
     downFrag: 
     death: 1
     overWriteProgress: -1
-  CassetteTapeB:
   - progress: -1
     frag: 
+    textID: TXT_CassetteTape_2_005
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  CassetteTapeB:
+  - progress: -1
+    frag: KL_CassetteTape_003_Obtained
+    textID: TXT_CassetteTape_3_006
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_02_read
     textID: TXT_CassetteTape_3_001
     demoID: 
     itemID: KL_CassetteTape_003_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
-    death: 1
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_3_005
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
     overWriteProgress: -1
   CassetteTapeC:
   - progress: -1
-    frag: 
+    frag: KL_CassetteTape_004_Obtained
+    textID: TXT_CassetteTape_4_007
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_02_read
     textID: TXT_CassetteTape_4_001
     demoID: 
     itemID: KL_CassetteTape_004_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
-    death: 1
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_4_006
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
     overWriteProgress: -1
   CassetteTapeD:
   - progress: -1
-    frag: 
+    frag: KL_CassetteTape_005_Obtained
+    textID: TXT_CassetteTape_5_006
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_02_read
     textID: TXT_CassetteTape_5_001
     demoID: 
     itemID: KL_CassetteTape_005_Obtained
     upFrag: KL_CassetteTape_get
     downFrag: 
-    death: 1
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_CassetteTape_5_005
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
     overWriteProgress: -1
   KasetPlayer:
   - progress: -1
@@ -358,15 +421,6 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: Flag_Rotor_4h_Selected
-    textID: TXT_Centrifuge_03
-    demoID: SetRoter4
-    itemID: 
-    upFrag: Flag_Rotor_4h_Set
-    downFrag: Flag_Rotor_4h_Obtained
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
     frag: Flag_Rotor_6h_Set
     textID: TXT_Roter6_get
     demoID: GetRoter6
@@ -376,21 +430,30 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: Flag_Rotor_6h_Selected
-    textID: TXT_Centrifuge_04
-    demoID: SetRoter6
-    itemID: 
-    upFrag: Flag_Rotor_6h_Set
-    downFrag: Flag_Rotor_6h_Obtained
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
     frag: Flag_Rotor_8h_Set
     textID: TXT_Roter8_get
     demoID: GetRoter8
     itemID: Flag_Rotor_8h_Obtained
     upFrag: 
     downFrag: Flag_Rotor_8h_Set
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_4h_Selected
+    textID: TXT_Centrifuge_03
+    demoID: SetRoter4
+    itemID: 
+    upFrag: Flag_Rotor_4h_Set
+    downFrag: Flag_Rotor_4h_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_6h_Selected
+    textID: TXT_Centrifuge_04
+    demoID: SetRoter6
+    itemID: 
+    upFrag: Flag_Rotor_6h_Set
+    downFrag: Flag_Rotor_6h_Obtained
     death: 0
     overWriteProgress: -1
   - progress: -1

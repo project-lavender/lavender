@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
+using UnityEngine.InputSystem;
 public class RierMover : MonoBehaviour
 {
     [SerializeField]
     private TextAsset param;
-    //private CharacterController ctr;
     private Rigidbody rb;
-    /*
-    [SerializeField]
-    private float PL_cam_height = 2.2f;
-    [SerializeField]
-    private float PL_light_intencity = 10f;
-    */
     [SerializeField]
     private float PL_walk = 3.0f;
     [SerializeField]
@@ -41,7 +35,11 @@ public class RierMover : MonoBehaviour
     [SerializeField]
     private List<string[]> p = new();
     Light l;
-    [SerializeField] Animator anm,anmmesh;
+    [SerializeField] Animator anm, anmmesh;
+
+    //inputSYstem
+    [SerializeField] private Lavender action;
+
 
     void NoiseSet(int i)
     {
@@ -65,6 +63,78 @@ public class RierMover : MonoBehaviour
 
     }
 
+    void Move(InputAction.CallbackContext callback)
+    {
+        if (callback.started && noisemode == 0)
+        {
+            noisemode = 1;
+            c = PL_walk;
+            anm.SetBool("walk", true);
+            anmmesh.SetBool("walk", true);
+            anm.SetBool("crouch", false);
+            anmmesh.SetBool("crouch", false);
+            anmmesh.SetFloat("x", h);
+            anmmesh.SetFloat("y", v);
+        }
+        else if (callback.performed)
+        {
+            Vector2 inputVal = action.Player.Move.ReadValue<Vector2>();
+            h = inputVal.x;
+            v = inputVal.y;
+        }
+        else if (callback.canceled)
+        {
+            noisemode = 0;
+            c = 0f;
+            h = 0f;
+            v = 0f;
+            anm.SetBool("walk", false);
+            anm.SetBool("run", false);
+            anmmesh.SetBool("walk", false);
+            anmmesh.SetBool("run", false);
+        }
+    }
+    void Crouch(InputAction.CallbackContext callback)
+    {
+
+        //しゃがみ状態なら
+        if (callback.started)
+        {
+            noisemode = 0;
+            c = 0f;
+            anm.SetBool("run", false);
+            anmmesh.SetBool("run", false);
+            anm.SetBool("walk", false);
+            anmmesh.SetBool("walk", false);
+            anm.SetBool("crouch", true);
+            anmmesh.SetBool("crouch", true);
+        }
+        else if (callback.canceled)
+        {
+            c = PL_walk;
+            anm.SetBool("crouch", false);
+            anmmesh.SetBool("crouch", false);
+        }
+    }
+    void Run(InputAction.CallbackContext callback)
+    {
+        //歩いている
+        if (c != 0f && callback.started)
+        {
+            noisemode = 2;
+            anm.SetBool("run", true);
+            anmmesh.SetBool("run", true);
+            c = PL_run;
+
+        }
+        else if (callback.canceled)
+        {
+            //しゃがみから離しても歩かない
+            noisemode = 1;
+            anm.SetBool("run", false);
+            anmmesh.SetBool("run", false);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -73,8 +143,18 @@ public class RierMover : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         mcam = Camera.main.transform;
         anm = GetComponent<Animator>();
+        //コールバック設定
+        action = new Lavender();
+        action.Player.Move.started += Move;
+        action.Player.Move.performed +=Move;
+        action.Player.Move.canceled += Move;
+        action.Player.Crouch.started += Crouch;
+        action.Player.Crouch.canceled += Crouch;
+        action.Player.Run.started += Run;
+        action.Player.Run.canceled += Run;
+        action.Enable();
+
         nz = vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>();
-        //anmmesh = GetComponentInChildren<Animator>();
         l = GetComponentInChildren<Light>();
         string ptext = param.text;
         string[] enterspl = ptext.Split("\n", System.StringSplitOptions.None);
@@ -82,83 +162,20 @@ public class RierMover : MonoBehaviour
             p.Add(s.Split(",", System.StringSplitOptions.None));
         }
         c = PL_walk;
-        //PL_cam_height = float.Parse( p[1][1]);
-        //PL_light_intencity = float.Parse( p[2][1]);
         h = 0f;
         v = 0f;
-        //ctr.Move((Camera.main.transform.forward * v + Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        //ctr.height = PL_cam_height;
+
         Vector3 camh = Vector3.up * Mathf.Lerp(0f, crouchCamHeight, highorCrouch);
         vc.transform.localPosition = camh;
-        //l.intensity = PL_light_intencity;
-
-        
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
         if (nownoise != noisemode && lt<leapTime)
         {
             NoiseSet(noisemode);
         }
-        //移動入力がない
-        if ((h * h + v * v) <  0.01f)
-        {
-            noisemode = 0;
-            c = 0f;
-            anm.SetBool("walk", false);
-            anm.SetBool("run", false);
-            anmmesh.SetBool("walk", false);
-            anmmesh.SetBool("run", false);
-            //しゃがみ状態なら
-            if (Input.GetKey(KeyCode.LeftControl))
-            {
-                noisemode = 0;
-                anm.SetBool("run", false);
-                anmmesh.SetBool("run", false);
-                anm.SetBool("walk", false);
-                anmmesh.SetBool("walk", false);
-                anm.SetBool("crouch", true);
-                anmmesh.SetBool("crouch", true);
-            }
-            else
-            {
-                anm.SetBool("crouch", false);
-                anmmesh.SetBool("crouch", false);
-            }
-        }
-        else
-        {
-            c = PL_walk;
-            noisemode = 1;
-            anm.SetBool("walk", true);
-            anmmesh.SetBool("walk", true);
-            anmmesh.SetFloat("x", h);
-            anmmesh.SetFloat("y", v);
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                anm.SetBool("run", true);
-                anmmesh.SetBool("run", true);
-                c = PL_run;
-                noisemode = 2;
-            }
-            else
-            {
-                anm.SetBool("run", false);
-                anmmesh.SetBool("run", false);
-                
-                //rb.velocity = Vector3.Scale(Vector3.up, rb.velocity);
-            }
-            anm.SetBool("crouch", false);
-            anmmesh.SetBool("crouch", false);
-            //ctr.Move((Camera.main.transform.forward * v + Camera.main.transform.right * h + Vector3.down * g) * c * Time.deltaTime);
-            
-            
-        }
-        
         Vector3 lookVec = Camera.main.transform.rotation.eulerAngles;
         lookVec = new Vector3(0f, lookVec.y, 0f);
         anmmesh.transform.rotation = Quaternion.Euler(lookVec);

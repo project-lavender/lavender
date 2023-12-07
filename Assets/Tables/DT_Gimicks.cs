@@ -85,7 +85,7 @@ public class DT_Gimicks : ScriptableObject
         else if (listname == nameof(MemoC)) {
             return MemoC;
         }
-        else if(listname == nameof(MemoD))
+        else if (listname == nameof(MemoD))
         {
             return MemoD;
         }

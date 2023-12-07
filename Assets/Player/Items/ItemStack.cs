@@ -25,6 +25,8 @@ public class ItemStack : MonoBehaviour
     [SerializeField] Color selectColor, Offcolor;
     
     [SerializeField] int nowitem = 0;
+
+    private Lavender action;
     int EnableNum()
     {
         int i = 0;
@@ -161,6 +163,8 @@ public class ItemStack : MonoBehaviour
         }
         Debug.Log(EnableNum());
         LineupItems();
+        action = new Lavender();
+        action.Enable();
     }
     
     // Update is called once per frame
@@ -179,18 +183,18 @@ public class ItemStack : MonoBehaviour
         */
         if (EnableNum() > 0)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (action.UI.ItemSelectBack.triggered)
             {
                 RotateItem(-1);
                 LineupItems();
 
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (action.UI.ItemSelectNext.triggered)
             {
                 RotateItem(1);
                 LineupItems();
             }
-            else if (itemList[nowitem].enable && Input.GetKeyDown(KeyCode.F))
+            else if (itemList[nowitem].enable && action.UI.UseItem.triggered)
             {
                 Items itemComponent = itemList[nowitem].itemComponent;//items[nowitem].item.GetComponent<Items>();
                 string id = itemComponent.UseItem();

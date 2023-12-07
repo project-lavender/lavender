@@ -207,8 +207,16 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CassetteTape_2_005
+    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060\u3000\u3088\u304F\u304A\u7236\u3055\u3093\u304C\u7814\u7A76\u306B\u3064\u3044\u3066\u9332\u97F3\u3057\u3066\u3044\u305F\n\u4F55\u304C\u8A18\u9332\u3055\u308C\u3066\u3044\u308B\u306E\u3060\u308D\u3046\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_CassetteTape_3_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    text: "\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u5165\u3063\u3066\u3044\u308B"
     ui: 2
     nextText: TXT_CassetteTape_3_002
     choise0: 
@@ -239,8 +247,24 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CassetteTape_3_005
+    text: "\u6551\u6025\u7BB1\u3060\u3000\u304B\u306A\u308A\u672C\u683C\u7684\u3060\n\u306A\u306B\u304B\u5F79\u7ACB\u3064\u3082\u306E\u306F\u306A\u3044\u304B\u306A\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_3_006
+    text: "\u6551\u6025\u7BB1\u3060\u3000\u304B\u306A\u308A\u672C\u683C\u7684\u3060\u304C\u3001\u5F79\u7ACB\u3061\u305D\u3046\u306A\u3082\u306E\u306F\u306A\u3044"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_CassetteTape_4_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    text: "1? \u5199\u771F\u7ACB\u3066\u306E\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u96A0\u3055\u308C\u3066\u3042\u3063\u305F"
     ui: 2
     nextText: TXT_CassetteTape_4_002
     choise0: 
@@ -279,8 +303,32 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CassetteTape_4_006
+    text: "\u5199\u771F\u7ACB\u3066\u3060\u3000\u79C1\u3068\u304A\u7236\u3055\u3093\u304C\u5199\u3063\u3066\u3044\u308B"
+    ui: 2
+    nextText: TXT_CassetteTape_4_008
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_008
+    text: "...\u307E\u3060\u5BB6\u306B\u5E30\u3063\u3066\u304D\u3066\u304F\u308C\u305F\u9803\u306E\u304A\u7236\u3055\u3093\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_4_007
+    text: "\u2026"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_CassetteTape_5_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    text: "\u30B4\u30DF\u7BB1\u306E\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u5165\u3063\u3066\u3044\u308B"
     ui: 2
     nextText: TXT_CassetteTape_5_002
     choise0: 
@@ -305,6 +353,22 @@ MonoBehaviour:
     choise3: 
   - id: TXT_CassetteTape_5_004
     text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2C\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_005
+    text: "\u30B4\u30DF\u7BB1\u3060\u3000...\u3082\u3057\u304B\u3057\u305F\u3089\u4F55\u304B\u3042\u308B\u304B\u3082"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_5_006
+    text: "\u30B4\u30DF\u7BB1\u3060\u3000\u4E2D\u306F\u5F53\u7136\u30B4\u30DF\u3060\u3051\u3060"
     ui: 2
     nextText: 
     choise0: 

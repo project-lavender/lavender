@@ -12,16 +12,17 @@ public class Interacter : MonoBehaviour
     [SerializeField] DT_Item dtitem;
     [SerializeField] DemoPlayer demoPlayer;
     [SerializeField] bool touchingOnother = false;
-    
+    [SerializeField] Gimicks gimicks = null;
+    private Lavender action;
+
 
     // Start is called before the first frame update
-    [SerializeField]
-    Gimicks gimicks = null;
     RaycastHit hit;
     void Start()
     {
-        //uictr = GetComponent<UIcontroller>();
-        //itemStack = GetComponent<ItemStack>();
+        //コールバック設定
+        action = new Lavender();
+        action.Enable();
         demoPlayer = FindAnyObjectByType<DemoPlayer>();
     }
 
@@ -49,7 +50,7 @@ public class Interacter : MonoBehaviour
             gimicks = null;
         }
         //インタラクトボタンオン
-        if (gimicks!=null && Input.GetMouseButtonDown(0))
+        if (gimicks!=null && action.Player.Fire.triggered)
         {
             //StartCoroutine(InteractTrigger());
             string textid;
@@ -66,15 +67,8 @@ public class Interacter : MonoBehaviour
                 Debug.Log(textid);
                 uictr.ActiveUI(textid);
 
-                //アイテム追加
-                //Debug.Log("itemID->" + dT.itemID);
-                //GameObject i = dtitem.FindItem(dT.itemID);
-                //itemStack.AddItem(i);
                 itemStack.EnableItem(dT.itemID);
                 itemStack.DisableItem(dT.downFrag);
-
-                //gimicks.TurnOffColor();
-                //gimicks = null;
 
                 //イベント発動
                 Debug.Log(dT.demoID);
