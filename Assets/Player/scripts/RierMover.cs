@@ -34,7 +34,6 @@ public class RierMover : MonoBehaviour
 
     [SerializeField]
     private List<string[]> p = new();
-    Light l;
     [SerializeField] Animator anm, anmmesh;
 
     //inputSYstem
@@ -155,7 +154,6 @@ public class RierMover : MonoBehaviour
         action.Enable();
 
         nz = vc.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>();
-        l = GetComponentInChildren<Light>();
         string ptext = param.text;
         string[] enterspl = ptext.Split("\n", System.StringSplitOptions.None);
         foreach (string s in enterspl){

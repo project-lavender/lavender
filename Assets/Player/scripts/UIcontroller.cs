@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using TMPro;
 using UnityEngine.Playables;
+using UnityEngine.InputSystem;
 
 public class UIcontroller : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class UIcontroller : MonoBehaviour
     private Lavender action;
     //
     int beforeOpenedID = -1;
+    int nowID = -1;
     [System.Serializable]
     private class Sence
     {
@@ -42,6 +44,9 @@ public class UIcontroller : MonoBehaviour
     Vector2 nowvec;
 
     Coroutine E;
+
+    //コントローラーのマウス
+    
 
     //ギミックのイベント呼び出し
     //汎用の選択肢で使う
@@ -128,6 +133,7 @@ public class UIcontroller : MonoBehaviour
         {
             
             i = dT.ui;
+            nowID = i;
             //前のuiと読み込んだuiのidが違う場合いったん消す
             if (beforeOpenedID != i)
             {
@@ -347,6 +353,17 @@ public class UIcontroller : MonoBehaviour
         if (action.UI.CloseUI.triggered)
         {
             CloseUIs();
+        }
+        if (nowID == 1)
+        {
+            if (action.UI.NextPage.triggered)
+            {
+                PageSend(1);
+            }
+            else if(action.UI.BeforePage.triggered)
+            {
+                PageSend(-1);
+            }
         }
     }
 }

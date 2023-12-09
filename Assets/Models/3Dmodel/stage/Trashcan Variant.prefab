@@ -64,12 +64,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c68c3401587123c4483658fd768c16c2, type: 2}
     - target: {fileID: 919132149155446097, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
       propertyPath: m_Name
       value: Trashcan Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+      propertyPath: m_TagString
+      value: Gimick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4354635403949682782}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6917863526142752650}
   m_SourcePrefab: {fileID: 100100000, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+--- !u!1 &1169173736519753749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d730025ab1a2d8a46bb8e543e9888454, type: 3}
+  m_PrefabInstance: {fileID: 2087652075553217860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4354635403949682782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169173736519753749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008896084, y: 0.01670675, z: 0.021005783}
+  m_Center: {x: 4.656615e-10, y: 0.00020894257, z: 0.010417759}
+--- !u!114 &6917863526142752650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169173736519753749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc706c54bddb9e4faf47b02e19041a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMats: []
+  gimicksName: CassetteTapeD
+  gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
+  frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
+  gimickDatalist: []
+  emittionColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 0}
+  darkColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}

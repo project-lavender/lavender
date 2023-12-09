@@ -362,7 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerIndex: -1
   AutoEnableInputs: 1
-  XYAxis: {fileID: 6177824982289524234, guid: 799fecd50ffa655429bc32bd124dd6f6, type: 3}
+  XYAxis: {fileID: 118889229535804237, guid: 96b493f4c28c49d4d90b56efa07b5b23, type: 3}
   ZAxis: {fileID: 0}
 --- !u!1 &8007964221798074061
 GameObject:
@@ -689,7 +689,6 @@ GameObject:
   - component: {fileID: 5672966590272851855}
   - component: {fileID: 4033518072065891532}
   - component: {fileID: 7331377751178736511}
-  - component: {fileID: 1812207716128401412}
   - component: {fileID: 4870261215657095603}
   m_Layer: 0
   m_Name: Main Camera
@@ -851,29 +850,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!136 &1812207716128401412
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8946203826881873724}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.12
-  m_Height: 1.4
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.7}
 --- !u!114 &4870261215657095603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,10 +909,6 @@ PrefabInstance:
       propertyPath: playesence
       value: 
       objectReference: {fileID: 4900000, guid: 9e7f2c150c44a434b8e066c898e5d89d, type: 3}
-    - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
-      propertyPath: interactColider
-      value: 
-      objectReference: {fileID: 1812207716128401412}
     - target: {fileID: 5596949391283323018, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

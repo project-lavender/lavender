@@ -211,7 +211,7 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
                     ""id"": ""c1f7a91b-d0fd-4a62-997e-7fb9b69bf235"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=12,y=12)"",
                     ""groups"": "";Gamepad"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
@@ -452,6 +452,24 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
                     ""name"": ""CloseUI"",
                     ""type"": ""Button"",
                     ""id"": ""e5fce7d4-8f0a-4951-861f-1328e151cc06"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextPage"",
+                    ""type"": ""Button"",
+                    ""id"": ""d3125dcf-3480-4f00-a278-11ec88e1374b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BeforePage"",
+                    ""type"": ""Button"",
+                    ""id"": ""1304b684-faf1-4791-8dd2-eeff83790c64"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -1019,6 +1037,28 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
                     ""action"": ""CloseUI"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""59f5ce2a-43f2-4896-8d12-01e9d22a9128"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""NextPage"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""334a339a-57eb-4f59-9719-cb29e2214181"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""BeforePage"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1110,6 +1150,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         m_UI_ItemSelectBack = m_UI.FindAction("ItemSelectBack", throwIfNotFound: true);
         m_UI_UseItem = m_UI.FindAction("UseItem", throwIfNotFound: true);
         m_UI_CloseUI = m_UI.FindAction("CloseUI", throwIfNotFound: true);
+        m_UI_NextPage = m_UI.FindAction("NextPage", throwIfNotFound: true);
+        m_UI_BeforePage = m_UI.FindAction("BeforePage", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1264,6 +1306,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_ItemSelectBack;
     private readonly InputAction m_UI_UseItem;
     private readonly InputAction m_UI_CloseUI;
+    private readonly InputAction m_UI_NextPage;
+    private readonly InputAction m_UI_BeforePage;
     public struct UIActions
     {
         private @Lavender m_Wrapper;
@@ -1283,6 +1327,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         public InputAction @ItemSelectBack => m_Wrapper.m_UI_ItemSelectBack;
         public InputAction @UseItem => m_Wrapper.m_UI_UseItem;
         public InputAction @CloseUI => m_Wrapper.m_UI_CloseUI;
+        public InputAction @NextPage => m_Wrapper.m_UI_NextPage;
+        public InputAction @BeforePage => m_Wrapper.m_UI_BeforePage;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1337,6 +1383,12 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
             @CloseUI.started += instance.OnCloseUI;
             @CloseUI.performed += instance.OnCloseUI;
             @CloseUI.canceled += instance.OnCloseUI;
+            @NextPage.started += instance.OnNextPage;
+            @NextPage.performed += instance.OnNextPage;
+            @NextPage.canceled += instance.OnNextPage;
+            @BeforePage.started += instance.OnBeforePage;
+            @BeforePage.performed += instance.OnBeforePage;
+            @BeforePage.canceled += instance.OnBeforePage;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -1386,6 +1438,12 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
             @CloseUI.started -= instance.OnCloseUI;
             @CloseUI.performed -= instance.OnCloseUI;
             @CloseUI.canceled -= instance.OnCloseUI;
+            @NextPage.started -= instance.OnNextPage;
+            @NextPage.performed -= instance.OnNextPage;
+            @NextPage.canceled -= instance.OnNextPage;
+            @BeforePage.started -= instance.OnBeforePage;
+            @BeforePage.performed -= instance.OnBeforePage;
+            @BeforePage.canceled -= instance.OnBeforePage;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -1473,5 +1531,7 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         void OnItemSelectBack(InputAction.CallbackContext context);
         void OnUseItem(InputAction.CallbackContext context);
         void OnCloseUI(InputAction.CallbackContext context);
+        void OnNextPage(InputAction.CallbackContext context);
+        void OnBeforePage(InputAction.CallbackContext context);
     }
 }

@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class Interacter : MonoBehaviour
 {
-    //左クリックからインタラクトできる時間
-    [SerializeField] float iTime = 0.2f;
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
     [SerializeField] DT_Item dtitem;
@@ -29,26 +27,32 @@ public class Interacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        Ray ray = new Ray();
+        ray.origin = transform.position;
+        ray.direction = transform.forward;
         Debug.DrawRay(transform.position, transform.forward * 0.8f);
-        if (Physics.Raycast(transform.position, transform.forward * 0.8f, out hit))
+
+        if (Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
         {
-            //とりあえず触れている
-            if (hit.collider.CompareTag("Gimick"))
+            if (gimicks != null)
             {
-                if (gimicks == null)
-                {
-                    Gimicks tmpgm = hit.collider.GetComponent<Gimicks>();
-                    gimicks = tmpgm;
-                    gimicks.EmitColor();
-                }
+                gimicks.TurnOffColor();
+                gimicks = null;
             }
+            Gimicks tmpgm = hit.collider.GetComponent<Gimicks>();
+            gimicks = tmpgm;
+            gimicks.EmitColor();
+
+
         }
-        //ギミックから離れたらオフ
-        if (gimicks != null && hit.collider.gameObject != gimicks.gameObject)
+        else if (gimicks != null)
         {
+            //ギミックから離れたらオフ
             gimicks.TurnOffColor();
             gimicks = null;
         }
+        
         //インタラクトボタンオン
         if (gimicks!=null && action.Player.Fire.triggered)
         {
