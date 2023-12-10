@@ -27,6 +27,7 @@ public class DT_Gimicks : ScriptableObject
     public List<DTGimick> Freezer;
     public List<DTGimick> DimpleKey;
     public List<DTGimick> Centrifuge;
+    public List<DTGimick> CentrifugeM;
 
     public List<DTGimick> FindTable(string listname)
     {
@@ -112,6 +113,10 @@ public class DT_Gimicks : ScriptableObject
         else if(listname == nameof(Centrifuge))
         {
             return Centrifuge;
+        }
+        else if(listname == nameof(CentrifugeM))
+        {
+            return CentrifugeM;
         }
         else
         {

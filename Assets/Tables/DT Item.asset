@@ -31,3 +31,5 @@ MonoBehaviour:
     item: {fileID: 920562781242114877, guid: b0e1f1f809651724a837c03bac2a6323, type: 3}
   - id: Flag_TestTube_Obtained
     item: {fileID: 4152621255302381244, guid: bb41a37eb7cea9548847a4121f477f2e, type: 3}
+  - id: Flag_RedSolution_Obtained
+    item: {fileID: 7149535195720165105, guid: 8d2b5252f371ec54ab6c6e2a607bd46a, type: 3}

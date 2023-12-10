@@ -329,6 +329,15 @@ MonoBehaviour:
     overWriteProgress: -1
   Freezer:
   - progress: -1
+    frag: Flag_TestTube_Obtained
+    textID: TXT_Freezer_04
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_DimpleKey_Selected
     textID: TXT_Freezer_03
     demoID: freezerOpen
@@ -486,6 +495,34 @@ MonoBehaviour:
   - progress: -1
     frag: 
     textID: TXT_Centrifuge_01
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  CentrifugeM:
+  - progress: -1
+    frag: Flag_RedSolution_Obtained
+    textID: TXT_CentrifugeM_04
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_TestTube_Selected
+    textID: TXT_CentrifugeM_02
+    demoID: 
+    itemID: Flag_RedSolution_Obtained
+    upFrag: Flag_RedSolution_Obtained
+    downFrag: Flag_TestTube_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_CentrifugeM_01
     demoID: 
     itemID: 
     upFrag: 

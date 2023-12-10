@@ -64,22 +64,22 @@ public class RierMover : MonoBehaviour
 
     void Move(InputAction.CallbackContext callback)
     {
-        if (callback.started && noisemode == 0)
+        //íºóßèÛë‘Ç≈Ç»Ç¢Ç∆ï‡Ç©Ç»Ç¢
+        
+        if (!anm.GetBool("crouch") && callback.started)
         {
             noisemode = 1;
             c = PL_walk;
             anm.SetBool("walk", true);
             anmmesh.SetBool("walk", true);
-            anm.SetBool("crouch", false);
-            anmmesh.SetBool("crouch", false);
-            anmmesh.SetFloat("x", h);
-            anmmesh.SetFloat("y", v);
         }
         else if (callback.performed)
         {
             Vector2 inputVal = action.Player.Move.ReadValue<Vector2>();
             h = inputVal.x;
             v = inputVal.y;
+            anmmesh.SetFloat("x", h);
+            anmmesh.SetFloat("y", v);
         }
         else if (callback.canceled)
         {
@@ -110,28 +110,44 @@ public class RierMover : MonoBehaviour
         }
         else if (callback.canceled)
         {
-            c = PL_walk;
+
             anm.SetBool("crouch", false);
             anmmesh.SetBool("crouch", false);
+            if (h * h + v * v > 0f)
+            {
+                noisemode = 1;
+                c = PL_walk;
+                anm.SetBool("walk", true);
+                anmmesh.SetBool("walk", true);
+            }
         }
     }
     void Run(InputAction.CallbackContext callback)
     {
-        //ï‡Ç¢ÇƒÇ¢ÇÈ
-        if (c != 0f && callback.started)
+        if (callback.canceled)
+        {
+            //ÇµÇ·Ç™Ç›Ç©ÇÁó£ÇµÇƒÇ‡ï‡Ç©Ç»Ç¢
+            if (anm.GetBool("crouch"))
+            {
+                noisemode = 0;
+                c = 0;
+            }
+            else
+            {
+                noisemode = 1;
+                c = PL_walk;
+            }
+            
+            anm.SetBool("run", false);
+            anmmesh.SetBool("run", false);
+        }
+        else if ( noisemode == 1 && callback.started)
         {
             noisemode = 2;
             anm.SetBool("run", true);
             anmmesh.SetBool("run", true);
             c = PL_run;
 
-        }
-        else if (callback.canceled)
-        {
-            //ÇµÇ·Ç™Ç›Ç©ÇÁó£ÇµÇƒÇ‡ï‡Ç©Ç»Ç¢
-            noisemode = 1;
-            anm.SetBool("run", false);
-            anmmesh.SetBool("run", false);
         }
     }
     // Start is called before the first frame update

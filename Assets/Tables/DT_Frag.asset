@@ -85,3 +85,7 @@ MonoBehaviour:
     value: 0
   - id: Flag_TestTube_Selected
     value: 0
+  - id: Flag_RedSolution_Obtained
+    value: 0
+  - id: Flag_RedSolution_Selected
+    value: 0
