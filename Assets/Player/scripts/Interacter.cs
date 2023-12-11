@@ -11,6 +11,7 @@ public class Interacter : MonoBehaviour
     [SerializeField] DemoPlayer demoPlayer;
     [SerializeField] bool touchingOnother = false;
     [SerializeField] Gimicks gimicks = null;
+    [SerializeField] UIcontroller uic; 
     private Lavender action;
 
 
@@ -28,12 +29,12 @@ public class Interacter : MonoBehaviour
     void Update()
     {
         
-        Ray ray = new Ray();
+        Ray ray = new();
         ray.origin = transform.position;
         ray.direction = transform.forward;
         Debug.DrawRay(transform.position, transform.forward * 0.8f);
 
-        if (Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
+        if (uic.nowID == -1 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
         {
             if (gimicks != null)
             {
@@ -43,7 +44,6 @@ public class Interacter : MonoBehaviour
             Gimicks tmpgm = hit.collider.GetComponent<Gimicks>();
             gimicks = tmpgm;
             gimicks.EmitColor();
-
 
         }
         else if (gimicks != null)

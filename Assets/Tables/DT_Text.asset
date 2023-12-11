@@ -375,6 +375,14 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CassetteTape_5_007
+    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u6368\u3066\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_ItemName_CassetteTape_2
     text: "\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5"
     ui: 2
@@ -640,7 +648,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_07
-    text: "\u3088\u3057\u3001\u59CB\u3081\u3088\u3046"
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u914D\u7F6E\u3057\u305F"
     ui: 2
     nextText: 
     choise0: 
@@ -648,7 +656,199 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_08
-    text: "\u3082\u3046\u4E00\u5EA6\u3084\u3063\u3066\u307F\u308B"
+    text: "\u3082\u3046\u4E00\u5EA6\u3084\u308A\u76F4\u305D\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_09
+    text: "\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_10
+    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_11
+    choise1: TXT_Centrifuge_12
+    choise2: TXT_Centrifuge_13
+    choise3: 
+  - id: TXT_Centrifuge_11
+    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_16
+    choise1: TXT_Centrifuge_17
+    choise2: TXT_Centrifuge_18
+    choise3: 
+  - id: TXT_Centrifuge_12
+    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_19
+    choise1: TXT_Centrifuge_20
+    choise2: TXT_Centrifuge_21
+    choise3: 
+  - id: TXT_Centrifuge_13
+    text: A ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_14
+    text: B ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_15
+    text: C (rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_16
+    text: A ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_17
+    text: B ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_18
+    text: C (rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_19
+    text: A ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_20
+    text: B ( rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_22
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_21
+    text: C (rpm )
+    ui: 0
+    nextText: TXT_Centrifuge_23
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_22
+    text: "\u6B21\u306F\u56DE\u8EE2\u6642\u9593\u3060"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_24
+    choise1: TXT_Centrifuge_25
+    choise2: TXT_Centrifuge_26
+    choise3: 
+  - id: TXT_Centrifuge_23
+    text: "\u6B21\u306F\u56DE\u8EE2\u6642\u9593\u3060"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_27
+    choise1: TXT_Centrifuge_28
+    choise2: TXT_Centrifuge_29
+    choise3: 
+  - id: TXT_Centrifuge_24
+    text: D ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_30
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_25
+    text: E ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_30
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_26
+    text: F ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_30
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_27
+    text: D ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_30
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_28
+    text: E ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_30
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_29
+    text: F ( sec )
+    ui: 0
+    nextText: TXT_Centrifuge_31
+    choise0: Flag_BlueSolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_30
+    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_31
+    text: "\u9752\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_32
+    text: "\u3082\u3046\u9752\u3044\u6EB6\u6DB2\u306F\u6301\u3063\u3066\u3044\u308B"
     ui: 2
     nextText: 
     choise0: 
@@ -697,6 +897,22 @@ MonoBehaviour:
     choise3: 
   - id: TXT_RedSolution
     text: "\u8D64\u3044\u6EB6\u6DB2\u3060\u3000\u3053\u308C\u3067\u4F55\u3092\u3059\u308B\u306E\u3060\u308D\u3046\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_BlueSolution
+    text: "\u9752\u3044\u6EB6\u6DB2\u3060\u3000\u3053\u308C\u3067\u4F55\u3092\u3059\u308B\u306E\u3060\u308D\u3046\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_BlueCSolution
+    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3060\u3000\u2026\u5909\u306A\u30CB\u30AA\u30A4\u3060\n\u306F\u3084\u304F\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u3088\u3046"
     ui: 2
     nextText: 
     choise0: 

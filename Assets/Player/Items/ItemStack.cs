@@ -13,6 +13,7 @@ public class ItemStack : MonoBehaviour
         public Items itemComponent;
         public Image img;
     }
+    [SerializeField] bool[] dbmode;
     [SerializeField] float itemUIdistance = 5f;
     [SerializeField] Transform itemIconAnker;
     [SerializeField] GameObject itemIconPrefab;
@@ -105,7 +106,7 @@ public class ItemStack : MonoBehaviour
                 set.enable = true;
                 itemList[i] = set;
                 Debug.Log(i);
-
+                DTfrag.SetVal(id,true);
                 RotateItem(i - nowitem);
             }
         }
@@ -165,6 +166,16 @@ public class ItemStack : MonoBehaviour
         LineupItems();
         action = new Lavender();
         action.Enable();
+        x = 0;
+        foreach (bool b in dbmode)
+        {
+            if (b)
+            {
+                DTItem i = DTitem.ItemsList[x];
+                EnableItem(i.id);
+            }
+            x++;
+        }   
     }
     
     // Update is called once per frame

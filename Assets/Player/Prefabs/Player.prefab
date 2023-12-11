@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc584dcd0ebff5940bf20a20e3a6f8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dbmode: 
   itemUIdistance: 5
   itemIconAnker: {fileID: 0}
   itemIconPrefab: {fileID: 8120506545867084935, guid: 5e949a05fce8df240b9881ac802ee3f5, type: 3}
@@ -862,13 +863,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42abe28ca9aee3940877b1333cbc9d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iTime: 0.2
   uictr: {fileID: 2095900640900647336}
   itemStack: {fileID: 4767323125235869803}
   dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
   demoPlayer: {fileID: 0}
   touchingOnother: 0
   gimicks: {fileID: 0}
+  uic: {fileID: 2095900640900647336}
 --- !u!1001 &3565668104991191244
 PrefabInstance:
   m_ObjectHideFlags: 0

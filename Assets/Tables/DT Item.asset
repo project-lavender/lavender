@@ -33,3 +33,7 @@ MonoBehaviour:
     item: {fileID: 4152621255302381244, guid: bb41a37eb7cea9548847a4121f477f2e, type: 3}
   - id: Flag_RedSolution_Obtained
     item: {fileID: 7149535195720165105, guid: 8d2b5252f371ec54ab6c6e2a607bd46a, type: 3}
+  - id: Flag_BlueSolution_Obtained
+    item: {fileID: 7149535195720165105, guid: e11da77290a13c040af0f83ba3caa431, type: 3}
+  - id: Flag_BlueCloudySolution_Obtained
+    item: {fileID: 7149535195720165105, guid: b2d9054903918bb4a895bee8e3ca0435, type: 3}

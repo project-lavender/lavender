@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 
 public class UIcontroller : MonoBehaviour
 {
+    public int nowID = -1;
     [SerializeField] DT_Text dttext;
     [SerializeField] DT_Item dtitem;
     [SerializeField] ItemStack itemStack;
@@ -32,7 +33,7 @@ public class UIcontroller : MonoBehaviour
     private Lavender action;
     //
     int beforeOpenedID = -1;
-    int nowID = -1;
+    
     [System.Serializable]
     private class Sence
     {
@@ -67,7 +68,7 @@ public class UIcontroller : MonoBehaviour
             itemStack.EnableItem(dT.choise0);
             demoPlayer.DemoPlay(dT.choise0);
         }
-        if(dT.choise1 != "")
+        if (dT.choise1 != "")
         {
             itemStack.EnableItem(dT.choise1);
             demoPlayer.DemoPlay(dT.choise1);
@@ -101,7 +102,7 @@ public class UIcontroller : MonoBehaviour
     public void CloseUIs()
     {
         Debug.Log("close ui");
-
+        nowID = -1;
         //interactColider.enabled = true;
         pageNum = 0;
         SetVirtualCamera(true);
@@ -311,8 +312,8 @@ public class UIcontroller : MonoBehaviour
             delay = new WaitForSeconds(finishWait);
             yield return delay;
         }
-
         uitexts[2].text = "";
+        CloseUIs();
     }
     // Start is called before the first frame update
     void Start()
