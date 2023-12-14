@@ -601,3 +601,22 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
+  Pipet:
+  - progress: -1
+    frag: Flag_Memo_04_read
+    textID: TXT_Pipet_002
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_Pipet_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
