@@ -55,17 +55,25 @@ MonoBehaviour:
     value: 0
   - id: KL_CassetteTape_002_Selected
     value: 0
+  - id: KL_CassetteTape_002_Listening
+    value: 0
   - id: KL_CassetteTape_003_Obtained
     value: 0
   - id: KL_CassetteTape_003_Selected
+    value: 0
+  - id: KL_CassetteTape_003_Listening
     value: 0
   - id: KL_CassetteTape_004_Obtained
     value: 0
   - id: KL_CassetteTape_004_Selected
     value: 0
+  - id: KL_CassetteTape_004_Listening
+    value: 0
   - id: KL_CassetteTape_005_Obtained
     value: 0
   - id: KL_CassetteTape_005_Selected
+    value: 0
+  - id: KL_CassetteTape_005_Listening
     value: 0
   - id: Flag_DimpleKey_Obtained
     value: 0

@@ -88,7 +88,7 @@ public class Gimicks : MonoBehaviour
             }
             
         }
-        if (ret.death)
+        if (ret!=null && ret.death)
         {
             Destroy(gameObject);
         }

@@ -185,47 +185,74 @@ MonoBehaviour:
     overWriteProgress: -1
   KasetPlayer:
   - progress: -1
-    frag: KL_CassetteTape_002_Selected
-    textID: TXT_CassettePlayer_T2
-    demoID: 
+    frag: KL_CassetteTape_002_Listening
+    textID: TXT_CassettePlayer_T6
+    demoID: StopTape
     itemID: 
     upFrag: 
+    downFrag: KL_CassetteTape_002_Listening
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_003_Listening
+    textID: TXT_CassettePlayer_T6
+    demoID: StopTape
+    itemID: 
+    upFrag: 
+    downFrag: KL_CassetteTape_003_Listening
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_004_Listening
+    textID: TXT_CassettePlayer_T6
+    demoID: StopTape
+    itemID: 
+    upFrag: 
+    downFrag: KL_CassetteTape_004_Listening
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_005_Listening
+    textID: TXT_CassettePlayer_T6
+    demoID: StopTape
+    itemID: 
+    upFrag: 
+    downFrag: KL_CassetteTape_005_Listening
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_002_Selected
+    textID: TXT_CassettePlayer_T2
+    demoID: Tape2
+    itemID: 
+    upFrag: KL_CassetteTape_002_Listening
     downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: -1
     frag: KL_CassetteTape_003_Selected
     textID: TXT_CassettePlayer_T3
-    demoID: 
+    demoID: Tape3
     itemID: 
-    upFrag: 
+    upFrag: KL_CassetteTape_003_Listening
     downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: -1
     frag: KL_CassetteTape_004_Selected
     textID: TXT_CassettePlayer_T4
-    demoID: 
+    demoID: Tape4
     itemID: 
-    upFrag: 
+    upFrag: KL_CassetteTape_004_Listening
     downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: -1
     frag: KL_CassetteTape_005_Selected
     textID: TXT_CassettePlayer_T5
-    demoID: 
+    demoID: Tape5
     itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
-    frag: 
-    textID: TXT_CassettePlayer_001
-    demoID: 
-    itemID: 
-    upFrag: 
+    upFrag: KL_CassetteTape_005_Listening
     downFrag: 
     death: 0
     overWriteProgress: -1
@@ -614,6 +641,25 @@ MonoBehaviour:
   - progress: -1
     frag: 
     textID: TXT_Pipet_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  Door:
+  - progress: -1
+    frag: Flag_Memo_05_read
+    textID: TXT_Door_002
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_Door_001
     demoID: 
     itemID: 
     upFrag: 

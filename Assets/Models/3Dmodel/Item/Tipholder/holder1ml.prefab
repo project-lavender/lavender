@@ -308,9 +308,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8501683052465862640}
+  - component: {fileID: 4814621058141362254}
+  - component: {fileID: 1157215375830278202}
   m_Layer: 0
   m_Name: holder1ml
-  m_TagString: Untagged
+  m_TagString: Gimick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,3 +335,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &4814621058141362254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131007689896226122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.12, z: 0.3}
+  m_Center: {x: 0, y: 0.05, z: 0}
+--- !u!114 &1157215375830278202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131007689896226122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc706c54bddb9e4faf47b02e19041a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMats: []
+  gimicksName: 
+  gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
+  frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
+  gimickDatalist: []
+  emittionColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+  darkColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}

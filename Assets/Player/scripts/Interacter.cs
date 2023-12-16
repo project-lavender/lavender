@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Interacter : MonoBehaviour
 {
+    [SerializeField] float interactCD = 1f;
+    [SerializeField] bool canTouch = true;
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
     [SerializeField] DT_Item dtitem;
     [SerializeField] DemoPlayer demoPlayer;
-    [SerializeField] bool touchingOnother = false;
     [SerializeField] Gimicks gimicks = null;
     [SerializeField] UIcontroller uic; 
     private Lavender action;
@@ -22,9 +23,14 @@ public class Interacter : MonoBehaviour
         //コールバック設定
         action = new Lavender();
         action.Enable();
-        demoPlayer = FindAnyObjectByType<DemoPlayer>();
+        //demoPlayer = FindAnyObjectByType<DemoPlayer>();
     }
-
+    IEnumerator SetCanTouch()
+    {
+        canTouch = false;
+        yield return new WaitForSeconds(interactCD);
+        canTouch = true;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -34,7 +40,7 @@ public class Interacter : MonoBehaviour
         ray.direction = transform.forward;
         Debug.DrawRay(transform.position, transform.forward * 0.8f);
 
-        if (uic.nowID == -1 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
+        if (uic.nowID != 0 && uic.nowID != 1 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
         {
             if (gimicks != null)
             {
@@ -54,9 +60,10 @@ public class Interacter : MonoBehaviour
         }
         
         //インタラクトボタンオン
-        if (gimicks!=null && action.Player.Fire.triggered)
+        if (canTouch && gimicks!=null && action.Player.Fire.triggered)
         {
             //StartCoroutine(InteractTrigger());
+            StartCoroutine(SetCanTouch());
             string textid;
             DTGimick dT;
             //ui 起動

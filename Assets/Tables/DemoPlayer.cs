@@ -17,6 +17,16 @@ public class DemoPlayer : MonoBehaviour
             }
         }
     }
+    public void StopDemo(string name)
+    {
+        foreach (PlayableDirector d in directors)
+        {
+            if (d.name == name)
+            {
+                d.Stop();
+            }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

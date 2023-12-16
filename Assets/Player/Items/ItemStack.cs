@@ -78,19 +78,22 @@ public class ItemStack : MonoBehaviour
         {
             return;
         }
-        for(int i = 0; i < itemList.Count; i++)
+        else
         {
-            ItemSet set = itemList[i];
-            if (set.item.id == id)
+            for (int i = 0; i < itemList.Count; i++)
             {
-                set.enable = false;
-                DTfrag.SetVal(set.itemComponent.myfrag, false);
-                itemList[i] = set;
-                break;
+                ItemSet set = itemList[i];
+                if (set.item.id == id)
+                {
+                    set.enable = false;
+                    DTfrag.SetVal(set.itemComponent.myfrag, false);
+                    itemList[i] = set;
+                    break;
+                }
             }
+            //RotateItem(1);
+            LineupItems();
         }
-        RotateItem(1);
-        LineupItems();
     }
     public void EnableItem(string id)
     {
@@ -98,19 +101,22 @@ public class ItemStack : MonoBehaviour
         {
             return;
         }
-        for (int i = 0; i < itemList.Count; i++)
+        else
         {
-            ItemSet set = itemList[i];
-            if (set.item.id == id)
+            for (int i = 0; i < itemList.Count; i++)
             {
-                set.enable = true;
-                itemList[i] = set;
-                Debug.Log(i);
-                DTfrag.SetVal(id,true);
-                RotateItem(i - nowitem);
+                ItemSet set = itemList[i];
+                if (set.item.id == id)
+                {
+                    set.enable = true;
+                    itemList[i] = set;
+                    Debug.Log(i);
+                    DTfrag.SetVal(id, true);
+                    RotateItem(i - nowitem);
+                }
             }
+            LineupItems();
         }
-        LineupItems();
     }
 
     void RotateItem(int r)

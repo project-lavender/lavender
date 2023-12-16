@@ -17,7 +17,14 @@ public class ProgressController : MonoBehaviour
     {
         return progress;
     }
-
+    public void UpFrag(string id)
+    {
+        frag.SetVal(id, true);
+    }
+    public void DownFrag(string id)
+    {
+        frag.SetVal(id, false);
+    }
     public void AttachProgress(int p)
     {
         Debug.Log("AttachProgress");
