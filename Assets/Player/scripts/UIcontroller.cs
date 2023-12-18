@@ -107,6 +107,7 @@ public class UIcontroller : MonoBehaviour
         pageNum = 0;
         SetVirtualCamera(true);
         Cursor.visible = false;
+        StopAllCoroutines();
         Cursor.lockState = CursorLockMode.Locked;
         foreach (RectTransform r in UIs)
         {
@@ -134,7 +135,6 @@ public class UIcontroller : MonoBehaviour
         {
             
             i = dT.ui;
-            nowID = i;
             //前のuiと読み込んだuiのidが違う場合いったん消す
             if (beforeOpenedID != i)
             {
@@ -161,6 +161,7 @@ public class UIcontroller : MonoBehaviour
 
         if (i == 0)
         {
+            nowID = 0;
             //カーソルロックを外す
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -210,6 +211,8 @@ public class UIcontroller : MonoBehaviour
             //テキストダイアログ
 
             //カーソルロックを外す
+
+            nowID = 1;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             //カメラ固定
@@ -226,6 +229,8 @@ public class UIcontroller : MonoBehaviour
         else if (i == 2)
         {
             //voice
+
+            nowID = 2;
             if (E != null)
             {
                 StopCoroutine(E);

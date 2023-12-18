@@ -57,11 +57,15 @@ MonoBehaviour:
     value: 0
   - id: KL_CassetteTape_002_Listening
     value: 0
+  - id: KL_CassetteTape_002_Listened
+    value: 0
   - id: KL_CassetteTape_003_Obtained
     value: 0
   - id: KL_CassetteTape_003_Selected
     value: 0
   - id: KL_CassetteTape_003_Listening
+    value: 0
+  - id: KL_CassetteTape_003_Listened
     value: 0
   - id: KL_CassetteTape_004_Obtained
     value: 0
@@ -69,11 +73,15 @@ MonoBehaviour:
     value: 0
   - id: KL_CassetteTape_004_Listening
     value: 0
+  - id: KL_CassetteTape_005_Listened
+    value: 0
   - id: KL_CassetteTape_005_Obtained
     value: 0
   - id: KL_CassetteTape_005_Selected
     value: 0
   - id: KL_CassetteTape_005_Listening
+    value: 0
+  - id: KL_CassetteTape_005_Listened
     value: 0
   - id: Flag_DimpleKey_Obtained
     value: 0
@@ -104,4 +112,20 @@ MonoBehaviour:
   - id: Flag_BlueSolution_Obtained
     value: 0
   - id: Flag_BlueSolution_Selected
+    value: 0
+  - id: Flag_ReagentBottle_Obtained
+    value: 0
+  - id: Flag_ReagentBottle_Selected
+    value: 0
+  - id: Flag_TipHolder_Obtained
+    value: 0
+  - id: Flag_TipHolder_Selected
+    value: 0
+  - id: Flag_PurpleSolution_Obtained
+    value: 0
+  - id: Flag_PurpleSolution_Selected
+    value: 0
+  - id: Flag_PurpleClowdySolution_Obtained
+    value: 0
+  - id: Flag_PurpleClowdySolution_Selected
     value: 0
