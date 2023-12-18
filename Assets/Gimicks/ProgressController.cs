@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProgressController : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class ProgressController : MonoBehaviour
     public void DownFrag(string id)
     {
         frag.SetVal(id, false);
+    }
+    public void SceneLoad(string scenename)
+    {
+        SceneManager.LoadScene(scenename);
     }
     public void AttachProgress(int p)
     {
@@ -51,13 +56,20 @@ public class ProgressController : MonoBehaviour
                     g.TurnOffColor();
                 }
 
-                dynamo.darkColor = Color.black;
+                //dynamo.darkColor = Color.black;
+                dynamo.BlackColor();
                 dynamo.DisableGimick();
-                stretcher.darkColor = Color.black;
+                //stretcher.darkColor = Color.black;
+                stretcher.BlackColor();
                 stretcher.DisableGimick();
                 
                 break;
-
+            case 500:
+                dynamo.TurnOffColor();
+                dynamo.EnableGimick();
+                stretcher.TurnOffColor();
+                stretcher.EnableGimick();
+                break;
             default:
                 break;
         }

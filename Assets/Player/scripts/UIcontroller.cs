@@ -120,6 +120,10 @@ public class UIcontroller : MonoBehaviour
         //interactColider.enabled = false;
         
         int i = -1;
+        if (textid == "")
+        {
+            return;
+        }
         DTText dT = dttext.Find(textid);
         //カーソルロックを外す
         Cursor.lockState = CursorLockMode.None;

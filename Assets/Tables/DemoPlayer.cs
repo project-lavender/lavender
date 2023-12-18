@@ -33,10 +33,5 @@ public class DemoPlayer : MonoBehaviour
         directors = GetComponentsInChildren<PlayableDirector>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 }

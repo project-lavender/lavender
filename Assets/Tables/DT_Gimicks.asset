@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: DT_Gimicks
   m_EditorClassIdentifier: 
   Stretcher:
+  - progress: 500
+    frag: 
+    textID: TXT_Stretcher_001
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: 100
     frag: 
     textID: 
@@ -32,10 +41,28 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   Dynamo:
+  - progress: 510
+    frag: 
+    textID: 
+    demoID: OnLight
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: 500
+  - progress: 500
+    frag: 
+    textID: 
+    demoID: OffLight
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: 510
   - progress: 110
     frag: 
     textID: 
-    demoID: 
+    demoID: OnLight
     itemID: 
     upFrag: 
     downFrag: 
@@ -307,11 +334,29 @@ MonoBehaviour:
     overWriteProgress: -1
   MemoD:
   - progress: -1
-    frag: 
+    frag: Flag_PurpleSolution_Selected
     textID: TXT_Memo_5_01
     demoID: 
     itemID: 
     upFrag: Flag_Memo_05_read
+    downFrag: 
+    death: 0
+    overWriteProgress: 500
+  - progress: -1
+    frag: Flag_PurpleClowdySolution_Obtained
+    textID: TXT_Memo_5_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_05_read
+    downFrag: 
+    death: 0
+    overWriteProgress: 500
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_5_02
+    demoID: 
+    itemID: 
+    upFrag: 
     downFrag: 
     death: 0
     overWriteProgress: -1
@@ -701,7 +746,7 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: 330
-  - progress: 300
+  - progress: 310
     frag: Flag_TipHolder_Obtained
     textID: TXT_Pipet_006
     demoID: 
@@ -727,7 +772,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: 300
+    overWriteProgress: 310
   - progress: -1
     frag: Flag_TipHolder_Obtained
     textID: TXT_Pipet_003
@@ -756,6 +801,24 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   Door:
+  - progress: 510
+    frag: Flag_PurpleClowdySolution_Obtained
+    textID: 
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 510
+    frag: Flag_PurpleSolution_Obtained
+    textID: 
+    demoID: Clear
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: -1
     frag: Flag_Memo_05_read
     textID: TXT_Door_002

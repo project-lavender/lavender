@@ -11,7 +11,7 @@ public class DynamoController : Gimicks
     private Light[] lights;
     [SerializeField]
     private Light[] execptionLights;
-    private float[] intencities;
+    [SerializeField] private float[] intencities;
     [SerializeField]
     Material emmision;
     [SerializeField]
@@ -45,34 +45,49 @@ public class DynamoController : Gimicks
         se = GetComponent<SEController>();
     }
 
-    private IEnumerator LightTime(int i)
+    private IEnumerator LightTime(int i,bool on)
     {
         float rt = Random.Range(0f, maxOnTime);
         yield return new WaitForSeconds(rt);
         Light l = lights[i];
-        l.intensity = intencities[i];
+        if (on)
+        {
+            l.intensity = intencities[i];
+        }
+        else
+        {
+            l.intensity = 0f;
+        }
 
     }
+    public void TurnOffLight()
+    {
+        
+        se.SE(0);
 
+        emmision.SetColor("_EmissionColor", Color.black);
+        myMat.SetColor("_RampColor", OffColor);
+        for (int i = 0; i < lights.Length; i++)
+        {
+            StartCoroutine(LightTime(i, false));
+        }
+    }
+    public void TurnOnLight()
+    {
+        Debug.Log("ON Light");
+
+        emmision.SetColor("_EmissionColor", Color.white);
+        se.SE(0);
+        myMat.SetColor("_RampColor", OnColor);
+        for (int i = 0; i < lights.Length; i++)
+        {
+            StartCoroutine(LightTime(i, true));
+        }
+    }
     public override void DisableGimick()
     {
         base.DisableGimick();
     }
     //ƒ_ƒCƒiƒ‚on
-    public override DTGimick InteractGimick()
-    {
-        base.InteractGimick();
-        darkColor = Color.black;
-        TurnOffColor();
-        SetProgress();
-        for (int i = 0; i < lights.Length; i++)
-        {
-            StartCoroutine(LightTime(i));
-        }
-        se.SE(0);
-        myMat.SetColor("_RampColor", OnColor);
-        emmision.SetColor("_EmissionColor", Color.white);
-        return null;
-    }
     
 }
