@@ -28,6 +28,8 @@ public class ProgressController : MonoBehaviour
     }
     public void SceneLoad(string scenename)
     {
+
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(scenename);
     }
     public void AttachProgress(int p)

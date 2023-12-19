@@ -804,7 +804,7 @@ MonoBehaviour:
   - progress: 510
     frag: Flag_PurpleClowdySolution_Obtained
     textID: 
-    demoID: 
+    demoID: GameOver
     itemID: 
     upFrag: 
     downFrag: 
