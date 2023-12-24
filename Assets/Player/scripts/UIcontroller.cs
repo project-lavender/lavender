@@ -254,6 +254,7 @@ public class UIcontroller : MonoBehaviour
             //esc
             //読み込み
             //カーソルロックを外す
+            nowID = 3;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             StreamReader rd = new(pathsence);

@@ -40,7 +40,7 @@ public class Interacter : MonoBehaviour
         ray.direction = transform.forward;
         Debug.DrawRay(transform.position, transform.forward * 0.8f);
 
-        if (uic.nowID != 0 && uic.nowID != 1 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
+        if (uic.nowID != 0 && uic.nowID != 1 && uic.nowID!=3 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
         {
             if (gimicks != null)
             {

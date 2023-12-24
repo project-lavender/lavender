@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655267b47c88e2e4d823cd3ca735ebb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: YOekiA
+  itemname: "\u9752\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5"
   useTextID: TXT_ItemName_CassetteTape_2
   myfrag: KL_CassetteTape_002_Selected
   itemIcon: {fileID: 21300000, guid: 4e20a12ff7f203f4290e957181c94998, type: 3}
