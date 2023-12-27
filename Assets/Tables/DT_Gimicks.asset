@@ -313,7 +313,7 @@ MonoBehaviour:
     overWriteProgress: -1
   MemoA:
   - progress: -1
-    frag: 
+    frag: Flag_Memo_01_read
     textID: TXT_Memo_2_01
     demoID: 
     itemID: 
@@ -321,9 +321,18 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  MemoB:
   - progress: -1
     frag: 
+    textID: TXT_Memo_2_00
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  MemoB:
+  - progress: -1
+    frag: Flag_BlueCloudySolution_Obtained
     textID: TXT_Memo_3_01
     demoID: 
     itemID: 
@@ -331,13 +340,58 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  MemoC:
+  - progress: -1
+    frag: Flag_BlueSolution_Obtained
+    textID: TXT_Memo_3_01
+    demoID: 
+    itemID: 
+    upFrag: Flag_Memo_03_read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_002_Listened
+    textID: TXT_Memo_3_03
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: -1
     frag: 
+    textID: TXT_Memo_3_00
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  MemoC:
+  - progress: -1
+    frag: Flag_RedSolution_Obtained
     textID: TXT_Memo_4_01
     demoID: 
     itemID: 
     upFrag: Flag_Memo_04_read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: KL_CassetteTape_003_Listening
+    textID: TXT_Memo_4_03
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_Memo_4_00
+    demoID: 
+    itemID: 
+    upFrag: 
     downFrag: 
     death: 0
     overWriteProgress: -1
