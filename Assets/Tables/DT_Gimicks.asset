@@ -557,7 +557,7 @@ MonoBehaviour:
     overWriteProgress: -1
   - progress: -1
     frag: Flag_BlueSolution_Obtained
-    textID: TXT_Centrifuge_28
+    textID: TXT_Centrifuge_32
     demoID: 
     itemID: 
     upFrag: 
@@ -737,6 +737,15 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
+    frag: Flag_Memo_03_read
+    textID: TXT_CentrifugeM_05
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: 
     textID: TXT_CentrifugeM_01
     demoID: 
@@ -877,6 +886,24 @@ MonoBehaviour:
     frag: Flag_PurpleSolution_Obtained
     textID: 
     demoID: Clear
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_PurpleClowdySolution_Obtained
+    textID: TXT_Door_003
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_PurpleSolution_Obtained
+    textID: TXT_Door_003
+    demoID: 
     itemID: 
     upFrag: 
     downFrag: 
