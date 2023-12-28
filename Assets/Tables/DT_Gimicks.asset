@@ -350,7 +350,7 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: KL_CassetteTape_002_Listened
+    frag: Flag_Memo_02_read
     textID: TXT_Memo_3_03
     demoID: 
     itemID: 
@@ -727,7 +727,7 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  - progress: -1
+  - progress: 250
     frag: Flag_TestTube_Selected
     textID: TXT_CentrifugeM_02
     demoID: 
@@ -744,7 +744,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: -1
+    overWriteProgress: 250
   - progress: -1
     frag: 
     textID: TXT_CentrifugeM_01
