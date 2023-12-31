@@ -552,7 +552,7 @@ MonoBehaviour:
     demoID: 
     itemID: 
     upFrag: 
-    downFrag: 
+    downFrag: Flag_TestTube_Set
     death: 0
     overWriteProgress: -1
   - progress: -1
@@ -561,7 +561,7 @@ MonoBehaviour:
     demoID: 
     itemID: 
     upFrag: 
-    downFrag: 
+    downFrag: Flag_TestTube_Set
     death: 0
     overWriteProgress: -1
   - progress: 210
@@ -570,7 +570,7 @@ MonoBehaviour:
     demoID: 
     itemID: 
     upFrag: 
-    downFrag: Flag_TestTube_Set
+    downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: 220
@@ -579,7 +579,7 @@ MonoBehaviour:
     demoID: 
     itemID: 
     upFrag: 
-    downFrag: Flag_TestTube_Set
+    downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: 230
@@ -588,7 +588,7 @@ MonoBehaviour:
     demoID: 
     itemID: 
     upFrag: 
-    downFrag: Flag_TestTube_Set
+    downFrag: 
     death: 0
     overWriteProgress: -1
   - progress: 210
@@ -886,6 +886,15 @@ MonoBehaviour:
     frag: Flag_PurpleSolution_Obtained
     textID: 
     demoID: Clear
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 500
+    frag: 
+    textID: TXT_Door_004
+    demoID: 
     itemID: 
     upFrag: 
     downFrag: 

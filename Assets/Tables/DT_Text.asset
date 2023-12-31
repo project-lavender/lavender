@@ -872,7 +872,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_08
-    text: "\u3082\u3046\u4E00\u5EA6\u3084\u308A\u76F4\u305D\u3046"
+    text: "\u3082\u3046\u4E00\u5EA6\u3084\u308A\u76F4\u305D\u3046\n\u9752\u9ED2\u3044\u6EB6\u6DB2\u306F\u6368\u3066\u3066\u3057\u307E\u304A\u3046"
     ui: 2
     nextText: 
     choise0: 
@@ -888,7 +888,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_10
-    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
     ui: 0
     nextText: 
     choise0: TXT_Centrifuge_13
@@ -896,7 +896,7 @@ MonoBehaviour:
     choise2: TXT_Centrifuge_15
     choise3: 
   - id: TXT_Centrifuge_11
-    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
     ui: 0
     nextText: 
     choise0: TXT_Centrifuge_16
@@ -904,7 +904,7 @@ MonoBehaviour:
     choise2: TXT_Centrifuge_18
     choise3: 
   - id: TXT_Centrifuge_12
-    text: "\u56DE\u8EE2\u6570\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
     ui: 0
     nextText: 
     choise0: TXT_Centrifuge_19
@@ -912,7 +912,7 @@ MonoBehaviour:
     choise2: TXT_Centrifuge_21
     choise3: 
   - id: TXT_Centrifuge_13
-    text: A ( rpm )
+    text: 2000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -920,7 +920,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_14
-    text: B ( rpm )
+    text: 4000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -928,7 +928,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_15
-    text: C (rpm )
+    text: 6000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -936,7 +936,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_16
-    text: A ( rpm )
+    text: 2000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -944,7 +944,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_17
-    text: B ( rpm )
+    text: 4000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -952,7 +952,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_18
-    text: C (rpm )
+    text: 6000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -960,7 +960,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_19
-    text: A ( rpm )
+    text: 2000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -968,7 +968,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_20
-    text: B ( rpm )
+    text: 4000 rpm
     ui: 0
     nextText: TXT_Centrifuge_22
     choise0: 
@@ -976,7 +976,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_21
-    text: C (rpm )
+    text: 6000 rpm
     ui: 0
     nextText: TXT_Centrifuge_23
     choise0: 
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     choise2: TXT_Centrifuge_29
     choise3: 
   - id: TXT_Centrifuge_24
-    text: D ( sec )
+    text: "5 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_30
     choise0: Flag_BlueCloudySolution_Obtained
@@ -1008,7 +1008,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_25
-    text: E ( sec )
+    text: "10 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_30
     choise0: Flag_BlueCloudySolution_Obtained
@@ -1016,7 +1016,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_26
-    text: F ( sec )
+    text: "15 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_30
     choise0: Flag_BlueCloudySolution_Obtained
@@ -1024,7 +1024,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_27
-    text: D ( sec )
+    text: "5 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_30
     choise0: Flag_BlueCloudySolution_Obtained
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_28
-    text: E ( sec )
+    text: "10 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_30
     choise0: Flag_BlueCloudySolution_Obtained
@@ -1040,7 +1040,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_29
-    text: F ( sec )
+    text: "15 \u79D2"
     ui: 0
     nextText: TXT_Centrifuge_31
     choise0: Flag_BlueSolution_Obtained
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_30
-    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F"
+    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F\u2026"
     ui: 2
     nextText: 
     choise0: 
@@ -1251,7 +1251,7 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Pipet_014
     text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u306F\u305A\u3060\u3088\u306D"
-    ui: 0
+    ui: 2
     nextText: 
     choise0: 
     choise1: 
@@ -1259,14 +1259,14 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Pipet_015
     text: "\u3061\u3087\u3063\u3068\u6FC1\u3063\u305F\u62B5\u6297\u85AC\u304C\u3067\u304D\u305F"
-    ui: 0
+    ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
   - id: TXT_PpetChoice_001
-    text: 0.2( mL )x
+    text: 1( mL )x
     ui: 0
     nextText: TXT_Pipet_012
     choise0: 
@@ -1274,7 +1274,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_PpetChoice_002
-    text: 1( mL )x
+    text: 5( mL )x
     ui: 0
     nextText: TXT_Pipet_012
     choise0: 
@@ -1290,7 +1290,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_PpetChoice_004
-    text: 0.2( mL )x
+    text: 1( mL )x
     ui: 0
     nextText: TXT_GetPurpleCloudySol
     choise0: Flag_PurpleClowdySolution_Obtained
@@ -1298,7 +1298,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_PpetChoice_005
-    text: 1( mL )x
+    text: 5( mL )x
     ui: 0
     nextText: TXT_GetPurpleCloudySol
     choise0: Flag_PurpleClowdySolution_Obtained
@@ -1322,7 +1322,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_PpetChoice_008
-    text: 1( mL )o
+    text: 5( mL )o
     ui: 0
     nextText: TXT_GetPurpleSol
     choise0: Flag_PurpleSolution_Obtained
@@ -1362,7 +1362,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Door_003
-    text: "\u30D6\u30EC\u30FC\u30AB\u30FC\u3092\u843D\u3068\u305D\u3046"
+    text: "\u8131\u51FA\u65B9\u6CD5\u306E\u30E1\u30E2\u3092\u63A2\u305D\u3046"
     ui: 2
     nextText: 
     choise0: 
@@ -1370,8 +1370,8 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Door_004
-    text: 
-    ui: 0
+    text: "\u30D6\u30EC\u30FC\u30AB\u30FC\u3092\u843D\u3068\u305D\u3046"
+    ui: 2
     nextText: 
     choise0: 
     choise1: 
