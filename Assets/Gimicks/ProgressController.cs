@@ -64,6 +64,7 @@ public class ProgressController : MonoBehaviour
                 //stretcher.darkColor = Color.black;
                 stretcher.BlackColor();
                 stretcher.DisableGimick();
+
                 
                 break;
             case 500:
