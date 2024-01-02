@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sheet1:
   - id: TXT_Stretcher_001
-    text: 'If I climb up to the top,I can touch that.
-
-      Climb?'
+    text: "\u4E0A\u306B\u4E57\u308C\u3070\u3001\u30E9\u30F3\u30D7\u306B\u624B\u304C\u5C4A\u304D\u305D\u3046\n\u306E\u307C\u3063\u3066\u307F\u3088\u3046\u304B\u306A\uFF1F"
     ui: 0
     nextText: TXT_Stretcher_002
     choise0: TXT_System_001
@@ -24,7 +22,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Stretcher_002
-    text: Climb?
+    text: "\u306E\u307C\u308D\u3046\u304B\u306A\uFF1F"
     ui: 0
     nextText: 
     choise0: 
@@ -32,7 +30,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Stretcher_003
-    text: It is a stretcher.
+    text: "\u30B9\u30C8\u30EC\u30C3\u30C1\u30E3\u30FC\u3060"
     ui: 2
     nextText: 
     choise0: 
@@ -40,7 +38,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_System_001
-    text: Yes
+    text: "\u306E\u307C\u308B"
     ui: -1
     nextText: 
     choise0: stretcherUp
@@ -48,1401 +46,1991 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_System_002
-    text: No
+    text: "\u306E\u307C\u3089\u306A\u3044"
     ui: -1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TestDialog_001
-    text: aaaaaaTESTTESTETETTETT
+  - id: TXT_Memo_001_content_010
+    text: "\u3053\u308C\u3092\u8AAD\u3093\u3067\u3044\u308B\u3042\u3093\u305F\u3002\n\n\u60AA\u3044\u304C\u5B9F\u9A13\u5BA4\u306F\n\u79C1\u304C\u8352\u3089\u3057\u305F\u3002\n\n\u5316\u3051\u7269\u306B\u306A\u308A\u304B\u3051\u306E\u5974\u3092\n\u5916\u306B\u51FA\u3059\u308F\u3051\u306B\u306F\u884C\u304B\u306A\u3044\u3002"
     ui: 1
-    nextText: TXT_TestDialog_002
+    nextText: TXT_Memo_001_content_015
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TestDialog_002
-    text: koreha Dialog no Test you Desu
+  - id: TXT_Memo_001_content_015
+    text: "\u3060\u304C\u5B89\u5FC3\u306F\u3057\u3066\u3044\u3044\u3002\n\u7121\u4E8B\u306A\u5974\u307E\u3067\u898B\u6BBA\u3057\u306B\u3059\u308B\u307B\u3069\n\u79C1\u3082\u9B3C\u3058\u3083\u306A\u3044\u3002"
     ui: 1
-    nextText: TXT_TestDialog_003
+    nextText: TXT_Memo_001_content_020
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TestDialog_003
-    text: wwwwwwwww
+  - id: TXT_Memo_001_content_020
+    text: "\u300E\u62B5\u6297\u85AC\u300F\u306F\u51E6\u5206\u3057\u305F\u304C\n\u65B0\u305F\u306B\u4F5C\u308B\u3053\u3068\u306F\u3067\u304D\u308B\u3002\n\n\u307E\u3060\u8133\u304C\u4FB5\u3055\u308C\u3066\u3044\u306A\u3051\u308C\u3070\n\u3068\u3044\u3046\u6761\u4EF6\u4ED8\u304D\u3060\u304C\u306A\u3002"
     ui: 1
-    nextText: 
+    nextText: TXT_Memo_001_content_025
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TestChoise_001
-    text: Choose from 4choices
-    ui: 0
-    nextText: 
-    choise0: TXT_System_001
-    choise1: TXT_System_002
-    choise2: TXT_TestChoise_002
-    choise3: TXT_TestChoise_003
-  - id: TXT_TestChoise_002
-    text: get r6
-    ui: 0
-    nextText: TXT_TestChoise_004
-    choise0: r6
-    choise1: testdemo1
-    choise2: 
-    choise3: testdemo2
-  - id: TXT_TestChoise_003
-    text: get r4 and r8
-    ui: 0
-    nextText: TXT_TestChose_005
-    choise0: r4
-    choise1: r8
-    choise2: testdemo2
-    choise3: 
-  - id: TXT_TestVoice_001
-    text: I couldn't look back
-    ui: 2
-    nextText: TXT_TestVoice_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestVoice_002
-    text: You'd gone away from me
-    ui: 2
-    nextText: TXT_TestVoice_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestVoice_003
-    text: I felt my heart aches
-    ui: 2
-    nextText: TXT_TestVoice_004
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestVoice_004
-    text: I was afraid of following you
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestChoise_004
-    text: You got r6
-    ui: 0
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestChose_005
-    text: You got r4 and r8
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestItem_001
-    text: This is test item01
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestItem_002
-    text: This is test item02
+  - id: TXT_Memo_001_content_025
+    text: "\u307E\u305A\u306F\n\u300E\u6EB6\u6DB2A\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\u304C\u66F8\u304B\u308C\u305F\u30E1\u30E2\u3092\u63A2\u305B\u3002\n\n\u305D\u308C\u3059\u3089\u3067\u304D\u306A\u304D\u3083\n\u3042\u3093\u305F\u306F\u3082\u3046\u7D42\u308F\u308A\u3060\u3002"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TestItem_003
-    text: This is test item03
-    ui: 0
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_2_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
-    ui: 2
-    nextText: TXT_CassetteTape_2_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_2_002
-    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
-    ui: 2
-    nextText: TXT_CassetteTape_2_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_2_003
-    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_2_004
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_2_005
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060\u3000\u3088\u304F\u304A\u7236\u3055\u3093\u304C\u7814\u7A76\u306B\u3064\u3044\u3066\u9332\u97F3\u3057\u3066\u3044\u305F\n\u4F55\u304C\u8A18\u9332\u3055\u308C\u3066\u3044\u308B\u306E\u3060\u308D\u3046\uFF1F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_001
-    text: "\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u5165\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: TXT_CassetteTape_3_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_002
-    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
-    ui: 2
-    nextText: TXT_CassetteTape_3_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_003
-    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_004
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_005
-    text: "\u6551\u6025\u7BB1\u3060\u3000\u304B\u306A\u308A\u672C\u683C\u7684\u3060\n\u306A\u306B\u304B\u5F79\u7ACB\u3064\u3082\u306E\u306F\u306A\u3044\u304B\u306A\uFF1F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_3_006
-    text: "\u6551\u6025\u7BB1\u3060\u3000\u304B\u306A\u308A\u672C\u683C\u7684\u3060\u304C\u3001\u5F79\u7ACB\u3061\u305D\u3046\u306A\u3082\u306E\u306F\u306A\u3044"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_001
-    text: "1? \u5199\u771F\u7ACB\u3066\u306E\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u96A0\u3055\u308C\u3066\u3042\u3063\u305F"
-    ui: 2
-    nextText: TXT_CassetteTape_4_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_002
-    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF1F"
-    ui: 2
-    nextText: TXT_CassetteTape_4_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_003
-    text: "\u6EB6\u6DB2C\u3067\u3044\u3044\u306E\u304B\u306A\uFF1F"
-    ui: 2
-    nextText: TXT_CassetteTape_4_004
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_004
-    text: "\u5C11\u3057\u30BF\u30A4\u30C8\u30EB\u304C\u5909\u306A\u6C17\u304C\u3059\u308B\u3051\u3069\u3001\u4E00\u5FDC\u8CB0\u3063\u3066\u304A\u3053\u3046"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_005
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_006
-    text: "\u5199\u771F\u7ACB\u3066\u3060\u3000\u79C1\u3068\u304A\u7236\u3055\u3093\u304C\u5199\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: TXT_CassetteTape_4_008
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_008
-    text: "...\u307E\u3060\u5BB6\u306B\u5E30\u3063\u3066\u304D\u3066\u304F\u308C\u305F\u9803\u306E\u304A\u7236\u3055\u3093\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_4_007
-    text: "\u2026"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_001
-    text: "\u30B4\u30DF\u7BB1\u306E\u4E2D\u306B\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u304C\u5165\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: TXT_CassetteTape_5_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_002
-    text: "\u30BF\u30A4\u30C8\u30EB\u306F......\u300C\u6EB6\u6DB2C\u306E\u4F5C\u6210\u65B9\u6CD5\u300D...\uFF01"
-    ui: 2
-    nextText: TXT_CassetteTape_5_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_003
-    text: "\u3053\u308C\u3001\u5927\u4E8B\u306A\u60C5\u5831\u304B\u3082\u77E5\u308C\u306A\u3044...\uFF01"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_004
-    text: "\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300C\u6EB6\u6DB2C\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u3092\u5165\u624B\u3057\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_005
-    text: "\u30B4\u30DF\u7BB1\u3060\u3000...\u3082\u3057\u304B\u3057\u305F\u3089\u4F55\u304B\u3042\u308B\u304B\u3082"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_006
-    text: "\u30B4\u30DF\u7BB1\u3060\u3000\u4E2D\u306F\u5F53\u7136\u30B4\u30DF\u3060\u3051\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_007
-    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u6368\u3066\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassetteTape_5_008
-    text: "\u6FC1\u3063\u305F\u62B5\u6297\u85AC\u3092\u6368\u3066\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_ItemName_CassetteTape_2
-    text: "\u6EB6\u6DB2\uFF21\u306E\u4F5C\u6210\u65B9\u6CD5"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_ItemName_CassetteTape_3
-    text: "\u6EB6\u6DB2\uFF22\u306E\u4F5C\u6210\u65B9\u6CD5"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_ItemName_CassetteTape_4
-    text: "\u6EB6\u6DB2\u531A\u306E\u4F5C\u6210\u65B9\u6CD5"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_ItemName_CassetteTape_5
-    text: "\u6EB6\u6DB2\uFF23\u306E\u4F5C\u6210\u65B9\u6CD5"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30D7\u30EC\u30FC\u30E4\u30FC\u3060"
-    ui: 2
-    nextText: TXT_CassettePlayer_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_002
-    text: "\u30C6\u30FC\u30D7\u304C\u3042\u308C\u3070\u518D\u751F\u3067\u304D\u305D\u3046"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T2_001
-    text: "\u60AA\u3044\u304C\u58F0\u306F\u52A0\u5DE5\u3055\u305B\u3066\u3082\u3089\u3046\u305E\n\u805E\u304D\u82E6\u3057\u304F\u3066\u60AA\u3044\u304C\u3001\u4E00\u5FDC\u306E\u4FDD\u967A\u3060"
-    ui: 2
-    nextText: TXT_CassettePlayer_T2_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T2_002
-    text: "\u3055\u3066\u3001\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u6975\u4F4E\u6E29\u3067\u4FDD\u5B58\u3057\u3066\u3044\u308B\n\u624B\u304C\u5C4A\u304B\u306A\u304B\u3063\u305F\u3089\u6BB5\u30DC\u30FC\u30EB\u306E\u4E2D\u3067\u3082\u63A2\u3057\u3066\u307F\u308D"
-    ui: 2
-    nextText: TXT_CassettePlayer_T2_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T2_003
-    text: "\u5834\u6240\u306E\u30D2\u30F3\u30C8\u306F\u3053\u308C\u3067\u5341\u5206\u3060\u308D\u3046...\n\u6B21\u306B\u3001\u9060\u5FC3\u5206\u96E2\u6A5F\u3092\u4F7F\u3046\u306B\u306F\u30ED\u30FC\u30BF\u30FC\u304C\u5FC5\u8981\u3060"
-    ui: 2
-    nextText: TXT_CassettePlayer_T2_004
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T2_004
-    text: "\u7A74\u306E\u958B\u3044\u305F\u4E38\u3044\u91D1\u5C5E\u90E8\u54C1\u3092\u63A2\u305B\n\u9060\u5FC3\u5206\u96E2\u306F\u91CD\u3055\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u60AA\u3044\u3068\u5931\u6557\u3059\u308B"
-    ui: 2
-    nextText: TXT_CassettePlayer_T2_005
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T2_005
-    text: "\u5206\u3089\u306A\u3044\u4E8B\u304C\u3042\u308C\u3070\u30DB\u30EF\u30A4\u30C8\u30DC\u30FC\u30C9\u3092\u898B\u306B\u884C\u3051\n\u554F\u984C\u304C\u306A\u3051\u308C\u3070\u3001\u300E\u9752\u3044\u6EB6\u6DB2\u300F\u304C\u51FA\u6765\u4E0A\u304C\u308B\u306F\u305A\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T3_001
-    text: "\u826F\u304F\u898B\u3064\u3051\u305F\u306A\u3001\u8D64\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u306F\u7C21\u5358\u3060\n"
-    ui: 2
-    nextText: TXT_CassettePlayer_T3_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T3_002
-    text: 
-    ui: 2
-    nextText: TXT_CassettePlayer_T3_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T3_003
-    text: 
-    ui: 2
-    nextText: TXT_CassettePlayer_T3_004
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T3_004
-    text: 
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T3_005
-    text: 
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T4_001
-    text: "\u9752\u3044\u6EB6\u6DB2\u3068\u8D64\u3044\u6EB6\u6DB2\u3092\n\u5168\u3066\u4F5C\u696D\u673A\u306E\u4E0A\u306E"
-    ui: 2
-    nextText: TXT_CassettePlayer_T4_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T4_002
-    text: "\u3053\u308C\u3067\u62B5\u6297\u85AC\u306F\u5B8C\u6210\n\u98F2\u3081\u3070\u304A\u524D\u306F\u52A9\u304B\u308B"
-    ui: 2
-    nextText: TXT_CassettePlayer_T4_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T4_003
-    text: "\u30C9\u30A2\u306E\u30ED\u30C3\u30AF\u3092\u89E3\u9664\u3057\u3066\u65E9\u304F\u9003\u3052\u308D\n\u4FFA\u306F\u3001\u5148\u306B\u884C\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_001
-    text: "\u624B\u5143\u306B\u306F\u9752\u3044\u6EB6\u6DB2\u306E\u8A66\u9A13\u7BA1\uFF13\u672C\n\u8D64\u3044\u6EB6\u6DB2\u306E\u30C1\u30E5\u30FC\u30D6\uFF12\u672C\u304C\u3042\u308B\u306A"
-    ui: 2
-    nextText: TXT_CassettePlayer_T5_002
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_002
-    text: "\u305D\u308C\u305E\u308C\u3001\u5FAE\u5999\u306B\u6EB6\u6DB2\u306E\u6FC3\u3055\u304C\u9055\u3046\u3060\u308D\u3046"
-    ui: 2
-    nextText: TXT_CassettePlayer_T5_003
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_003
-    text: "\u9752\u3044\u65B9\u306F\u8584\u3044\u9806\u306B1ml\u30015ml\u300110ml\n\u8D64\u3044\u6EB6\u6DB2\u3082\u540C\u69D8\u3001\u8584\u3044\u9806\u306B2ml\u30014ml"
-    ui: 2
-    nextText: TXT_CassettePlayer_T5_004
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_004
-    text: "\u305D\u308C\u3092\u30AF\u30EA\u30FC\u30F3\u30D9\u30F3\u30C1\u306E\u4E0A\u306E\u8A66\u85AC\u74F6\u306B\u5165\u308C\u308D\n\u5B9F\u9A13\u53F0\u306E\u30D4\u30DA\u30C3\u30C8\u3067\u6B63\u78BA\u306A\u5206\u91CF\u304C\u8A08\u308C\u308B"
-    ui: 2
-    nextText: TXT_CassettePlayer_T5_005
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_005
-    text: "\u4E0A\u624B\u304F\u3044\u3063\u3066\u3044\u308C\u3070\u900F\u660E\u306A\u7D2B\u8272\u306E\u6EB6\u6DB2\u306B\u306A\u308B\n\u75C7\u72B6\u304C\u9032\u884C\u3059\u308B\u524D\u306B\u65E9\u304F\u98F2\u3093\u3067\u3057\u307E\u3048"
-    ui: 2
-    nextText: TXT_CassettePlayer_T5_006
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T5_006
-    text: "\u5F8C\u306F\u9003\u3052\u308B\u3060\u3051\u3060\u3000\u9003\u3052\u65B9\u306E\u30E1\u30E2\u3092\u7528\u610F\u3057\u305F\n\u3042\u3093\u305F\u304C\u5165\u3063\u3066\u304D\u305F\u30C9\u30A2\u306E\u5468\u56F2\u3092\u8ABF\u3079\u3066\u307F\u308D"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CassettePlayer_T6_001
-    text: "\u30AB\u30BB\u30C3\u30C8\u30D7\u30EC\u30FC\u30E4\u30FC\u3092\u6B62\u3081\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_1_01
-    text: "\u3053\u308C\u3092\u8AAD\u3093\u3067\u3044\u308B\u3042\u3093\u305F\u3001\u60AA\u3044\u304C\u5B9F\u9A13\u5BA4\u306F\u79C1\u304C\u8352\u3089\u3057\u305F\u3002\n\u5316\u3051\u7269\u306B\u306A\u308A\u304B\u3051\u3067\u77E5\u80FD\u304C\u6B8B\u3063\u3066\u3044\u305F\u3089\u307E\u305A\u3044\u304B\u3089\u306A\u3002\n\u305D\u3093\u306A\u5974\u3092\u5916\u306B\u51FA\u3059\u308F\u3051\u306B\u306F\u3044\u304B\u306A\u3044\u7406\u89E3\u3057\u3066\u304F\u308C\u3002\n\u3060\u304C\u5B89\u5FC3\u306F\u3057\u3066\u3044\u3044\u3002\n\u7121\u4E8B\u306A\u5974\u307E\u3067\u898B\u6BBA\u3057\u306B\u3059\u308B\u307B\u3069\u79C1\u3082\u9B3C\u3058\u3083\u306A\u3044\u3002"
+  - id: TXT_Memo_002_content_010
+    text: "\u300E\u6EB6\u6DB2A\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u6587\u5B57\u306F\u307E\u3060\u8AAD\u3081\u308B\u3088\u3046\u3060\u306A\u3002\n\u52A9\u304B\u308A\u305F\u3051\u308C\u3070\u6025\u3052\u3088\u3002\n\n\u3067\u306F\u300E\u62B5\u6297\u85AC\u300F\u306E\n\u5408\u6210\u65B9\u6CD5\u3092\u6307\u793A\u3059\u308B\u3002"
     ui: 1
-    nextText: TXT_Memo_1_02
+    nextText: TXT_Memo_002_content_020
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_1_02
-    text: "\u5438\u3044\u8FBC\u3093\u3060\u80DE\u5B50\u3092\u9664\u53BB\u3059\u308B\u300E\u62B5\u6297\u85AC\u300F\u306F\u3053\u3053\u3067\u4F5C\u308C\u308B\u3002\n\u307E\u3060\u8133\u304C\u4FB5\u3055\u308C\u3066\u3044\u306A\u3051\u308C\u3070\u3001\u3068\u3044\u3046\u6761\u4EF6\u4ED8\u304D\u3060\u304C\u306A\u3002\n\u307E\u305A\u306F\u300E\u9752\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u304C\u30E1\u30E2\u3092\u63A2\u305B\u3002\n\u305D\u308C\u3059\u3089\u3067\u304D\u306A\u304D\u3083\u3002\u3042\u3093\u305F\u306F\u3082\u3046\u7D42\u308F\u308A\u3060\u3002\n\u6570\u6642\u9593\u5F8C\u306B\u306F\u5316\u3051\u7269\u306E\u4EF2\u9593\u5165\u308A\u3060\u3002"
+  - id: TXT_Memo_002_content_020
+    text: "\u307E\u305A\u306F\n\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092\n\u300E\u9060\u5FC3\u5206\u96E2\u6A5F\u300F\u306B\u304B\u3051\u308D\u3002\n\n\u8A73\u7D30\u306F\u3053\u306E\u30E1\u30E2\u3068\u540C\u3058\u540D\u524D\u306E\n\u300E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300F\u306B\u9332\u97F3\u3057\u305F\u3002\n\n\u6B21\u306F\u305D\u3044\u3064\u3092\u63A2\u3059\u3093\u3060\u3002"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_2_00
-    text: "\u300E\u9752\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F...\n\u66F8\u304B\u308C\u3066\u3044\u308B\u306E\u306F\u4F55\u304B\u306E\u5B9F\u9A13\u624B\u9806\u304B\u306A\uFF1F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_2_01
-    text: "\u300E\u9752\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u6587\u5B57\u306F\u307E\u3060\u8AAD\u3081\u308B\u3088\u3046\u3060\u306A\u52A9\u304B\u308A\u305F\u3051\u308C\u3070\u6025\u3052\u3088\u3002\n\u3067\u300E\u62B5\u6297\u85AC\u300F\u306E\u751F\u6210\u65B9\u6CD5\u3092\u6307\u793A\u3059\u308B\u3002"
+  - id: TXT_Memo_002_reaction_010
+    text: "\u300E\u6EB6\u6DB2A\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\uFF1F"
     ui: 1
-    nextText: TXT_Memo_2_02
+    nextText: TXT_Memo_002_reaction_015
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_2_02
-    text: "\u307E\u305A\u306F\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092\u300E\u9060\u5FC3\u5206\u96E2\u6A5F\u300F\u306B\u304B\u3051\u308D\u3002\n\u5F53\u7136\u3001\u3053\u308C\u306B\u3082\u5C11\u3057\u9762\u5012\u306A\u624B\u9806\u3092\u8E0F\u3093\u3067\u3082\u3089\u3046\u3002\n\u8A73\u7D30\u306F\u300E\u9752\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u3068\u66F8\u3044\u305F\n\u300E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300F\u306B\u9332\u97F3\u3057\u305F\u3002\n\u6B21\u306F\u305D\u3044\u3064\u3092\u63A2\u3059\u3093\u3060\u3002"
+  - id: TXT_Memo_002_reaction_015
+    text: "\u4F55\u304B\u306E\u5B9F\u9A13\u624B\u9806\u304C\n\u66F8\u304B\u308C\u305F\u30E1\u30E2\u3060"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_3_00
-    text: "\u300E\u8D64\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u2026\n\u66F8\u304B\u308C\u3066\u3044\u308B\u306E\u306F\u4F55\u304B\u306E\u5B9F\u9A13\u624B\u9806\u304B\u306A\uFF1F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_3_01
-    text: "\u300E\u8D64\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u624B\u9806\u306F\u9752\u3044\u6EB6\u6DB2\u3068\u540C\u3058\u3060\u3002\n\u7528\u610F\u3057\u3066\u304A\u3044\u3066\u3084\u3063\u305F\u6EB6\u6DB2\u3092\u9060\u5FC3\u5206\u96E2\u3059\u308C\u3070\u3044\u3044\u3002\n\u5FC5\u8981\u306A\u306E\u306F\u300E\u30C1\u30E5\u30FC\u30D6\u30BB\u30C3\u30C8\u300F\u3068\u300E\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u6A5F\u300F\u3060\u3002"
+  - id: TXT_Memo_003_content_010
+    text: "\u300E\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u3084\u308B\u3053\u3068\u306F\u6EB6\u6DB2A\u3068\u540C\u3058\u3060\u3002\n\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092\n\u300E\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u6A5F\u300F\u306B\u304B\u3051\u308D\u3002"
     ui: 1
-    nextText: TXT_Memo_3_02
+    nextText: TXT_Memo_003_content_020
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_3_02
-    text: "\u8A73\u7D30\u306A\u6307\u793A\u306F\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u306B\u9332\u97F3\u3057\u305F\u3002\n\u3053\u306E\u30E1\u30E2\u3068\u540C\u3058\u30BF\u30A4\u30C8\u30EB\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3092\u63A2\u305B\u3002\n\u4ECA\u5EA6\u306F\u3053\u3044\u3064\u3092\u63A2\u3059\u306E\u306B\u82E6\u52B4\u3057\u3066\u3082\u3089\u304A\u3046\u3002\n\u3082\u3057\u898B\u3064\u304B\u3089\u306A\u3044\u3088\u3046\u306A\u3089\u4E00\u5EA6\u982D\u3092\u51B7\u3084\u3059\u3068\u3044\u3044\u3002\n\u78BA\u304B\u6551\u6025\u7BB1\u306B\u4FDD\u51B7\u30B7\u30FC\u30C8\u304C\u5165\u3063\u3066\u3044\u305F\u306F\u305A\u3060\u3002"
+  - id: TXT_Memo_003_content_020
+    text: "\u8A73\u7D30\u306F\u300E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u300F\u3060\u3002\n\u3053\u306E\u30E1\u30E2\u540D\u524D\u306E\u30C6\u30FC\u30D7\u3092\u63A2\u305B\u3002\n\n\u3082\u3057\u898B\u3064\u304B\u3089\u306A\u3044\u3088\u3046\u306A\u3089\n\u4E00\u5EA6\u982D\u3092\u51B7\u3084\u3059\u3068\u3044\u3044\u3002\n\n\u6551\u6025\u7BB1\u306B\u4FDD\u51B7\u30B7\u30FC\u30C8\u304C\n\u5165\u3063\u3066\u3044\u305F\u306F\u305A\u3060\u3002"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_3_03
-    text: "\u300E\u8D64\u3044\u6EB6\u6DB2\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u306E\u30E1\u30E2\u3060\n\u3060\u3051\u3069\u3001\u307E\u305A\u306F\u9752\u3044\u6EB6\u6DB2\u3092\u4F5C\u3089\u306A\u304D\u3083"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_4_00
-    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u2026\n\u4ECA\u8AAD\u3093\u3067\u3082\u3088\u304F\u308F\u304B\u3089\u306A\u3044\u3084"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_4_01
-    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u9752\u3044\u6EB6\u6DB2\u3068\u8D64\u3044\u6EB6\u6DB2\u3092\u9069\u5207\u306A\u5206\u91CF\u3067\u6DF7\u305C\u308C\u3070\n\u300E\u62B5\u6297\u85AC\u300F\u306E\u5B8C\u6210\u3060\u3002\n\u4F8B\u306B\u3088\u3063\u3066\u8A73\u7D30\u306F\u540C\u3058\u540D\u524D\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060\u3002"
+  - id: TXT_Memo_003_reaction_010
+    text: "\u300E\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\uFF1F"
     ui: 1
-    nextText: TXT_Memo_4_02
+    nextText: TXT_Memo_003_reaction_015
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_4_02
-    text: "...\u307E\u3063\u305F\u304F\u3001\u5BB6\u65CF\u304C\u604B\u3057\u3044\u3088\u3002\n\u6559\u6388\u3082\u5B9F\u9A13\u5BA4\u306B\u5BB6\u65CF\u5199\u771F\u3092\u7F6E\u3044\u3066\u3044\u3066\n\u3044\u3064\u3082\u5A18\u3055\u3093\u3092\u773A\u3081\u3066\u3044\u305F\u306A\u3002\n...\u306A\u305C\u3001\u3053\u3093\u306A\u3053\u3068\u306B\u306A\u3063\u3066\u3057\u307E\u3063\u305F\u3093\u3060\u308D\u3046\u306A\u3002"
+  - id: TXT_Memo_003_reaction_015
+    text: "\u4F55\u304B\u306E\u5B9F\u9A13\u624B\u9806\u304C\n\u66F8\u304B\u308C\u305F\u30E1\u30E2\u3060"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_4_03
-    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u306E\u30E1\u30E2\u3060\uFF01\n\u3051\u3069\u3001\u4ECA\u306F\u8D64\u3044\u6EB6\u6DB2\u3092\u4F5C\u3089\u306A\u304D\u3083...\uFF01"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_5_01
-    text: "\u300E\u8131\u51FA\u65B9\u6CD5\u300F\n\n\u62B5\u6297\u85AC\u306F\u4F5C\u308A\u7D42\u3048\u305F\u304B\uFF1F\n\u5F8C\u306F\u9003\u3052\u308B\u3060\u3051\u3060\u3002\n\u3053\u306E\u90E8\u5C4B\u306E\u30C9\u30A2\u306F\u96FB\u5B50\u30ED\u30C3\u30AF\u306B\u306A\u3063\u3066\u3044\u308B\u3002\n\u901A\u96FB\u3068\u540C\u6642\u306B\u30ED\u30C3\u30AF\u3055\u308C\u3066\u3044\u308B\u306F\u305A\u3060\u304B\u3089\n\u4E00\u5EA6\u30D6\u30EC\u30FC\u30AB\u30FC\u3092\u843D\u3068\u305B\u3002\n\u771F\u3063\u6697\u306B\u306F\u306A\u308B\u304C\u72ED\u3044\u7814\u7A76\u5BA4\u3060\u3001\u554F\u984C\u306A\u3044\u3060\u308D\u3046\u3002"
+  - id: TXT_Memo_003_reaction_020
+    text: "\u300E\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\uFF01"
     ui: 1
-    nextText: TXT_Memo_5_03
+    nextText: TXT_Memo_003_reaction_025
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Memo_5_02
-    text: "\u300E\u8131\u51FA\u65B9\u6CD5\u300F...\n\u307E\u3060\u9003\u3052\u3066\u3044\u3089\u308C\u306A\u3044"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Memo_5_03
-    text: "\u9003\u3052\u308B\u9014\u4E2D\u306B\u5316\u3051\u7269\u306B\u51FA\u304F\u308F\u3057\u305F\u3089\u6C17\u3092\u3064\u3051\u308D\u3002\n\u3042\u3044\u3064\u3089\u306F\u76EE\u3082\u898B\u3048\u306A\u3044\u3057\u9F3B\u3082\u307B\u307C\u5229\u304B\u306A\u3044\u304C\n\u97F3\u306B\u306F\u654F\u611F\u3060\u3002\n\u305D\u308C\u3067\u3082\u3086\u3063\u304F\u308A\u3068\u8107\u3092\u901A\u308C\u3070\u554F\u984C\u306A\u3044\u3002\n\u79C1\u306F\u5225\u306E\u5B9F\u9A13\u5BA4\u306B\u3082\u540C\u3058\u4ED5\u8FBC\u307F\u3092\u3057\u306B\u884C\u304F\u3002\n\u7814\u7A76\u8005\u3068\u3057\u3066\u306E\u8CAC\u4EFB\u3060\u3002\n\u3053\u3053\u307E\u3067\u3084\u308C\u305F\u3093\u3060\u3001\u3042\u3093\u305F\u306F\u7121\u4E8B\u306B\u9003\u3052\u5207\u3063\u3066\u304F\u308C\u3088\u3002"
+  - id: TXT_Memo_003_reaction_025
+    text: "\u3053\u308C\u3082\u4F5C\u308B\u3093\u3060\u308D\u3046\u3051\u3069\n\u4ECA\u306F\u6EB6\u6DB2A\u3092\u4F5C\u308D\u3046\uFF01"
     ui: 1
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Roter_no_Memo
-    text: "\u306A\u3093\u3060\u3053\u308C\uFF1F\u8AAC\u660E\u66F8\u306F\u306A\u3044\u304B\u306A\u2026"
+  - id: TXT_Memo_004_content_010
+    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\n\n\u6EB6\u6DB2A\u3068\u6EB6\u6DB2B\u3092\n\u9069\u5207\u306A\u5206\u91CF\u3067\u6DF7\u305C\u308C\u3070\n\u300E\u62B5\u6297\u85AC\u300F\u306E\u5B8C\u6210\u3060\u3002\n\n\u4F8B\u306B\u3088\u3063\u3066\u8A73\u7D30\u306F\n\u540C\u3058\u540D\u524D\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060\u3002"
+    ui: 1
+    nextText: TXT_Memo_004_content_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_004_content_020
+    text: "...\u307E\u3063\u305F\u304F\u3001\u5BB6\u65CF\u304C\u604B\u3057\u3044\u3088\u3002\n\n\u6559\u6388\u3082\u3044\u3064\u3082\u5A18\u3055\u3093\u306E\n\u5199\u771F\u3092\u773A\u3081\u3066\u3044\u305F\u306A\u3002\n\n...\u306A\u305C\u3001\u3053\u3093\u306A\u3053\u3068\u306B\n\u306A\u3063\u3066\u3057\u307E\u3063\u305F\u3093\u3060\u308D\u3046\u306A\u3002"
+    ui: 1
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_004_reaction_010
+    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F..."
+    ui: 2
+    nextText: TXT_Memo_004_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_004_reaction_015
+    text: "\u5B9F\u9A13\u624B\u9806\u304C\u304B\u304B\u308C\u3066\u3044\u308B\u3051\u3069"
+    ui: 2
+    nextText: TXT_Memo_004_reaction_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_004_reaction_018
+    text: "\u4ECA\u8AAD\u3093\u3067\u3082\u3088\u304F\u5206\u304B\u3089\u306A\u3044\u3084"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Roter4_get
-    text: "4\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u624B\u306B\u5165\u308C\u305F"
+  - id: TXT_Memo_004_reaction_020
+    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\uFF01"
+    ui: 2
+    nextText: TXT_Memo_004_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_004_reaction_025
+    text: "\u3053\u308C\u3082\u4F5C\u308B\u3093\u3060\u308D\u3046\u3051\u3069\n\u4ECA\u306F\u6EB6\u6DB2A\u3092\u4F5C\u308D\u3046\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Roter6_get
-    text: "6\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u624B\u306B\u5165\u308C\u305F"
+  - id: TXT_Memo_005_content_010
+    text: "\u300E\u8131\u51FA\u65B9\u6CD5\u300F\n\n\u62B5\u6297\u85AC\u306F\u4F5C\u308A\u7D42\u3048\u305F\u304B\uFF1F\n\u5F8C\u306F\u9003\u3052\u308B\u3060\u3051\u3060\u3002\n\n\u3053\u306E\u90E8\u5C4B\u306E\u30C9\u30A2\u306F\u96FB\u5B50\u30ED\u30C3\u30AF\u3067\n\u901A\u96FB\u6642\u306B\u30ED\u30C3\u30AF\u3055\u308C\u308B\u306F\u305A\u3060\u3002"
+    ui: 1
+    nextText: TXT_Memo_005_content_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_005_content_020
+    text: "\u4E00\u5EA6\u90E8\u5C4B\u306E\u96FB\u6C17\u3092\u843D\u3068\u305B\u3002\n\u72ED\u3044\u7814\u7A76\u5BA4\u3060\n\u6697\u304F\u3068\u3082\u554F\u984C\u306A\u3044\u3060\u308D\u3046\u3002\n\n\u79C1\u306F\u5225\u306E\u5B9F\u9A13\u5BA4\u306B\u3082\n\u540C\u3058\u4ED5\u8FBC\u307F\u3092\u3057\u306B\u884C\u304F\u3002\n\n\u7814\u7A76\u8005\u3068\u3057\u3066\u306E\u8CAC\u4EFB\u3060\u3002\n\u3053\u3053\u307E\u3067\u3084\u308C\u305F\u3093\u3060\n\u3042\u3093\u305F\u306F\u7121\u4E8B\u306B\u9003\u3052\u5207\u308C\u3088\u3002"
+    ui: 1
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_005_reaction_010
+    text: "\u300E\u8131\u51FA\u65B9\u6CD5\u300F\u306E\u30E1\u30E2\uFF01"
+    ui: 2
+    nextText: TXT_Memo_005_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_005_reaction_015
+    text: "\u3067\u3082\u3001\u307E\u3060\u9003\u3052\u3089\u308C\u306A\u3044...\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Roter8_get
-    text: "8\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u624B\u306B\u5165\u308C\u305F"
+  - id: TXT_Memo_005_reaction_020
+    text: "\u300E\u8131\u51FA\u65B9\u6CD5\u300F..."
+    ui: 2
+    nextText: TXT_Memo_005_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Memo_005_reaction_025
+    text: "...\u62B5\u6297\u85AC\u3092\u4F5C\u308B\u307E\u3067\u306F\n\u9003\u3052\u3089\u308C\u306A\u3044"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_DimpleKey_01
-    text: "\u4E2D\u306F\u30AC\u30E9\u30AF\u30BF\u3070\u304B\u308A\u3060\u3000\u5F79\u7ACB\u3061\u305D\u3046\u306A\u3082\u306E\u306F\u3042\u308B\u304B\u306A\uFF1F"
+  - id: TXT_CassetteTape_002_reaction_010
+    text: "\u3053\u308C\u3001\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_CassetteTape_002_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_002_reaction_015
+    text: "\u304A\u7236\u3055\u3093\u304C\u5B9F\u9A13\u5185\u5BB9\u306E\u9332\u97F3\u306B\n\u4F7F\u3063\u3066\u305F\u306A"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_DimpleKey_02
-    text: "\u5909\u306A\u30AB\u30AE\u3060\u3000\u4F55\u304B\u3092\u958B\u3051\u3089\u308C\u308B\u304B\u3082\u3000\u3068\u308A\u3042\u3048\u305A\u3082\u3063\u3066\u304A\u3053\u3046"
+  - id: TXT_CassetteTape_002_reaction_020
+    text: "\u300E\u6EB6\u6DB2A\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\uFF01"
+    ui: 2
+    nextText: TXT_CassetteTape_002_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CassetteTape_002_reaction_025
+    text: "\u3053\u308C\u3060\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_DimpleKey_03
-    text: "\u4E2D\u306F\u30AC\u30E9\u30AF\u30BF\u3070\u304B\u308A\u3060\u3000\u5F79\u306B\u7ACB\u3061\u305D\u3046\u306A\u3082\u306E\u306F\u3082\u3046\u306A\u3044"
+  - id: TXT_RescueBox_reaction_010
+    text: "\u6551\u6025\u7BB1\u3060"
+    ui: 2
+    nextText: TXT_RescueBox_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_RescueBox_reaction_015
+    text: "\u3046\u3061\u306B\u3042\u308B\u3084\u3064\u3088\u308A\u5927\u304D\u3044\u306A"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Freezer_01
-    text: "\u51B7\u51CD\u5EAB\u3060\u3000\u9375\u304C\u304B\u304B\u3063\u3066\u958B\u304B\u306A\u3044"
+  - id: TXT_RescueBox_reaction_020
+    text: "\u300E \u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\uFF01"
+    ui: 2
+    nextText: TXT_RescueBox_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_RescueBox_reaction_025
+    text: "\u3053\u308C\u3060\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Freezer_02
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3053\u306E\u4E2D\u3060\u3000\u9375\u3092\u63A2\u305D\u3046\u2026"
+  - id: TXT_PictureFrame_reaction_010
+    text: "\u5199\u771F\u7ACB\u3066\u3060"
+    ui: 2
+    nextText: TXT_PictureFrame_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PictureFrame_reaction_015
+    text: "\u79C1\u3068\u304A\u7236\u3055\u3093\u304C\u6620\u3063\u3066\u3044\u308B"
+    ui: 2
+    nextText: TXT_PictureFrame_reaction_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PictureFrame_reaction_018
+    text: "\u307E\u3060\u5BB6\u306B\u5E30\u3063\u3066\u6765\u3066\u305F\u9803\u306E\n\u304A\u7236\u3055\u3093\u3060..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Freezer_03
-    text: "\u51B7\u51CD\u5EAB\u304C\u958B\u3044\u305F\u3000\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u304C\u305F\u304F\u3055\u3093\u3042\u308B"
+  - id: TXT_PictureFrame_reaction_020
+    text: "...\u300E\u4F4E\u676D\u697D\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\uFF1F"
+    ui: 2
+    nextText: TXT_PictureFrame_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PictureFrame_reaction_025
+    text: "\u5B57\u3092\u9593\u9055\u3048\u3066\u308B\u3051\u3069..."
+    ui: 2
+    nextText: TXT_PictureFrame_reaction_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PictureFrame_reaction_028
+    text: "\u614C\u3066\u3066\u3044\u305F\u306E\u304B\u306A\uFF1F"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Freezer_04
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3082\u3046\u6301\u3063\u3066\u3044\u308B"
+  - id: TXT_PictureFrame_reaction_030
+    text: "\u304A\u7236\u3055\u3093...\n\u79C1\u304C\u52A9\u3051\u308B\u304B\u3089...\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_01
-    text: "\u4F55\u304B\u306E\u6A5F\u68B0\u3060"
+  - id: TXT_GarbageCan_reaction_010
+    text: "\u30B4\u30DF\u7BB1\u3060"
+    ui: 2
+    nextText: TXT_GarbageCan_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_GarbageCan_reaction_015
+    text: "\u7D19\u306B\u3001\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u306B..."
+    ui: 2
+    nextText: TXT_GarbageCan_reaction_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_GarbageCan_reaction_018
+    text: "\u7D30\u3044\u7BA1\uFF1F\n\u307F\u305F\u3044\u306A\u3084\u3064\u304C\u3044\u3063\u3071\u3044..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_02
-    text: "\u9060\u5FC3\u5206\u96E2\u6A5F\u3060\u3000\u307E\u305A\u306F\u30ED\u30FC\u30BF\u30FC\u3092\u63A2\u3055\u306A\u304D\u3083"
+  - id: TXT_GarbageCan_reaction_020
+    text: "\u3053\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7...\uFF01"
+    ui: 2
+    nextText: TXT_GarbageCan_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_GarbageCan_reaction_025
+    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u3063\u3066\n\u66F8\u3044\u3066\u3042\u308B\uFF01"
+    ui: 2
+    nextText: TXT_GarbageCan_reaction_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_GarbageCan_reaction_028
+    text: "\u3084\u3063\u3071\u308A\u3042\u306E\u30C6\u30FC\u30D7\u507D\u7269\u3060\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_03
-    text: "4\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u305F"
+  - id: TXT_GarbageCan_reaction_030
+    text: "\u30B4\u30DF\u7BB1\u3060"
+    ui: 2
+    nextText: TXT_GarbageCan_reaction_035
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_GarbageCan_reaction_035
+    text: "\u7D30\u3044\u7BA1\uFF1F\n\u307F\u305F\u3044\u306A\u3084\u3064\u304C\u3044\u3063\u3071\u3044..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_04
-    text: "6\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u305F"
+  - id: TXT_CasettePlayer_Tape002_010
+    text: "\u60AA\u3044\u304C\u58F0\u306F\u52A0\u5DE5\u3055\u305B\u3066\u3082\u3089\u3046\u305E"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_012
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_012
+    text: "\u4E00\u5FDC\u306E\u4FDD\u967A\u3068\u3057\u3066\u306A"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_014
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_014
+    text: "\u3055\u3066\u3001\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\n\u6975\u4F4E\u6E29\u3067\u4FDD\u5B58\u3057\u3066\u3044\u308B"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_016
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_016
+    text: "\u5834\u6240\u306E\u30D2\u30F3\u30C8\u306F\u3053\u308C\u3067\n\u5341\u5206\u3060\u308D\u3046"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_018
+    text: "\u624B\u304C\u5C4A\u304B\u306A\u304B\u3063\u305F\u3089\n\u6BB5\u30DC\u30FC\u30EB\u306E\u4E2D\u3067\u3082\u63A2\u3057\u3066\u307F\u308D"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_020
+    text: "\u6B21\u306B\u3001\u9060\u5FC3\u5206\u96E2\u6A5F\u3092\u4F7F\u3046\u306B\u306F\n\u30ED\u30FC\u30BF\u30FC\u304C\u5FC5\u8981\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_022
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_022
+    text: "\u7A74\u306E\u958B\u3044\u305F\u4E38\u3044\u91D1\u5C5E\u90E8\u54C1\u3092\u63A2\u305B"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_024
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_024
+    text: "\u9060\u5FC3\u5206\u96E2\u306F\u91CD\u3055\u306E\u30D0\u30E9\u30F3\u30B9\u304C\n\u60AA\u3044\u3068\u5931\u6557\u3059\u308B"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_026
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_026
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u4E09\u672C\u3067\u4E00\u7D44\u3060\n\u3042\u3068\u306F\u8003\u3048\u308D"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_028
+    text: "\u8003\u3048\u3066\u3082\u5206\u3089\u306A\u3044\u4E8B\u304C\u3042\u308C\u3070"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_030
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_030
+    text: "\u30DB\u30EF\u30A4\u30C8\u30DC\u30FC\u30C9\u3092\u898B\u306B\u884C\u3051"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_032
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_032
+    text: "40000\uFF47\u3001\u5341\u79D2\u7A0B\u5EA6\u3067\n\u5206\u96E2\u306F\u5B8C\u4E86\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_034
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_034
+    text: "\u4E0A\u624B\u304F\u3044\u3063\u305F\u900F\u660E\u306A\u300C\u6EB6\u6DB2A\u300D\u304C\n\u51FA\u6765\u4E0A\u304C\u308B\u306F\u305A\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_036
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_036
+    text: "\u6B21\u306F\u300C\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300D\u306E\n\u30E1\u30E2\u3092\u63A2\u305B\u3002"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape002_038
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape002_038
+    text: "\u91D1\u5C5E\u68DA\u306B\u3042\u308B"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_05
-    text: "8\u3064\u7A74\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u305F"
+  - id: TXT_CasettePlayer_Tape003_010
+    text: "\u826F\u304F\u898B\u3064\u3051\u305F\u306A\n\u6EB6\u6DB2B\u306E\u4F5C\u6210\u306F\u7C21\u5358\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_012
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_012
+    text: "\u6EB6\u6DB2A\u3067\u4F7F\u3063\u305F\u306E\u3082\u306E\u3068\u540C\u3058\n\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_014
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_014
+    text: "\u300E\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u5668\u300F\u306B\n\u304B\u3051\u308C\u3070\u3044\u3044"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_016
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_016
+    text: "\u3053\u306E\u9060\u5FC3\u5206\u96E2\u6A5F\u306F\u8A2D\u5B9A\u306F\u4E0D\u8981\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_018
+    text: "\u91CD\u3055\u306E\u30D0\u30E9\u30F3\u30B9\u3082\n\u6C17\u306B\u3057\u306A\u304F\u3066\u3044\u3044"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_020
+    text: "\u4E94\u79D2\u307B\u3069\u6A5F\u68B0\u306B\u304B\u3051\u308C\u3070\n\u5341\u5206\u3060\u308D\u3046"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_022
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_022
+    text: "\u554F\u984C\u304C\u306A\u3051\u308C\u3070\u500B\u6DB2\u5206\u96E2\u304C\u3067\u304D\u305F"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_024
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_024
+    text: "\u300E\u6EB6\u6DB2B\u300F\u304C\u51FA\u6765\u4E0A\u304C\u308B\u306F\u305A\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_026
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_026
+    text: "\u3082\u3046\u4E00\u3064\u624B\u9806\u3092\u8E0F\u3081\u3070\n\u62B5\u6297\u85AC\u306F\u51FA\u6765\u4E0A\u304C\u308B"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_028
+    text: "\u9811\u5F35\u308C\u3088"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape003_030
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape003_030
+    text: "\u30E1\u30E2\u306F\u30DB\u30EF\u30A4\u30C8\u30DC\u30FC\u30C9\u306B\n\u8CBC\u3063\u3066\u3042\u308B"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_06
-    text: "\u3042\u3068\u306F\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u304C\u3042\u308C\u3070\u2026"
+  - id: TXT_CasettePlayer_Tape004_010
+    text: "\u6EB6\u6DB2A\u3068\u6EB6\u6DB2B\u3092"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_012
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_012
+    text: "\u5168\u3066\u4F5C\u696D\u673A\u306E\u4E0A\u306E"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_014
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_014
+    text: "\u85AC\u74F6\u306B\u5165\u308C\u308D"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_016
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_016
+    text: "\u3053\u308C\u3067\u62B5\u6297\u85AC\u306F\u5B8C\u6210\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_018
+    text: "\u30C9\u30A2\u306F\u96FB\u5B50\u30ED\u30C3\u30AF\u5F0F\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_022
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_020
+    text: "\u90E8\u5C4B\u306E\u96FB\u6C17\u3092\u843D\u3068\u3057\u3066\u9003\u3052\u308D"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape004_022
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_022
+    text: "\u4FFA\u306F\u3001\u5148\u306B\u884C\u3063\u3066\u3044\u308B"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_07
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u914D\u7F6E\u3057\u305F"
+  - id: TXT_CasettePlayer_Tape005_010
+    text: "\u624B\u5143\u306B\u306F\u6EB6\u6DB2A\u3068\u6EB6\u6DB2B\u306E"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_012
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_012
+    text: "\u8A66\u9A13\u7BA1\u304C\u4E09\u672C\u305A\u3064\u3042\u308B\u306A"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_014
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_014
+    text: "\u6EB6\u6DB2A\u306F\u305D\u308C\u305E\u308C5ml"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_016
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_016
+    text: "\u6EB6\u6DB2B\u306F\u305D\u308C\u305E\u308C2ml"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_018
+    text: "\u305D\u308C\u3092\u51B7\u8535\u5EAB\u306E\u4E2D\u306E\n\u8A66\u85AC\u74F6\u306B\u5165\u308C\u308D"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_020
+    text: "\u6B63\u78BA\u306A\u5206\u91CF\u306F\u30D4\u30DA\u30C3\u30C8\u3067\n\u91CF\u308A\u3068\u308C"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_024
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_024
+    text: "\u74F6\u306E\u8A66\u85AC\u304C\u5168\u3066\u6EB6\u3051\u308C\u3070\n\u62B5\u6297\u85AC\u306E\u5B8C\u6210\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_026
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_026
+    text: "\u4E0A\u624B\u304F\u3044\u3063\u3066\u3044\u308C\u3070\n\u900F\u660E\u306A\u7D2B\u8272\u306E\u6EB6\u6DB2\u306B\u306A\u308B"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_034
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_034
+    text: "\u5F8C\u306F\u9003\u3052\u308B\u3060\u3051\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_036
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_036
+    text: "\u9003\u3052\u65B9\u306E\u30E1\u30E2\u3082\u7528\u610F\u3057\u305F"
+    ui: 2
+    nextText: TXT_CasettePlayer_Tape005_038
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_038
+    text: "\u3042\u3093\u305F\u304C\u5165\u3063\u3066\u304D\u305F\n\u30C9\u30A2\u3092\u8ABF\u3079\u3066\u307F\u308D"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_08
-    text: "\u3082\u3046\u4E00\u5EA6\u3084\u308A\u76F4\u305D\u3046\n\u9752\u9ED2\u3044\u6EB6\u6DB2\u306F\u6368\u3066\u3066\u3057\u307E\u304A\u3046"
+  - id: TXT_CasettePlayer_reaction_010
+    text: "\u30AB\u30BB\u30C3\u30C8\u30D7\u30EC\u30A4\u30E4\u30FC\u3060"
+    ui: 2
+    nextText: TXT_CasettePlayer_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_reaction_015
+    text: "\u304A\u7236\u3055\u3093\u3082\u540C\u3058\u306E\u6301\u3063\u3066\u305F\u306A"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_09
-    text: "\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u3088\u3046"
+  - id: TXT_Freezer_reaction_010
+    text: "\u3053\u308C\u306F\u51B7\u51CD\u5EAB\u304B\u306A"
+    ui: 2
+    nextText: TXT_Freezer_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_015
+    text: "\u9375\u304C\u304B\u304B\u3063\u3066\u308B..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_10
-    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
+  - id: TXT_Freezer_reaction_020
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3063\u3066\u3053\u306E\u4E2D\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_Freezer_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_025
+    text: "\u307E\u305A\u306F\u9375\u3092\u63A2\u3055\u306A\u304D\u3083"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_030
+    text: "\u898B\u3064\u3051\u305F\u9375\u3067..."
+    ui: 2
+    nextText: TXT_Freezer_reaction_032
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_032
+    text: "...\u958B\u3044\u305F\uFF01"
+    ui: 2
+    nextText: TXT_Freezer_reaction_034
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_034
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F..."
+    ui: 2
+    nextText: TXT_Freezer_reaction_036
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_036
+    text: "\u3046\u308F\u3063\uFF01\u3000\u3044\u3063\u3071\u3044\u3042\u308B...\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_040
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3082\u3046\u6301\u3063\u3066\u308B"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_050
+    text: "\u3061\u3083\u3093\u3068\u51FA\u6765\u3066\u308B\u304B\u5FC3\u914D\u3060\u306A..."
+    ui: 2
+    nextText: TXT_Freezer_reaction_055
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_055
+    text: "\u3046\u3093\u3001\u4F5C\u3063\u305F\u3084\u3064\u306F\n\u6368\u3066\u3066\u3084\u308A\u76F4\u305D\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_060
+    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057"
+    ui: 2
+    nextText: TXT_Freezer_reaction_065
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_065
+    text: "\u3082\u3046\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3044\u3089\u306A\u3044\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_070
+    text: "\u3088\u3057\u3001\u3082\u3046\u4E00\u5EA6\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_DimpleKey_reaction_010
+    text: "\u8907\u96D1\u306A\u30AB\u30AE\u3060\u306A..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_DimpleKey_reaction_020
+    text: "\u3053\u306E\u9375\u3001\u4F55\u304B\u306B\u4F7F\u3048\u306A\u3044\u304B\u306A\uFF1F"
+    ui: 2
+    nextText: TXT_DimpleKey_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_DimpleKey_reaction_025
+    text: "\u8CB0\u3063\u3066\u304A\u3053\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_010
+    text: "\u5B9F\u9A13\u306B\u4F7F\u3046\u6A5F\u68B0\u304B\u306A"
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_015
+    text: "\u300E\u9060\u5FC3\u5206\u96E2\u6A5F\u300F\u3063\u3066\u66F8\u3044\u3066\u3042\u308B"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_020
+    text: "\u300E\u9060\u5FC3\u5206\u96E2\u6A5F\u300F...\u3053\u308C\u3060"
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_025
+    text: "\u30ED\u30FC\u30BF\u30FC\u3063\u3066\u8A00\u3046\u90E8\u54C1\u3092\n\u63A2\u3055\u306A\u304D\u3083"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_030
+    text: "\u307E\u305A\u306F\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u306A\u3044\u3068"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_040
+    text: "\u30ED\u30FC\u30BF\u30FC\u3092\u30BB\u30C3\u30C8\u3057\u3066...\u3068"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_050
+    text: "\u3053\u306E\u30ED\u30FC\u30BF\u30FC\u3058\u3083\u306A\u3044\u304B\u3082..."
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_055
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_055
+    text: "\u53D6\u308A\u63DB\u3048\u3088\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_060
+    text: "\u91CD\u3055\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u5927\u4E8B..."
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_065
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_065
+    text: "...\u3053\u308C\u3067\u3044\u3044\u304B\u306A"
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_068
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_068
+    text: "\u6B21\u306F...\n\u8272\u3005\u3068\u8A2D\u5B9A\u3057\u306A\u304D\u3083\u306A\u3093\u3060..."
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_069
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_069
+    text: "\u3057\u3063\u304B\u308A\u6E96\u5099\u3057\u3066\u304B\u3089\u59CB\u3081\u3088\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorNG
+    text: "\u3048\u30FC\u3063\u3068\n\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
     ui: 0
     nextText: 
-    choise0: TXT_Centrifuge_13
-    choise1: TXT_Centrifuge_14
-    choise2: TXT_Centrifuge_15
+    choise0: TXT_Centrifuge_reaction_070_RotorNG_B
+    choise1: TXT_Centrifuge_reaction_070_RotorNG_C
+    choise2: TXT_Centrifuge_reaction_075_RotorNG_A
     choise3: 
-  - id: TXT_Centrifuge_11
-    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
+  - id: TXT_Centrifuge_reaction_070_RotorNG_A
+    text: 2000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorNG_A
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorNG_B
+    text: 4000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorNG_B
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorNG_C
+    text: 6000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorNG_C
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorNG_D
+    text: "\u5206\u304B\u3089\u306A\u3044..."
     ui: 0
     nextText: 
-    choise0: TXT_Centrifuge_16
-    choise1: TXT_Centrifuge_17
-    choise2: TXT_Centrifuge_18
+    choise0: 
+    choise1: 
+    choise2: 
     choise3: 
-  - id: TXT_Centrifuge_12
-    text: "\u3048\u30FC\u3063\u3068\u3001\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_A
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
     ui: 0
     nextText: 
-    choise0: TXT_Centrifuge_19
-    choise1: TXT_Centrifuge_20
-    choise2: TXT_Centrifuge_21
+    choise0: TXT_Centrifuge_reaction_075_RotorNG_A_A
+    choise1: TXT_Centrifuge_reaction_075_RotorNG_A_B
+    choise2: TXT_Centrifuge_reaction_075_RotorNG_A_C
     choise3: 
-  - id: TXT_Centrifuge_13
-    text: 2000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_14
-    text: 4000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_15
-    text: 6000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_16
-    text: 2000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_17
-    text: 4000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_18
-    text: 6000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_19
-    text: 2000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_20
-    text: 4000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_22
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_21
-    text: 6000 rpm
-    ui: 0
-    nextText: TXT_Centrifuge_23
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_22
-    text: "\u6B21\u306F\u56DE\u8EE2\u6642\u9593\u3060"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_B
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
     ui: 0
     nextText: 
-    choise0: TXT_Centrifuge_24
-    choise1: TXT_Centrifuge_25
-    choise2: TXT_Centrifuge_26
+    choise0: TXT_Centrifuge_reaction_075_RotorNG_B_A
+    choise1: TXT_Centrifuge_reaction_075_RotorNG_B_B
+    choise2: TXT_Centrifuge_reaction_075_RotorNG_B_C
     choise3: 
-  - id: TXT_Centrifuge_23
-    text: "\u6B21\u306F\u56DE\u8EE2\u6642\u9593\u3060"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_C
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
     ui: 0
     nextText: 
-    choise0: TXT_Centrifuge_27
-    choise1: TXT_Centrifuge_28
-    choise2: TXT_Centrifuge_29
+    choise0: TXT_Centrifuge_reaction_075_RotorNG_C_A
+    choise1: TXT_Centrifuge_reaction_075_RotorNG_C_B
+    choise2: TXT_Centrifuge_reaction_075_RotorNG_C_C
     choise3: 
-  - id: TXT_Centrifuge_24
-    text: "5 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_D
+    text: "\u5206\u304B\u3089\u306A\u3044..."
     ui: 0
-    nextText: TXT_Centrifuge_30
-    choise0: Flag_BlueCloudySolution_Obtained
+    nextText: 
+    choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_25
-    text: "10 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_A_A
+    text: "5\u79D2"
     ui: 0
-    nextText: TXT_Centrifuge_30
-    choise0: Flag_BlueCloudySolution_Obtained
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_26
-    text: "15 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_A_B
+    text: "10\u79D2"
     ui: 0
-    nextText: TXT_Centrifuge_30
-    choise0: Flag_BlueCloudySolution_Obtained
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_27
-    text: "5 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_A_C
+    text: "15\u79D2"
     ui: 0
-    nextText: TXT_Centrifuge_30
-    choise0: Flag_BlueCloudySolution_Obtained
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_28
-    text: "10 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_B_A
+    text: "5\u79D2"
     ui: 0
-    nextText: TXT_Centrifuge_30
-    choise0: Flag_BlueCloudySolution_Obtained
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_29
-    text: "15 \u79D2"
+  - id: TXT_Centrifuge_reaction_075_RotorNG_B_B
+    text: "10\u79D2"
     ui: 0
-    nextText: TXT_Centrifuge_31
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorNG_B_C
+    text: "15\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorNG_C_A
+    text: "5\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorNG_C_B
+    text: "10\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorNG_C_C
+    text: "15\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorOK
+    text: "\u3048\u30FC\u3063\u3068\n\u300E\u56DE\u8EE2\u901F\u5EA6\u300F\u306E\u8A2D\u5B9A...\uFF1F"
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_reaction_070_RotorOK_B
+    choise1: TXT_Centrifuge_reaction_070_RotorOK_C
+    choise2: TXT_Centrifuge_reaction_075_RotorOK_A
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorOK_A
+    text: 2000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorOK_A
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorOK_B
+    text: 4000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorOK_B
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorOK_C
+    text: 6000(rpm)
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_075_RotorOK_C
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_070_RotorOK_D
+    text: "\u5206\u304B\u3089\u306A\u3044..."
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_A
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_reaction_075_RotorOK_A_A
+    choise1: TXT_Centrifuge_reaction_075_RotorOK_A_B
+    choise2: TXT_Centrifuge_reaction_075_RotorOK_A_C
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_B
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_reaction_075_RotorOK_B_A
+    choise1: TXT_Centrifuge_reaction_075_RotorOK_B_B
+    choise2: TXT_Centrifuge_reaction_075_RotorOK_B_C
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_C
+    text: "\u6B21\u306F\n\u300E\u6642\u9593\u300F\u306E\u8A2D\u5B9A..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Centrifuge_reaction_075_RotorOK_C_A
+    choise1: TXT_Centrifuge_reaction_075_RotorOK_C_B
+    choise2: TXT_Centrifuge_reaction_075_RotorOK_C_C
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_D
+    text: "\u5206\u304B\u3089\u306A\u3044..."
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_A_A
+    text: "5\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_A_B
+    text: "10\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_A_C
+    text: "15\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_B_A
+    text: "5\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_allcorrect
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_B_B
+    text: "10\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_B_C
+    text: "15\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_C_A
+    text: "5\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_C_B
+    text: "10\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_075_RotorOK_C_C
+    text: "15\u79D2"
+    ui: 0
+    nextText: TXT_Centrifuge_reaction_078_failed_010
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_078_allcorrect
+    text: "\u3088\u3057\u3001\u51FA\u6765\u305F\uFF01"
+    ui: 0
+    nextText: 
     choise0: Flag_BlueSolution_Obtained
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Centrifuge_30
-    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F\u2026"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_31
-    text: "\u9752\u3044\u6EB6\u6DB2\u3092\u624B\u306B\u5165\u308C\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_32
-    text: "\u3082\u3046\u9752\u3044\u6EB6\u6DB2\u306F\u6301\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TestTube_ItemUse
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3060\u3000\u9060\u5FC3\u5206\u96E2\u6A5F\u306B\u30BB\u30C3\u30C8\u3057\u3088\u3046"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CentrifugeM_01
-    text: "\u4F55\u306E\u6A5F\u68B0\u3060\u308D\u3046\uFF1F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CentrifugeM_02
-    text: "\u30C1\u30E5\u30FC\u30D6\u30BB\u30C3\u30C8\u3092\u30BB\u30C3\u30C8\u3057\u3066\u2026\n\u84CB\u3092\u9589\u3058\u308C\u3070\u2026"
-    ui: 2
-    nextText: TXT_CentrifugeM_03
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CentrifugeM_03
-    text: "\u2026\u8D64\u3044\u6EB6\u6DB2\u304C\u3067\u304D\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CentrifugeM_04
-    text: "\u8D64\u3044\u6EB6\u6DB2\u306F\u3082\u3046\u6301\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_CentrifugeM_05
-    text: "\u304D\u3063\u3068\u3053\u308C\u304C\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u6A5F\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_RedSolution
-    text: "\u8D64\u3044\u6EB6\u6DB2\u3060\u3000\u62B5\u6297\u85AC\u3092\u5408\u6210\u3057\u3088\u3046"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_BlueSolution
-    text: "\u9752\u3044\u6EB6\u6DB2\u3060\u3000\u62B5\u6297\u85AC\u306E\u6750\u6599\u306B\u306A\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_BlueCSolution
-    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u3060\u3000\u2026\u5909\u306A\u30CB\u30AA\u30A4\u3060\n\u306F\u3084\u304F\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u3088\u3046"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_001
-    text: "\u30D4\u30DA\u30C3\u30C8\u3060\u3000\u7406\u79D1\u306E\u6388\u696D\u3067\u4F7F\u3063\u305F\u3053\u3068\u304C\u3042\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_002
-    text: "\u30D4\u30DA\u30C3\u30C8\u3060\u3000\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u304C\u5FC5\u8981\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_003
-    text: "\u30D4\u30DA\u30C3\u30C8\u3060\u3000\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u306F\u3042\u308B\u304B\u3089\u2026"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_004
-    text: "\u30D4\u30DA\u30C3\u30C8\u3060\u3000\u8A66\u85AC\u74F6\u306F\u3042\u308B\u304B\u3089\u2026"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_005
-    text: "\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u3068\u8A66\u85AC\u74F6\u306F\u305D\u308D\u3063\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_006
-    text: "\u8A66\u85AC\u74F6\u3068\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u306F\u305D\u308D\u3063\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_007
-    text: "\u8D64\u3044\u6EB6\u6DB2\u306F\u6301\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_008
-    text: "\u9752\u3044\u6EB6\u6DB2\u306F\u6301\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_009
-    text: "\u9752\u9ED2\u3044\u6EB6\u6DB2\u306F\u6301\u3063\u3066\u3044\u308B\u2026"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Pipet_010
-    text: "\u6DF7\u5408\u3092\u59CB\u3081\u3088\u3046\n\u9752\u3044\u6EB6\u6DB2\u306F\u3069\u308C\u3060\u3051\u5165\u308C\u308B?"
+  - id: TXT_Centrifuge_reaction_078_failed_010
+    text: "\u3067\u304D\u305F\uFF01\n...\u3051\u3069\u5927\u4E08\u592B\u304B\u306A...\uFF1F"
     ui: 0
     nextText: 
-    choise0: TXT_PpetChoice_001
-    choise1: TXT_PpetChoice_002
-    choise2: TXT_PpetChoice_003
+    choise0: Flag_BlueCloudySolution_Obtained
+    choise1: 
+    choise2: 
     choise3: 
-  - id: TXT_Pipet_011
-    text: "\u6DF7\u5408\u3092\u59CB\u3081\u3088\u3046\n\u9752\u9ED2\u3044\u6EB6\u6DB2\u306F\u3069\u308C\u3060\u3051\u5165\u308C\u308B?"
-    ui: 0
-    nextText: 
-    choise0: TXT_PpetChoice_001
-    choise1: TXT_PpetChoice_002
-    choise2: TXT_PpetChoice_007
-    choise3: 
-  - id: TXT_Pipet_012
-    text: "\u8D64\u3044\u6EB6\u6DB2\u306F\u3069\u308C\u3060\u3051\u5165\u308C\u308B?
-      Spi"
-    ui: 0
-    nextText: 
-    choise0: TXT_PpetChoice_004
-    choise1: TXT_PpetChoice_005
-    choise2: TXT_PpetChoice_006
-    choise3: 
-  - id: TXT_Pipet_013
-    text: "\u8D64\u3044\u6EB6\u6DB2\u306F\u3069\u308C\u3060\u3051\u5165\u308C\u308B?
-      Seiko"
-    ui: 0
-    nextText: 
-    choise0: TXT_PpetChoice_004
-    choise1: TXT_PpetChoice_008
-    choise2: TXT_PpetChoice_006
-    choise3: 
-  - id: TXT_Pipet_014
-    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u306F\u305A\u3060\u3088\u306D"
+  - id: TXT_Centrifuge_reaction_080
+    text: "\u91CD\u3055\u306E\u30D0\u30E9\u30F3\u30B9\u306F...\n\u3053\u308C\u3067\u5927\u4E08\u592B\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Pipet_015
-    text: "\u3061\u3087\u3063\u3068\u6FC1\u3063\u305F\u62B5\u6297\u85AC\u304C\u3067\u304D\u305F"
+  - id: TXT_Centrifuge_reaction_090
+    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057"
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_095
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Centrifuge_reaction_095
+    text: "\u4ECA\u306F\u4F7F\u3046\u5FC5\u8981\u306F\u7121\u3044\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_PpetChoice_001
-    text: 1( mL )x
-    ui: 0
-    nextText: TXT_Pipet_012
+  - id: TXT_Centrifuge_reaction_100
+    text: "\u3046\u307E\u304F\u3067\u304D\u305F\u306E...\u304B\u306A\uFF1F"
+    ui: 2
+    nextText: TXT_Centrifuge_reaction_105
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_PpetChoice_002
-    text: 5( mL )x
-    ui: 0
-    nextText: TXT_Pipet_012
+  - id: TXT_Centrifuge_reaction_105
+    text: "\u3061\u3087\u3063\u3068\u4E0D\u5B89..."
+    ui: 2
+    nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_PpetChoice_003
-    text: 10( mL )o
-    ui: 0
-    nextText: TXT_Pipet_013
+  - id: TXT_Rotor_4h_reaction_010
+    text: "\u4F55\u304B\u306E\u6A5F\u68B0\u306E\u90E8\u54C1...\uFF1F"
+    ui: 2
+    nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_PpetChoice_004
-    text: 1( mL )x
-    ui: 0
-    nextText: TXT_GetPurpleCloudySol
-    choise0: Flag_PurpleClowdySolution_Obtained
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_PpetChoice_005
-    text: 5( mL )x
-    ui: 0
-    nextText: TXT_GetPurpleCloudySol
-    choise0: Flag_PurpleClowdySolution_Obtained
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_PpetChoice_006
-    text: 10( mL )x
-    ui: 0
-    nextText: TXT_GetPurpleCloudySol
-    choise0: Flag_PurpleClowdySolution_Obtained
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_PpetChoice_007
-    text: 10( mL )x
-    ui: 0
-    nextText: TXT_Pipet_012
+  - id: TXT_Rotor_4h_reaction_020
+    text: "\u7A74\u304C4\u3064\u7A7A\u3044\u305F\u4E38\u3044\u91D1\u5C5E\u306E\u584A..."
+    ui: 2
+    nextText: TXT_Rotor_4h_reaction_025
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_PpetChoice_008
-    text: 5( mL )o
+  - id: TXT_Rotor_4h_reaction_025
+    text: "\u3053\u308C\u3001\u591A\u5206\u300E\u30ED\u30FC\u30BF\u30FC\u300F\u3060\u3088\u306D"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_6h_reaction_010
+    text: "\u4F55\u304B\u306E\u6A5F\u68B0\u306E\u90E8\u54C1...\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_6h_reaction_020
+    text: "\u7A74\u304C6\u3064\u7A7A\u3044\u305F\u4E38\u3044\u91D1\u5C5E\u306E\u584A..."
+    ui: 2
+    nextText: TXT_Rotor_6h_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_6h_reaction_025
+    text: "\u3053\u308C\u3001\u591A\u5206\u300E\u30ED\u30FC\u30BF\u30FC\u300F\u3060\u3088\u306D"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_8h_reaction_010
+    text: "\u4F55\u304B\u306E\u6A5F\u68B0\u306E\u90E8\u54C1...\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_8h_reaction_020
+    text: "\u7A74\u304C8\u3064\u7A7A\u3044\u305F\u4E38\u3044\u91D1\u5C5E\u306E\u584A..."
+    ui: 2
+    nextText: TXT_Rotor_8h_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_8h_reaction_025
+    text: "\u3053\u308C\u3001\u591A\u5206\u300E\u30ED\u30FC\u30BF\u30FC\u300F\u3060\u3088\u306D"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_010
+    text: "\u4F55\u306B\u4F7F\u3046\u6A5F\u68B0\u3060\u308D\u3046..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_020
+    text: "\u4F55\u304B\u3092\u306F\u3081\u308B\u7A74\u304C\u3042\u308B\u3057"
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_023
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_023
+    text: "\u771F\u3093\u4E2D\u304C\u56DE\u8EE2\u3059\u308B..."
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_026
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_026
+    text: "\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u6A5F\u3063\u3066\n\u3053\u308C\u306E\u3053\u3068\u304B\u306A"
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_028
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u3068\u3063\u3066\u3053\u306A\u304D\u3083"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_030
+    text: "\u6EB6\u6DB2B\u306F\u3082\u3046\u6301\u3063\u3066\u308B\u3057"
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_035
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_035
+    text: "\u4ECA\u306F\u7528\u306F\u306A\u3044\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_040
+    text: "\u3053\u306E\u624B\u9806\u306F\u9593\u9055\u3044\u3088\u3046\u304C\u306A\u3044\u306D"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_050
+    text: "\u3053\u308C\u304C\u5353\u4E0A\u9060\u5FC3\u5206\u96E2\u6A5F\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_052
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_052
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u30BB\u30C3\u30C8\u3057\u3066..."
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_054
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_054
+    text: "\u84CB\u3092\u9589\u3058\u308C\u3070..."
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_056
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_056
+    text: .........
+    ui: 2
+    nextText: TXT_SmallCentrifuge_reaction_058
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_SmallCentrifuge_reaction_058
+    text: "\u3082\u3046\u3044\u3044\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_010
+    text: "\u3053\u308C\u30D4\u30DA\u30C3\u30C8\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_Pipette_reaction_015
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_015
+    text: "\u5B66\u6821\u3067\u4F7F\u3063\u305F\u3053\u3068\u3042\u308B\u3051\u3069..."
+    ui: 2
+    nextText: TXT_Pipette_reaction_018
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_018
+    text: "\u5148\u3063\u307D\u304C\u306A\u3044...\uFF1F"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_020
+    text: "\u3053\u308C\u304C\u30D4\u30DA\u30C3\u30C8\u3060\u308D\u3046\u3051\u3069\n\u5148\u3063\u307D\u304C\u306A\u3044..."
+    ui: 2
+    nextText: TXT_Pipette_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_025
+    text: "\u305F\u3076\u3093\u3053\u306E\u307E\u307E\u3058\u3083\n\u4F7F\u3048\u306A\u3044\u3088\u306D..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_030
+    text: "\u3053\u306E\u30D4\u30DA\u30C3\u30C8\u3092\u4F7F\u3046\u306B\u306F"
+    ui: 2
+    nextText: TXT_Pipette_reaction_035
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_035
+    text: "\u30C1\u30C3\u30D7\u3063\u3066\u8A00\u3046\u306E\u304C\n\u5FC5\u8981\u306A\u3093\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_Pipette_reaction_038
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_038
+    text: "\u307E\u305A\u306F\u305D\u308C\u304B\u3089\u63A2\u305D\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_040
+    text: "\u3088\u3057\u30C1\u30C3\u30D7\u306F\u898B\u3064\u3051\u305F"
+    ui: 2
+    nextText: TXT_Pipette_reaction_045
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_045
+    text: "\u5F8C\u306F\u8A66\u85AC\u74F6\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_050
+    text: "\u8A66\u85AC\u74F6\u306F\u898B\u3064\u3051\u305F\u3051\u3069"
+    ui: 2
+    nextText: TXT_Pipette_reaction_052
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_052
+    text: "\u3053\u306E\u30D4\u30DA\u30C3\u30C8\u5148\u3063\u307D\u304C\u306A\u3044"
+    ui: 2
+    nextText: TXT_Pipette_reaction_054
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_054
+    text: "\u305F\u3076\u3093\u3053\u308C\u3058\u3083\u3042\n\u4F7F\u3048\u306A\u3044\u3088\u306D..."
+    ui: 2
+    nextText: TXT_Pipette_reaction_056
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_056
+    text: "\u3069\u3046\u3057\u305F\u3089\u3044\u3044\u3093\u3060\u308D\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_060
+    text: "\u30C1\u30C3\u30D7\u3082\u8A66\u85AC\u74F6\u3082\u63C3\u3063\u3066\u308B\u3057"
+    ui: 2
+    nextText: TXT_Pipette_reaction_065
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_065
+    text: "\u624B\u9806\u304C\u78BA\u8A8D\u51FA\u6765\u305F\u3089\u59CB\u3081\u3088\u3046"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070
+    text: "\u4F5C\u696D\u3092\u958B\u59CB\u3057\u3088\u3046\u304B\u306A\uFF1F"
     ui: 0
-    nextText: TXT_GetPurpleSol
+    nextText: 
+    choise0: TXT_Pipette_reaction_070_Yes
+    choise1: TXT_Pipette_reaction_070_No
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_Yes
+    text: "\u59CB\u3081\u308B"
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_No
+    text: "\u624B\u9806\u3092\u78BA\u8A8D\u3057\u3066\u304F\u308B"
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1
+    text: "\u6EB6\u6DB2A\u306E\u6DB2\u91CF\u306F..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Pipette_reaction_070_BlueSolAm_1_A
+    choise1: TXT_Pipette_reaction_070_BlueSolAm_1_B
+    choise2: TXT_Pipette_reaction_070_BlueSolAm_1_C
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1_A
+    text: 1(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_1A_2
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1_B
+    text: 3(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_1B_2
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1_C
+    text: 5(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_1C_2
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1A_2
+    text: "\u6EB6\u6DB2B\u3082\u8584\u3044\u9806\u306B..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Pipette_reaction_070_BlueSolAm_1A_2_A
+    choise1: TXT_Pipette_reaction_070_BlueSolAm_1A_2_B
+    choise2: TXT_Pipette_reaction_070_BlueSolAm_1A_2_C
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1A_2_A
+    text: 2(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1A_2_B
+    text: 4(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1A_2_C
+    text: 6(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1B_2
+    text: "\u6EB6\u6DB2B\u3082\u8584\u3044\u9806\u306B..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Pipette_reaction_070_BlueSolAm_1B_2_A
+    choise1: TXT_Pipette_reaction_070_BlueSolAm_1B_2_B
+    choise2: TXT_Pipette_reaction_070_BlueSolAm_1B_2_C
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1B_2_A
+    text: 2(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1B_2_B
+    text: 4(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1B_2_C
+    text: 6(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1C_2
+    text: "\u6EB6\u6DB2B\u3082\u8584\u3044\u9806\u306B..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Pipette_reaction_070_BlueSolAm_1C_2_A
+    choise1: TXT_Pipette_reaction_070_BlueSolAm_1C_2_B
+    choise2: TXT_Pipette_reaction_070_BlueSolAm_1C_2_C
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1C_2_A
+    text: 2(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_allcorrect
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1C_2_B
+    text: 4(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_1C_2_C
+    text: 6(ml)
+    ui: 0
+    nextText: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_070_BlueSolAm_3_allcorrect
+    text: "\u62B5\u6297\u85AC\u304C\u3067\u304D\u305F\uFF01"
+    ui: 0
+    nextText: 
     choise0: Flag_PurpleSolution_Obtained
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_GetPurpleSol
-    text: "\u62B5\u6297\u85AC\u304C\u5B8C\u6210\u3057\u305F"
+  - id: TXT_Pipette_reaction_070_BlueSolAm_3_failed
+    text: "\u6FC1\u3063\u305F\u6EB6\u6DB2\u304C\u3067\u304D\u305F..."
+    ui: 0
+    nextText: 
+    choise0: Flag_PurpleClowdySolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_080
+    text: "\u6307\u793A\u901A\u308A\u3067\u304D\u3066\u308B\u306F\u305A\u3060\u3088\u306D..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_GetPurpleCloudySol
-    text: "\u62B5\u6297\u85AC\u304C\u5B8C\u6210\u3057\u305F\u2026?"
+  - id: TXT_Pipette_reaction_090
+    text: "\u3067\u304D\u305F\u6EB6\u6DB2\u3001\u5C11\u3057\u6FC1\u3063\u3066\u308B..."
+    ui: 2
+    nextText: TXT_Pipette_reaction_095
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Pipette_reaction_095
+    text: "\u5927\u4E08\u592B\u3060\u3088\u306D...\uFF1F"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Door_001
-    text: "\u30C9\u30A2\u3060\u3000\u30ED\u30C3\u30AF\u304C\u304B\u304B\u3063\u3066\u3044\u308B"
+  - id: TXT_TipHolder_reaction_010
+    text: "\u900F\u660E\u306A\u7D30\u3044\u7BA1\u304C\u523A\u3055\u3063\u305F\u7BB1\u3060"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Door_002
-    text: "\u30E1\u30E2\u306B\u3088\u308B\u3068\u3001\u62B5\u6297\u85AC\u3092\u4F5C\u3089\u306A\u3044\u3068\u958B\u3051\u3061\u3083\u3060\u3081\u3060"
+  - id: TXT_TipHolder_reaction_015
+    text: "\u306A\u3093\u3060\u308D\u3046\u3053\u308C\uFF1F"
+    ui: 2
+    nextText: TXT_TipHolder_reaction_020
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TipHolder_reaction_020
+    text: "\u3053\u308C\u3001\u30D4\u30DA\u30C3\u30C8\u306B\u4F7F\u3046\u30C1\u30C3\u30D7\u3060\uFF01"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Door_003
-    text: "\u8131\u51FA\u65B9\u6CD5\u306E\u30E1\u30E2\u3092\u63A2\u305D\u3046"
+  - id: TXT_PipetteManual_content_10
+    text: "\u300E\u30D4\u30DA\u30C3\u30C8\u3092\u4F7F\u3046\u969B\u306E\u6CE8\u610F\u300F\n\n\u6EB6\u6DB2\u306B\u76F4\u63A5\u30D4\u30DA\u30C3\u30C8\u3092\n\u89E6\u308C\u3055\u305B\u306A\u3044\u3053\u3068\n\n\u30D4\u30DA\u30C3\u30C8\u306B\u53D6\u308A\u4ED8\u3051\u308B\n\u30C1\u30C3\u30D7\u306E\u30B5\u30A4\u30BA\u3068\u5438\u3044\u4E0A\u3052\u308B\n\u6EB6\u6DB2\u91CF\u3092\u78BA\u8A8D\u3057\u3066\u304B\u3089\n\u4F7F\u7528\u3057\u3066\u304F\u3060\u3055\u3044"
+    ui: 1
+    nextText: TXT_PipetteManual_content_20
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PipetteManual_content_20
+    text: "\u30C1\u30C3\u30D7\u304C\u5207\u308C\u305D\u3046\u306B\u306A\u3063\u305F\u3089\n\u91D1\u5C5E\u68DA\u304B\u3089\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u3092\n\u88DC\u5145\u3057\u3066\u304F\u3060\u3055\u3044\n\n\u30C1\u30C3\u30D7\u304C\u5207\u308C\u305F\u72B6\u614B\u3067\n\u653E\u7F6E\u3057\u3066\u304A\u304B\u306A\u3044\u3053\u3068\uFF01"
+    ui: 1
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ReagentBottle_reaction_010
+    text: "\u4E0D\u601D\u8B70\u306A\u5F62\u3092\u3057\u305F\u74F6\u304C\u3044\u3063\u3071\u3044..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Door_004
-    text: "\u30D6\u30EC\u30FC\u30AB\u30FC\u3092\u843D\u3068\u305D\u3046"
+  - id: TXT_ReagentBottle_reaction_020
+    text: "\u51B7\u8535\u5EAB\u306E\u4E2D\u306E\u8A66\u85AC\u74F6\u3063\u3066"
+    ui: 2
+    nextText: TXT_ReagentBottle_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ReagentBottle_reaction_025
+    text: "\u3053\u308C\u306E\u3053\u3068\u3060\u3088\u306D"
+    ui: 2
+    nextText: TXT_ReagentBottle_reaction_028
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ReagentBottle_reaction_028
+    text: "\u4E00\u3064\u6301\u3063\u3066\u3044\u3053\u3046"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_ReagentBottle
-    text: "\u8A66\u85AC\u74F6\u3060\u3000\u4E0D\u601D\u8B70\u306A\u5F62\u3092\u3057\u3066\u3044\u308B"
+  - id: TXT_ReagentBottle_reaction_030
+    text: "\u8A66\u85AC\u74F6\u304C\u3082\u3046\u6301\u3063\u3066\u308B"
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_TipHolder
-    text: "\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u3060\u3000\u3053\u308C\u3067\u30D4\u30DA\u30C3\u30C8\u304C\u4F7F\u3048\u308B\u3088\u3046\u306B\u306A\u308B"
+  - id: TXT_FakeReagentBottle_reaction_010
+    text: "\u4E0D\u601D\u8B70\u306A\u5F62\u3092\u3057\u305F\u74F6\u304C\u3044\u3063\u3071\u3044..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_ReagentBottle_001
-    text: "\u4E0D\u601D\u8B70\u306A\u5F62\u3092\u3057\u305F\u74F6\u304C\u305F\u304F\u3055\u3093\u3042\u308B"
+  - id: TXT_FakeReagentBottle_reaction_020
+    text: "\u4F5C\u696D\u673A\u306E\u8A66\u85AC\u74F6\u3001\u3053\u308C\u304B\u306A"
+    ui: 0
+    nextText: 
+    choise0: TXT_FakeReagentBottle_reaction_020_Yes
+    choise1: TXT_FakeReagentBottle_reaction_020_No
+    choise2: 
+    choise3: 
+  - id: TXT_FakeReagentBottle_reaction_020_Yes
+    text: "\u30C6\u30FC\u30D7\u306E\u6307\u793A\u306B\u5F93\u3046"
+    ui: 0
+    nextText: TXT_FakeReagentBottle_reaction_025
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_FakeReagentBottle_reaction_020_No
+    text: "\u30C6\u30FC\u30D7\u3092\u805E\u304D\u76F4\u3059"
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_FakeReagentBottle_reaction_025
+    text: "\u62B5\u6297\u85AC\u304C\u3067\u304D\u305F"
+    ui: 2
+    nextText: 
+    choise0: Flag_FakeSolution_Obtained
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_FakeReagentBottle_reaction_030
+    text: "\u3053\u308C\u3067\u62B5\u6297\u85AC\u306E\u5B8C\u6210\u3001\u304B\u306A..."
     ui: 2
     nextText: 
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_ReagentBottle_002
-    text: "\u8A66\u85AC\u74F6\u3092\u624B\u306B\u5165\u308C\u305F"
+  - id: TXT_FakeReagentBottle_reaction_040
+    text: "\u3053\u306E\u74F6\u3082\u507D\u7269\u304B\u3082\u3057\u308C\u306A\u3044...\uFF01"
     ui: 2
-    nextText: 
+    nextText: TXT_FakeReagentBottle_reaction_045
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_ReagentBottle_003
-    text: "\u8A66\u85AC\u74F6\u306F\u3082\u3046\u6301\u3063\u3066\u3044\u308B"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TipHolder_001
-    text: "\u306A\u3093\u3060\u304B\u3088\u304F\u308F\u304B\u3089\u306A\u3044\u7BB1\u3060"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_TipHolder_002
-    text: "\u30C1\u30C3\u30D7\u30DB\u30EB\u30C0\u30FC\u3092\u624B\u306B\u5165\u308C\u305F"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_PurpleSolution_001
-    text: "\u62B5\u6297\u85AC\u3060\u3000"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_PurpleClowdySolution_001
-    text: "\u62B5\u6297\u85AC\u3060\u3000\u306A\u3093\u3060\u304B\u6FC1\u3063\u3066\u3044\u308B"
+  - id: TXT_FakeReagentBottle_reaction_045
+    text: "\u7121\u8996\u3057\u3066\u304A\u3053\u3046"
     ui: 2
     nextText: 
     choise0: 
