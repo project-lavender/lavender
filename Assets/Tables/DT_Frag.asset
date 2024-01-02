@@ -13,87 +13,53 @@ MonoBehaviour:
   m_Name: DT_Frag
   m_EditorClassIdentifier: 
   Sheet1:
-  - id: Flag_Memo_01_read
+  - id: Flag_Memo_001_Read
     value: 0
-  - id: Flag_Memo_02_read
+  - id: Flag_Memo_002_Read
     value: 0
-  - id: Flag_Memo_03_read
+  - id: Flag_Memo_003_Read
     value: 0
-  - id: Flag_Memo_04_read
+  - id: Flag_Memo_004_Read
     value: 0
-  - id: Flag_Memo_05_read
+  - id: Flag_Memo_005_Read
     value: 0
   - id: Flag_Stretcher_Collided
     value: 0
-  - id: Flag_TestTube_Obtained
+  - id: Flag_CasetteTape_Obtained
     value: 0
-  - id: Flag_Rotor_4h_Obtained
+  - id: Flag_CassetteTape_3_Obtained
     value: 0
-  - id: Flag_Rotor_4h_Selected
+  - id: Flag_CassetteTape_4_Obtained
     value: 0
-  - id: Flag_Rotor_6h_Obtained
+  - id: Flag_CassetteTape_5_Obtained
     value: 0
-  - id: Flag_Rotor_6h_Selected
+  - id: Flag_CassetteTape_2_Selected
     value: 0
-  - id: Flag_Rotor_8h_Obtained
+  - id: Flag_CassetteTape_3_Selected
     value: 0
-  - id: Flag_Rotor_8h_Selected
+  - id: Flag_CassetteTape_4_Selected
     value: 0
-  - id: Flag_SeparatedTestTube_Obtained
+  - id: Flag_CassetteTape_5_Selected
     value: 0
-  - id: Flag_TipSet_Obtained
+  - id: Flag_CassetteTape_2_Listening
     value: 0
-  - id: Flag_TestGimick_UpFrag
+  - id: Flag_CassetteTape_3_Listening
     value: 0
-  - id: Flag_TestGimick_DownFrag
+  - id: Flag_CassetteTape_4_Listening
     value: 0
-  - id: Flag_TestGimick_CanTouch
+  - id: Flag_CassetteTape_5_Listening
     value: 0
-  - id: KL_CassetteTape_get
+  - id: Flag_CassetteTape_2_Listened
     value: 0
-  - id: KL_CassetteTape_002_Obtained
+  - id: Flag_CassetteTape_3_Listened
     value: 0
-  - id: KL_CassetteTape_002_Selected
+  - id: Flag_CassetteTape_4_Listened
     value: 0
-  - id: KL_CassetteTape_002_Listening
-    value: 0
-  - id: KL_CassetteTape_002_Listened
-    value: 0
-  - id: KL_CassetteTape_003_Obtained
-    value: 0
-  - id: KL_CassetteTape_003_Selected
-    value: 0
-  - id: KL_CassetteTape_003_Listening
-    value: 0
-  - id: KL_CassetteTape_003_Listened
-    value: 0
-  - id: KL_CassetteTape_004_Obtained
-    value: 0
-  - id: KL_CassetteTape_004_Selected
-    value: 0
-  - id: KL_CassetteTape_004_Listening
-    value: 0
-  - id: KL_CassetteTape_005_Listened
-    value: 0
-  - id: KL_CassetteTape_005_Obtained
-    value: 0
-  - id: KL_CassetteTape_005_Selected
-    value: 0
-  - id: KL_CassetteTape_005_Listening
-    value: 0
-  - id: KL_CassetteTape_005_Listened
+  - id: Flag_CassetteTape_5_Listened
     value: 0
   - id: Flag_DimpleKey_Obtained
     value: 0
   - id: Flag_DimpleKey_Selected
-    value: 0
-  - id: Flag_CloudySolution_Obtained
-    value: 0
-  - id: Flag_Rotor_4h_Set
-    value: 0
-  - id: Flag_Rotor_6h_Set
-    value: 0
-  - id: Flag_Rotor_8h_Set
     value: 0
   - id: Flag_TestTube_Obtained
     value: 0
@@ -101,31 +67,41 @@ MonoBehaviour:
     value: 0
   - id: Flag_TestTube_Set
     value: 0
-  - id: Flag_RedSolution_Obtained
+  - id: Flag_Rotor_4h_Obtained
     value: 0
-  - id: Flag_RedSolution_Selected
+  - id: Flag_Rotor_6h_Obtained
     value: 0
-  - id: Flag_BlueCloudySolution_Obtained
+  - id: Flag_Rotor_8h_Obtained
     value: 0
-  - id: Flag_BlueCloudySolution_Selected
+  - id: Flag_Rotor_4h_Selected
+    value: 0
+  - id: Flag_Rotor_6h_Selected
+    value: 0
+  - id: Flag_Rotor_8h_Selected
+    value: 0
+  - id: Flag_Rotor_4h_Set
+    value: 0
+  - id: Flag_Rotor_6h_Set
+    value: 0
+  - id: Flag_Rotor_8h_Set
     value: 0
   - id: Flag_BlueSolution_Obtained
     value: 0
-  - id: Flag_BlueSolution_Selected
+  - id: Flag_BlueCloudySolution_Obtained
     value: 0
-  - id: Flag_ReagentBottle_Obtained
+  - id: Flag_RedSolution_Obtained
     value: 0
-  - id: Flag_ReagentBottle_Selected
-    value: 0
-  - id: Flag_TipHolder_Obtained
-    value: 0
-  - id: Flag_TipHolder_Selected
+  - id: Flag_PipetteManual_Read
     value: 0
   - id: Flag_PurpleSolution_Obtained
     value: 0
-  - id: Flag_PurpleSolution_Selected
+  - id: Flag_PurpleCloudySolution_Obtained
     value: 0
   - id: Flag_PurpleClowdySolution_Obtained
     value: 0
-  - id: Flag_PurpleClowdySolution_Selected
+  - id: Flag_ReagentBottle_Obtained
+    value: 0
+  - id: Flag_TipHolder_Obtained
+    value: 0
+  - id: Flag_FakeSolution_Obtained
     value: 0
