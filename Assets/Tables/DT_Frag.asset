@@ -25,7 +25,7 @@ MonoBehaviour:
     value: 0
   - id: Flag_Stretcher_Collided
     value: 0
-  - id: Flag_CasetteTape_Obtained
+  - id: Flag_CassetteTape_Obtained
     value: 0
   - id: Flag_CassetteTape_3_Obtained
     value: 0

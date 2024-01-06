@@ -101,16 +101,16 @@ MonoBehaviour:
   CassetteTapeA:
   - progress: -1
     frag: Flag_Memo_002_Read
-    textID: TXT_CassetteTape_002_reaction_ 020
+    textID: TXT_CassetteTape_002_reaction_020
     demoID: 
-    itemID: Flag_CasetteTape_Obtained
-    upFrag: Flag_CasetteTape_Obtained
+    itemID: Flag_CassetteTape_Obtained
+    upFrag: Flag_CassetteTape_Obtained
     downFrag: 
     death: 0
     overWriteProgress: 0
   - progress: -1
     frag: 
-    textID: TXT_CassetteTape_002_reaction_ 010
+    textID: TXT_CassetteTape_002_reaction_010
     demoID: 
     itemID: 
     upFrag: 
@@ -240,7 +240,7 @@ MonoBehaviour:
     overWriteProgress: 0
   - progress: -1
     frag: Flag_CassetteTape_2_Selected
-    textID: TXT_CasettePlayer_Tape2_010
+    textID: TXT_CasettePlayer_Tape002_010
     demoID: Tape2
     itemID: 
     upFrag: Flag_CassetteTape_2_Listened
@@ -249,7 +249,7 @@ MonoBehaviour:
     overWriteProgress: 0
   - progress: -1
     frag: Flag_CassetteTape_3_Selected
-    textID: TXT_CasettePlayer_Tape3_010
+    textID: TXT_CasettePlayer_Tape003_010
     demoID: Tape3
     itemID: 
     upFrag: Flag_CassetteTape_3_Listened
@@ -258,7 +258,7 @@ MonoBehaviour:
     overWriteProgress: 0
   - progress: -1
     frag: Flag_CassetteTape_4_Selected
-    textID: TXT_CasettePlayer_Tape4_010
+    textID: TXT_CasettePlayer_Tape004_010
     demoID: Tape4
     itemID: 
     upFrag: Flag_CassetteTape_4_Listened
@@ -267,7 +267,7 @@ MonoBehaviour:
     overWriteProgress: 0
   - progress: -1
     frag: Flag_CassetteTape_5_Selected
-    textID: TXT_CasettePlayer_Tape5_010
+    textID: TXT_CasettePlayer_Tape005_010
     demoID: Tape5
     itemID: 
     upFrag: Flag_CassetteTape_5_Listened

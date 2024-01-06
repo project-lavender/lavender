@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: DT Item
   m_EditorClassIdentifier: 
   ItemsList:
-  - id: KL_CassetteTape_002_Obtained
+  - id: Flag_CassetteTape_Obtained
     item: {fileID: 4496552130631344947, guid: eacf83bdac62c46438417647873c9f98, type: 3}
-  - id: KL_CassetteTape_003_Obtained
+  - id: Flag_CassetteTape_3_Obtained
     item: {fileID: 4496552130631344947, guid: 06b969b85cdcff8439eee76a6dfaeb38, type: 3}
-  - id: KL_CassetteTape_004_Obtained
+  - id: Flag_CassetteTape_4_Obtained
     item: {fileID: 4496552130631344947, guid: ee63ee1e777484842a597736f9a2ea1b, type: 3}
-  - id: KL_CassetteTape_005_Obtained
+  - id: Flag_CassetteTape_5_Obtained
     item: {fileID: 4496552130631344947, guid: ea1068beccbe2e84ebc09f954df64a89, type: 3}
   - id: Flag_Rotor_4h_Obtained
     item: {fileID: 1038337578043533058, guid: da09ff59bf3558b41b1f2aedf0b6c637, type: 3}
