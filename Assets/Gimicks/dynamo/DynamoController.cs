@@ -11,7 +11,7 @@ public class DynamoController : Gimicks
     private Light[] lights;
     [SerializeField]
     private Light[] execptionLights;
-    [SerializeField] private float[] intencities;
+    [SerializeField] private float[] intencities,exceIntencity;
     [SerializeField] Material emmision;
     [SerializeField]
     private float maxOnTime = 0.5f;
@@ -25,8 +25,15 @@ public class DynamoController : Gimicks
         myMat.SetColor("_RampColor", OffColor);
         lights = GameObject.FindObjectsOfType<Light>();
         intencities = new float[lights.Length];
+        exceIntencity = new float[execptionLights.Length];
+        for (int i = 0; i < execptionLights.Length; i++)
+        {
 
-        for(int i = 0; i < lights.Length; i++)
+            Light l = execptionLights[i];
+            exceIntencity[i] = l.intensity;
+
+        }
+        for (int i = 0; i < lights.Length; i++)
         {
             Light l = lights[i];
             intencities[i] = l.intensity;
@@ -34,9 +41,10 @@ public class DynamoController : Gimicks
         }
         for (int i = 0; i < execptionLights.Length; i++)
         {
+
             Light l = execptionLights[i];
-            //intencities[i] = l.intensity;
-            l.intensity = intencities[i];
+            l.intensity = exceIntencity[i];
+
         }
 
         //ƒ‰ƒCƒg‚Ìmaterial collor
