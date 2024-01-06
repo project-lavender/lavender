@@ -79,11 +79,17 @@ MonoBehaviour:
     value: 0
   - id: Flag_Rotor_8h_Selected
     value: 0
-  - id: Flag_Rotor_4h_Set
+  - id: Flag_Rotor_4h_Set_first
     value: 0
-  - id: Flag_Rotor_6h_Set
+  - id: Flag_Rotor_6h_Set_first
     value: 0
-  - id: Flag_Rotor_8h_Set
+  - id: Flag_Rotor_8h_Set_first
+    value: 0
+  - id: Flag_Rotor_4h_Set_redo
+    value: 0
+  - id: Flag_Rotor_6h_Set_redo
+    value: 0
+  - id: Flag_Rotor_8h_Set_redo
     value: 0
   - id: Flag_BlueSolution_Obtained
     value: 0
