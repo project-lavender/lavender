@@ -1046,15 +1046,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_reaction_090
-    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057"
-    ui: 2
-    nextText: TXT_Centrifuge_reaction_095
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_reaction_095
-    text: "\u4ECA\u306F\u4F7F\u3046\u5FC5\u8981\u306F\u7121\u3044\u304B\u306A"
+    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057\n\u4ECA\u306F\u4F7F\u3046\u5FC5\u8981\u306F\u7121\u3044\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -1062,15 +1054,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Centrifuge_reaction_100
-    text: "\u3046\u307E\u304F\u3067\u304D\u305F\u306E...\u304B\u306A\uFF1F"
-    ui: 2
-    nextText: TXT_Centrifuge_reaction_105
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
-  - id: TXT_Centrifuge_reaction_105
-    text: "\u3061\u3087\u3063\u3068\u4E0D\u5B89..."
+    text: "\u3046\u307E\u304F\u3067\u304D\u305F\u306E...\u304B\u306A\uFF1F\n\u3061\u3087\u3063\u3068\u4E0D\u5B89..."
     ui: 2
     nextText: 
     choise0: 
