@@ -81,6 +81,8 @@ public class ProgressController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
         if (!debugMode)
         {
             allgimicks = FindObjectsOfType<Gimicks>();
