@@ -29,11 +29,11 @@ public class UIcontroller : MonoBehaviour
 
     [SerializeField] DemoPlayer demoPlayer;
 
-    [SerializeField] float voiceSpeed = 0.2f,finishWait = 2.5f;
+    [SerializeField] float voiceSpeed = 0.2f, finishWait = 2.5f;
     private Lavender action;
     //
     int beforeOpenedID = -1;
-    
+
     [System.Serializable]
     private class Sence
     {
@@ -47,7 +47,7 @@ public class UIcontroller : MonoBehaviour
     Coroutine E;
 
     //コントローラーのマウス
-    
+
 
     //ギミックのイベント呼び出し
     //汎用の選択肢で使う
@@ -88,8 +88,8 @@ public class UIcontroller : MonoBehaviour
     //テキストダイアログのページ送り
     public void PageSend(int p)
     {
-        Debug.Log("next page->"+(pageNum + p).ToString());
-        if(pageNum+p<0 || pageNum + p >= dialog.Count)
+        Debug.Log("next page->" + (pageNum + p).ToString());
+        if (pageNum + p < 0 || pageNum + p >= dialog.Count)
         {
             return;
         }
@@ -118,7 +118,7 @@ public class UIcontroller : MonoBehaviour
     {
         //インタラクトコライダーを無効か
         //interactColider.enabled = false;
-        
+
         int i = -1;
         if (textid == "")
         {
@@ -130,14 +130,14 @@ public class UIcontroller : MonoBehaviour
         //カメラ固定
         SetVirtualCamera(false);
 
-        
+
         if (textid == "esc")
         {
             i = 3;
         }
         else if (dT != null)
         {
-            
+
             i = dT.ui;
             //前のuiと読み込んだuiのidが違う場合いったん消す
             if (beforeOpenedID != i)
@@ -157,7 +157,7 @@ public class UIcontroller : MonoBehaviour
             r.gameObject.SetActive(false);
             if (i == j)
             {
-                
+
                 r.gameObject.SetActive(true);
             }
             j += 1;
@@ -190,7 +190,7 @@ public class UIcontroller : MonoBehaviour
                 }
                 else
                 {
-                    
+
                     DTText choiseText = dttext.Find(choiseID[c]);
                     Debug.Log(choiseID[c]);
                     if (choiseText != null)
@@ -269,7 +269,7 @@ public class UIcontroller : MonoBehaviour
         {
             CloseUIs();
             return;
-            
+
         }
     }
     public void XSence()
@@ -294,7 +294,8 @@ public class UIcontroller : MonoBehaviour
     }
     void SetVirtualCamera(bool b)
     {
-        if (b) {
+        if (b)
+        {
             pov.m_HorizontalAxis.m_MaxSpeed = nowvec.x;
             pov.m_VerticalAxis.m_MaxSpeed = nowvec.x;
         }
@@ -344,12 +345,13 @@ public class UIcontroller : MonoBehaviour
     void Update()
     {
         //Esc
-        if (action.UI.finishUI.triggered){
+        if (action.UI.finishUI.triggered)
+        {
 
             bool allNonActive = true;
-            foreach(RectTransform rect in UIs)
+            foreach (RectTransform rect in UIs)
             {
-                Debug.Log(rect.name+rect.gameObject.activeSelf);
+                Debug.Log(rect.name + rect.gameObject.activeSelf);
                 allNonActive = allNonActive && !rect.gameObject.activeSelf;
             }
             if (allNonActive)
@@ -358,23 +360,28 @@ public class UIcontroller : MonoBehaviour
             }
             else
             {
-               CloseUIs();
+                CloseUIs();
             }
         }
-        if (action.UI.CloseUI.triggered)
+        else if (action.UI.CloseUI.triggered)
         {
             CloseUIs();
         }
-        if (nowID == 1)
+
+        if (action.UI.NextPage.triggered)
         {
-            if (action.UI.NextPage.triggered)
+            if (nowID == 1)
             {
                 PageSend(1);
             }
-            else if(action.UI.BeforePage.triggered)
+        }
+        else if (action.UI.BeforePage.triggered)
+        {
+            if (nowID == 1)
             {
                 PageSend(-1);
             }
         }
+
     }
 }

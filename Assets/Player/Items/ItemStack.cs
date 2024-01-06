@@ -187,31 +187,19 @@ public class ItemStack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            DisableItem(itemList[nowitem].item.id);
-            //LineupItems();
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            EnableItem("KL_CassetteTape_003_Obtained");
-        }
-        */
-        if (EnableNum() > 0)
-        {
-            if (action.UI.ItemSelectBack.triggered)
+
+            if (action.UI.ItemSelectBack.triggered && EnableNum() > 0)
             {
                 RotateItem(-1);
                 LineupItems();
 
             }
-            else if (action.UI.ItemSelectNext.triggered)
+            else if (action.UI.ItemSelectNext.triggered && EnableNum() > 0)
             {
                 RotateItem(1);
                 LineupItems();
             }
-            else if (itemList[nowitem].enable && action.UI.UseItem.triggered)
+            else if (itemList[nowitem].enable && action.UI.UseItem.triggered && EnableNum() > 0)
             {
                 Items itemComponent = itemList[nowitem].itemComponent;//items[nowitem].item.GetComponent<Items>();
                 string id = itemComponent.UseItem();
@@ -220,6 +208,6 @@ public class ItemStack : MonoBehaviour
 
                 uic.ActiveUI(id);
             }
-        }
+        
     }
 }
