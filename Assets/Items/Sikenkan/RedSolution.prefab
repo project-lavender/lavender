@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655267b47c88e2e4d823cd3ca735ebb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: "\u8D64\u3044\u6EB6\u6DB2"
+  itemname: "\u6EB6\u6DB2B"
   useTextID: TXT_RedSolution
   myfrag: Flag_RedSolution_Selected
   itemIcon: {fileID: 21300000, guid: 2b686715acba64d4d823f7e1547ca6f9, type: 3}
