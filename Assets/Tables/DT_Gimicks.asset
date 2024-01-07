@@ -1373,7 +1373,7 @@ MonoBehaviour:
   PipetManual:
   - progress: -1
     frag: Flag_CassetteTape_5_Listened
-    textID: TXT_PipetteManual_content_20
+    textID: TXT_PipetteManual_content_10
     demoID: 
     itemID: 
     upFrag: Flag_PipetteManual_Read
@@ -1412,8 +1412,8 @@ MonoBehaviour:
     frag: Flag_CassetteTape_4_Listened
     textID: TXT_FakeReagentBottle_reaction_020
     demoID: 
-    itemID: 
-    upFrag: 
+    itemID: Flag_FakeSolution_Obtained
+    upFrag: Flag_FakeSolution_Obtained
     downFrag: 
     death: 0
     overWriteProgress: -1
