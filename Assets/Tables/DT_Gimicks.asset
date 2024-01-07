@@ -1136,3 +1136,50 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
+  PipetManual:
+  - progress: -1
+    frag: 
+    textID: TXT_PipetteManual_content_10
+    demoID: 
+    itemID: 
+    upFrag: Flag_PipetteManual_Read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  FakeReagentBottle:
+  - progress: -1
+    frag: Flag_CassetteTape_5_Listened
+    textID: TXT_FakeReagentBottle_reaction_040
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_FakeSolution_Obtained
+    textID: TXT_FakeReagentBottle_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_CassetteTape_4_Listened
+    textID: TXT_FakeReagentBottle_reaction_020
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_FakeReagentBottle_reaction_010
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
