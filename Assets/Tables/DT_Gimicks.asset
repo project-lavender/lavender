@@ -202,8 +202,17 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: 
+    frag: Flag_BlueCloudySolution_Obtained
     textID: TXT_GarbageCan_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: Flag_BlueCloudySolution_Trashed
+    downFrag: Flag_BlueCloudySolution_Obtained
+    death: 0
+    overWriteProgress: 240
+  - progress: -1
+    frag: 
+    textID: TXT_GarbageCan_reaction_040
     demoID: 
     itemID: 
     upFrag: 
@@ -452,6 +461,33 @@ MonoBehaviour:
     overWriteProgress: -1
   RoterRed:
   - progress: -1
+    frag: Flag_Rotor_4h_Set_redo
+    textID: TXT_Rotor_4h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_4h_Set_first
+    textID: TXT_Rotor_4h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_4h_Obtained
+    textID: TXT_Rotor_4h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_CassetteTape_2_Listened
     textID: TXT_Rotor_4h_reaction_020
     demoID: 
@@ -471,6 +507,33 @@ MonoBehaviour:
     overWriteProgress: -1
   RoterBlack:
   - progress: -1
+    frag: Flag_Rotor_6h_Set_redo
+    textID: TXT_Rotor_6h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_6h_Set_first
+    textID: TXT_Rotor_6h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_6h_Obtained
+    textID: TXT_Rotor_6h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_CassetteTape_2_Listened
     textID: TXT_Rotor_6h_reaction_020
     demoID: 
@@ -489,6 +552,33 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   RoterBlue:
+  - progress: -1
+    frag: Flag_Rotor_8h_Set_redo
+    textID: TXT_Rotor_8h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_8h_Set_first
+    textID: TXT_Rotor_8h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Rotor_8h_Obtained
+    textID: TXT_Rotor_8h_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: -1
     frag: Flag_CassetteTape_2_Listened
     textID: TXT_Rotor_8h_reaction_020
@@ -534,7 +624,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: 0
+    overWriteProgress: -1
   - progress: -1
     frag: Flag_CassetteTape_3_Listened
     textID: TXT_Freezer_reaction_080
@@ -554,6 +644,15 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
+    frag: Flag_BlueCloudySolution_Trashed
+    textID: TXT_Freezer_reaction_050_add
+    demoID: freezerOpen
+    itemID: Flag_TestTube_Obtained
+    upFrag: Flag_TestTube_Obtained
+    downFrag: Flag_BlueCloudySolution_Obtained
+    death: 0
+    overWriteProgress: 240
+  - progress: -1
     frag: Flag_BlueCloudySolution_Obtained
     textID: TXT_Freezer_reaction_050
     demoID: freezerOpen
@@ -561,7 +660,7 @@ MonoBehaviour:
     upFrag: Flag_TestTube_Obtained
     downFrag: Flag_BlueCloudySolution_Obtained
     death: 0
-    overWriteProgress: 200
+    overWriteProgress: 240
   - progress: -1
     frag: Flag_DimpleKey_Selected
     textID: TXT_Freezer_reaction_030
@@ -735,6 +834,24 @@ MonoBehaviour:
     downFrag: Flag_Rotor_8h_Obtained
     death: 0
     overWriteProgress: 430
+  - progress: 240
+    frag: Flag_TestTube_Obtained
+    textID: TXT_Centrifuge_reaction_110
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Set
+    death: 0
+    overWriteProgress: 200
+  - progress: 240
+    frag: Flag_TestTube_Set
+    textID: TXT_Centrifuge_reaction_120
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_TestTube_Set
+    death: 0
+    overWriteProgress: -1
   - progress: 210
     frag: Flag_TestTube_Set
     textID: TXT_Centrifuge_reaction_070_RotorNG
@@ -871,8 +988,17 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: Flag_Memo_002_Read
+    frag: Flag_CassetteTape_2_Listened
     textID: TXT_Centrifuge_reaction_020
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_Memo_002_Read
+    textID: TXT_Centrifuge_reaction_010_add
     demoID: 
     itemID: 
     upFrag: 
@@ -1119,6 +1245,15 @@ MonoBehaviour:
     overWriteProgress: -1
   TipHolder:
   - progress: -1
+    frag: Flag_TipHolder_Obtained
+    textID: TXT_TipHolder_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
     frag: Flag_PipetteManual_Read
     textID: TXT_TipHolder_reaction_020
     demoID: 
@@ -1138,11 +1273,20 @@ MonoBehaviour:
     overWriteProgress: -1
   PipetManual:
   - progress: -1
-    frag: 
-    textID: TXT_PipetteManual_content_10
+    frag: Flag_CassetteTape_5_Listened
+    textID: TXT_PipetteManual_content_20
     demoID: 
     itemID: 
     upFrag: Flag_PipetteManual_Read
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: 
+    textID: TXT_PipetteManual_reaction_10
+    demoID: 
+    itemID: 
+    upFrag: 
     downFrag: 
     death: 0
     overWriteProgress: -1

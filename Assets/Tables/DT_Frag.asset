@@ -95,6 +95,8 @@ MonoBehaviour:
     value: 0
   - id: Flag_BlueCloudySolution_Obtained
     value: 0
+  - id: Flag_BlueCloudySolution_Trashed
+    value: 0
   - id: Flag_RedSolution_Obtained
     value: 0
   - id: Flag_PipetteManual_Read
