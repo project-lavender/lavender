@@ -645,16 +645,8 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_Freezer_reaction_050_add
-    text: "\u3088\u3057\u3001\u3082\u3046\u4E00\u5EA6\u3060\uFF01"
-    ui: 2
-    nextText: 
-    choise0: 
-    choise1: 
-    choise2: 
-    choise3: 
   - id: TXT_Freezer_reaction_060
-    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057\n\u3082\u3046\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3044\u3089\u306A\u3044\u306A"
+    text: "\u6307\u793A\u901A\u308A\u306B\u3067\u304D\u305F\u307F\u305F\u3044\u3060\u3057\n\u4ECA\u306F\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u3044\u3089\u306A\u3044\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -671,6 +663,22 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Freezer_reaction_080
     text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u3082\u3046\u4E00\u5EA6\u3060\u3088\u306D"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_090
+    text: "\u3088\u3057\u3001\u3082\u3046\u4E00\u5EA6\u3060\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Freezer_reaction_100
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u306F\u9060\u5FC3\u5206\u96E2\u6A5F\u306B\n\u30BB\u30C3\u30C8\u3057\u3066\u308B\u304B\u3089\u3044\u3089\u306A\u3044\u3084"
     ui: 2
     nextText: 
     choise0: 
@@ -1093,6 +1101,14 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_Centrifuge_reaction_130
+    text: "\u4E00\u5EA6\u30ED\u30FC\u30BF\u30FC\u3082\u53D6\u308A\u5916\u3057\u3066\u518D\u958B\u3060\uFF01"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_Rotor_4h_reaction_010
     text: "\u4F55\u304B\u306E\u6A5F\u68B0\u306E\u90E8\u54C1...\uFF1F"
     ui: 2
@@ -1111,6 +1127,14 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Rotor_4h_reaction_030
     text: "\u3053\u306E\u30ED\u30FC\u30BF\u30FC\u306F\u3082\u3046\u3044\u3089\u306A\u3044\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_4h_reaction_040
+    text: "\u6EB6\u6DB2A\u306F\u4F5C\u308C\u305F\u3057\u3001\u4ECA\u306F\u4E0D\u8981\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -1141,6 +1165,14 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_Rotor_6h_reaction_040
+    text: "\u6EB6\u6DB2A\u306F\u4F5C\u308C\u305F\u3057\u3001\u4ECA\u306F\u4E0D\u8981\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_Rotor_8h_reaction_010
     text: "\u4F55\u304B\u306E\u6A5F\u68B0\u306E\u90E8\u54C1...\uFF1F"
     ui: 2
@@ -1159,6 +1191,14 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Rotor_8h_reaction_030
     text: "\u3053\u306E\u30ED\u30FC\u30BF\u30FC\u306F\u3082\u3046\u3044\u3089\u306A\u3044\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Rotor_8h_reaction_040
+    text: "\u6EB6\u6DB2A\u306F\u4F5C\u308C\u305F\u3057\u3001\u4ECA\u306F\u4E0D\u8981\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
