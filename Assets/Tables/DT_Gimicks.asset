@@ -1179,8 +1179,17 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: 320
-    frag: 
-    textID: TXT_Pipette_reaction_070
+    frag: Flag_BlueSolution_Obtained
+    textID: TXT_Pipette_reaction_070_correct
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: Flag_ReagentBottle_Obtained
+    death: 0
+    overWriteProgress: -1
+  - progress: 320
+    frag: Flag_BlueClowdySolution_Obtained
+    textID: TXT_Pipette_reaction_070_failed
     demoID: 
     itemID: 
     upFrag: 
@@ -1318,6 +1327,15 @@ MonoBehaviour:
   - progress: -1
     frag: Flag_ReagentBottle_Obtained
     textID: TXT_ReagentBottle_reaction_030
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 320
+    frag: 
+    textID: TXT_ReagentBottle_reaction_020_add
     demoID: 
     itemID: 
     upFrag: 
