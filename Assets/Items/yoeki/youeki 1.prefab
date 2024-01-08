@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7026667997164835142
+--- !u!1 &4973912315785374195
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8322811706622616746}
-  - component: {fileID: 4732214507583734299}
+  - component: {fileID: 5887162295288382879}
+  - component: {fileID: -7061356338732536753}
   m_Layer: 0
-  m_Name: dummy
+  m_Name: youeki 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8322811706622616746
+--- !u!4 &5887162295288382879
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026667997164835142}
+  m_GameObject: {fileID: 4973912315785374195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,20 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4732214507583734299
+--- !u!114 &-7061356338732536753
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026667997164835142}
+  m_GameObject: {fileID: 4973912315785374195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 655267b47c88e2e4d823cd3ca735ebb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: 
-  useTextID: 
-  myfrag: 
-  itemIcon: {fileID: 21300000, guid: 073962f447fc9e549a3ef7800923bbec, type: 3}
+  itemname: "\u62B5\u6297\u85AC"
+  useTextID: TXT_ReagentBottle
+  myfrag: Flag_FakeReagentBottle_Selected
+  itemIcon: {fileID: 21300000, guid: d664f040310e5e54a9b7265ea8bf2d6b, type: 3}
   frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
