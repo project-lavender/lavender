@@ -97,6 +97,8 @@ MonoBehaviour:
     value: 0
   - id: Flag_BlueCloudySolution_Trashed
     value: 0
+  - id: Flag_BlueCloudySolution_Selected
+    value: 0
   - id: Flag_RedSolution_Obtained
     value: 0
   - id: Flag_PipetteManual_Read
@@ -105,7 +107,9 @@ MonoBehaviour:
     value: 0
   - id: Flag_PurpleCloudySolution_Obtained
     value: 0
-  - id: Flag_PurpleClowdySolution_Obtained
+  - id: Flag_PurpleCloudySolution_Trashed
+    value: 0
+  - id: Flag_PurpleCloudySolution_Selected
     value: 0
   - id: Flag_ReagentBottle_Obtained
     value: 0
