@@ -474,6 +474,24 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""2b79623e-9769-4698-b765-272000bb6b43"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skip"",
+                    ""type"": ""Button"",
+                    ""id"": ""54c2270e-baaa-4b03-a307-a795e679e595"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1059,6 +1077,39 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
                     ""action"": ""BeforePage"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c2525430-a255-4ce5-9721-4c3479165090"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86d656b1-7858-4693-8184-d66791964920"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4cf2cc6b-b833-4313-b148-d6e72d9d5edd"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Skip"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1152,6 +1203,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         m_UI_CloseUI = m_UI.FindAction("CloseUI", throwIfNotFound: true);
         m_UI_NextPage = m_UI.FindAction("NextPage", throwIfNotFound: true);
         m_UI_BeforePage = m_UI.FindAction("BeforePage", throwIfNotFound: true);
+        m_UI_Pause = m_UI.FindAction("Pause", throwIfNotFound: true);
+        m_UI_Skip = m_UI.FindAction("Skip", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1308,6 +1361,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_CloseUI;
     private readonly InputAction m_UI_NextPage;
     private readonly InputAction m_UI_BeforePage;
+    private readonly InputAction m_UI_Pause;
+    private readonly InputAction m_UI_Skip;
     public struct UIActions
     {
         private @Lavender m_Wrapper;
@@ -1329,6 +1384,8 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         public InputAction @CloseUI => m_Wrapper.m_UI_CloseUI;
         public InputAction @NextPage => m_Wrapper.m_UI_NextPage;
         public InputAction @BeforePage => m_Wrapper.m_UI_BeforePage;
+        public InputAction @Pause => m_Wrapper.m_UI_Pause;
+        public InputAction @Skip => m_Wrapper.m_UI_Skip;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1389,6 +1446,12 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
             @BeforePage.started += instance.OnBeforePage;
             @BeforePage.performed += instance.OnBeforePage;
             @BeforePage.canceled += instance.OnBeforePage;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @Skip.started += instance.OnSkip;
+            @Skip.performed += instance.OnSkip;
+            @Skip.canceled += instance.OnSkip;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -1444,6 +1507,12 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
             @BeforePage.started -= instance.OnBeforePage;
             @BeforePage.performed -= instance.OnBeforePage;
             @BeforePage.canceled -= instance.OnBeforePage;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @Skip.started -= instance.OnSkip;
+            @Skip.performed -= instance.OnSkip;
+            @Skip.canceled -= instance.OnSkip;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -1533,5 +1602,7 @@ public partial class @Lavender: IInputActionCollection2, IDisposable
         void OnCloseUI(InputAction.CallbackContext context);
         void OnNextPage(InputAction.CallbackContext context);
         void OnBeforePage(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnSkip(InputAction.CallbackContext context);
     }
 }

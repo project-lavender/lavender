@@ -25,7 +25,7 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] List<string> dialog;
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
     Cinemachine.CinemachinePOV pov;
-    [SerializeField] Slider xslider, yslder;
+    [SerializeField] Slider xslider, yslder,sslider;
 
     [SerializeField] DemoPlayer demoPlayer;
 
@@ -304,6 +304,11 @@ public class UIcontroller : MonoBehaviour
             pov.m_HorizontalAxis.m_MaxSpeed = 0f;
             pov.m_VerticalAxis.m_MaxSpeed = 0f;
         }
+    }
+
+    public void Sound()
+    {
+        AudioListener.volume = sslider.value;
     }
 
     IEnumerator VoiceText()
