@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5076318689254897188, guid: 8a5e08229777c7049a83b0a0dc6a635c, type: 3}
       propertyPath: gimicksName
-      value: PipetManual
+      value: CentrifugeManual
       objectReference: {fileID: 0}
     - target: {fileID: 5076318689254897188, guid: 8a5e08229777c7049a83b0a0dc6a635c, type: 3}
       propertyPath: emittionColor.b
@@ -5353,7 +5353,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256236182}
-  m_LocalRotation: {x: -0.000483097, y: -0.9987364, z: 0.009788352, w: -0.049291916}
+  m_LocalRotation: {x: -0.0004830974, y: -0.9987364, z: 0.0097883595, w: -0.0492919}
   m_LocalPosition: {x: -1.270038, y: 0.9380665, z: 3.2873573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
