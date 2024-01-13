@@ -341,8 +341,16 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CasettePlayer_Tape002_001
+    text: ' '
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_CasettePlayer_Tape002_010
-    text: "\u60AA\u3044\u304C\u58F0\u306F\u52A0\u5DE5\u3055\u305B\u3066\u3082\u3089\u3046\n\u4FDD\u8EAB\u3067\u60AA\u3044\u304C\u306A"
+    text: "\u4FDD\u8EAB\u3067\u60AA\u3044\u304C\n\u58F0\u306F\u52A0\u5DE5\u3055\u305B\u3066\u3082\u3089\u3046"
     ui: 2
     nextText: TXT_CasettePlayer_Tape002_012
     choise0: 
@@ -437,6 +445,14 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
+  - id: TXT_CasettePlayer_Tape003_001
+    text: ' '
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
   - id: TXT_CasettePlayer_Tape003_010
     text: "\u826F\u304F\u898B\u3064\u3051\u305F\u306A\n\u6EB6\u6DB2B\u306E\u4F5C\u6210\u306F\u7C21\u5358\u3060"
     ui: 2
@@ -470,7 +486,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_CasettePlayer_Tape003_018
-    text: "\u6A5F\u68B0\u306B\u304B\u3051\u308B\u306E\u306F5(\u79D2)\u3067\u5341\u5206\u3060\u308D\u3046"
+    text: "\u6A5F\u68B0\u306B\u304B\u3051\u308B\u306E\u306F\u6570\u79D2\u3067\u5341\u5206\u3060\u308D\u3046"
     ui: 2
     nextText: TXT_CasettePlayer_Tape003_020
     choise0: 
@@ -487,6 +503,14 @@ MonoBehaviour:
     choise3: 
   - id: TXT_CasettePlayer_Tape003_022
     text: "\u6EB6\u6DB2A\u3068B\u3092\u6DF7\u305C\u308C\u3070\u62B5\u6297\u85AC\u306F\u5B8C\u6210\u3060\n\u6B21\u306E\u30E1\u30E2\u306F\u8A66\u85AC\u68DA\u306E\u4E2D\u3060\u3000\u3088\u304F\u63A2\u305B"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape004_001
+    text: ' '
     ui: 2
     nextText: 
     choise0: 
@@ -543,6 +567,14 @@ MonoBehaviour:
     choise3: 
   - id: TXT_CasettePlayer_Tape004_022
     text: "\u4FFA\u306F\u3001\u5148\u306B\u884C\u3063\u3066\u3044\u308B"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_CasettePlayer_Tape005_001
+    text: ' '
     ui: 2
     nextText: 
     choise0: 
