@@ -59,13 +59,21 @@ public class ProgressController : MonoBehaviour
                 }
 
                 //dynamo.darkColor = Color.black;
-                dynamo.BlackColor();
-                dynamo.DisableGimick();
+                //dynamo.BlackColor();
+                //dynamo.DisableGimick();
                 //stretcher.darkColor = Color.black;
-                stretcher.BlackColor();
-                stretcher.DisableGimick();
+                //0stretcher.BlackColor();
+                //stretcher.DisableGimick();
 
                 
+                break;
+            case 300:
+                //ストレッチャーとダイナモは明かりを消す
+                foreach (Gimicks g in allgimicks)
+                {
+                    g.EnableGimick();
+                    g.TurnOffColor();
+                }                
                 break;
             case 330:
                 foreach(Gimicks g in allgimicks)
