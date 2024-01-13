@@ -63,7 +63,11 @@ MonoBehaviour:
     value: 0
   - id: Flag_TestTube_Obtained
     value: 0
+  - id: Flag_TestTube_2_Obtained
+    value: 0
   - id: Flag_TestTube_Selected
+    value: 0
+  - id: Flag_TestTube_2_Selected
     value: 0
   - id: Flag_TestTube_Set
     value: 0
@@ -117,6 +121,8 @@ MonoBehaviour:
     value: 0
   - id: Flag_ReagentBottle_Obtained
     value: 0
+  - id: Flag_ReagentBottle_Selected
+    value: 0
   - id: Flag_TipHolder_Obtained
     value: 0
   - id: Flag_FakeSolution_Obtained
@@ -124,4 +130,6 @@ MonoBehaviour:
   - id: Flag_Light_On
     value: 0
   - id: Flag_Light_Off
+    value: 0
+  - id: Flag_teikouyakunazotokikaishimae
     value: 0
