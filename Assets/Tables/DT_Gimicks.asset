@@ -1846,47 +1846,20 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  TipHolder:
-  - progress: -1
-    frag: Flag_TipHolder_Obtained
-    textID: TXT_TipHolder_reaction_030
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
-    frag: Flag_PipetteManual_Read
-    textID: TXT_TipHolder_reaction_020
-    demoID: 
-    itemID: Flag_TipHolder_Obtained
-    upFrag: Flag_TipHolder_Obtained
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
-    frag: 
-    textID: TXT_TipHolder_reaction_010
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
   PipetManual:
-  - progress: -1
-    frag: Flag_CassetteTape_5_Listened
-    textID: TXT_PipetteManual_content_10
-    demoID: 
-    itemID: 
-    upFrag: Flag_PipetteManual_Read
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
   - progress: -1
     frag: 
     textID: TXT_PipetteManual_reaction_10
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  CentrifugeManual:
+  - progress: -1
+    frag: 
+    textID: TXT_CentrifugeManual_reaction_10
     demoID: 
     itemID: 
     upFrag: 

@@ -31,8 +31,8 @@ public class DT_Gimicks : ScriptableObject
     public List<DTGimick> Pipet;
     public List<DTGimick> Door;
     public List<DTGimick> ReagentBottle;
-    public List<DTGimick> TipHolder;
     public List<DTGimick> PipetManual;
+    public List<DTGimick> CentrifugeManual;
     public List<DTGimick> FakeReagentBottle;
 
     public List<DTGimick> FindTable(string listname)
@@ -136,13 +136,13 @@ public class DT_Gimicks : ScriptableObject
         {
             return ReagentBottle;
         }
-        else if(listname == nameof(TipHolder))
-        {
-            return TipHolder;
-        }
         else if(listname == nameof(PipetManual))
         {
             return PipetManual;
+        }
+         else if(listname == nameof(CentrifugeManual))
+        {
+            return CentrifugeManual;
         }
         else if(listname == nameof(FakeReagentBottle))
         {
