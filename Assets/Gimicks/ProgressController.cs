@@ -9,7 +9,7 @@ public class ProgressController : MonoBehaviour
     //progressによってアクティブなギミックを設定
     [SerializeField]private int progress = 0;
     [SerializeField] bool debugMode = false;
-    [SerializeField] Gimicks dynamo = null, stretcher=null;
+    [SerializeField] Gimicks dynamo = null, stretcher = null, door = null;
     [SerializeField] DT_Frag frag = null;
 
     [SerializeField] Gimicks[] allgimicks = null;
@@ -66,6 +66,21 @@ public class ProgressController : MonoBehaviour
                 stretcher.DisableGimick();
 
                 
+                break;
+            case 320:
+                foreach(Gimicks g in allgimicks)
+                {
+                    g.BlackColor();
+                    g.DisableGimick();
+                }
+
+                dynamo.TurnOffColor();
+                dynamo.EnableGimick();
+                stretcher.EnableGimick();
+                stretcher.TurnOffColor();
+                door.EnableGimick();
+                door.TurnOffColor();
+
                 break;
             case 500:
                 dynamo.TurnOffColor();

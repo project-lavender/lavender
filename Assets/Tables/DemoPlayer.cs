@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class DemoPlayer : MonoBehaviour
 {
     [SerializeField] PlayableDirector[] directors;
+    [SerializeField] PlayableDirector[] noSkips;
     private Lavender action;
     [SerializeField] PlayableDirector director;
 
@@ -58,6 +59,13 @@ public class DemoPlayer : MonoBehaviour
         if(director == null || director.state == PlayState.Paused)
         {
             return;
+        }
+        foreach (PlayableDirector d in noSkips)
+        {
+            if (d == director)
+            {
+                return;
+            }
         }
         var rootP = director.playableGraph.GetRootPlayable(0);
         rootP.SetSpeed(10f);
