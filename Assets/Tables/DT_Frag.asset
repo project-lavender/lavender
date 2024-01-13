@@ -121,3 +121,7 @@ MonoBehaviour:
     value: 0
   - id: Flag_FakeSolution_Obtained
     value: 0
+  - id: Flag_Light_On
+    value: 0
+  - id: Flag_Light_Off
+    value: 0
