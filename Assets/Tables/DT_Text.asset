@@ -1750,15 +1750,15 @@ MonoBehaviour:
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_CentrifugeManual_content_10
+  - id: TXT_CentrifugeManual_reaction_10
     text: "\u300E\u9060\u5FC3\u5206\u96E2\u6A5F\u306E\u8A2D\u5B9A\u300F\n\n\u9060\u5FC3\u5206\u96E2\u6A5F\u3092\u4F7F\u3046\u306B\u306F\n\u9060\u5FC3\u529B\u3068\u5206\u96E2\u6642\u9593\u3092\u8A2D\u5B9A\u3059\u308B\n\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\n\n\u9060\u5FC3\u529B\u306E\u5358\u4F4D\u306F\u300Eg\u300F\n\u6642\u9593\u306E\u5358\u4F4D\u306F\u300E\u79D2\u300F\u3067\u8A2D\u5B9A\u3057\u307E\u3059"
     ui: 1
-    nextText: TXT_CentrifugeManual_content_20
+    nextText: TXT_CentrifugeManual_reaction_20
     choise0: 
     choise1: 
     choise2: 
     choise3: 
-  - id: TXT_CentrifugeManual_content_20
+  - id: TXT_CentrifugeManual_reaction_20
     text: "\u5206\u96E2\u3057\u305F\u3044\u6EB6\u6DB2\u306E\u672C\u6570\u3068\n\u6EB6\u6DB2\u306E\u6027\u8CEA\u306B\u5408\u308F\u305B\u3066\n\n\u9060\u5FC3\u529B\u3068\u6642\u9593\u3092\u8A2D\u5B9A\u3057\u3066\u304F\u3060\u3055\u3044"
     ui: 1
     nextText: 
@@ -1858,6 +1858,78 @@ MonoBehaviour:
   - id: TXT_FakeReagentBottle_reaction_040
     text: "\u3053\u306E\u74F6\u3082\u507D\u7269\u304B\u3082\u3057\u308C\u306A\u3044...\n\u7121\u8996\u3057\u3066\u304A\u3053\u3046\uFF01"
     ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_010
+    text: "\u3042\u308C\u3001\u9375\u304C\u639B\u304B\u3063\u3066\u308B\n\u9589\u3081\u305F\u899A\u3048\u306F\u306A\u3044\u3093\u3060\u3051\u3069\u306A..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_020
+    text: "\u3082\u3046\u5B9F\u9A13\u306B\u306F\u7528\u306F\u306A\u3044\u3088\u306D..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Door_reaction_020_yes
+    choise1: TXT_Door_reaction_020_no
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_020_yes
+    text: "\u5916\u306B\u51FA\u3088\u3046"
+    ui: 0
+    nextText: 
+    choise0: Clear
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_020_no
+    text: "\u3044\u3084..."
+    ui: 0
+    nextText: TXT_Door_reaction_020_dummy
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_020_dummy
+    text: "\u3000"
+    ui: 0
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_030
+    text: "\u3082\u3046\u5B9F\u9A13\u306B\u306F\u7528\u306F\u306A\u3044\u3088\u306D..."
+    ui: 0
+    nextText: 
+    choise0: TXT_Door_reaction_030_yes
+    choise1: TXT_Door_reaction_030_no
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_030_yes
+    text: "\u5916\u306B\u51FA\u3088\u3046"
+    ui: 0
+    nextText: 
+    choise0: GameOver
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_030_no
+    text: "\u3044\u3084..."
+    ui: 0
+    nextText: TXT_Door_reaction_030_dummy
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_Door_reaction_030_dummy
+    text: "\u3000"
+    ui: 0
     nextText: 
     choise0: 
     choise1: 
