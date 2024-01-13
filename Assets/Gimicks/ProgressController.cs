@@ -67,7 +67,7 @@ public class ProgressController : MonoBehaviour
 
                 
                 break;
-            case 320:
+            case 330:
                 foreach(Gimicks g in allgimicks)
                 {
                     g.BlackColor();
