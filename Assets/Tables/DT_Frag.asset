@@ -67,6 +67,10 @@ MonoBehaviour:
     value: 0
   - id: Flag_TestTube_Set
     value: 0
+  - id: Flag_TestTube_Set_first
+    value: 0
+  - id: Flag_TestTube_Set_redo
+    value: 0
   - id: Flag_Rotor_4h_Obtained
     value: 0
   - id: Flag_Rotor_6h_Obtained
