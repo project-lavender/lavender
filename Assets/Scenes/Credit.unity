@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4409583, g: 0.4896831, b: 0.56978077, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u4F7F\u7528\u3055\u305B\u3066\u3044\u305F\u3060\u3044\u305F\u7D20\u6750\u30EA\u30F3\u30AF\u96C6\n\u3000\u30E2\u30AE\u30CF\u30FB\u30DA\u30F3\u5B57Font\r\n\u3000http://ahito.com/item/desktop/font/mogihaPen/\r\n\u3000Kazesawa\u30D5\u30A9\u30F3\u30C8\r\n\u3000https://kazesawa.github.io\r\n\u3000\u3074\u305F\u3061\u30FC\u7D20\u6750\u9928\r\n\u3000http://www.vita-chi.net/sozai1.htm\r\n\u3000\u30CE\u30BF\u306E\u68EE\r\n\u3000http://notanomori.net\r\n\u3000\u9B54\u738B\u9B42\r\n\u3000https://maou.audio\r\n\u3000\u97F3\u4EBA\r\n\u3000https://on-jin.com"
+  m_text: "\u4F7F\u7528\u3055\u305B\u3066\u3044\u305F\u3060\u3044\u305F\u7D20\u6750\u30EA\u30F3\u30AF\u96C6\n\u3000\u30E2\u30AE\u30CF\u30FB\u30DA\u30F3\u5B57Font\r\n\u3000http://ahito.com/item/desktop/font/mogihaPen/\r\n\u3000Kazesawa\u30D5\u30A9\u30F3\u30C8\r\n\u3000https://kazesawa.github.io\r\n\u3000\u3074\u305F\u3061\u30FC\u7D20\u6750\u9928\r\n\u3000http://www.vita-chi.net/sozai1.htm\r\n\u3000\u30CE\u30BF\u306E\u68EE\r\n\u3000http://notanomori.net\r\n\u3000\u9B54\u738B\u9B42\r\n\u3000https://maou.audio\r\n\u3000\u97F3\u4EBA\r\n\u3000https://on-jin.com\n\u3000\u68D2\u8AAD\u307F\u3061\u3083\u3093\n\u3000https://chi.usamimi.info/Program/\n\u3000Application/BouyomiChan/"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 775a5beb0d8891c4f96b9f7fef591231, type: 2}
   m_sharedMaterial: {fileID: 3499104947528058583, guid: 775a5beb0d8891c4f96b9f7fef591231, type: 2}
