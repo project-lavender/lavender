@@ -710,7 +710,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Freezer_reaction_080
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u3082\u3046\u4E00\u5EA6\u3060\u3088\u306D"
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8...\u5FC5\u8981\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -2025,6 +2025,134 @@ MonoBehaviour:
     choise3: 
   - id: TXT_Door_reaction_040
     text: "\u9375\u306F\u958B\u3044\u3066\u308B\u3051\u3069\n\u62B5\u6297\u85AC\u3092\u4F5C\u308B\u307E\u3067\u306F..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_2
+    text: "\u300E\u6EB6\u6DB2A\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_3
+    text: "\u300E\u6EB6\u6DB2B\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_4
+    text: "\u300E\u4F4E\u676D\u697D\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u3068\u66F8\u304B\u308C\u3066\u308B\n\u6F22\u5B57\u3082\u9593\u9055\u3063\u3066\u3044\u308B\u3057\u3001\u4F55\u304B\u5909\u3060\u306A..."
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ItemName_CassetteTape_5
+    text: "\u300E\u62B5\u6297\u85AC\u306E\u4F5C\u6210\u65B9\u6CD5\u300F\u306E\u30AB\u30BB\u30C3\u30C8\u30C6\u30FC\u30D7\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_DimpleKey_02
+    text: "\u8907\u96D1\u306A\u5F62\u3092\u3057\u305F\u9375\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PurpleCloudySolution_001
+    text: "\u6FC1\u3063\u305F\u7D2B\u8272\u306E\u6DB2\u4F53\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_PurpleSolution_001
+    text: "\u900F\u660E\u306A\u7D2B\u8272\u306E\u6DB2\u4F53\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestItem_001
+    text: "\u7A74\u304C\uFF14\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestItem_002
+    text: "\u7A74\u304C\uFF16\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestItem_003
+    text: "\u7A74\u304C\uFF18\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_BlueCSolution
+    text: "\u6FC1\u3063\u305F\u9752\u8272\u306E\u6DB2\u4F53\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_BlueSolution
+    text: "\u900F\u660E\u306A\u9752\u8272\u306E\u6DB2\u4F53\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_RedSolution
+    text: "\u900F\u660E\u306A\u8D64\u8272\u306E\u6DB2\u4F53\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_TestTube_ItemUse
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3060\n\u898B\u308B\u89D2\u5EA6\u3067\u8272\u304C\u5909\u308F\u308B...\u4E0D\u601D\u8B70\u3060\u306A"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_ReagentBottle
+    text: "\u4E0D\u601D\u8B70\u306A\u5F62\u3092\u3057\u305F\u8A66\u85AC\u74F6\u3060"
+    ui: 2
+    nextText: 
+    choise0: 
+    choise1: 
+    choise2: 
+    choise3: 
+  - id: TXT_FakeReagentBottle
+    text: "\u62B5\u6297\u85AC\u3060\n\u6DF1\u7DD1\u306E...\u5C11\u3057\u3060\u3051\u5ACC\u306A\u8272\u3092\u3057\u3066\u308B..."
     ui: 2
     nextText: 
     choise0: 
