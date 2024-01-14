@@ -5353,7 +5353,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256236182}
-  m_LocalRotation: {x: -0.0004830959, y: -0.9987364, z: 0.009788339, w: -0.049291864}
+  m_LocalRotation: {x: -0.00048309655, y: -0.9987364, z: 0.009788349, w: -0.049291875}
   m_LocalPosition: {x: -1.270038, y: 0.9380665, z: 3.2873573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22140,7 +22140,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1148658713}
           m_TargetAssemblyTypeName: ProgressController, Assembly-CSharp
-          m_MethodName: DownFrag
+          m_MethodName: UpFrag
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -41538,7 +41538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4767323125235869803, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: dbmode.Array.data[2]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4767323125235869803, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: dbmode.Array.data[3]
