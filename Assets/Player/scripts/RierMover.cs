@@ -30,7 +30,7 @@ public class RierMover : MonoBehaviour
     private float h, v, c;
     float lt = 0f;
     Cinemachine.CinemachineBasicMultiChannelPerlin nz;
-    Transform mcam;
+    [SerializeField] Transform mcam;
 
     [SerializeField]
     private List<string[]> p = new();
@@ -156,7 +156,7 @@ public class RierMover : MonoBehaviour
         
         //ctr = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
-        mcam = Camera.main.transform;
+        //mcam = Camera.main.transform;
         anm = GetComponent<Animator>();
         //コールバック設定
         action = new Lavender();
