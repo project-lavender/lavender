@@ -3423,8 +3423,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165556073}
-  m_LocalRotation: {x: 0.009832096, y: 0.019059947, z: -0.00018744238, w: 0.99977005}
-  m_LocalPosition: {x: -0.414, y: 1.093, z: -5.116}
+  m_LocalRotation: {x: -0.0016446735, y: -0.019200245, z: -0.000031584, w: 0.99981433}
+  m_LocalPosition: {x: 1.05, y: 0.719, z: -13.049}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4830,7 +4830,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222228162}
-  m_LocalRotation: {x: 0.19970563, y: 0.046664096, z: -0.00952192, w: 0.97869784}
+  m_LocalRotation: {x: 0.19970565, y: 0.04666411, z: -0.009521924, w: 0.97869784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5353,7 +5353,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256236182}
-  m_LocalRotation: {x: -0.000483097, y: -0.9987364, z: 0.009788352, w: -0.049291916}
+  m_LocalRotation: {x: -0.00048309818, y: -0.9987364, z: 0.009788374, w: -0.04929191}
   m_LocalPosition: {x: -1.270038, y: 0.9380665, z: 3.2873573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22179,7 +22179,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Title
+            m_StringArgument: GameClear
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -41542,7 +41542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4767323125235869803, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: dbmode.Array.data[2]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4767323125235869803, guid: 76e0ca746faab5c44bcc8d974526c862, type: 3}
       propertyPath: dbmode.Array.data[3]
