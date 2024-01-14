@@ -67,6 +67,14 @@ public class ProgressController : MonoBehaviour
 
                 
                 break;
+            case 300:
+                //ストレッチャーとダイナモは明かりを消す
+                foreach (Gimicks g in allgimicks)
+                {
+                    g.EnableGimick();
+                    g.TurnOffColor();
+                }                
+                break;
             case 320:
                 //ストレッチャーとダイナモは明かりを消す
                 foreach (Gimicks g in allgimicks)
