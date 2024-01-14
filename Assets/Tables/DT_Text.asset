@@ -710,7 +710,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_Freezer_reaction_080
-    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8...\u5FC5\u8981\u304B\u306A"
+    text: "\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u3092\u3082\u3046\u4E00\u5EA6\u3060\u3088\u306D"
     ui: 2
     nextText: 
     choise0: 
@@ -1382,7 +1382,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_SmallCentrifuge_reaction_090
-    text: "\u6EB6\u6DB2B\u306E\u4F5C\u6210\u3092\u59CB\u3081\u3088\u3046"
+    text: "\u6B21\u306F\u6EB6\u6DB2B\u306E\u4F5C\u6210\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
