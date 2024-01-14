@@ -508,7 +508,25 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  - progress: -1
+  - progress: 200
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 210
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 211
     frag: Flag_CassetteTape_3_Selected
     textID: TXT_CasettePlayer_Tape003_001
     demoID: Tape3
@@ -517,6 +535,150 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: 250
+  - progress: 220
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 221
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: 250
+  - progress: 230
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 231
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: 250
+  - progress: 240
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 245
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 250
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 260
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 261
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 270
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 271
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 280
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 271
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 300
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 320
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: 330
+    frag: Flag_CassetteTape_3_Selected
+    textID: TXT_CasettePlayer_Tape003_001
+    demoID: Tape3
+    itemID: 
+    upFrag: Flag_CassetteTape_3_Listened
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: -1
     frag: Flag_CassetteTape_4_Selected
     textID: TXT_CasettePlayer_Tape004_001
@@ -905,15 +1067,6 @@ MonoBehaviour:
     death: 0
     overWriteProgress: -1
   - progress: -1
-    frag: Flag_TestTube_Obtained
-    textID: TXT_Freezer_reaction_040
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
-  - progress: -1
     frag: Flag_PurpleCloudySolution_Selected
     textID: TXT_Freezer_reaction_120
     demoID: 
@@ -931,6 +1084,24 @@ MonoBehaviour:
     downFrag: Flag_BlueCloudySolution_Obtained
     death: 0
     overWriteProgress: 240
+  - progress: -1
+    frag: Flag_TestTube_Obtained
+    textID: TXT_Freezer_reaction_040
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
+  - progress: -1
+    frag: Flag_TestTube_Set_redo
+    textID: TXT_Freezer_reaction_110
+    demoID: 
+    itemID: 
+    upFrag: 
+    downFrag: 
+    death: 0
+    overWriteProgress: -1
   - progress: 271
     frag: Flag_BlueSolution_Obtained
     textID: TXT_Freezer_reaction_080
