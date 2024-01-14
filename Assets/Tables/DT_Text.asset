@@ -462,7 +462,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_CasettePlayer_Tape003_012
-    text: "\u6EB6\u6DB2A\u3067\u4F7F\u3063\u305F\u306E\u3082\u306E\u3068\u540C\u3058\n\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092"
+    text: "\u6EB6\u6DB2A\u3067\u4F7F\u3063\u305F\u3082\u306E\u3068\u540C\u3058\n\u300E\u8A66\u9A13\u7BA1\u30BB\u30C3\u30C8\u300F\u3092"
     ui: 2
     nextText: TXT_CasettePlayer_Tape003_014
     choise0: 
