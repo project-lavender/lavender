@@ -2174,7 +2174,7 @@ MonoBehaviour:
     overWriteProgress: -1
   FakeReagentBottle:
   - progress: -1
-    frag: Flag_CassetteTape_5_Listened
+    frag: Flag_CassetteTape_5_Obtained
     textID: TXT_FakeReagentBottle_reaction_040
     demoID: 
     itemID: 
