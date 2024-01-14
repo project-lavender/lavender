@@ -2155,7 +2155,7 @@ MonoBehaviour:
   - progress: -1
     frag: Flag_teikouyakunazotokikaishimae
     textID: TXT_ReagentBottle_reaction_010
-    demoID: 
+    demoID: ReizoOpen
     itemID: 
     upFrag: 
     downFrag: 
