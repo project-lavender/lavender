@@ -67,7 +67,7 @@ public class ProgressController : MonoBehaviour
 
                 
                 break;
-            case 300:
+            case 320:
                 //ストレッチャーとダイナモは明かりを消す
                 foreach (Gimicks g in allgimicks)
                 {
