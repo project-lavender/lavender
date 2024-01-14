@@ -1734,7 +1734,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: -1
+    overWriteProgress: 250
   - progress: 271
     frag: Flag_BlueCloudySolution_Obtained
     textID: TXT_SmallCentrifuge_reaction_090
@@ -1743,7 +1743,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: -1
+    overWriteProgress: 250
   - progress: 271
     frag: Flag_BlueSolution_Obtained
     textID: TXT_SmallCentrifuge_reaction_090
@@ -1752,7 +1752,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: -1
+    overWriteProgress: 250
   - progress: 281
     frag: Flag_BlueCloudySolution_Obtained
     textID: TXT_SmallCentrifuge_reaction_090
@@ -1761,7 +1761,7 @@ MonoBehaviour:
     upFrag: 
     downFrag: 
     death: 0
-    overWriteProgress: -1
+    overWriteProgress: 250
   - progress: 240
     frag: 
     textID: TXT_SmallCentrifuge_reaction_060
