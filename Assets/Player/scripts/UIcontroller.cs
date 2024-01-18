@@ -108,6 +108,7 @@ public class UIcontroller : MonoBehaviour
         SetVirtualCamera(true);
         Cursor.visible = false;
         StopAllCoroutines();
+        //E = null;
         Cursor.lockState = CursorLockMode.Locked;
         foreach (RectTransform r in UIs)
         {
