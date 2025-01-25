@@ -11,7 +11,7 @@ public class Items : MonoBehaviour
     public Sprite itemIcon;
 
     
-    [SerializeField] DT_Frag frags;
+    [SerializeField] FragTableHolder frags;
 
     public void SetFrag(bool f)
     {

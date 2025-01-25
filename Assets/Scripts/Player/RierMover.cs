@@ -186,7 +186,7 @@ public class RierMover : MonoBehaviour
 
         Vector3 camh = Vector3.up * Mathf.Lerp(0f, crouchCamHeight, highorCrouch);
         vc.transform.localPosition = camh;
-        if (nownoise != noisemode && lt<leapTime)
+        if (nownoise != noisemode && lt < leapTime)
         {
             NoiseSet(noisemode);
         }

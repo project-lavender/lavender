@@ -99,10 +99,6 @@ public class DynamoController : Gimicks
             StartCoroutine(LightTime(i, true));
         }
     }
-    public override void DisableGimick()
-    {
-        base.DisableGimick();
-    }
     //ƒ_ƒCƒiƒ‚on
     
 }

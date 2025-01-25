@@ -387,7 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136974027620226280}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DemoCameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,6 +601,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &7394991662878362085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5381975117468309588}
+  m_Layer: 0
+  m_Name: itemStack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5381975117468309588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394991662878362085}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11608347, y: -0.45066425, z: 0.14402318}
+  m_LocalScale: {x: 1, y: 1.1111112, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4020231014645416042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7881103191903185500
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +737,7 @@ GameObject:
   - component: {fileID: 7761597855725295765}
   - component: {fileID: 6724844463670009853}
   - component: {fileID: 4767323125235869803}
+  - component: {fileID: 142045373278811374}
   - component: {fileID: 1901522790197371626}
   m_Layer: 0
   m_Name: Player
@@ -731,6 +763,7 @@ Transform:
   - {fileID: 4831139825744425676}
   - {fileID: 5353035646805916632}
   - {fileID: 2136974027620226280}
+  - {fileID: 5381975117468309588}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &32616767431670812
@@ -964,6 +997,7 @@ MonoBehaviour:
   dbmode: 00000000000000000000000000000000
   itemUIdistance: 32
   itemIconAnker: {fileID: 4534740036358564661}
+  itemSets: {fileID: 5381975117468309588}
   itemIconPrefab: {fileID: 8120506545867084935, guid: 5e949a05fce8df240b9881ac802ee3f5, type: 3}
   uic: {fileID: 2095900640900647336}
   DTfrag: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
@@ -974,6 +1008,28 @@ MonoBehaviour:
   selectColor: {r: 1, g: 1, b: 1, a: 1}
   Offcolor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.64705884}
   nowitem: 0
+--- !u!114 &142045373278811374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007964221798074061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42abe28ca9aee3940877b1333cbc9d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 424837382816074474}
+  interactCD: 1
+  scanlength: 0.8
+  canTouch: 1
+  uictr: {fileID: 2095900640900647336}
+  itemStack: {fileID: 4767323125235869803}
+  dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
+  demoPlayer: {fileID: 0}
+  gimicks: {fileID: 0}
+  uic: {fileID: 2095900640900647336}
 --- !u!114 &1901522790197371626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 96b493f4c28c49d4d90b56efa07b5b23, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -998,7 +1054,227 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 49b32624-d320-4f44-b20b-885af70404a6
+    m_ActionName: Player/Move[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 38470aac-8a10-46cf-b7d2-fa79897bbc68
+    m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/Mouse/delta,/Pen/delta]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 142045373278811374}
+        m_TargetAssemblyTypeName: Interacter, Assembly-CSharp
+        m_MethodName: OnFire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a3442207-6ced-40d6-afab-e52934952661
+    m_ActionName: Player/Fire[/XInputControllerWindows/rightTrigger,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a0497d8b-85d3-4088-a560-0a3707846de6
+    m_ActionName: Player/Crouch[/Keyboard/ctrl]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c268d61f-d454-4316-a686-8210a016c1fe
+    m_ActionName: Player/Run[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45be0ab7-9c68-4b3e-bf6c-e33b10d43271
+    m_ActionName: UI/Cancel[/Keyboard/escape,/XInputControllerWindows/buttonEast]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 05df7f1b-1b37-4fbd-b137-5b46a9efc6e6
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ab3657d8-026d-436a-811c-707e415dba2f
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip,/XInputControllerWindows/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6364db88-8f79-443a-80cb-5409dceb202b
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2d99165d-86d6-4544-b398-b86c58843528
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2ba10ba9-5850-4f49-a68d-bd16a332ceff
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2fc531a9-fb0e-494f-8c2a-d8871f3dd275
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ffb85e55-129b-42dd-9486-7f24f800d89d
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095900640900647336}
+        m_TargetAssemblyTypeName: UIcontroller, Assembly-CSharp
+        m_MethodName: EscMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a1d935be-0ca2-4060-9da6-761ec6e97969
+    m_ActionName: UI/finishUI[/Keyboard/escape,/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1fd96a76-83d9-4525-abda-59c4e39c4496
+    m_ActionName: UI/ItemSelectNext[/Keyboard/e,/XInputControllerWindows/dpad/right,/XInputControllerWindows/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 89abba59-a21a-4707-9ed2-7041fcc7c1b6
+    m_ActionName: UI/ItemSelectBack[/Keyboard/q,/XInputControllerWindows/dpad/left,/XInputControllerWindows/leftShoulder]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ce874308-9f6f-4e78-820b-2bd36132dc97
+    m_ActionName: UI/UseItem[/Keyboard/f,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095900640900647336}
+        m_TargetAssemblyTypeName: UIcontroller, Assembly-CSharp
+        m_MethodName: CloseUI_Context
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5fce7d4-8f0a-4951-861f-1328e151cc06
+    m_ActionName: UI/CloseUI[/Keyboard/space,/XInputControllerWindows/buttonEast]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095900640900647336}
+        m_TargetAssemblyTypeName: UIcontroller, Assembly-CSharp
+        m_MethodName: PageSend_Context
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d3125dcf-3480-4f00-a278-11ec88e1374b
+    m_ActionName: UI/NextPage[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095900640900647336}
+        m_TargetAssemblyTypeName: UIcontroller, Assembly-CSharp
+        m_MethodName: PageBack_Context
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1304b684-faf1-4791-8dd2-eeff83790c64
+    m_ActionName: UI/BeforePage[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2b79623e-9769-4698-b765-272000bb6b43
+    m_ActionName: UI/Pause[/Keyboard/space,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 54c2270e-baaa-4b03-a307-a795e679e595
+    m_ActionName: UI/Skip[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e5d54ca0-272b-4351-bb9c-2e0065cc8c7e
+    m_ActionName: Player/Navigate[/XInputControllerWindows/leftStick/up,/XInputControllerWindows/rightStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/rightStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/rightStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/rightStick/right,/XInputControllerWindows/dpad,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2e02447c-c299-4dff-9401-1f30e4ece56f
+    m_ActionName: Player/Submit[/Keyboard/enter,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4767323125235869803}
+        m_TargetAssemblyTypeName: ItemStack, Assembly-CSharp
+        m_MethodName: ItemNext
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 235bc215-d563-41fe-b829-e697dd359942
+    m_ActionName: Player/ItemNext[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4767323125235869803}
+        m_TargetAssemblyTypeName: ItemStack, Assembly-CSharp
+        m_MethodName: ItemBack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 111b06d9-050f-4c3b-bbc0-6a8f3392d0da
+    m_ActionName: Player/ItemBack[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4767323125235869803}
+        m_TargetAssemblyTypeName: ItemStack, Assembly-CSharp
+        m_MethodName: UseItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7da64289-e650-45cf-9db8-3c6f9562c564
+    m_ActionName: Player/UseItem[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095900640900647336}
+        m_TargetAssemblyTypeName: UIcontroller, Assembly-CSharp
+        m_MethodName: SettingUI
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2de269ba-d637-421a-bf42-0f446bd32235
+    m_ActionName: Player/EscMenu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1017,7 +1293,6 @@ GameObject:
   - component: {fileID: 5672966590272851855}
   - component: {fileID: 4033518072065891532}
   - component: {fileID: 7331377751178736511}
-  - component: {fileID: 4870261215657095603}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1034,7 +1309,7 @@ Transform:
   m_GameObject: {fileID: 8946203826881873724}
   serializedVersion: 2
   m_LocalRotation: {x: 0.4665641, y: -0.06410938, z: 0.033931777, w: 0.8815081}
-  m_LocalPosition: {x: 0, y: 0, z: 0.06999993}
+  m_LocalPosition: {x: -1.847, y: 0.9222222, z: -0.909}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1178,26 +1453,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4870261215657095603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8946203826881873724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42abe28ca9aee3940877b1333cbc9d74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactCD: 1
-  canTouch: 1
-  uictr: {fileID: 2095900640900647336}
-  itemStack: {fileID: 4767323125235869803}
-  dtitem: {fileID: 11400000, guid: 539658f44650489458ab161b662cb18b, type: 2}
-  demoPlayer: {fileID: 0}
-  gimicks: {fileID: 0}
-  uic: {fileID: 2095900640900647336}
 --- !u!1001 &3565668104991191244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1302,10 +1557,6 @@ PrefabInstance:
       propertyPath: finishWait
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
-      propertyPath: interacter
-      value: 
-      objectReference: {fileID: 4870261215657095603}
     - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: maxSence.x
       value: 1

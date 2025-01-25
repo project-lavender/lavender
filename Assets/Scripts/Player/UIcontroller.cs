@@ -10,8 +10,8 @@ using UnityEngine.InputSystem;
 public class UIcontroller : MonoBehaviour
 {
     public int nowID = -1;
-    [SerializeField] DT_Text dttext;
-    [SerializeField] DT_Item dtitem;
+    [SerializeField] TextTableHolder dttext;
+    [SerializeField] ItemTableHolder dtitem;
     [SerializeField] ItemStack itemStack;
     [SerializeField] TextAsset playesence;
     [SerializeField] string pathsence = "Assets/Player/scripts/DataTable/PlayerSence.json";
@@ -20,12 +20,13 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] RectTransform[] choices;
     [SerializeField] TMP_Text[] uitexts;
     [SerializeField] TMP_Text dialogPageView;
+    [SerializeField] PlayerInput pin;
     //テキストダイアログのページ
     [SerializeField] int pageNum = 0;
     [SerializeField] List<string> dialog;
     [SerializeField] Cinemachine.CinemachineVirtualCamera vc;
     Cinemachine.CinemachinePOV pov;
-    [SerializeField] Slider xslider, yslder,sslider;
+    [SerializeField] Slider xslider, yslder, sslider;
 
     [SerializeField] DemoPlayer demoPlayer;
 
@@ -51,7 +52,7 @@ public class UIcontroller : MonoBehaviour
 
     //ギミックのイベント呼び出し
     //汎用の選択肢で使う
-    void ChosesAction(DTText dT)
+    void ChosesAction(TextStructure dT)
     {
         //chose の nextTextがある->テキスト表示イベント
         Debug.Log("Choise Act ->" + dT.id);
@@ -102,6 +103,11 @@ public class UIcontroller : MonoBehaviour
     public void CloseUIs()
     {
         Debug.Log("close ui");
+
+        pin.SwitchCurrentActionMap("Player");
+        action.Player.Enable();
+        action.UI.Disable();
+
         nowID = -1;
         //interactColider.enabled = true;
         pageNum = 0;
@@ -120,12 +126,13 @@ public class UIcontroller : MonoBehaviour
         //インタラクトコライダーを無効か
         //interactColider.enabled = false;
 
+
         int i = -1;
         if (textid == "")
         {
             return;
         }
-        DTText dT = dttext.Find(textid);
+        TextStructure dT = dttext.Find(textid);
         //カーソルロックを外す
         Cursor.lockState = CursorLockMode.None;
         //カメラ固定
@@ -163,13 +170,10 @@ public class UIcontroller : MonoBehaviour
             }
             j += 1;
         }
-
+        //選択肢
         if (i == 0)
         {
             nowID = 0;
-            //カーソルロックを外す
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
             //カメラ固定
             SetVirtualCamera(false);
             //汎用
@@ -192,7 +196,7 @@ public class UIcontroller : MonoBehaviour
                 else
                 {
 
-                    DTText choiseText = dttext.Find(choiseID[c]);
+                    TextStructure choiseText = dttext.Find(choiseID[c]);
                     Debug.Log(choiseID[c]);
                     if (choiseText != null)
                     {
@@ -218,8 +222,8 @@ public class UIcontroller : MonoBehaviour
             //カーソルロックを外す
 
             nowID = 1;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
+            //Cursor.lockState = CursorLockMode.None;
             //カメラ固定
             SetVirtualCamera(false);
 
@@ -245,8 +249,6 @@ public class UIcontroller : MonoBehaviour
             dialog = new List<string>();
             (pagenum, dialog) = dttext.Pages(textid);
             //カメラ設定
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
             SetVirtualCamera(true);
             E = StartCoroutine(VoiceText());
         }
@@ -256,8 +258,6 @@ public class UIcontroller : MonoBehaviour
             //読み込み
             //カーソルロックを外す
             nowID = 3;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
             StreamReader rd = new(pathsence);
             string json = rd.ReadToEnd();
             rd.Close();
@@ -271,6 +271,22 @@ public class UIcontroller : MonoBehaviour
             CloseUIs();
             return;
 
+        }
+
+        //UI操作切替 & カメラ設定
+        if (i == 0 || i == 1 || i == 3)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            pin.SwitchCurrentActionMap("UI");
+            action.Player.Disable();
+            action.UI.Enable();
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
     public void XSence()
@@ -344,16 +360,17 @@ public class UIcontroller : MonoBehaviour
         pov.m_VerticalAxis.m_MaxSpeed = nowvec.y;
         demoPlayer = FindAnyObjectByType<DemoPlayer>();
         // WriteSence();
+        pin = GetComponentInParent<PlayerInput>();
         action = new Lavender();
         action.Enable();
+        action.Player.Disable();
+        action.UI.Enable();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        //Esc
-        if (action.UI.finishUI.triggered)
-        {
 
+    public void SettingUI(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
             bool allNonActive = true;
             foreach (RectTransform rect in UIs)
             {
@@ -362,6 +379,7 @@ public class UIcontroller : MonoBehaviour
             }
             if (allNonActive)
             {
+
                 ActiveUI("esc");
             }
             else
@@ -369,25 +387,33 @@ public class UIcontroller : MonoBehaviour
                 CloseUIs();
             }
         }
-        else if (action.UI.CloseUI.triggered)
+    }
+
+    public void CloseUI_Context(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
             CloseUIs();
         }
-
-        if (action.UI.NextPage.triggered)
+    }
+    public void PageSend_Context(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
             if (nowID == 1)
             {
                 PageSend(1);
             }
         }
-        else if (action.UI.BeforePage.triggered)
+    }
+    public void PageBack_Context(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
             if (nowID == 1)
             {
                 PageSend(-1);
             }
         }
-
     }
 }

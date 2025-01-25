@@ -51,7 +51,7 @@ public class StretcherCtr : Gimicks
     {
         if(collision.gameObject.tag == "Wall")
         {
-            base.InteractGimick();
+            base.ReturnGimickInfo();
             base.EnableGimick();
             SetProgress();
             rb.isKinematic = true;

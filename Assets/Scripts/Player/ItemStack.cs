@@ -3,37 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
+
+//入手済みのアイテムのフラグ管理とアイテムＵＩ制御
 public class ItemStack : MonoBehaviour
 {
     [System.Serializable]
     struct ItemSet
     {
         public bool enable;
-        public DTItem item;
+        public ItemStructure item;
         public Items itemComponent;
         public Image img;
     }
     [SerializeField] bool[] dbmode;
     [SerializeField] float itemUIdistance = 5f;
-    [SerializeField] Transform itemIconAnker;
+    [SerializeField] Transform itemIconAnker, itemSets;
     [SerializeField] GameObject itemIconPrefab;
     [SerializeField] UIcontroller uic;
-    [SerializeField] DT_Frag DTfrag;
-    [SerializeField] DT_Item DTitem;
+    [SerializeField] FragTableHolder DTfrag;
+    [SerializeField] ItemTableHolder DTitem;
     [SerializeField] List<ItemSet> itemList = new();
     [SerializeField] Sprite dummy;
     [SerializeField] TMP_Text itemname;
     [SerializeField] Color selectColor, Offcolor;
-    
+
     [SerializeField] int nowitem = 0;
 
     private Lavender action;
     int EnableNum()
     {
         int i = 0;
-        foreach(ItemSet set in itemList)
+        foreach (ItemSet set in itemList)
         {
-            if(set.enable == true)
+            if (set.enable == true)
             {
                 i++;
             }
@@ -43,7 +46,7 @@ public class ItemStack : MonoBehaviour
     void LineupItems()
     {
         int i = 0;
-        foreach(ItemSet set in itemList)
+        foreach (ItemSet set in itemList)
         {
             //set　を配置
             set.img.transform.localPosition = new Vector3(itemUIdistance * i, 0f, 0f);
@@ -121,9 +124,13 @@ public class ItemStack : MonoBehaviour
 
     void RotateItem(int r)
     {
+        if (EnableNum() == 0)
+        {
+            return;
+        }
         //r...進める数
         int itemN = itemList.Count;
-        
+
         if (nowitem == 0 && r < 0)
         {
             //nowitem 最前列 で後ろに行きたいときはリストの最後尾にジャンプ
@@ -138,23 +145,28 @@ public class ItemStack : MonoBehaviour
         {
             nowitem += r;
         }
+
     }
     // Start is called before the first frame update
-    
+
     void Start()
     {
         int x = 0;
-        foreach(DTItem dti in DTitem.ItemsList)
+        foreach (ItemStructure dti in DTitem.ItemsList)
         {
             //オブジェを追加
             GameObject i = Instantiate(dti.item);
-            DTItem tItem = new();
+            i.transform.SetParent(itemSets);
+            ItemStructure tItem = new();
             tItem.id = dti.id;
             tItem.item = i;
             //items.Add(tItem);
             //アイコンを追加
             Items itemComp = i.GetComponent<Items>();
             GameObject iconobj = Instantiate(itemIconPrefab, itemIconAnker);
+            //iconobj.transform.parent = itemIconAnker;
+            iconobj.transform.SetParent(itemIconAnker);
+            //itemSets.SetParent(iconobj.transform);
             Image iconImg = iconobj.GetComponent<Image>();
             Sprite sprite = itemComp.itemIcon;
             iconImg.sprite = sprite;
@@ -171,43 +183,49 @@ public class ItemStack : MonoBehaviour
         Debug.Log(EnableNum());
         LineupItems();
         action = new Lavender();
-        action.Enable();
+        
         x = 0;
         foreach (bool b in dbmode)
         {
             if (b)
             {
-                DTItem i = DTitem.ItemsList[x];
+                ItemStructure i = DTitem.ItemsList[x];
                 EnableItem(i.id);
             }
             x++;
-        }   
+        }
     }
-    
-    // Update is called once per frame
-    void Update()
+
+    public void ItemNext(InputAction.CallbackContext context)
     {
+        Debug.Log("aaaaaaa");
+        if (context.performed)
+        {
+            RotateItem(1);
+            LineupItems();
+        }
+    }
 
-            if (action.UI.ItemSelectBack.triggered && EnableNum() > 0)
-            {
-                RotateItem(-1);
-                LineupItems();
+    public void ItemBack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            RotateItem(-1);
+            LineupItems();
+        }
+    }
 
-            }
-            else if (action.UI.ItemSelectNext.triggered && EnableNum() > 0)
-            {
-                RotateItem(1);
-                LineupItems();
-            }
-            else if (itemList[nowitem].enable && action.UI.UseItem.triggered && EnableNum() > 0)
-            {
-                Items itemComponent = itemList[nowitem].itemComponent;//items[nowitem].item.GetComponent<Items>();
-                string id = itemComponent.UseItem();
-                Debug.Log("Use item " + id);
-                //アイテムテキスト表示
+    public void UseItem(InputAction.CallbackContext context)
+    {
+        if (context.performed && itemList[nowitem].enable)
+        {
+            Items itemComponent = itemList[nowitem].itemComponent;
+            string id = itemComponent.UseItem();
+            Debug.Log("Use item " + id);
+            //アイテムテキスト表示
 
-                uic.ActiveUI(id);
-            }
-        
+            uic.ActiveUI(id);
+        }
+
     }
 }

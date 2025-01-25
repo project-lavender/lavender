@@ -2,17 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
+//ギミックにアクセスし　UIコントローラに情報を送信
 public class Interacter : MonoBehaviour
 {
-    [SerializeField] float interactCD = 1f;
+    [SerializeField] Transform cam;
+    [SerializeField] float interactCD = 1f, scanlength = 0.8f;
     [SerializeField] bool canTouch = true;
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
-    [SerializeField] DT_Item dtitem;
+    [SerializeField] ItemTableHolder dtitem;
     [SerializeField] DemoPlayer demoPlayer;
     [SerializeField] Gimicks gimicks = null;
-    [SerializeField] UIcontroller uic; 
+    [SerializeField] UIcontroller uic;
     private Lavender action;
 
 
@@ -34,21 +37,21 @@ public class Interacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Ray ray = new();
-        ray.origin = transform.position;
-        ray.direction = transform.forward;
-        Debug.DrawRay(transform.position, transform.forward * 0.8f);
 
-        if (uic.nowID != 0 && uic.nowID != 1 && uic.nowID!=3 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick"))
+        Ray ray = new();
+        ray.origin = cam.position;
+        ray.direction = cam.forward;
+        Debug.DrawRay(cam.position, cam.forward * 0.8f);
+        //uic.nowID != 0 && uic.nowID != 1 && uic.nowID != 3 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick")
+        if (uic.nowID == -1 && Physics.Raycast(ray, out hit, scanlength) && hit.collider.CompareTag("Gimick"))
         {
             if (gimicks != null)
             {
                 gimicks.TurnOffColor();
                 gimicks = null;
             }
-            Gimicks tmpgm = hit.collider.GetComponent<Gimicks>();
-            gimicks = tmpgm;
+            gimicks = hit.collider.GetComponent<Gimicks>();
+            //強調表示
             gimicks.EmitColor();
 
         }
@@ -58,31 +61,22 @@ public class Interacter : MonoBehaviour
             gimicks.TurnOffColor();
             gimicks = null;
         }
-        
-        //インタラクトボタンオン
-        if (canTouch && gimicks!=null && action.Player.Fire.triggered)
+    }
+    //ギミックにアクセス
+    public void OnFire(InputAction.CallbackContext context)
+    {
+        // && canTouch && gimicks != null
+        Debug.Log("Fire");
+        if (context.performed && gimicks != null)
         {
-            //StartCoroutine(InteractTrigger());
             StartCoroutine(SetCanTouch());
-            string textid;
-            DTGimick dT;
-            //ui 起動
-            if (gimicks != null)
+            GimickStructure dT;
+            dT = gimicks.ReturnGimickInfo();
+            if (dT != null)
             {
-                dT = gimicks.InteractGimick();
-                if (dT == null)
-                {
-                    return;
-                }
-                textid = dT.textID;
-                Debug.Log(textid);
-                uictr.ActiveUI(textid);
-
+                uictr.ActiveUI(dT.textID);
                 itemStack.EnableItem(dT.itemID);
                 itemStack.DisableItem(dT.downFrag);
-
-                //イベント発動
-                Debug.Log(dT.demoID);
                 demoPlayer.DemoPlay(dT.demoID);
             }
         }
