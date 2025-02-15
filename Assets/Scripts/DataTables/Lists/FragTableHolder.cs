@@ -10,9 +10,9 @@ public class FragTableHolder : ScriptableObject
 	public List<FragStructure> Sheet1; // Replace 'EntityType' to an actual type that is serializable.
 
 
-	public void SetVal(string fragname,bool val)
+    public void SetVal(string fragname, bool val)
     {
-        foreach(FragStructure f in Sheet1)
+        foreach (FragStructure f in Sheet1)
         {
             if (fragname == f.id)
             {

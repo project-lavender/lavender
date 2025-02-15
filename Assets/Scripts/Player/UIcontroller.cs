@@ -124,15 +124,12 @@ public class UIcontroller : MonoBehaviour
     public void ActiveUI(string textid)
     {
         //インタラクトコライダーを無効か
-        //interactColider.enabled = false;
-
-
         int i = -1;
         if (textid == "")
         {
             return;
         }
-        TextStructure dT = dttext.Find(textid);
+        TextStructure textData = dttext.Find(textid);
         //カーソルロックを外す
         Cursor.lockState = CursorLockMode.None;
         //カメラ固定
@@ -143,10 +140,10 @@ public class UIcontroller : MonoBehaviour
         {
             i = 3;
         }
-        else if (dT != null)
+        else if (textData != null)
         {
 
-            i = dT.ui;
+            i = textData.ui;
             //前のuiと読み込んだuiのidが違う場合いったん消す
             if (beforeOpenedID != i)
             {
@@ -177,14 +174,13 @@ public class UIcontroller : MonoBehaviour
             //カメラ固定
             SetVirtualCamera(false);
             //汎用
-            uitexts[i].text = dT.text;
-            //Cursor.lockState = CursorLockMode.None;
+            uitexts[i].text = textData.text;
             List<string> choiseID = new()
             {
-                dT.choise0,
-                dT.choise1,
-                dT.choise2,
-                dT.choise3
+                textData.choise0,
+                textData.choise1,
+                textData.choise2,
+                textData.choise3
             };
 
             for (int c = 0; c < choiseID.Count; c++)
@@ -222,8 +218,6 @@ public class UIcontroller : MonoBehaviour
             //カーソルロックを外す
 
             nowID = 1;
-            //Cursor.visible = true;
-            //Cursor.lockState = CursorLockMode.None;
             //カメラ固定
             SetVirtualCamera(false);
 

@@ -38,53 +38,29 @@ public class ProgressController : MonoBehaviour
         progress = p;
         switch (p)
         {
-            case 100:
-                //active stretcher
-                //dynamo.DisableGimick();
-                //stretcher.EnableGimick();
-                break;
-
-            case 110:
-                //active all gimicks
-                
-                //dynamo.DisableGimick();
-                //stretcher.DisableGimick();
-                break;
             case 120:
-                //ストレッチャーとダイナモは明かりを消す
                 foreach (Gimicks g in allgimicks)
                 {
                     g.EnableGimick();
                     g.TurnOffColor();
                 }
-
-                //dynamo.darkColor = Color.black;
-                //dynamo.BlackColor();
-                //dynamo.DisableGimick();
-                //stretcher.darkColor = Color.black;
-                //0stretcher.BlackColor();
-                //stretcher.DisableGimick();
-
-                
                 break;
             case 300:
-                //ストレッチャーとダイナモは明かりを消す
                 foreach (Gimicks g in allgimicks)
                 {
                     g.EnableGimick();
                     g.TurnOffColor();
-                }                
+                }
                 break;
             case 320:
-                //ストレッチャーとダイナモは明かりを消す
                 foreach (Gimicks g in allgimicks)
                 {
                     g.EnableGimick();
                     g.TurnOffColor();
-                }                
+                }
                 break;
             case 330:
-                foreach(Gimicks g in allgimicks)
+                foreach (Gimicks g in allgimicks)
                 {
                     g.BlackColor();
                     g.DisableGimick();
@@ -107,7 +83,6 @@ public class ProgressController : MonoBehaviour
             default:
                 break;
         }
-
     }
     // Start is called before the first frame update
     void Start()
@@ -121,9 +96,10 @@ public class ProgressController : MonoBehaviour
             {
                 g.DisableGimick();
                 g.BlackColor();
+
+                //初めはダイナモとストレッチャーだけ起動
                 if (g == dynamo || g == stretcher)
                 {
-                    Debug.Log("aaaa");
                     g.EnableGimick();
                     g.TurnOffColor();
                     

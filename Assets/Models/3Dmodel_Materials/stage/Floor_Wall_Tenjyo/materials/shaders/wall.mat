@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: wall
-  m_Shader: {fileID: -6465566751694194690, guid: cb04c3fa6aed4b74b9fc009cfd658dbf,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cb04c3fa6aed4b74b9fc009cfd658dbf, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -113,12 +112,20 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _post: 2.91
+    - _simpleScale1: 256
+    - _simpleScale2: 9.98
+    - _voronoiScale: 7.07
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Conkuri: {r: 0.30188674, g: 0.30188674, b: 0.30188674, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Paint: {r: 1, g: 1, b: 1, a: 0}
+    - _PaintColor: {r: 0.95294124, g: 0.85098046, b: 0.59607846, a: 1}
+    - _SementColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SementColor1: {r: 0.5764706, g: 0.5764706, b: 0.5764706, a: 1}
+    - _SementColor2: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2642690294096229370

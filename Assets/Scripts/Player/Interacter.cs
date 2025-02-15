@@ -37,6 +37,7 @@ public class Interacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //触れられるギミックに対して、色を変更させる
 
         Ray ray = new();
         ray.origin = cam.position;
@@ -70,14 +71,14 @@ public class Interacter : MonoBehaviour
         if (context.performed && gimicks != null)
         {
             StartCoroutine(SetCanTouch());
-            GimickStructure dT;
-            dT = gimicks.ReturnGimickInfo();
-            if (dT != null)
+            GimickStructure gimickData;
+            gimickData = gimicks.ReturnGimickInfo();
+            if (gimickData != null)
             {
-                uictr.ActiveUI(dT.textID);
-                itemStack.EnableItem(dT.itemID);
-                itemStack.DisableItem(dT.downFrag);
-                demoPlayer.DemoPlay(dT.demoID);
+                uictr.ActiveUI(gimickData.textID);
+                itemStack.EnableItem(gimickData.itemID);
+                itemStack.DisableItem(gimickData.downFrag);
+                demoPlayer.DemoPlay(gimickData.demoID);
             }
         }
     }
