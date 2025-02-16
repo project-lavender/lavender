@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [ExcelAsset]
-public class GimickTableHolder : ScriptableObject
+public class DT_Gimicks : ScriptableObject
 {
 	public List<GimickStructure> Stretcher; // Replace 'EntityType' to an actual type that is serializable.
     public List<GimickStructure> Dynamo;

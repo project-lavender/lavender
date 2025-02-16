@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExcelAsset]
-public class TextTableHolder : ScriptableObject
+public class DT_Text : ScriptableObject
 {
 	public List<TextStructure> Sheet1; // Replace 'EntityType' to an actual type that is serializable.
 

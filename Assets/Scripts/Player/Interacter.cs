@@ -12,7 +12,7 @@ public class Interacter : MonoBehaviour
     [SerializeField] bool canTouch = true;
     [SerializeField] UIcontroller uictr;
     [SerializeField] ItemStack itemStack;
-    [SerializeField] ItemTableHolder dtitem;
+    [SerializeField] DT_Items dtitem;
     [SerializeField] DemoPlayer demoPlayer;
     [SerializeField] Gimicks gimicks = null;
     [SerializeField] UIcontroller uic;
@@ -44,7 +44,7 @@ public class Interacter : MonoBehaviour
         ray.direction = cam.forward;
         Debug.DrawRay(cam.position, cam.forward * 0.8f);
         //uic.nowID != 0 && uic.nowID != 1 && uic.nowID != 3 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick")
-        if (uic.nowID == -1 && Physics.Raycast(ray, out hit, scanlength) && hit.collider.CompareTag("Gimick"))
+        if ((uic.nowID == -1 || uic.nowID == 2) && Physics.Raycast(ray, out hit, scanlength) && hit.collider.CompareTag("Gimick"))
         {
             if (gimicks != null)
             {

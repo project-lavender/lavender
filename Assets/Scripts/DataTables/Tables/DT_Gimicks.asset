@@ -293,36 +293,9 @@ MonoBehaviour:
     downFrag: 
     death: 0
     overWriteProgress: -1
-  TestGimick:
-  - progress: -1
-    frag: Flag_TestGimick_CanTouch
-    textID: TXT_TestDialog_001
-    demoID: 
-    itemID: r4
-    upFrag: Flag_TestGimick_UpFrag
-    downFrag: Flag_TestGimick_DownFrag
-    death: 0
-    overWriteProgress: -1
-  TestGimick_choise:
-  - progress: -1
-    frag: Flag_TestGimick_CanTouch
-    textID: TXT_TestChoise_001
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
-  TestGimick_voice:
-  - progress: -1
-    frag: Flag_TestGimick_CanTouch
-    textID: TXT_TestVoice_001
-    demoID: 
-    itemID: 
-    upFrag: 
-    downFrag: 
-    death: 0
-    overWriteProgress: -1
+  TestGimick: []
+  TestGimick_choise: []
+  TestGimick_voice: []
   CassetteTapeA:
   - progress: -1
     frag: Flag_CassetteTape_Obtained
@@ -501,7 +474,7 @@ MonoBehaviour:
     overWriteProgress: -1
   - progress: -1
     frag: Flag_CassetteTape_2_Selected
-    textID: TXT_CasettePlayer_Tape002_001
+    textID: TXT_CasettePlayer_Tape002_010
     demoID: Tape2
     itemID: 
     upFrag: Flag_CassetteTape_2_Listened

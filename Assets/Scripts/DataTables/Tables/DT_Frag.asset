@@ -2,14 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc953083b37a0a43bb87b9ee66d41d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b17380baca127b48b7e6b3fdf7a8ce0, type: 3}
   m_Name: DT_Frag
   m_EditorClassIdentifier: 
   Sheet1:
@@ -24,17 +24,17 @@ MonoBehaviour:
   - id: Flag_Memo_005_Read
     value: 0
   - id: Flag_Stretcher_Collided
-    value: 1
+    value: 0
   - id: Flag_CassetteTape_Obtained
     value: 0
   - id: Flag_CassetteTape_3_Obtained
-    value: 1
+    value: 0
   - id: Flag_CassetteTape_4_Obtained
-    value: 1
+    value: 0
   - id: Flag_CassetteTape_5_Obtained
-    value: 1
+    value: 0
   - id: Flag_CassetteTape_2_Selected
-    value: 1
+    value: 0
   - id: Flag_CassetteTape_3_Selected
     value: 0
   - id: Flag_CassetteTape_4_Selected
@@ -128,10 +128,10 @@ MonoBehaviour:
   - id: Flag_FakeSolution_Obtained
     value: 0
   - id: Flag_Light_On
-    value: 1
+    value: 0
   - id: Flag_Light_Off
     value: 0
   - id: Flag_teikouyakunazotokikaishimae
     value: 0
-  - id: Flag_TestGimick_CanTouch
+  - id: Flag_TestGiimck_CanTouch
     value: 1

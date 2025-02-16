@@ -10,7 +10,7 @@ public class ProgressController : MonoBehaviour
     [SerializeField]private int progress = 0;
     [SerializeField] bool debugMode = false;
     [SerializeField] Gimicks dynamo = null, stretcher = null, door = null;
-    [SerializeField] FragTableHolder frag = null;
+    [SerializeField] DT_Frag frag = null;
 
     [SerializeField] Gimicks[] allgimicks = null;
 

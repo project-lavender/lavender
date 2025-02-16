@@ -10,8 +10,8 @@ using UnityEngine.InputSystem;
 public class UIcontroller : MonoBehaviour
 {
     public int nowID = -1;
-    [SerializeField] TextTableHolder dttext;
-    [SerializeField] ItemTableHolder dtitem;
+    [SerializeField] DT_Text dttext;
+    [SerializeField] DT_Items dtitem;
     [SerializeField] ItemStack itemStack;
     [SerializeField] TextAsset playesence;
     [SerializeField] string pathsence = "Assets/Player/scripts/DataTable/PlayerSence.json";
@@ -130,9 +130,7 @@ public class UIcontroller : MonoBehaviour
             return;
         }
         TextStructure textData = dttext.Find(textid);
-        //カーソルロックを外す
         Cursor.lockState = CursorLockMode.None;
-        //カメラ固定
         SetVirtualCamera(false);
 
 
@@ -244,6 +242,7 @@ public class UIcontroller : MonoBehaviour
             (pagenum, dialog) = dttext.Pages(textid);
             //カメラ設定
             SetVirtualCamera(true);
+            Cursor.lockState = CursorLockMode.Locked;
             E = StartCoroutine(VoiceText());
         }
         else if (i == 3)

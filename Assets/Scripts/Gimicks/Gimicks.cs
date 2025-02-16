@@ -13,8 +13,8 @@ public class Gimicks : MonoBehaviour
     [SerializeField] private List<Material> myMats = null;
     [SerializeField] private ENUMGimickName.GimickNames gimiENUM;
     //[SerializeField] private string gimicksName = "";
-    [SerializeField] private GimickTableHolder gimicks = null;
-    [SerializeField] private FragTableHolder frags = null;
+    [SerializeField] private DT_Gimicks gimicks = null;
+    [SerializeField] private DT_Frag frags = null;
     [SerializeField] private List<GimickStructure> gimickDatalist;
     public Color emittionColor = Color.white, darkColor = Color.black;
 

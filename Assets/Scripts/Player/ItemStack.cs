@@ -21,8 +21,8 @@ public class ItemStack : MonoBehaviour
     [SerializeField] Transform itemIconAnker, itemSets;
     [SerializeField] GameObject itemIconPrefab;
     [SerializeField] UIcontroller uic;
-    [SerializeField] FragTableHolder DTfrag;
-    [SerializeField] ItemTableHolder DTitem;
+    [SerializeField] DT_Frag DTfrag;
+    [SerializeField] DT_Items DTitem;
     [SerializeField] List<ItemSet> itemList = new();
     [SerializeField] Sprite dummy;
     [SerializeField] TMP_Text itemname;

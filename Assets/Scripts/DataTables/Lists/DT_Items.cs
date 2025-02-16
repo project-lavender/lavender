@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemTableHolder : ScriptableObject
+public class DT_Items : ScriptableObject
 {
     public List<ItemStructure> ItemsList = new List<ItemStructure>();
 

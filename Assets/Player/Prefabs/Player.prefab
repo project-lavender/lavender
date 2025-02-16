@@ -312,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RecenterTarget: 0
   m_VerticalAxis:
-    Value: 55.7827
+    Value: 33.178146
     m_SpeedMode: 1
     m_MaxSpeed: 1
     m_AccelTime: 0.02
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_HorizontalAxis:
-    Value: -8.319245
+    Value: 1.0868835
     m_SpeedMode: 1
     m_MaxSpeed: 1
     m_AccelTime: 0.02
@@ -1308,8 +1308,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8946203826881873724}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4665641, y: -0.06410938, z: 0.033931777, w: 0.8815081}
-  m_LocalPosition: {x: -1.847, y: 0.9222222, z: -0.909}
+  m_LocalRotation: {x: 0.35577306, y: -0.5299429, z: 0.25068948, w: 0.72783303}
+  m_LocalPosition: {x: 0.70000005, y: -0.35666665, z: 9.507442}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1546,6 +1546,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2694801402056874853}
     - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
+      propertyPath: dttext
+      value: 
+      objectReference: {fileID: 11400000, guid: f035f7e16093f734e928236bbfe9f274, type: 2}
+    - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: itemStack
       value: 
       objectReference: {fileID: 4767323125235869803}
@@ -1555,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: finishWait
-      value: 3
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3201477387151030628, guid: e94f990d0c418d64ab8c8ecd26bc67ba, type: 3}
       propertyPath: maxSence.x

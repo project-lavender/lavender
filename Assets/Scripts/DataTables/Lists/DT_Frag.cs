@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 
 [ExcelAsset]
-public class FragTableHolder : ScriptableObject
+public class DT_Frag : ScriptableObject
 {
 	public List<FragStructure> Sheet1; // Replace 'EntityType' to an actual type that is serializable.
 
