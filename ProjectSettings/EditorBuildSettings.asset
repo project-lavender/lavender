@@ -20,4 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameClear.unity
     guid: 8b088b94e8e535749b8882e405136906
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: d1ebbb6c471bb744698b5360c8728d92, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 96b493f4c28c49d4d90b56efa07b5b23, type: 3}
