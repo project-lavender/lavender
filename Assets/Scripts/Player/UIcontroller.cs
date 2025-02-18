@@ -223,8 +223,12 @@ public class UIcontroller : MonoBehaviour
             int pagenum;
             dialog = new List<string>();
             (pagenum, dialog) = dttext.Pages(textid);
-            uitexts[i].text = dialog[0];
-            dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
+            if (pagenum != -1)
+            {
+                uitexts[i].text = dialog[0];
+                dialogPageView.text = (pageNum + 1).ToString() + "/" + dialog.Count.ToString();
+            }
+            
 
         }
         else if (i == 2)
@@ -240,10 +244,13 @@ public class UIcontroller : MonoBehaviour
             int pagenum;
             dialog = new List<string>();
             (pagenum, dialog) = dttext.Pages(textid);
-            //ÉJÉÅÉâê›íË
-            SetVirtualCamera(true);
-            Cursor.lockState = CursorLockMode.Locked;
-            E = StartCoroutine(VoiceText());
+            if (pagenum != -1)
+            {
+                //ÉJÉÅÉâê›íË
+                SetVirtualCamera(true);
+                Cursor.lockState = CursorLockMode.Locked;
+                E = StartCoroutine(VoiceText());
+            }
         }
         else if (i == 3)
         {

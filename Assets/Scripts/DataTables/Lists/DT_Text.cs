@@ -25,6 +25,10 @@ public class DT_Text : ScriptableObject
     public (int,List<string>) Pages(string id)
     {
         TextStructure text = Find(id);
+        if (text == null)
+        {
+            return (-1, null);
+        }
         int pagesize = 1;
         List<string> texts = new();
         texts.Add(text.text);

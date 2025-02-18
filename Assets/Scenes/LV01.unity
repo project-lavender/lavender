@@ -43969,7 +43969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myMats: []
-  gimiENUM: 0
+  gimiENUM: 24
   gimicks: {fileID: 11400000, guid: d96dd5e80685400468e5ceab3aef1e11, type: 2}
   frags: {fileID: 11400000, guid: 43f9e19c4783a1044b12c04b630131fa, type: 2}
   gimickDatalist: []

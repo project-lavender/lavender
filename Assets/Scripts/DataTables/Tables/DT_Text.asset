@@ -2112,7 +2112,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_TestItem_001
-    text: "\u7A74\u304C\uFF14\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306Atest"
+    text: "\u7A74\u304C\uFF14\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -2120,7 +2120,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_TestItem_002
-    text: "\u7A74\u304C\uFF16\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306Ates"
+    text: "\u7A74\u304C\uFF16\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 
@@ -2128,7 +2128,7 @@ MonoBehaviour:
     choise2: 
     choise3: 
   - id: TXT_TestItem_003
-    text: "\u7A74\u304C\uFF18\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306Ates"
+    text: "\u7A74\u304C\uFF18\u3064\u958B\u3044\u305F...\u30ED\u30FC\u30BF\u30FC\u304B\u306A"
     ui: 2
     nextText: 
     choise0: 

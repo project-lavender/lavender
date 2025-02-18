@@ -46,15 +46,10 @@ public class Interacter : MonoBehaviour
         //uic.nowID != 0 && uic.nowID != 1 && uic.nowID != 3 && Physics.Raycast(ray, out hit, 0.8f) && hit.collider.CompareTag("Gimick")
         if ((uic.nowID == -1 || uic.nowID == 2) && Physics.Raycast(ray, out hit, scanlength) && hit.collider.CompareTag("Gimick"))
         {
-            if (gimicks != null)
-            {
-                gimicks.TurnOffColor();
-                gimicks = null;
-            }
+
             gimicks = hit.collider.GetComponent<Gimicks>();
             //‹­’²•\Ž¦
             gimicks.EmitColor();
-
         }
         else if (gimicks != null)
         {
