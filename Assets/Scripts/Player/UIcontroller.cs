@@ -47,7 +47,6 @@ public class UIcontroller : MonoBehaviour
 
     Coroutine E;
 
-    //コントローラーのマウス
 
 
     //ギミックのイベント呼び出し
@@ -371,21 +370,19 @@ public class UIcontroller : MonoBehaviour
     {
         if (context.performed)
         {
+            //すべてのUIが起動していない
             bool allNonActive = true;
             foreach (RectTransform rect in UIs)
             {
                 Debug.Log(rect.name + rect.gameObject.activeSelf);
                 allNonActive = allNonActive && !rect.gameObject.activeSelf;
             }
+
             if (allNonActive)
             {
-
                 ActiveUI("esc");
             }
-            else
-            {
-                CloseUIs();
-            }
+            
         }
     }
 
