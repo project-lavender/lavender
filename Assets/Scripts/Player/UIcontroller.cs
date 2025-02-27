@@ -110,6 +110,8 @@ public class UIcontroller : MonoBehaviour
         nowID = -1;
         //interactColider.enabled = true;
         pageNum = 0;
+
+        //カメラを操作可能に
         SetVirtualCamera(true);
         Cursor.visible = false;
         StopAllCoroutines();
@@ -119,20 +121,22 @@ public class UIcontroller : MonoBehaviour
         {
             r.gameObject.SetActive(false);
         }
+
     }
     public void ActiveUI(string textid)
     {
         //インタラクトコライダーを無効か
         int i = -1;
+        int j = 0;
         if (textid == "")
         {
             return;
         }
         TextStructure textData = dttext.Find(textid);
-        Cursor.lockState = CursorLockMode.None;
-        SetVirtualCamera(false);
+        //Cursor.lockState = CursorLockMode.None;
+        //SetVirtualCamera(false);
 
-
+        //UIの初期化
         if (textid == "esc")
         {
             i = 3;
@@ -153,7 +157,6 @@ public class UIcontroller : MonoBehaviour
             return;
         }
         Debug.Log(textid + " ui" + i.ToString());
-        int j = 0;
         foreach (RectTransform r in UIs)
         {
             r.gameObject.SetActive(false);
@@ -164,13 +167,30 @@ public class UIcontroller : MonoBehaviour
             }
             j += 1;
         }
-        //選択肢
+
+        //UI操作切替 & カメラ設定
+        if (i == 0 || i == 1 || i == 3)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            SetVirtualCamera(false);
+            pin.SwitchCurrentActionMap("UI");
+            action.Player.Disable();
+            action.UI.Enable();
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            SetVirtualCamera(true);
+        }
+
+        //UIの起動
         if (i == 0)
         {
-            nowID = 0;
-            //カメラ固定
-            SetVirtualCamera(false);
+
             //汎用
+            nowID = 0;
             uitexts[i].text = textData.text;
             List<string> choiseID = new()
             {
@@ -215,9 +235,6 @@ public class UIcontroller : MonoBehaviour
             //カーソルロックを外す
 
             nowID = 1;
-            //カメラ固定
-            SetVirtualCamera(false);
-
             //本文に代入
             int pagenum;
             dialog = new List<string>();
@@ -245,9 +262,6 @@ public class UIcontroller : MonoBehaviour
             (pagenum, dialog) = dttext.Pages(textid);
             if (pagenum != -1)
             {
-                //カメラ設定
-                SetVirtualCamera(true);
-                Cursor.lockState = CursorLockMode.Locked;
                 E = StartCoroutine(VoiceText());
             }
         }
@@ -255,7 +269,6 @@ public class UIcontroller : MonoBehaviour
         {
             //esc
             //読み込み
-            //カーソルロックを外す
             nowID = 3;
             StreamReader rd = new(pathsence);
             string json = rd.ReadToEnd();
@@ -272,21 +285,7 @@ public class UIcontroller : MonoBehaviour
 
         }
 
-        //UI操作切替 & カメラ設定
-        if (i == 0 || i == 1 || i == 3)
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-
-            pin.SwitchCurrentActionMap("UI");
-            action.Player.Disable();
-            action.UI.Enable();
-        }
-        else
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+        
     }
     public void XSence()
     {
