@@ -1,0 +1,14 @@
+@startuml
+class Gimicks {
+    + EmitColor() : void
+    + TurnOffColor() : void
+    + BlackColor() : void
+    + SetProgress() : void
+    + <<virtual>> ReturnGimickInfo() : GimickStructure
+    + <<virtual>> DisableGimick() : void
+    + <<virtual>> EnableGimick() : void
+}
+MonoBehaviour <|-- Gimicks
+Gimicks o-> "emittionColor" Color
+Gimicks o-> "darkColor" Color
+@enduml

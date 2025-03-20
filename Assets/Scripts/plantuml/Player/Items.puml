@@ -1,0 +1,11 @@
+@startuml
+class Items {
+    + itemname : string = ""
+    + useTextID : string = ""
+    + myfrag : string
+    + SetFrag(f:bool) : void
+    + <<virtual>> UseItem() : string
+}
+MonoBehaviour <|-- Items
+Items --> "itemIcon" Sprite
+@enduml

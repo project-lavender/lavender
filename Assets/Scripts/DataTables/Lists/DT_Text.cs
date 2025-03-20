@@ -8,8 +8,7 @@ public class DT_Text : ScriptableObject
 {
 	public List<TextStructure> Sheet1; // Replace 'EntityType' to an actual type that is serializable.
 
-	public
-        TextStructure Find(string id)
+	public TextStructure Find(string id)
     {
         TextStructure text = null;
         foreach (TextStructure t in Sheet1)

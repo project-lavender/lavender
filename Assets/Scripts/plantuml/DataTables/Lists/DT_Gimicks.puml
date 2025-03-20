@@ -1,0 +1,36 @@
+@startuml
+class DT_Gimicks {
+    + FindTableENUM(listname:ENUMGimickName.GimickNames) : List<GimickStructure>
+}
+class "List`1"<T> {
+}
+ScriptableObject <|-- DT_Gimicks
+DT_Gimicks --> "Stretcher<GimickStructure>" "List`1"
+DT_Gimicks --> "Dynamo<GimickStructure>" "List`1"
+DT_Gimicks --> "TestGimick<GimickStructure>" "List`1"
+DT_Gimicks --> "TestGimick_choise<GimickStructure>" "List`1"
+DT_Gimicks --> "TestGimick_voice<GimickStructure>" "List`1"
+DT_Gimicks --> "CassetteTapeA<GimickStructure>" "List`1"
+DT_Gimicks --> "CassetteTapeB<GimickStructure>" "List`1"
+DT_Gimicks --> "CassetteTapeC<GimickStructure>" "List`1"
+DT_Gimicks --> "CassetteTapeD<GimickStructure>" "List`1"
+DT_Gimicks --> "KasetPlayer<GimickStructure>" "List`1"
+DT_Gimicks --> "MemoO<GimickStructure>" "List`1"
+DT_Gimicks --> "MemoA<GimickStructure>" "List`1"
+DT_Gimicks --> "MemoB<GimickStructure>" "List`1"
+DT_Gimicks --> "MemoC<GimickStructure>" "List`1"
+DT_Gimicks --> "MemoD<GimickStructure>" "List`1"
+DT_Gimicks --> "RoterRed<GimickStructure>" "List`1"
+DT_Gimicks --> "RoterBlack<GimickStructure>" "List`1"
+DT_Gimicks --> "RoterBlue<GimickStructure>" "List`1"
+DT_Gimicks --> "Freezer<GimickStructure>" "List`1"
+DT_Gimicks --> "DimpleKey<GimickStructure>" "List`1"
+DT_Gimicks --> "Centrifuge<GimickStructure>" "List`1"
+DT_Gimicks --> "CentrifugeM<GimickStructure>" "List`1"
+DT_Gimicks --> "Pipet<GimickStructure>" "List`1"
+DT_Gimicks --> "Door<GimickStructure>" "List`1"
+DT_Gimicks --> "ReagentBottle<GimickStructure>" "List`1"
+DT_Gimicks --> "PipetManual<GimickStructure>" "List`1"
+DT_Gimicks --> "CentrifugeManual<GimickStructure>" "List`1"
+DT_Gimicks --> "FakeReagentBottle<GimickStructure>" "List`1"
+@enduml

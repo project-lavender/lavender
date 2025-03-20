@@ -1,0 +1,10 @@
+@startuml
+class ProgressController {
+    + ReadProgress() : int
+    + UpFrag(id:string) : void
+    + DownFrag(id:string) : void
+    + SceneLoad(scenename:string) : void
+    + AttachProgress(p:int) : void
+}
+MonoBehaviour <|-- ProgressController
+@enduml

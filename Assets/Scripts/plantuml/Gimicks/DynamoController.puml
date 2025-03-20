@@ -1,0 +1,7 @@
+@startuml
+class DynamoController {
+    + TurnOffLight() : void
+    + TurnOnLight() : void
+}
+Gimicks <|-- DynamoController
+@enduml

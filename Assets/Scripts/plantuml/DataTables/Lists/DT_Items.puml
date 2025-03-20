@@ -1,0 +1,9 @@
+@startuml
+class DT_Items {
+    + FindItem(id:string) : GameObject
+}
+class "List`1"<T> {
+}
+ScriptableObject <|-- DT_Items
+DT_Items o-> "ItemsList<ItemStructure>" "List`1"
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class DT_Demos {
+}
+class "List`1"<T> {
+}
+ScriptableObject <|-- DT_Demos
+DT_Demos o-> "demos<DemoStructure>" "List`1"
+@enduml

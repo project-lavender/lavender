@@ -1,0 +1,32 @@
+@startuml
+!include .\\DataTables\ENUMGimickName.puml
+!include .\\Gimicks\CassettePlayer.puml
+!include .\\Gimicks\DynamoController.puml
+!include .\\Gimicks\Gimicks.puml
+!include .\\Gimicks\ProgressController.puml
+!include .\\Gimicks\RoterController.puml
+!include .\\Gimicks\StretcherCtr.puml
+!include .\\Player\Interacter.puml
+!include .\\Player\Items.puml
+!include .\\Player\ItemStack.puml
+!include .\\Player\RierMover.puml
+!include .\\Player\SEController.puml
+!include .\\Player\SoftwareCursorPositionAdjuster.puml
+!include .\\Player\UIcontroller.puml
+!include .\\Player\VirtualMouseScaler.puml
+!include .\\Scene\DemoPlayer.puml
+!include .\\Scene\GameOverUI.puml
+!include .\\Scene\SceneLorder.puml
+!include .\\Scene\TitleLogoParams.puml
+!include .\\Scene\VaseLightRandomizer.puml
+!include .\\DataTables\Lists\DT_Demos.puml
+!include .\\DataTables\Lists\DT_Frag.puml
+!include .\\DataTables\Lists\DT_Gimicks.puml
+!include .\\DataTables\Lists\DT_Items.puml
+!include .\\DataTables\Lists\DT_Text.puml
+!include .\\DataTables\Structure\DemoStructure.puml
+!include .\\DataTables\Structure\FragStructure.puml
+!include .\\DataTables\Structure\GimickStructure.puml
+!include .\\DataTables\Structure\ItemStructure.puml
+!include .\\DataTables\Structure\TextStructure.puml
+@enduml

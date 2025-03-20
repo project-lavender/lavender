@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraMover" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAEAAQCCAAACAAAAAAAAAAAAhAgAABIACgBAAQAIA=</HashCode>
+      <FileName>Assets\Models\cameraMover\CameraMover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Readme" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\TutorialInfo\Scripts\Readme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="@Lavender" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACQAgAACEAARAiEAKEGREJYAYPBGCUQGGgIEhQQtA=</HashCode>
+      <FileName>Assets\Player\lavender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ENUMGimickName" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\ENUMGimickName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DT_Demos" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Lists\DT_Demos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DT_Frag" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAkAAAAAAAAAAAgAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Lists\DT_Frag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DT_Gimicks" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAgCqQAAAAAAAgABCAAACIAgjgESCAAAQAAABgBAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Lists\DT_Gimicks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DT_Items" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Lists\DT_Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DT_Text">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEgAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Lists\DT_Text.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoStructure" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Structure\DemoStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FragStructure" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Structure\FragStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GimickStructure" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAACAAAAAAAAACEAABAgQAAAAAIAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Structure\GimickStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemStructure" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Structure\ItemStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextStructure">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAB4AAAAEAAAAAAAAAAAAAAAAAAIAAAAAgAAAgA=</HashCode>
+      <FileName>Assets\Scripts\DataTables\Structure\TextStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CassettePlayer" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\CassettePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamoController" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAACAiAgAAAAQAQCAACAAAIAAAAAAIACEAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\DynamoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gimicks">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAIAAIYAAQAAESgAAQAAAAAAAACAAAACAAgEE=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\Gimicks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProgressController" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAQIAACAgAAAIQAAACEAAAAAAAAgAAIAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\ProgressController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoterController" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\RoterController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StretcherCtr" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAQAAiAAIAAEAAQAAAAAAAAAAAAICAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gimicks\StretcherCtr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interacter">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <Members>
+      <Field Name="action" Hidden="true" />
+      <Field Name="cam" Hidden="true" />
+      <Field Name="canTouch" Hidden="true" />
+      <Field Name="demoPlayer" Hidden="true" />
+      <Field Name="dtitem" Hidden="true" />
+      <Field Name="gimicks" Hidden="true" />
+      <Field Name="hit" Hidden="true" />
+      <Field Name="interactCD" Hidden="true" />
+      <Field Name="itemStack" Hidden="true" />
+      <Field Name="scanlength" Hidden="true" />
+      <Method Name="SetCanTouch" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Field Name="uic" Hidden="true" />
+      <Field Name="uictr" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>oQQABAEAACAIkgAAAwQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Interacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Items" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIAAAQAAAAAEAAAAABBAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemStack" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABxAQIACIgEACIQAQAAAgABAAYAAAAgAAEAEBAABA=</HashCode>
+      <FileName>Assets\Scripts\Player\ItemStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RierMover" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQABCAAAqACAAIUAAIAAAAGAAAAAACARHAMAIAAAQI=</HashCode>
+      <FileName>Assets\Scripts\Player\RierMover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEController" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABACAAIECAAAQEAAAAIAAABAAQAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\SEController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareCursorPositionAdjuster" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAQAIAAAAAAAAACAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\SoftwareCursorPositionAdjuster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIcontroller" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oMlADIAFECAEgMIEAcYAAIAAACAQAECABBAAAgACGBA=</HashCode>
+      <FileName>Assets\Scripts\Player\UIcontroller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualMouseScaler" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAgAAAAACAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\VirtualMouseScaler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoPlayer" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAAACAQAAAAAAAAAAAAAAAAAABAECAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\Scene\DemoPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOverUI" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAABBIAAAAAAAAgAQAAAAAAASAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Scene\GameOverUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneLorder" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Scene\SceneLorder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TitleLogoParams" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACgAAACAAAABIAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Scene\TitleLogoParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VaseLightRandomizer" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAACAgABAAAAAAAAAAAAAAAACAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Scene\VaseLightRandomizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>

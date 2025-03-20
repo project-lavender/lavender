@@ -1,0 +1,8 @@
+@startuml
+class TitleLogoParams {
+    + Grad : float = 15f
+    + MoveScene(i:int) : void
+    + FinishGame() : void
+}
+MonoBehaviour <|-- TitleLogoParams
+@enduml

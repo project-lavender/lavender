@@ -1,0 +1,11 @@
+@startuml
+class DT_Frag {
+    + SetVal(fragname:string, val:bool) : void
+    + ReadVal(fragname:string) : bool
+    + ResetValue() : void
+}
+class "List`1"<T> {
+}
+ScriptableObject <|-- DT_Frag
+DT_Frag --> "Sheet1<FragStructure>" "List`1"
+@enduml

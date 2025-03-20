@@ -1,0 +1,11 @@
+@startuml
+class SEController {
+    + isRandom : bool = true
+    + SE(i:int) : void
+    + SetNoRandom(t:float) : IEnumerator
+    + PitchReset() : void
+    + SELoop(i:int) : void
+    + LoopFinish() : void
+}
+MonoBehaviour <|-- SEController
+@enduml

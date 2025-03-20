@@ -1,0 +1,6 @@
+@startuml
+class SceneLorder {
+    + LoadScene(lname:string) : void
+}
+MonoBehaviour <|-- SceneLorder
+@enduml

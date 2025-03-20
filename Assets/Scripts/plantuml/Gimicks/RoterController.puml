@@ -1,0 +1,5 @@
+@startuml
+class RoterController {
+}
+Gimicks <|-- RoterController
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class GameOverUI {
+    + MoveScene(i:int) : void
+    + FinishGame() : void
+}
+MonoBehaviour <|-- GameOverUI
+@enduml

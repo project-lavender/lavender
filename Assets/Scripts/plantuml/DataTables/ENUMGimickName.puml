@@ -1,0 +1,36 @@
+@startuml
+class ENUMGimickName {
+}
+enum GimickNames {
+    Stretcher,
+    Dynamo,
+    TestGimick,
+    TestGimick_choise,
+    TestGimick_voice,
+    CassetteTapeA,
+    CassetteTapeB,
+    CassetteTapeC,
+    CassetteTapeD,
+    KasetPlayer,
+    MemoO,
+    MemoA,
+    MemoB,
+    MemoC,
+    MemoD,
+    RoterRed,
+    RoterBlack,
+    RoterBlue,
+    Freezer,
+    DimpleKey,
+    Centrifuge,
+    CentrifugeM,
+    Pipet,
+    Door,
+    ReagentBottle,
+    PipetManual,
+    CentrifugeManual,
+    FakeReagentBottle,
+}
+MonoBehaviour <|-- ENUMGimickName
+ENUMGimickName +-- GimickNames
+@enduml

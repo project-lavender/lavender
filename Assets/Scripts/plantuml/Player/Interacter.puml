@@ -1,0 +1,6 @@
+@startuml
+class Interacter {
+    + OnFire(context:InputAction.CallbackContext) : void
+}
+MonoBehaviour <|-- Interacter
+@enduml

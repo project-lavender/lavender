@@ -1,0 +1,7 @@
+@startuml
+class DemoPlayer {
+    + DemoPlay(name:string) : void
+    + StopDemo(name:string) : void
+}
+MonoBehaviour <|-- DemoPlayer
+@enduml

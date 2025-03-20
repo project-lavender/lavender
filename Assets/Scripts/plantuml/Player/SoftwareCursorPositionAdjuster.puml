@@ -1,0 +1,5 @@
+@startuml
+class SoftwareCursorPositionAdjuster {
+}
+MonoBehaviour <|-- SoftwareCursorPositionAdjuster
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class VirtualMouseScaler {
+    + scale : float = 1
+    + <<override>> Process(value:Vector2, control:InputControl) : Vector2
+}
+class "InputProcessor`1"<T> {
+}
+"InputProcessor`1" "<Vector2>" <|-- VirtualMouseScaler
+@enduml

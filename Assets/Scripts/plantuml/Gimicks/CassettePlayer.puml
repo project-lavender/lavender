@@ -1,0 +1,5 @@
+@startuml
+class CassettePlayer {
+}
+Gimicks <|-- CassettePlayer
+@enduml

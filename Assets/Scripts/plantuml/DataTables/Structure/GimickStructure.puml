@@ -1,0 +1,13 @@
+@startuml
+class GimickStructure {
+    + progress : int = 0
+    + frag : string = ""
+    + textID : string = ""
+    + demoID : string = ""
+    + itemID : string = ""
+    + upFrag : string = ""
+    + downFrag : string = ""
+    + death : bool = false
+    + overWriteProgress : int
+}
+@enduml

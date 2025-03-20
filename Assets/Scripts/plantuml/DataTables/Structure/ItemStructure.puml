@@ -1,0 +1,6 @@
+@startuml
+class ItemStructure {
+    + id : string
+}
+ItemStructure --> "item" GameObject
+@enduml

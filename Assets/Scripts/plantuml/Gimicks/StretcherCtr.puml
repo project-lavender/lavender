@@ -1,0 +1,7 @@
+@startuml
+class StretcherCtr {
+    + <<override>> DisableGimick() : void
+    + <<override>> EnableGimick() : void
+}
+Gimicks <|-- StretcherCtr
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+class UIcontroller {
+    + nowID : int
+    + PageSend(p:int) : void
+    + CloseUIs() : void
+    + ActiveUI(textid:string) : void
+    + XSence() : void
+    + YSence() : void
+    + WriteSence() : void
+    + Sound() : void
+    + SettingUI(context:InputAction.CallbackContext) : void
+    + CloseUI_Context(context:InputAction.CallbackContext) : void
+    + PageSend_Context(context:InputAction.CallbackContext) : void
+    + PageBack_Context(context:InputAction.CallbackContext) : void
+}
+class Sence {
+    + Xsence : float
+    + Ysence : float
+}
+MonoBehaviour <|-- UIcontroller
+UIcontroller +-- Sence
+@enduml

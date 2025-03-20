@@ -1,0 +1,10 @@
+@startuml
+class DT_Text {
+    + Find(id:string) : TextStructure
+    + Pages(id:string) : (int,List<string>)
+}
+class "List`1"<T> {
+}
+ScriptableObject <|-- DT_Text
+DT_Text --> "Sheet1<TextStructure>" "List`1"
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class FragStructure {
+    + id : string = ""
+    + value : bool = false
+}
+@enduml

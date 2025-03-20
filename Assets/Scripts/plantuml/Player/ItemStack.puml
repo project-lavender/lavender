@@ -1,0 +1,17 @@
+@startuml
+class ItemStack {
+    + DisableItem(id:string) : void
+    + EnableItem(id:string) : void
+    + ItemNext(context:InputAction.CallbackContext) : void
+    + ItemBack(context:InputAction.CallbackContext) : void
+    + UseItem(context:InputAction.CallbackContext) : void
+}
+struct ItemSet {
+    + enable : bool
+}
+MonoBehaviour <|-- ItemStack
+ItemStack +-- ItemSet
+ItemSet --> "item" ItemStructure
+ItemSet --> "itemComponent" Items
+ItemSet --> "img" Image
+@enduml

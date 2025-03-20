@@ -1,0 +1,5 @@
+@startuml
+class VaseLightRandomizer {
+}
+MonoBehaviour <|-- VaseLightRandomizer
+@enduml

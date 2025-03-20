@@ -1,0 +1,12 @@
+@startuml
+class TextStructure {
+    + id : string = ""
+    + text : string = ""
+    + ui : int = 0
+    + nextText : string = ""
+    + choise0 : string = ""
+    + choise1 : string = ""
+    + choise2 : string = ""
+    + choise3 : string = ""
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class RierMover {
+    + highorCrouch : float = 1.0f
+}
+MonoBehaviour <|-- RierMover
+@enduml

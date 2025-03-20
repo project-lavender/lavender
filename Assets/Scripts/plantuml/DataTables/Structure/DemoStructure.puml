@@ -1,0 +1,6 @@
+@startuml
+class DemoStructure {
+    + id : string
+}
+DemoStructure --> "asset" PlayableAsset
+@enduml
